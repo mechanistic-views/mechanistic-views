@@ -32,7 +32,7 @@ This is the central obstacle. A model hedging on obscure-fact questions may have
 
 ## Relationship to hallucination
 
-If $S_\text{self}$ causally suppresses confident-but-wrong outputs when its projection is high, then accurate self-knowledge is anti-hallucination infrastructure. This makes the self-knowledge mechanism one of the most safety-relevant open questions in interpretability.
+If $S_\text{self}$ causally suppresses confident-but-wrong outputs when its projection is high, then accurate self-knowledge is anti-hallucination infrastructure. If this holds, the self-knowledge mechanism has direct safety relevance: it would provide a causal account of when and why models produce calibrated self-assessments.
 
 ## Current evidence state
 

@@ -1,13 +1,11 @@
 ---
 title: Mechanistic Views
-subtitle: An atlas of what mechanisms are, how we know them, when two are the same, and what follows from each stance
+subtitle: A reference for the implicit commitments in mechanistic interpretability claims
 ---
 
 # Mechanistic Views
 
-Mechanistic interpretability produces circuits, features, subspaces, and algorithms. Every one of those results carries a hidden commitment: to what kind of object a mechanism is, to what evidence supports the claim, to when two descriptions refer to the same thing.
-
-This site maps those commitments.
+Mechanistic interpretability produces circuits, features, subspaces, and algorithms. Each of these results rests on implicit assumptions: about what kind of object a mechanism is, what evidence supports the claim, and when two descriptions refer to the same thing. This site makes those assumptions explicit.
 
 The basic unit is a **mechanistic view**: a background account of what mechanisms are, how they are identified, when two mechanisms are the same, and what evidence can justify claims about them. Most interpretability papers assume a view without stating it. Making the view explicit does not settle empirical questions, but it makes the right questions easier to find.
 
@@ -45,7 +43,7 @@ This site is a companion to two working papers:
 - *Mechanistic Validity* introduces 27 criteria for evaluating whether a mechanistic claim is warranted by evidence.
 - *The Geometry of Mechanisms* develops the Grassmannian SCM, the No-Free-Lunch Triangulation Theorem, and geometric invariants for mechanism identity.
 
-This site asks the prior question: what background view makes a mechanism claim meaningful in the first place?
+This site addresses a different question: what background assumptions make a mechanism claim well-defined?
 
 ## How this relates to existing literature
 

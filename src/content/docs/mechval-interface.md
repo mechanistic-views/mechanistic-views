@@ -10,7 +10,7 @@ Mechanistic Views and Mechanistic Validity (MechVal) are companion frameworks wi
 
 **Mechanistic Views** asks: what background view makes the claim meaningful in the first place?
 
-The questions are distinct but dependent. A MechVal audit assumes the claim's concepts — mechanism, identity, evidence — are well-defined. Mechanistic Views provides those definitions.
+The questions are distinct but dependent. A MechVal audit assumes the claim's concepts — mechanism, identity, evidence — are well-defined. Mechanistic Views supplies those definitions, making the MechVal criteria applicable.
 
 ## How the validity lenses map to view commitments
 

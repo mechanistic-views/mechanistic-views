@@ -6,7 +6,7 @@ title: Framework
 
 Every mechanistic interpretability result assumes a view of what mechanisms are. The claim "head 4.4 is a name-mover" assumes mechanisms can be identified with heads. The claim "a causal subspace at layer 8 stores the indirect object" assumes mechanisms can be subspaces. The claim "the grokking circuit forms by epoch 30K" assumes mechanisms are processes with formation timelines.
 
-These assumptions are usually tacit. This site makes them explicit.
+These assumptions are usually tacit; this site makes them explicit.
 
 ## The five axes
 

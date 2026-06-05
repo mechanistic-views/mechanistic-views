@@ -8,7 +8,7 @@ title: Case Study — Grokking
 
 ## Why this case is important
 
-Grokking is the paradigm case for the process view. The static views describe the final Fourier mechanism but cannot describe why the transition occurs when it does.
+Grokking is a natural case for the process view. The static views describe the final Fourier mechanism but cannot describe why the transition occurs when it does.
 
 ## The final-state mechanism (Fourier)
 

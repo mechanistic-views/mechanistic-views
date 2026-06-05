@@ -25,4 +25,4 @@ Start with [Object](object/) and [Subspace](subspace/) for the two most common b
 
 ## How the views relate
 
-The views are not mutually exclusive at the level of phenomena. A given model may contain mechanisms best described by different views at different strata. The atlas is not a menu of alternatives where one must be chosen; it is a map of which commitments different descriptions carry.
+The views are not mutually exclusive at the level of phenomena. A given model may contain mechanisms best described by different views at different strata. The goal is to identify which commitments different descriptions carry, not to select a single correct view.
