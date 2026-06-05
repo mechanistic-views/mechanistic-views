@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css');
+
+/* KaTeX math sizing and centering */
+.katex { font-size: 1.21em; }
+.katex-display {
+  display: flex !important;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+.katex-display > .katex { font-size: 1.5em; }
+
+:root {
+  --sl-font: 'Inter', system-ui, sans-serif;
+  --sl-font-system-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --sl-color-accent-low: #2e1065;
+  --sl-color-accent: #7c3aed;
+  --sl-color-accent-high: #c4b5fd;
+}
+:root[data-theme='light'] {
+  --sl-color-accent-low: #ede9fe;
+  --sl-color-accent: #7c3aed;
+  --sl-color-accent-high: #4c1d95;
+}
+
+/* Tighter heading spacing */
+.sl-markdown-content h2 {
+  margin-top: 2.5rem;
+}
+
+.sl-markdown-content h3 {
+  margin-top: 1.75rem;
+}
+
+/* Badge colors */
+.sl-badge.success { --sl-color-bg-badge: #16a34a; }
+.sl-badge.caution { --sl-color-bg-badge: #d97706; }
+.sl-badge.danger { --sl-color-bg-badge: #dc2626; }
+.sl-badge.note { --sl-color-bg-badge: #7c3aed; }
+
+/* Uniform sidebar font */
+#starlight__sidebar a,
+#starlight__sidebar summary {
+  font-weight: 400;
+}
+#starlight__sidebar li li summary .large,
+#starlight__sidebar li li summary span {
+  font-size: var(--sl-text-sm) !important;
+  font-weight: 400;
+}
+
+/* Splash page hero */
+.hero-tagline {
+  font-size: 1.25rem;
+  color: var(--sl-color-gray-2);
+  max-width: 48rem;
+  line-height: 1.6;
+}

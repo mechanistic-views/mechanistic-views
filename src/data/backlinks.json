@@ -1,0 +1,188 @@
+{
+  "/cases/ioi/": [
+    {
+      "slug": "/cases/",
+      "title": "Cases"
+    }
+  ],
+  "/cases/induction/": [
+    {
+      "slug": "/cases/",
+      "title": "Cases"
+    }
+  ],
+  "/cases/grokking/": [
+    {
+      "slug": "/cases/",
+      "title": "Cases"
+    }
+  ],
+  "/cases/hallucination/": [
+    {
+      "slug": "/cases/",
+      "title": "Cases"
+    }
+  ],
+  "/cases/self-knowledge/": [
+    {
+      "slug": "/cases/",
+      "title": "Cases"
+    }
+  ],
+  "/decisions/object-vs-role/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    }
+  ],
+  "/decisions/subspace-vs-structural/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    }
+  ],
+  "/decisions/localized-vs-distributed/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    }
+  ],
+  "/decisions/single-vs-triangulated/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
+  "/decisions/static-vs-process/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    }
+  ],
+  "/formalism/grassmannian/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/formalism/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
+  "/formalism/gauge-holonomy/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/formalism/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    }
+  ],
+  "/formalism/sheaves/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    }
+  ],
+  "/formalism/stratification/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ],
+  "/framework/views/subspace/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    }
+  ],
+  "/framework/decisions/single-vs-triangulated/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    }
+  ],
+  "/views/subspace/": [
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/object/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/role/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/object/",
+      "title": "Object View"
+    }
+  ],
+  "/views/structural/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/process/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/stratified/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/perspectival/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/instrumental/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/index/": [
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ]
+}
