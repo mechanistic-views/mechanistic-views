@@ -22,7 +22,7 @@ Key terms used across this site, in order of dependency.
 
 **Transport map.** $\tau_W(S) = \overline{\mathrm{span}(WS)}$ for $W \in \mathbb{R}^{d_\text{out} \times d_\text{in}}$. For nonlinear modules: defined via expected Jacobian.
 
-**G-SCM.** Grassmannian SCM: Pearl SCM with subspaces as nodes and transport maps as edges. Requires transport-respecting alignments, blocking the Sutter et al. (2025) (Denis Sutter, Julian Minder, Thomas Hofmann, Tiago Pimentel. "The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability?" NeurIPS 2025) vacuity result.
+**G-SCM.** Grassmannian SCM: Pearl SCM with subspaces as nodes and transport maps as edges. Requires transport-respecting alignments, which in principle addresses the Sutter et al. (2025) vacuity result. Not yet empirically validated on natural transformer circuits.
 
 **Sutter et al. (2025) (Denis Sutter, Julian Minder, Thomas Hofmann, Tiago Pimentel. "The Non-Linear Representation Dilemma: Is Causal Abstraction Enough for Mechanistic Interpretability?" NeurIPS 2025) vacuity result.** Unrestricted nonlinear alignment functions can achieve high IIA without genuine causal structure.
 

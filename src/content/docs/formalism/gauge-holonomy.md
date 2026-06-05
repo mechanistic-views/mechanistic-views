@@ -61,7 +61,7 @@ Properties:
 
 ## The holonomy identity conjecture
 
-**Conjecture** (Tower 2026b).
+**Conjecture.**
 
 *Necessary direction* (established): same mechanism (same gauge orbit) implies isomorphic holonomy groups. Follows from gauge-invariance.
 

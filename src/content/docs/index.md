@@ -38,10 +38,7 @@ Read **framework** first, then one or two view pages. The **cases** section show
 
 ## Relationship to companion work
 
-This site is a companion to two working papers:
-
-- *Mechanistic Validity* introduces 27 criteria for evaluating whether a mechanistic claim is warranted by evidence.
-- *The Geometry of Mechanisms* develops the Grassmannian SCM, the No-Free-Lunch Triangulation Theorem, and geometric invariants for mechanism identity.
+This site is a companion to *Mechanistic Validity*, which introduces 27 criteria for evaluating whether a mechanistic claim is warranted by evidence.
 
 This site addresses a different question: what background assumptions make a mechanism claim well-defined?
 

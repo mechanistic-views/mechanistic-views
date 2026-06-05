@@ -44,11 +44,11 @@ Three independently non-injective sources:
 - **Weight-space structural**: SVD of $W^{OV} = W^O W^V$, invariant subspace decomposition
 - **Dynamics-space**: AGOP convergence toward the eventual DAS subspace during training
 
-The **No-Free-Lunch Triangulation Theorem** shows each domain is individually non-injective on mechanism space, but the joint map is injective under a **general position condition** — the requirement that no pair of distinct mechanisms looks identical across all three domains simultaneously. See the [Single-Method vs. Triangulated Evidence](/decisions/single-vs-triangulated/) page for the precise statement.
+Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a **general position condition** — the requirement that no pair of distinct mechanisms looks identical across all three domains simultaneously. This has not been formally verified for natural transformer mechanisms. See the [Single-Method vs. Triangulated Evidence](/decisions/single-vs-triangulated/) page for discussion.
 
 ## Formalism
 
-Grassmannian geometry. The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. It blocks the Sutter et al. (2025) vacuity result by requiring alignment maps to respect transport structure. See [Grassmannian Geometry](/formalism/grassmannian/).
+Grassmannian geometry. The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. In principle, requiring alignment maps to respect transport structure addresses the Sutter et al. (2025) vacuity result, though the G-SCM has not yet been empirically validated on natural transformer circuits. See [Grassmannian Geometry](/formalism/grassmannian/).
 
 ## What it explains
 
@@ -59,7 +59,7 @@ Why SAE features and DAS subspaces are not always the same object: SAE features 
 ## What it lets you prove
 
 - **Convergence**: weight-space and activation-space subspaces converge on $\mathrm{Gr}(k, d)$
-- **Non-vacuity**: Sutter et al. (2025) show that for unrestricted nonlinear alignments, high IIA is achievable without genuine causal structure. Restricting to transport-respecting alignments (G-SCM) rules out these degenerate solutions: an alignment achieving high IIA under the G-SCM constraint genuinely respects the causal structure implied by the weight matrices
+- **Non-vacuity** (theoretical): Sutter et al. (2025) show that for unrestricted nonlinear alignments, high IIA is achievable without genuine causal structure. Restricting to transport-respecting alignments (G-SCM) is expected to rule out these degenerate solutions, though this has not yet been empirically demonstrated on natural transformer circuits
 - **Flow bounds**: $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ is a distribution-free upper bound on causal information flow
 - **Triangulation necessity**: each evidence domain alone is non-injective on mechanism space; convergence across domains is required for unambiguous identification
 

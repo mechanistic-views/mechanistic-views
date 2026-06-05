@@ -74,7 +74,7 @@ $$H^1(\mathcal{F}) = C^1(G, \mathcal{F}) / \mathrm{im}(\delta^0)$$
 
 Non-zero $H^1$: there exist edge-level discrepancies between adjacent-layer subspace descriptions that cannot all be simultaneously resolved by any global assignment.
 
-**Claim** (Tower 2026b). Genuinely distributed mechanisms produce non-zero $H^1$.
+**Conjecture.** Genuinely distributed mechanisms produce non-zero $H^1$.
 
 *Status.* A conjecture. Two conditions are required:
 

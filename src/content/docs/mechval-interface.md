@@ -44,31 +44,13 @@ Tier assignments are view-relative: the same evidence can warrant Tier 3 under t
 
 ## The geometric realization of the validity chain
 
-The companion geometry paper shows the MechVal validity chain can be realized as Grassmannian convergence conditions:
+The MechVal validity chain can in principle be realized as Grassmannian convergence conditions. These realizations are not yet empirically validated:
 
 - **Construct validity**: weight-space, activation-space, and dynamics-space subspace estimates lie within geodesic $\epsilon_C$ of each other on $\mathrm{Gr}(k, d)$
 - **Measurement validity**: Fréchet variance of subspace estimates across seeds and prompts below $\epsilon_M$
 - **Internal validity**: IIA tests surgical intervention quality (activation-space domain); composition score $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ provides a distribution-free *upper bound* on causal information flow (weight-space domain) — it is a necessary condition for significant flow, not a direct causal test, and is invariant under head permutations but not full orthogonal rotation
 - **External validity**: cross-architecture generalization corresponds to isomorphic holonomy groups (necessary condition, connection-dependent)
 - **Interpretive validity**: the claim's Marr level determines the required evidence type (level 1 behavioral; level 2 component/subspace mechanistic; level 3 weight-space)
-
-## Safety applications
-
-Safety-relevant interpretability makes claims of a different type than standard circuit descriptions. The relevant claims include: "this model has a deceptive internal goal," "this model's capability representation generalizes to out-of-distribution inputs," "fine-tuning changed this mechanism." These claims require more than the object view can provide.
-
-**Object view limitations for safety.** Object-view claims are model- and seed-specific: "head 4.4 in this checkpoint implements name-moving." They cannot establish whether a dangerous capability is present in a different model, has generalized across training, or has been removed by fine-tuning. Safety claims require cross-model identity, which requires at minimum the role or structural view.
-
-**Minimum view for safety claims:**
-
-| Safety claim type | Minimum required view | Why object view fails |
-|---|---|---|
-| "This model has the same dangerous capability as a reference model" | Structural (gauge-orbit identity) | Object view has no cross-model identity criterion |
-| "This capability generalizes to new inputs" | Role or subspace | Object view is input-distribution dependent |
-| "Fine-tuning removed this mechanism" | Process or structural | Object view cannot track mechanism identity across training |
-| "This model is pursuing goal G" | Role (functional specification) | Object view describes components, not goals |
-| "This representation encodes deceptive intent" | Subspace or structural | Object view cannot represent distributed representations |
-
-The instrumental view is explicitly insufficient for safety: saying "this predictive shorthand is useful" cannot distinguish a model that has learned a dangerous goal from one that produces dangerous-looking outputs by a different mechanism, and these may come apart under deployment conditions.
 
 ## Caveats for structural-view criteria
 

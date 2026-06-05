@@ -4,7 +4,7 @@ title: Formalisms
 
 # Formalisms
 
-The views in this atlas reference several mathematical structures not standard in machine learning. These pages introduce each one in enough depth to follow the arguments on the view pages and in companion papers.
+The views in this atlas reference several mathematical structures not standard in machine learning. These pages introduce each one in enough depth to follow the arguments on the view pages.
 
 The natural dependency order is: **Grassmannian → Gauge and Holonomy → Sheaf Cohomology → Stratification**. Each page is self-contained, but reading in order helps. Undergraduate linear algebra is assumed throughout.
 
