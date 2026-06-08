@@ -20,4 +20,8 @@ The nodes are specific components — head 9.9 in layer 9, MLP 10, the embedding
 
 Two object-level descriptions refer to the same mechanism when they share sufficient component overlap — when the subgraphs have the same (or sufficiently overlapping) nodes and edges.
 
-Circuit discovery methods like activation patching, ACDC, and edge attribution patching all produce directed graphs as output. This is why the object view is implicit in most circuit-discovery work: the methods already speak the language of the formalism.
+Circuit discovery methods like [activation patching](https://learnmechinterp.com/topics/activation-patching/), [ACDC](https://learnmechinterp.com/topics/attribution-patching/), and [edge attribution patching](https://learnmechinterp.com/topics/attribution-patching/) all produce directed graphs as output. This is why the object view is implicit in most circuit-discovery work: the methods already speak the language of the formalism.
+
+## Relationship to other formalisms
+
+The directed graph is the simplest circuit formalism. The [role graph](/formalism/role-graph/) uses the same graph structure but labels nodes with functional roles instead of component identities. The [causal graph](/formalism/causal-graph/) (used by causal scrubbing and causal abstraction) is a DAG over high-level variables rather than model components — it tests whether the model's computation respects a proposed causal structure.

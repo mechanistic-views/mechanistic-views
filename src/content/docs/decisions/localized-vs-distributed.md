@@ -32,10 +32,10 @@ These are not equivalent. Conflating them leads to wrong conclusions: (A) calls 
 
 **Iterative circuit expansion.** Repeatedly add the next most important component. If the circuit grows to cover most of the model before $r$ approaches 1.0, localization is failing.
 
-**Cross-method convergence.** If DAS, activation patching, and SAE features all recover different locations and none substantially reduces $r$, this is convergent evidence for distribution.
+**Cross-method convergence.** If [DAS](https://learnmechinterp.com/topics/causal-abstraction/), [activation patching](https://learnmechinterp.com/topics/activation-patching/), and [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) all recover different locations and none substantially reduces $r$, this is convergent evidence for distribution.
 
 **Cohomological test.** Build the circuit cosheaf and estimate $H^1$. Non-zero $H^1$ establishes obstruction in *this* specific cosheaf proposal. It does not establish that no description has $H^1 = 0$. This gap should be acknowledged.
 
 ## Recommended default
 
-Default to localization for well-studied tasks. Treat distribution as the working hypothesis when $r$ is persistently high despite multiple recovery attempts. Do not treat $H^1 \neq 0$ for one cosheaf proposal as proof of irreducible distribution.
+Default to localization for well-studied tasks. Treat distribution as the working hypothesis when $r$ is persistently high despite multiple recovery attempts. Do not treat $H^1 \neq 0$ for one cosheaf proposal as proof of irreducible distribution. See the [stratified view](/views/stratified/) for how different strata ($\mathcal{M}_k$ vs $\mathcal{M}_\infty$) correspond to localized vs distributed mechanisms.

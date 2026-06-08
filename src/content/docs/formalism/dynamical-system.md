@@ -21,3 +21,7 @@ Under the process view, a mechanism is not a static structure in a trained model
 Two process-level descriptions refer to the same mechanism when they follow the same trajectory type — the same sequence of qualitative phases (e.g., memorization → generalization → cleanup), the same bifurcation structure, the same attractor. The specific parameter values at each step are irrelevant; what matters is the shape of the trajectory.
 
 Evidence for the process view comes from training checkpoints, formation knockouts (ablating a component at a specific training step to see if the mechanism recovers), and phase transition analysis. The formalism provides the vocabulary: a mechanism that forms via a sharp phase transition is qualitatively different from one that forms gradually, even if the end states look identical.
+
+## Relationship to other formalisms
+
+The dynamical system formalism describes the *trajectory* through weight space; the [Grassmannian](/formalism/grassmannian/) and [fiber bundle quotient](/formalism/fiber-bundle-quotient/) describe the *endpoint* of that trajectory (the trained model's subspaces and invariant structures). [AGOP](https://arxiv.org/abs/2110.04005) connects the two: it tracks the convergence of a subspace estimate across training, producing a trajectory on $\mathrm{Gr}(k, d)$. See the [Grokking](/cases/grokking/) and [Induction](/cases/induction/) case studies for concrete examples of formation trajectories.

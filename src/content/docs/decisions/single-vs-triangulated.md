@@ -32,7 +32,7 @@ Required for: mechanism identity claims, cross-model generalization, mechanism f
 
 ## The non-independence trap
 
-Activation patching and DAS are both activation-space methods. They share failure modes: both fail for distributed mechanisms, both depend on prompt distribution, both are confounded by backup circuits. They are not independent triangulation.
+[Activation patching](https://learnmechinterp.com/topics/activation-patching/) and [DAS](https://learnmechinterp.com/topics/causal-abstraction/) are both activation-space methods. They share failure modes: both fail for distributed mechanisms, both depend on prompt distribution, both are confounded by backup circuits. They are not independent triangulation.
 
 The three genuinely independent domains and their distinct failure modes:
 - **Weight-space**: invariant to prompt distribution; fails for low-rank causally active structures that composition score analysis misses
@@ -46,3 +46,5 @@ Single-method: acceptable at Tier 2 for single-model, single-task claims.
 Two domains: required for cross-seed or cross-model identity claims.
 
 All three domains: required for safety-relevant or intervention-design claims.
+
+See the [methods page](/methods/) for how each method maps to evidence domains, and the [Mechanistic Validity Interface](/mechval-interface/) for per-view triangulation requirements.

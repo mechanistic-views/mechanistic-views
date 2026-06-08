@@ -45,3 +45,9 @@ This means the perspectival view cannot be used to prove theorems about mechanis
 ## Relationship to Mechanistic Validity
 
 The perspectival view implies that construct validity is always method-relative. A Mechanistic Validity audit under the perspectival view produces a verdict about whether the claim is warranted relative to the methods used, not whether it is warranted absolutely.
+
+## Further reading
+
+- Massimi, *Perspectival Realism* (Oxford, 2022) — the philosophical framework underlying the perspectival view
+- The [measurement algebra](/formalism/measurement-algebra/) formalism captures the perspectival view's emphasis on measurement operations as the primary objects
+- For comparison: the [instrumental view](/views/instrumental/) is anti-realist about mechanisms entirely, while the perspectival view accepts them as real but method-relative. The [subspace view](/views/subspace/) and [structural view](/views/structural/) are realist — they commit to specific objects that exist independently of any measurement procedure

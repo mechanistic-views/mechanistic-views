@@ -26,7 +26,7 @@ These are the *gauge transformations*. Two weight configurations related by a ga
 
 ## How the structural view uses it
 
-Under the structural view, a mechanism is a gauge-invariant property of the weights: something that depends only on the equivalence class $[\theta] \in \mathcal{W}/\mathcal{G}$, not on any particular representative $\theta$. Singular values of $W^{OV}$, principal angles between subspaces, and effective rank are gauge-invariant. Individual neuron activations and head indices are not.
+Under the structural view, a mechanism is a gauge-invariant property of the weights: something that depends only on the equivalence class $[\theta] \in \mathcal{W}/\mathcal{G}$, not on any particular representative $\theta$. Singular values of [OV circuits](https://learnmechinterp.com/topics/qk-ov-circuits/) $W^{OV}$, principal angles between subspaces, and effective rank are gauge-invariant. [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) are invariant under head permutations but not under the full rotation symmetry. Individual neuron activations and head indices are not gauge-invariant.
 
 Two structural descriptions refer to the same mechanism when they lie in the same gauge orbit — when one can be transformed into the other by a sequence of gauge transformations.
 
@@ -35,3 +35,7 @@ The fiber bundle quotient also supports *holonomy*: a gauge-invariant fingerprin
 ## Deep dive
 
 For the full mathematical treatment — fiber bundle construction, connection choices, holonomy computation, the freeness requirement, and tractability — see the [Gauge Quotients and Holonomy deep dive](/formalism/deep-dives/gauge-holonomy/).
+
+## Relationship to other formalisms
+
+The fiber bundle quotient is the most structurally rich formalism in the framework. The [Grassmannian](/formalism/grassmannian/) captures subspace identity but not the full gauge structure; the quotient captures both. The [Whitney stratification](/formalism/stratification/) organizes mechanisms by dimensionality within the stratified view, while the fiber bundle quotient organizes them by gauge orbit within the structural view — related but distinct classification schemes.

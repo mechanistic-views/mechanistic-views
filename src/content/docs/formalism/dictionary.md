@@ -19,3 +19,14 @@ See [Sparse dictionary learning](https://en.wikipedia.org/wiki/Sparse_dictionary
 Sparse autoencoders (SAEs) learn a dictionary of features from a model's activations. Each feature is a direction in activation space, and the sparsity constraint encourages each activation to be explained by a small number of features. The hope is that these features correspond to interpretable concepts.
 
 The limitation: the sparsity objective optimizes for *reconstruction* quality, not *causal* relevance. A feature that helps reconstruct activations may not be causally active in the model's computation. Feature splitting (one concept spread across multiple dictionary elements) and feature absorption (multiple concepts merged into one element) complicate the mapping between dictionary features and functional units. Causal validation — e.g., steering with a feature direction and observing the predicted behavioral change — is needed to establish that a dictionary feature is a mechanism, not just a statistical pattern.
+
+## Relationship to other formalisms
+
+Dictionary features are points in $\mathrm{Gr}(1, d)$ — the simplest objects on the [Grassmannian](/formalism/grassmannian/). The [subspace view](/views/subspace/) generalizes from single directions to $k$-dimensional subspaces. The [stratified view](/views/stratified/) places dictionary features at the $\mathcal{M}_1$ stratum and asks when they should be grouped into higher-dimensional mechanisms.
+
+## Further reading
+
+- Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Directions in Language Models" (2023) — SAE features as interpretable directions
+- Bricken et al., "Towards Monosemanticity" (2023) — scaling SAEs to large models
+- See the [SAE features discussion](/views/subspace/#sae-features-and-the-subspace-view) on the subspace view page for when SAE features and causal subspaces agree or diverge
+- See the [methods page](/methods/) for how [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) fit into the broader evidence landscape

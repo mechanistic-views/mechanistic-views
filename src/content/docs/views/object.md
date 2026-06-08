@@ -12,7 +12,7 @@ A mechanism is a localized object or collection of objects whose activity or wei
 
 ## What exists
 
-Architectural or learned units: heads, neurons, SAE features. The view is strongest when the relevant computation is sparse, stable across prompts and seeds, and concentrated in a small number of components.
+Architectural or learned units: heads, neurons, [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/). The view is strongest when the relevant computation is sparse, stable across prompts and seeds, and concentrated in a small number of components.
 
 ## Identity
 
@@ -21,9 +21,9 @@ Two mechanisms are the same when they share the same relevant parts, or when the
 ## Evidence
 
 Intervention on the proposed component:
-- Ablation and mean-ablation (necessity — removing component destroys behavior)
-- Activation patching (replacing a component's activations from one forward pass into another; tests whether the source-pass behavior is sufficient to cause target-pass output change)
-- Path patching (tests specific information-flow paths; note this is also used under the role view for path-level role attribution, not just component-level testing)
+- [Ablation](https://learnmechinterp.com/topics/activation-patching/) and mean-ablation (necessity — removing component destroys behavior)
+- [Activation patching](https://learnmechinterp.com/topics/activation-patching/) (replacing a component's activations from one forward pass into another; tests whether the source-pass behavior is sufficient to cause target-pass output change)
+- [Path patching](https://learnmechinterp.com/topics/activation-patching/#path-patching) (tests specific information-flow paths; note this is also used under the role view for path-level role attribution, not just component-level testing)
 - Dose-response tests (causal dependence is graded, not binary)
 - Minimal sufficiency tests
 
@@ -31,7 +31,7 @@ A claim is stronger when independent intervention protocols converge on the same
 
 ## Formalism
 
-Graph or set-theoretic circuit description. Standard causal graphs (Pearl, 2009) apply directly.
+[Directed graph](/formalism/directed-graph/) or set-theoretic circuit description. Standard causal graphs (Pearl, 2009) apply directly. Circuit discovery methods like [ACDC](https://learnmechinterp.com/topics/attribution-patching/), [activation patching](https://learnmechinterp.com/topics/activation-patching/), and [EAP](https://learnmechinterp.com/topics/attribution-patching/) all produce directed graphs as output.
 
 ## What it explains
 
@@ -54,10 +54,17 @@ This matters because the purely correlational reading ("head 4.4 is active when 
 
 **Distributed mechanisms.** If computation is distributed, no single object will be both necessary and sufficient.
 
-**Coordinate artifacts.** A neuron may look privileged because of parameterization, not because computation is intrinsically localized there. Rotating the basis can move the apparent mechanism without changing the function.
+**Coordinate artifacts.** A neuron may look privileged because of parameterization, not because computation is intrinsically localized there. Rotating the basis can move the apparent mechanism without changing the function. When this is the primary concern, the [subspace view](/views/subspace/) or [structural view](/views/structural/) may be more appropriate.
 
 **Backup circuits.** Ablating one component may not impair behavior because a backup engages, producing false negatives for necessity.
 
 ## Relationship to Mechanistic Validity
 
 Aligns well with causal and internal validity criteria. Needs measurement validity (stability across seeds) and external validity (cross-context generalization).
+
+## Further reading
+
+- Elhage et al., "A Mathematical Framework for Transformer Circuits" (2021) — foundational circuits work using the object view
+- Wang et al., "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small" (2022) — the canonical IOI circuit, see [IOI case study](/cases/ioi/)
+- Conmy et al., "Towards Automated Circuit Discovery for Mechanistic Interpretability" (2023) — ACDC, automated circuit discovery producing directed graphs
+- For related views: [Role view](/views/role/) (abstracts away from specific components), [Subspace view](/views/subspace/) (replaces components with subspaces), [Structural view](/views/structural/) (identifies mechanisms with gauge orbits rather than component sets)

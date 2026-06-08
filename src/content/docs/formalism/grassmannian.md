@@ -16,7 +16,7 @@ See [Grassmannian](https://en.wikipedia.org/wiki/Grassmannian) on Wikipedia.
 
 ## Why subspaces, not vectors
 
-Distributed alignment search (DAS) recovers a matrix $Q \in \mathbb{R}^{d \times k}$ such that intervening on $QQ^\top x$ transfers a causal variable. But $Q$ and $QR$ produce the same projector for any rotation $R \in O(k)$. The method identifies a subspace — a column span — not a specific basis. The natural space of such objects is the Grassmannian.
+[Distributed alignment search (DAS)](https://learnmechinterp.com/topics/causal-abstraction/) recovers a matrix $Q \in \mathbb{R}^{d \times k}$ such that intervening on $QQ^\top x$ transfers a causal variable. But $Q$ and $QR$ produce the same projector for any rotation $R \in O(k)$. The method identifies a subspace — a column span — not a specific basis. The natural space of such objects is the Grassmannian.
 
 ## How the subspace view uses it
 
@@ -37,3 +37,7 @@ See the [deep dive](/formalism/deep-dives/grassmannian/#fréchet-mean-and-varian
 ## Deep dive
 
 For the full mathematical treatment — principal angles, transport maps, Fréchet mean and variance, computational tractability — see the [Grassmannian Geometry deep dive](/formalism/deep-dives/grassmannian/).
+
+## Relationship to other formalisms
+
+The Grassmannian is the natural setting for comparing subspaces across models and seeds. [Dictionary](/formalism/dictionary/) features (from SAEs) are points in $\mathrm{Gr}(1, d)$, the simplest case. The [fiber bundle quotient](/formalism/fiber-bundle-quotient/) uses gauge orbits as identity criteria — a finer-grained notion than subspace proximity, since two subspaces can be Grassmannian-close but in different gauge orbits. The [Whitney stratification](/formalism/stratification/) organizes all Grassmannians $\mathrm{Gr}(k, d)$ into a single stratified space, where the stratum boundary captures how mechanisms change dimensionality.

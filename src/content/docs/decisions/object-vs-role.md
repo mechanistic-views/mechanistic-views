@@ -6,13 +6,13 @@ title: Object vs. Role
 
 **The fork.** When identifying a mechanism, are you identifying the component or the functional role it plays?
 
-## Option A: Object
+## Option A: [Object](/views/object/)
 
 The mechanism *is* the component. Commits you to identity by component overlap. Cross-model claims are component-level.
 
 **When it goes wrong.** If the same role is realized by different heads across seeds, the object view implies each seed has a different mechanism — technically defensible but often missing the scientific point.
 
-## Option B: Role
+## Option B: [Role](/views/role/)
 
 The mechanism is the role. Commits you to functional equivalence under a specified transformation class. The role must be defined precisely enough to predict which component will play it in a new model.
 
@@ -28,4 +28,4 @@ The mechanism is the role. Commits you to functional equivalence under a specifi
 
 ## Recommended default
 
-Role view for cross-model claims and multi-seed analyses. Object view for precise single-model circuit recovery at early investigation stages.
+[Role view](/views/role/) for cross-model claims and multi-seed analyses. [Object view](/views/object/) for precise single-model circuit recovery at early investigation stages. See the [IOI case study](/cases/ioi/) for a concrete example where both views apply to the same circuit.

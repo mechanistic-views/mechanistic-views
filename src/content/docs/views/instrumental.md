@@ -39,3 +39,9 @@ This is not a fatal objection, but it means the instrumental view is not fully a
 ## Relationship to Mechanistic Validity
 
 The instrumental view implies that the "existence" validity criteria in Mechanistic Validity (construct validity, cross-domain triangulation) are not required — only predictive validity is. Most interpretability researchers will find this too weak for their purposes, but it is a coherent position. The view is best understood as a floor, not a ceiling: it states the minimum that mechanistic claims must satisfy, not the maximum they should aspire to.
+
+## Further reading
+
+- The [model theory](/formalism/model-theory/) formalism formalizes the instrumental view's commitment to predictive equivalence without internal structure claims
+- Van Fraassen, *The Scientific Image* (1980) — constructive empiricism, the philosophical ancestor of the instrumental view
+- For comparison: the [perspectival view](/views/perspectival/) also avoids privileging any single description, but accepts that descriptions are real (method-relative) rather than merely useful

@@ -14,10 +14,10 @@ There is no single correct description of what a mechanism is. The appropriate d
 
 $$\mathcal{M} = \mathcal{M}_1 \sqcup \mathcal{M}_2 \sqcup \cdots \sqcup \mathcal{M}_d \sqcup \mathcal{M}_\infty$$
 
-- **$\mathcal{M}_1$**: single feature direction; a point in $\mathrm{Gr}(1, d) \cong \mathbb{RP}^{d-1}$. SAE features and directional probes.
-- **$\mathcal{M}_k$ for $k \geq 2$**: $k$-dimensional causal subspace; point in $\mathrm{Gr}(k,d)/\mathcal{G}$.
+- **$\mathcal{M}_1$**: single feature direction; a point in $\mathrm{Gr}(1, d) \cong \mathbb{RP}^{d-1}$. [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) and directional probes.
+- **$\mathcal{M}_k$ for $k \geq 2$**: $k$-dimensional causal subspace; point in $\mathrm{Gr}(k,d)/\mathcal{G}$. Identified by [DAS](https://learnmechinterp.com/topics/causal-abstraction/).
 - **Flag strata**: nested sequences $S_1 \subset \cdots \subset S_m$; relevant for attention patterns with hierarchical structure.
-- **Nonlinear manifold strata**: mechanisms with nonlinear encoding structure within a flat Grassmannian stratum, e.g., the circular Fourier structure in grokking (which lives in $\mathcal{M}_2$ but encodes the causal variable on $S^1 \subset \mathcal{M}_2$ rather than linearly); require Riemannian geometry on the embedded submanifold, not just Grassmannian geometry.
+- **Nonlinear manifold strata**: mechanisms with nonlinear encoding structure within a flat [Grassmannian](/formalism/grassmannian/) stratum, e.g., the circular Fourier structure in [grokking](/cases/grokking/) (which lives in $\mathcal{M}_2$ but encodes the causal variable on $S^1 \subset \mathcal{M}_2$ rather than linearly); require Riemannian geometry on the embedded submanifold, not just Grassmannian geometry.
 - **$\mathcal{M}_\infty$**: genuinely distributed mechanisms; no finite-dimensional representative. Working hypothesis (see [Stratification](/formalism/stratification/)).
 
 ## What exists
@@ -46,7 +46,7 @@ Multi-domain triangulation applies at every stratum.
 
 ## Formalism
 
-Grassmannian and flag manifolds, gauge quotients, holonomy, cellular cosheaf cohomology, spectral sequences, Whitney stratifications. See the [Formalisms](/formalism/index/) section.
+[Grassmannian](/formalism/grassmannian/) and flag manifolds, gauge quotients, holonomy, cellular cosheaf cohomology, spectral sequences, [Whitney stratifications](/formalism/stratification/). See the [Formalisms](/formalism/) section and the [Stratification deep dive](/formalism/deep-dives/stratification/).
 
 ## What it explains
 
@@ -77,3 +77,9 @@ The analogy is structural, not literal. There is no Hamiltonian, no partition fu
 ## Relationship to Mechanistic Validity
 
 Allows Mechanistic Validity evidence standards to vary by mechanism type. The stratum assignment is an input to the Mechanistic Validity audit.
+
+## Further reading
+
+- The [Subspace view](/views/subspace/) and [Structural view](/views/structural/) each apply within individual strata; the stratified view is the meta-framework that organizes them
+- See the [Grokking case study](/cases/grokking/) for an example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)
+- The [Stratification deep dive](/formalism/deep-dives/stratification/) covers Whitney conditions, frontier condition, and Thom-Mather control data

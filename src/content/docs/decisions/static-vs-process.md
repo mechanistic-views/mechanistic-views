@@ -14,11 +14,11 @@ The mechanism is the final circuit, subspace, or structural invariant. Training 
 
 **Rules out.** Explaining why this mechanism formed rather than another; addressing phase transitions; developmental prerequisites.
 
-## Option B: Process
+## Option B: [Process](/views/process/)
 
 The mechanism includes its formation history. Formation order and developmental prerequisites are part of the description.
 
-**Required when.** The phenomenon is inherently dynamic (grokking, emergence); the claim involves formation timing; the target is intervention on training.
+**Required when.** The phenomenon is inherently dynamic ([grokking](/cases/grokking/), emergence); the claim involves formation timing; the target is intervention on training.
 
 **Commits you to.** Checkpoint data; a **stated formation criterion**; dynamics-domain evidence.
 
@@ -39,4 +39,4 @@ AGOP convergence often precedes behavioral detection by thousands of steps. A pr
 
 ## Recommended default
 
-Static for well-studied final-state mechanisms. Process by default for any temporally defined phenomenon: grokking, emergence, fine-tuning effects. Do not use static-only descriptions to make causal claims about training (e.g., "this mechanism forms *because of* weight decay") — those are process claims requiring process-view evidence.
+Static for well-studied final-state mechanisms. [Process view](/views/process/) by default for any temporally defined phenomenon: [grokking](/cases/grokking/), emergence, fine-tuning effects. Do not use static-only descriptions to make causal claims about training (e.g., "this mechanism forms *because of* weight decay") — those are process claims requiring process-view evidence. See the [dynamical system formalism](/formalism/dynamical-system/) for the mathematical framework.

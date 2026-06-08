@@ -24,8 +24,8 @@ Behavioral equivalence is coarser: two mechanisms can compute differently but ha
 
 Invariants, transport maps, and equivalence classes:
 - **Gauge orbits**: sets of weight configurations related by function-preserving transformations
-- **Holonomy fingerprints**: accumulated rotations from parallel-transporting a subspace around a closed loop (connection-dependent; see [Gauge and Holonomy](/formalism/gauge-holonomy/))
-- **Cosheaf cohomology classes**: topological invariants tracking localizability (linearization-dependent; see [Sheaf Cohomology](/formalism/sheaves/))
+- **Holonomy fingerprints**: accumulated rotations from parallel-transporting a subspace around a closed loop (connection-dependent; see [Gauge and Holonomy](/formalism/deep-dives/gauge-holonomy/))
+- **Cosheaf cohomology classes**: topological invariants tracking localizability (linearization-dependent; see [Sheaf Cohomology](/formalism/deep-dives/sheaves/))
 - **Coverage equivalence classes**: circuit hypotheses with isomorphic cosheaf cohomology
 
 ## Identity
@@ -34,17 +34,17 @@ Two mechanisms are the same when they lie in the same gauge orbit. Isomorphic ho
 
 ## Evidence
 
-- **Gauge-invariant measurements**: singular values of $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. Composition scores $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ are invariant under head permutations but not under the orthogonal rotation symmetry (a residual-stream rotation $U$ transforms $W^{KQ} \to U W^{KQ}$, changing the score); they are gauge-invariant only with respect to the permutation subgroup
+- **Gauge-invariant measurements**: singular values of [OV circuits](https://learnmechinterp.com/topics/qk-ov-circuits/) $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ are invariant under head permutations but not under the orthogonal rotation symmetry (a residual-stream rotation $U$ transforms $W^{KQ} \to U W^{KQ}$, changing the score); they are gauge-invariant only with respect to the permutation subgroup
 - **Holonomy**: estimates of the holonomy group (connection must be specified); isomorphic holonomy is necessary for identity
 - **Cohomological tests**: $H^0$ and $H^1$ of the circuit cosheaf (relative to base sections and choice of cosheaf structure)
 
 ## Formalism
 
-Gauge quotients $\mathcal{W}/\mathcal{G}$, principal fiber bundles (at generic points), parallel transport, holonomy (connection-dependent), cellular cosheaf cohomology (base-section-dependent). See the [Gauge and Holonomy](/formalism/gauge-holonomy/) and [Sheaf Cohomology](/formalism/sheaves/) pages for the technical conditions under which these constructions are well-defined.
+[Fiber bundle quotient](/formalism/fiber-bundle-quotient/) $\mathcal{W}/\mathcal{G}$, principal fiber bundles (at generic points), parallel transport, holonomy (connection-dependent), cellular cosheaf cohomology (base-section-dependent). See the [Gauge and Holonomy](/formalism/deep-dives/gauge-holonomy/) and [Sheaf Cohomology](/formalism/deep-dives/sheaves/) deep dives for the technical conditions under which these constructions are well-defined.
 
 ## What it explains
 
-Portability. When the same mechanism appears across seeds or architectures, what is preserved is the structural invariants. Also explains apparent circuit disagreements: coverage-equivalent proposals (same cosheaf cohomology) have the same localizability structure and may not be contradicting each other — though coverage equivalence is a necessary, not sufficient, condition for non-contradiction (see [Sheaf Cohomology](/formalism/sheaves/)).
+Portability. When the same mechanism appears across seeds or architectures, what is preserved is the structural invariants. Also explains apparent circuit disagreements: coverage-equivalent proposals (same cosheaf cohomology) have the same localizability structure and may not be contradicting each other — though coverage equivalence is a necessary, not sufficient, condition for non-contradiction (see [Sheaf Cohomology](/formalism/deep-dives/sheaves/)).
 
 ## What it lets you prove
 
@@ -67,3 +67,9 @@ Portability. When the same mechanism appears across seeds or architectures, what
 ## Relationship to Mechanistic Validity
 
 Strengthens external validity (generalization as invariance under symmetries) and interpretive validity (Marr-level correspondence as structural claim). The caveats about gauge freeness and connection choice must be stated alongside any Mechanistic Validity assessment using structural-view criteria.
+
+## Further reading
+
+- Elhage et al., "A Mathematical Framework for Transformer Circuits" (2021) — composition scores and QK/OV decomposition as weight-space invariants
+- Ainsworth et al., "Git Re-Basin: Merging Models modulo Permutation Symmetries" (2023) — permutation gauge symmetry in neural networks
+- For related views: [Object view](/views/object/) (uses the same weight matrices but identifies mechanisms with components, not invariants), [Subspace view](/views/subspace/) (identifies mechanisms with Grassmannian points, a related but distinct geometric object)

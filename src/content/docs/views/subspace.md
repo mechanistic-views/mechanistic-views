@@ -40,15 +40,15 @@ where $\theta_1, \ldots, \theta_k$ are the principal angles between $S_1$ and $S
 
 Three independently non-injective sources:
 
-- **Activation-space interventional**: DAS/IIA (with IIA as surgical-intervention test)
-- **Weight-space structural**: SVD of $W^{OV} = W^O W^V$, invariant subspace decomposition
-- **Dynamics-space**: AGOP convergence toward the eventual DAS subspace during training
+- **Activation-space interventional**: [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) (with IIA as surgical-intervention test)
+- **Weight-space structural**: [SVD of $W^{OV} = W^O W^V$](https://learnmechinterp.com/topics/qk-ov-circuits/), invariant subspace decomposition
+- **Dynamics-space**: [AGOP](https://arxiv.org/abs/2110.04005) convergence toward the eventual DAS subspace during training
 
 Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a **general position condition** — the requirement that no pair of distinct mechanisms looks identical across all three domains simultaneously. This has not been formally verified for natural transformer mechanisms. See the [Single-Method vs. Triangulated Evidence](/decisions/single-vs-triangulated/) page for discussion.
 
 ## Formalism
 
-Grassmannian geometry. The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. In principle, requiring alignment maps to respect transport structure addresses the Sutter et al. (2025) vacuity result, though the G-SCM has not yet been empirically validated on natural transformer circuits. See [Grassmannian Geometry](/formalism/grassmannian/).
+[Grassmannian geometry](/formalism/grassmannian/). The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. In principle, requiring alignment maps to respect transport structure addresses the Sutter et al. (2025) vacuity result, though the G-SCM has not yet been empirically validated on natural transformer circuits. See the [Grassmannian deep dive](/formalism/deep-dives/grassmannian/) for the full mathematical treatment.
 
 ## What it explains
 
@@ -67,7 +67,7 @@ Why SAE features and DAS subspaces are not always the same object: SAE features 
 
 Sparse autoencoders (SAEs) have become the dominant practical method for recovering $\mathcal{M}_1$ features — single directions in the residual stream. The relationship between SAE features and subspace-view mechanisms is more subtle than it first appears.
 
-**What SAEs recover.** An SAE trained on residual stream activations at layer $l$ learns a dictionary $D \in \mathbb{R}^{d \times n}$ ($n \gg d$) and sparse codes $a \in \mathbb{R}^n_{\geq 0}$ such that $x \approx Da$. Each column $d_i \in \mathbb{R}^d$ is a candidate feature direction — a point in $\mathrm{Gr}(1, d)$.
+**What SAEs recover.** An [SAE](https://learnmechinterp.com/topics/sparse-autoencoders/) trained on residual stream activations at layer $l$ learns a dictionary $D \in \mathbb{R}^{d \times n}$ ($n \gg d$) and sparse codes $a \in \mathbb{R}^n_{\geq 0}$ such that $x \approx Da$. Each column $d_i \in \mathbb{R}^d$ is a candidate feature direction — a point in $\mathrm{Gr}(1, d)$.
 
 **The epistemological stance SAEs embed.** A feature $d_i$ is treated as real if it appears reliably in the sparse codes and has a human-interpretable activating pattern. This is a *sparse reconstruction criterion* for feature existence — a feature exists if it is needed to reconstruct the activations. This is not the same as the subspace-view *causal criterion* — a mechanism exists if intervening on the corresponding subspace changes the model's output as predicted.
 
@@ -90,3 +90,10 @@ Sparse autoencoders (SAEs) have become the dominant practical method for recover
 ## Relationship to Mechanistic Validity
 
 Gives concrete objects for construct validity (a point on a manifold) and measurement validity (Fréchet variance across seeds). IIA as a surgical-intervention test is a diagnostic for internal validity.
+
+## Further reading
+
+- Geiger et al., "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations" (2024) — DAS, the primary subspace-view method
+- Elhage et al., "Toy Models of Superposition" (2022) — why features may be represented in superposition, motivating the subspace rather than neuron view
+- Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Directions in Language Models" (2023) — SAE features as candidate $\mathrm{Gr}(1, d)$ mechanisms
+- For related views: [Object view](/views/object/) (identifies mechanisms with components, not subspaces), [Role view](/views/role/) (uses subspaces as search space but role equivalence as identity), [Structural view](/views/structural/) (invariant properties of subspaces under gauge transformations)

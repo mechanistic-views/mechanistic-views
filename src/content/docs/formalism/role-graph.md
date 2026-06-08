@@ -21,3 +21,7 @@ Under the role view, a mechanism is a functional decomposition: a set of roles a
 Two role-level descriptions refer to the same mechanism when they have the same role graph — the same functional roles connected by the same dependencies — regardless of which components fill those roles. Head 9.9 in model A and head 7.3 in model B can be the same mechanism if they play the same role in the same functional structure.
 
 This is what makes the role view useful for cross-model comparison: the role graph can be the same across models even when the component identities are completely different. It is also what makes role claims harder to falsify — the functional labels must be independently specified, not just read off the same activations used to identify the components.
+
+## Relationship to other formalisms
+
+The role graph and the [directed graph](/formalism/directed-graph/) are structurally identical (both are DAGs). The difference is semantic: directed graph nodes are component identities (head 9.9), role graph nodes are functional labels (name-mover). The [causal graph](/formalism/causal-graph/) is more abstract still — its nodes are high-level causal variables (subject gender), not model components or functional roles. See the [IOI case study](/cases/ioi/) for a concrete example where the same circuit is described at all three levels.

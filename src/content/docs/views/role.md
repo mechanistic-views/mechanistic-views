@@ -22,11 +22,12 @@ Two mechanisms are the same when they occupy the same role in isomorphic computa
 
 - **Cross-seed comparison**: different training seeds implement the same behavior via different components, but the same role partition covers all of them
 - **Component transplant**: replacing component $h_1$ from $M_1$ with $h_2$ from $M_2$ preserves behavior iff both realize the same role
+- **[Linear probing](https://learnmechinterp.com/topics/probing-classifiers/)**: tests whether a concept is linearly accessible, though probing establishes presence not causal use (see [linear classifier formalism](/formalism/linear-classifier/))
 - **Role-partitioned circuit search**: restricting edge search to role-respecting edges achieves comparable precision and recall to unrestricted search, where precision and recall are measured against a *behavioral* ground truth (necessity and sufficiency on held-out prompts), not against the unrestricted search result itself. Measuring precision/recall against the unrestricted result would be circular
 
 ## Formalism
 
-Role partitions, graph homomorphism, causal abstraction. The role view operates at Marr's level 2 — the algorithm and representation level, describing *how* the computation is organized into functional roles — rather than level 1 (the abstract task) or level 3 (the specific weights).
+[Role graph](/formalism/role-graph/), graph homomorphism, [causal abstraction](https://learnmechinterp.com/topics/causal-abstraction/). The role view operates at Marr's level 2 — the algorithm and representation level, describing *how* the computation is organized into functional roles — rather than level 1 (the abstract task) or level 3 (the specific weights). [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) is the primary method for testing role claims via interchange interventions.
 
 ## What it explains
 
@@ -55,3 +56,10 @@ The role claim is stronger than the object claim in one way (it specifies *what 
 ## Relationship to Mechanistic Validity
 
 Relevant to external validity (cross-model generalization expressed as role preservation) and interpretive validity (role descriptions are Marr-level-2 claims, requiring component- or subspace-level mechanistic evidence).
+
+## Further reading
+
+- Geiger et al., "Causal Abstraction for Faithful Model Interpretation" (2021) — formalizes causal abstraction and interchange intervention
+- Geiger et al., "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations" (2024) — DAS, the primary tool for discovering role-subspace alignments
+- Wang et al., "Interpretability in the Wild" (2022) — the IOI circuit's role labels (name-movers, S-inhibition heads) are role-view claims, see [IOI case study](/cases/ioi/)
+- For related views: [Object view](/views/object/) (identifies mechanisms with specific components rather than roles), [Subspace view](/views/subspace/) (locates roles in geometric subspaces)

@@ -22,20 +22,20 @@ Cross-seed identity under the process view requires: the formation event (phase 
 
 ## Evidence
 
-- **Checkpoint analysis**: subspace estimates (DAS or AGOP) measured across training steps
+- **Checkpoint analysis**: subspace estimates ([DAS](https://learnmechinterp.com/topics/causal-abstraction/) or [AGOP](https://arxiv.org/abs/2110.04005)) measured across training steps
 - **AGOP trajectories**: convergence to eventual causal subspace — empirically observed to precede behavioral detection in some cases (Nanda et al., grokking), but whether this generalises to arbitrary mechanisms is not established
-- **Phase transitions**: sudden changes in IIA, composition score, or behavior
+- **Phase transitions**: sudden changes in IIA, [composition score](https://learnmechinterp.com/topics/composition-and-virtual-heads/), or behavior
 - **Knockout retraining**: train a model with a proposed prerequisite component permanently ablated (a *training-time* intervention, not inference-time ablation) — if the target mechanism then fails to form, the prerequisite is established; if it forms anyway via a different route, the prerequisite claim is falsified
 
 The **formation criterion** must be stated explicitly, because different criteria (behavioral threshold, AGOP convergence, weight-space structure) can disagree in timing. The process view should specify which criterion is used.
 
 ## Formalism
 
-Dynamical systems on weight space, AGOP, training-time subspace estimation. The formation event corresponds to a trajectory crossing a boundary in mechanism space $\mathcal{M}$.
+[Dynamical systems](/formalism/dynamical-system/) on weight space, [AGOP](https://arxiv.org/abs/2110.04005), training-time subspace estimation. The formation event corresponds to a trajectory crossing a boundary in mechanism space $\mathcal{M}$.
 
 ## What it explains
 
-Grokking: the phase transition is the formation event of the Fourier generalization mechanism, preceded by a memorization phase. Induction head emergence: the sudden formation corresponds to a developmental event with a prerequisite (previous-token head formation). These phenomena are not visible from static views.
+[Grokking](/cases/grokking/): the phase transition is the formation event of the Fourier generalization mechanism, preceded by a memorization phase. [Induction head](/cases/induction/) emergence: the sudden formation corresponds to a developmental event with a prerequisite (previous-token head formation). These phenomena are not visible from static views.
 
 ## What it lets you prove
 
@@ -54,3 +54,9 @@ Grokking: the phase transition is the formation event of the Fourier generalizat
 ## Relationship to Mechanistic Validity
 
 Adds a dimension that static views cannot address: the explanatory relevance of training history. Required for claims about emergence, phase transitions, or developmental dependencies. Formation criteria should be part of the construct validity statement.
+
+## Further reading
+
+- Nanda et al., "Progress measures for grokking via mechanistic interpretability" (2023) — AGOP-like progress measures track mechanism formation before behavioral detection, see [Grokking case study](/cases/grokking/)
+- Olsson et al., "In-context Learning and Induction Heads" (2022) — induction head formation as a developmental event with prerequisites, see [Induction case study](/cases/induction/)
+- For related views: [Object view](/views/object/) and [Subspace view](/views/subspace/) describe the static end-state; the process view describes how it got there. [Stratified view](/views/stratified/) also tracks mechanism dimensionality but at a fixed time point, not across training
