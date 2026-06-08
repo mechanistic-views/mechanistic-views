@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 465" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .col-header { font-size: 13px; font-weight: 600; fill: #475569; }
+      .row-label { font-size: 11px; font-weight: 600; fill: #94a3b8; letter-spacing: 1px; }
+      .pill-text { font-size: 10.5px; fill: #1e293b; }
+      .legend-label { font-size: 10px; fill: #64748b; }
+      .tagline { font-size: 11px; fill: #94a3b8; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- White background -->
+  <rect x="0" y="0" width="740" height="465" fill="white"/>
+
+  <!-- Column backgrounds -->
+  <rect x="75" y="48" width="270" height="352" rx="5" fill="#f8f7ff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="350" y="48" width="160" height="352" rx="5" fill="#fffef5" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="515" y="48" width="145" height="352" rx="5" fill="#f5fdf8" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Row divider -->
+  <line x1="75" y1="253" x2="660" y2="253" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="5,3"/>
+
+  <!-- Column headers -->
+  <text x="210" y="36" text-anchor="middle" class="col-header">Activations</text>
+  <text x="430" y="36" text-anchor="middle" class="col-header">Weights</text>
+  <text x="587" y="36" text-anchor="middle" class="col-header">Dynamics</text>
+
+  <!-- Row labels -->
+  <text x="38" y="150" text-anchor="middle" transform="rotate(-90, 38, 150)" class="row-label">INTERVENTIONAL</text>
+  <text x="38" y="330" text-anchor="middle" transform="rotate(-90, 38, 330)" class="row-label">OBSERVATIONAL</text>
+
+  <!-- ========== INTERVENTIONAL ROW ========== -->
+
+  <!-- Activations: Object view (purple) -->
+  <rect x="85" y="68" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="145" y="84" text-anchor="middle" class="pill-text">Activation patching</text>
+
+  <rect x="85" y="98" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="145" y="114" text-anchor="middle" class="pill-text">Path patching</text>
+
+  <rect x="85" y="128" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="145" y="144" text-anchor="middle" class="pill-text">ACDC</text>
+
+  <rect x="85" y="158" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="145" y="174" text-anchor="middle" class="pill-text">Ablation</text>
+
+  <!-- Activations: Role view (blue) -->
+  <rect x="215" y="68" width="120" height="24" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="275" y="84" text-anchor="middle" class="pill-text">DAS / IIA</text>
+
+  <rect x="215" y="98" width="120" height="24" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="275" y="114" text-anchor="middle" class="pill-text">Causal scrubbing</text>
+
+  <!-- Spanning activations + weights: EAP (Object, dashed) -->
+  <rect x="170" y="200" width="270" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="305" y="216" text-anchor="middle" class="pill-text">EAP (activations + weights)</text>
+
+  <!-- ========== OBSERVATIONAL ROW ========== -->
+
+  <!-- Activations: Role view (blue) -->
+  <rect x="150" y="275" width="120" height="24" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="210" y="291" text-anchor="middle" class="pill-text">Linear probing</text>
+
+  <!-- Activations: Object view (purple) -->
+  <rect x="150" y="305" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="210" y="321" text-anchor="middle" class="pill-text">SAE features</text>
+
+  <rect x="150" y="335" width="120" height="24" rx="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="210" y="351" text-anchor="middle" class="pill-text">Logit / tuned lens</text>
+
+  <!-- Weights: Subspace view (teal) -->
+  <rect x="370" y="275" width="120" height="24" rx="5" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="430" y="291" text-anchor="middle" class="pill-text">SVD of weights</text>
+
+  <!-- Weights: Structural view (amber) -->
+  <rect x="370" y="305" width="120" height="24" rx="5" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="430" y="321" text-anchor="middle" class="pill-text">Composition scores</text>
+
+  <!-- Dynamics: Process view (rose) -->
+  <rect x="527" y="275" width="120" height="24" rx="5" fill="#fff1f2" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="587" y="291" text-anchor="middle" class="pill-text">AGOP</text>
+
+  <!-- ========== LEGEND ========== -->
+  <circle cx="115" cy="430" r="5" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="125" y="434" class="legend-label">Object</text>
+
+  <circle cx="210" cy="430" r="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="220" y="434" class="legend-label">Role</text>
+
+  <circle cx="290" cy="430" r="5" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="300" y="434" class="legend-label">Subspace</text>
+
+  <circle cx="400" cy="430" r="5" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="410" y="434" class="legend-label">Structural</text>
+
+  <circle cx="520" cy="430" r="5" fill="#fff1f2" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="530" y="434" class="legend-label">Process</text>
+
+  <!-- Tagline -->
+  <text x="370" y="458" text-anchor="middle" class="tagline">Color indicates primary view. Most methods cluster in activation-interventional.</text>
+</svg>

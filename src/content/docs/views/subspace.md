@@ -87,6 +87,6 @@ Sparse autoencoders (SAEs) have become the dominant practical method for recover
 
 **Non-surgical interventions or wrong causal graph.** Low IIA has two interpretations: the intervention leaks into other variables (non-surgical), or the proposed causal graph is wrong and changing this variable should affect the measured variable (wrong graph). See the interventionism section above for how to distinguish them. High DAS accuracy does not by itself warrant the causal claim when IIA is low.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
 Gives concrete objects for construct validity (a point on a manifold) and measurement validity (Fréchet variance across seeds). IIA as a surgical-intervention test is a diagnostic for internal validity.

@@ -64,6 +64,6 @@ Portability. When the same mechanism appears across seeds or architectures, what
 
 **Connection dependence.** Different connections give different holonomy groups. Claims must specify the connection.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
-Strengthens external validity (generalization as invariance under symmetries) and interpretive validity (Marr-level correspondence as structural claim). The caveats about gauge freeness and connection choice must be stated alongside any MechVal assessment using structural-view criteria.
+Strengthens external validity (generalization as invariance under symmetries) and interpretive validity (Marr-level correspondence as structural claim). The caveats about gauge freeness and connection choice must be stated alongside any Mechanistic Validity assessment using structural-view criteria.

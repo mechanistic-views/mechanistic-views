@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 560" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .family-label { font-size: 14px; font-weight: 600; letter-spacing: 0.3px; }
+      .view-name { font-size: 15px; font-weight: 600; fill: #1e293b; }
+      .view-desc { font-size: 11.5px; fill: #475569; }
+      .edge-label { font-size: 11px; fill: #64748b; font-style: italic; }
+      .cross-label { font-size: 12px; fill: #64748b; font-style: italic; }
+      .section-label { font-size: 11.5px; fill: #64748b; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+    <marker id="arr-purple" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#a78bfa"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#60a5fa"/>
+    </marker>
+    <marker id="arr-teal" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#2dd4bf"/>
+    </marker>
+    <marker id="arr-gray" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Identity Family box: 30–340 -->
+  <rect x="30" y="55" width="310" height="200" rx="12" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="185" y="42" text-anchor="middle" class="family-label" fill="#7c3aed">Identity Family</text>
+
+  <rect x="55" y="80" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="185" y="106" text-anchor="middle" class="view-name">Object View</text>
+  <text x="185" y="124" text-anchor="middle" class="view-desc">concrete parts: heads, neurons</text>
+
+  <rect x="55" y="168" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="185" y="194" text-anchor="middle" class="view-name">Role View</text>
+  <text x="185" y="212" text-anchor="middle" class="view-desc">functional roles, multiply realized</text>
+
+  <line x1="185" y1="142" x2="185" y2="165" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+  <text x="202" y="158" class="edge-label">inflation risk</text>
+
+  <!-- Identity → Mathematical arrow (gap: 340–500 = 160px) -->
+  <line x1="340" y1="155" x2="497" y2="155" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+  <text x="418" y="145" text-anchor="middle" class="cross-label">components vs. geometry</text>
+
+  <!-- Mathematical Family box: 500–810 -->
+  <rect x="500" y="55" width="310" height="200" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="655" y="42" text-anchor="middle" class="family-label" fill="#3b82f6">Mathematical Family</text>
+
+  <rect x="525" y="80" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="655" y="106" text-anchor="middle" class="view-name">Subspace View</text>
+  <text x="655" y="124" text-anchor="middle" class="view-desc">causal subspaces on Gr(k, d)</text>
+
+  <rect x="525" y="168" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="655" y="194" text-anchor="middle" class="view-name">Structural View</text>
+  <text x="655" y="212" text-anchor="middle" class="view-desc">gauge orbits, holonomy</text>
+
+  <line x1="655" y1="142" x2="655" y2="165" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+  <text x="672" y="158" class="edge-label">gauge question</text>
+
+  <!-- Mathematical → Process arrow (gap: 810–970 = 160px) -->
+  <line x1="810" y1="155" x2="967" y2="155" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+  <text x="888" y="145" text-anchor="middle" class="cross-label">state vs. trajectory</text>
+
+  <!-- Process Family box: 970–1280 -->
+  <rect x="970" y="55" width="310" height="200" rx="12" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="1125" y="42" text-anchor="middle" class="family-label" fill="#14b8a6">Process Family</text>
+
+  <rect x="995" y="80" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="1125" y="106" text-anchor="middle" class="view-name">Process View</text>
+  <text x="1125" y="124" text-anchor="middle" class="view-desc">formation trajectories</text>
+
+  <rect x="995" y="168" width="260" height="62" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="1125" y="194" text-anchor="middle" class="view-name">Stratified View</text>
+  <text x="1125" y="212" text-anchor="middle" class="view-desc">strata with varying identity</text>
+
+  <line x1="1125" y1="142" x2="1125" y2="165" stroke="#2dd4bf" stroke-width="1.5" marker-end="url(#arr-teal)"/>
+  <text x="1142" y="158" class="edge-label">resolution</text>
+
+  <!-- Divider line -->
+  <line x1="60" y1="310" x2="1250" y2="310" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Bottom section labels -->
+  <text x="340" y="343" text-anchor="middle" class="section-label">Methodological</text>
+  <text x="970" y="343" text-anchor="middle" class="section-label">Pragmatic</text>
+
+  <!-- Perspectival View card -->
+  <rect x="150" y="360" width="380" height="85" rx="10" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="340" y="395" text-anchor="middle" class="view-name">Perspectival View</text>
+  <text x="340" y="416" text-anchor="middle" class="view-desc">methods as partial projections</text>
+
+  <!-- "method vs. utility" bidirectional arrow -->
+  <defs>
+    <marker id="arr-gray-rev" markerWidth="7" markerHeight="5" refX="0" refY="2.5" orient="auto">
+      <polygon points="7 0, 0 2.5, 7 5" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <text x="655" y="390" text-anchor="middle" class="cross-label">method vs. utility</text>
+  <line x1="533" y1="402" x2="777" y2="402" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4" marker-start="url(#arr-gray-rev)" marker-end="url(#arr-gray)"/>
+
+  <!-- Instrumental View card -->
+  <rect x="780" y="360" width="380" height="85" rx="10" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="970" y="395" text-anchor="middle" class="view-name">Instrumental View</text>
+  <text x="970" y="416" text-anchor="middle" class="view-desc">useful predictive models, not real objects</text>
+
+  <!-- Bottom tagline -->
+  <text x="655" y="494" text-anchor="middle" font-size="13.5" fill="#64748b" font-style="italic">The first six views make metaphysical commitments.</text>
+  <text x="655" y="516" text-anchor="middle" font-size="13.5" fill="#64748b" font-style="italic">The perspectival and instrumental views are skeptical positions.</text>
+</svg>

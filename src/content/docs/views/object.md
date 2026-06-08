@@ -58,6 +58,6 @@ This matters because the purely correlational reading ("head 4.4 is active when 
 
 **Backup circuits.** Ablating one component may not impair behavior because a backup engages, producing false negatives for necessity.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
 Aligns well with causal and internal validity criteria. Needs measurement validity (stability across seeds) and external validity (cross-context generalization).

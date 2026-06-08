@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 770" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .col-header { font-size: 13px; font-weight: 600; fill: #64748b; text-transform: uppercase; letter-spacing: 1px; }
+      .fam-label { font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+      .card-name { font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .card-desc { font-size: 10px; fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Column headers -->
+  <text x="165" y="24" text-anchor="middle" class="col-header">Views</text>
+  <text x="720" y="24" text-anchor="middle" class="col-header">Identity</text>
+
+  <!-- ══════ LEFT: View family boxes ══════ -->
+
+  <!-- Pragmatic -->
+  <rect x="40" y="48" width="250" height="68" rx="12" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="165" y="42" text-anchor="middle" class="fam-label" fill="#f43f5e">Pragmatic</text>
+  <rect x="60" y="60" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f43f5e" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="78" text-anchor="middle" class="card-name">Instrumental</text>
+  <text x="165" y="94" text-anchor="middle" class="card-desc">useful predictions, not real objects</text>
+
+  <!-- Methodological -->
+  <rect x="40" y="146" width="250" height="68" rx="12" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="165" y="140" text-anchor="middle" class="fam-label" fill="#f59e0b">Methodological</text>
+  <rect x="60" y="158" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="176" text-anchor="middle" class="card-name">Perspectival</text>
+  <text x="165" y="192" text-anchor="middle" class="card-desc">methods as partial projections</text>
+
+  <!-- Identity -->
+  <rect x="40" y="250" width="250" height="130" rx="12" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="165" y="244" text-anchor="middle" class="fam-label" fill="#7c3aed">Identity</text>
+  <rect x="60" y="262" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="280" text-anchor="middle" class="card-name">Object</text>
+  <text x="165" y="296" text-anchor="middle" class="card-desc">concrete parts: heads, neurons</text>
+  <rect x="60" y="324" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="342" text-anchor="middle" class="card-name">Role</text>
+  <text x="165" y="358" text-anchor="middle" class="card-desc">functional roles, multiply realized</text>
+
+  <!-- Mathematical -->
+  <rect x="40" y="416" width="250" height="130" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="165" y="410" text-anchor="middle" class="fam-label" fill="#3b82f6">Mathematical</text>
+  <rect x="60" y="428" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="446" text-anchor="middle" class="card-name">Subspace</text>
+  <text x="165" y="462" text-anchor="middle" class="card-desc">causal subspaces on Gr(k, d)</text>
+  <rect x="60" y="490" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="508" text-anchor="middle" class="card-name">Structural</text>
+  <text x="165" y="524" text-anchor="middle" class="card-desc">parallel transport, holonomy</text>
+
+  <!-- Process -->
+  <rect x="40" y="582" width="250" height="130" rx="12" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="165" y="576" text-anchor="middle" class="fam-label" fill="#14b8a6">Process</text>
+  <rect x="60" y="594" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="612" text-anchor="middle" class="card-name">Process</text>
+  <text x="165" y="628" text-anchor="middle" class="card-desc">formation trajectories</text>
+  <rect x="60" y="656" width="210" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="165" y="674" text-anchor="middle" class="card-name">Stratified</text>
+  <text x="165" y="690" text-anchor="middle" class="card-desc">strata with varying identity</text>
+
+  <!-- ══════ RIGHT: Identity criteria (5 core) ══════ -->
+
+  <!-- Component overlap (Object) -->
+  <rect x="620" y="56" width="210" height="52" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="725" y="78" text-anchor="middle" class="card-name">Component overlap</text>
+  <text x="725" y="96" text-anchor="middle" class="card-desc">same heads, neurons, or features</text>
+
+  <!-- Role equivalence (Role) -->
+  <rect x="620" y="205" width="210" height="52" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="725" y="227" text-anchor="middle" class="card-name">Role equivalence</text>
+  <text x="725" y="245" text-anchor="middle" class="card-desc">same functional I/O mapping</text>
+
+  <!-- Subspace proximity (Subspace) -->
+  <rect x="620" y="354" width="210" height="52" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="725" y="376" text-anchor="middle" class="card-name">Subspace proximity</text>
+  <text x="725" y="394" text-anchor="middle" class="card-desc">Gr(k, d) geodesic distance &lt; θ</text>
+
+  <!-- Gauge-orbit membership (Structural) -->
+  <rect x="620" y="503" width="210" height="52" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="725" y="525" text-anchor="middle" class="card-name">Gauge-orbit membership</text>
+  <text x="725" y="543" text-anchor="middle" class="card-desc">computation-preserving symmetry</text>
+
+  <!-- Dynamical-basin membership (Process) -->
+  <rect x="620" y="652" width="210" height="52" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="725" y="674" text-anchor="middle" class="card-name">Dynamical-basin membership</text>
+  <text x="725" y="692" text-anchor="middle" class="card-desc">same formation attractor</text>
+
+  <!-- ══════ Connections ══════ -->
+
+  <!-- Primary: each realist view → its criterion -->
+
+  <!-- Object → Component overlap -->
+  <path d="M 290 280 C 420 270, 520 82, 620 82" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+  <!-- Object → Role equivalence (secondary: objects compared by function) -->
+  <path d="M 290 288 C 420 290, 520 231, 620 231" fill="none" stroke="#7c3aed" stroke-opacity="0.18" stroke-width="1.5"/>
+
+  <!-- Role → Role equivalence -->
+  <path d="M 290 342 C 420 330, 520 233, 620 233" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Subspace → Subspace proximity -->
+  <path d="M 290 446 C 420 440, 520 382, 620 382" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2.5"/>
+  <!-- Subspace → Gauge-orbit (secondary: subspaces in gauge structure) -->
+  <path d="M 290 454 C 420 470, 520 529, 620 529" fill="none" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1.5"/>
+
+  <!-- Structural → Gauge-orbit membership -->
+  <path d="M 290 512 C 420 512, 520 531, 620 531" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2.5"/>
+  <!-- Structural → Subspace proximity (secondary: structural subsumes geometric) -->
+  <path d="M 290 504 C 420 490, 520 384, 620 384" fill="none" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1.5"/>
+
+  <!-- Process → Dynamical-basin membership -->
+  <path d="M 290 616 C 420 616, 520 678, 620 678" fill="none" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Stratified → multiple criteria (varies by stratum) -->
+  <path d="M 290 678 C 420 678, 520 680, 620 680" fill="none" stroke="#14b8a6" stroke-opacity="0.25" stroke-width="1.5"/>
+  <path d="M 290 674 C 420 660, 520 533, 620 533" fill="none" stroke="#14b8a6" stroke-opacity="0.15" stroke-width="1.5"/>
+  <path d="M 290 670 C 420 650, 520 386, 620 386" fill="none" stroke="#14b8a6" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <!-- Instrumental → Role equivalence (weak: predictive ≈ functional) -->
+  <path d="M 290 82 C 420 82, 520 231, 620 231" fill="none" stroke="#f43f5e" stroke-opacity="0.2" stroke-width="1.5"/>
+
+  <!-- Bottom tagline -->
+  <text x="450" y="745" text-anchor="middle" font-size="12.5" fill="#64748b" font-style="italic">Each view implies a criterion for when two mechanisms are the same.</text>
+</svg>

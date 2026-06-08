@@ -2,7 +2,7 @@
 title: Single-Method vs. Triangulated Evidence
 ---
 
-# Decision: Single-Method vs. Triangulated Evidence
+# Single-Method vs. Triangulated Evidence
 
 **The fork.** When is one strong source sufficient, and when is convergent evidence from independent domains required?
 

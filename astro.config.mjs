@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import mdx from '@astrojs/mdx';
 import { execSync } from 'child_process';
 import remarkMath from 'remark-math';
+import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
+import starlightImageZoom from 'starlight-image-zoom';
 
 export default defineConfig({
   site: 'https://mechanistic-validity.github.io',
@@ -20,8 +23,9 @@ export default defineConfig({
       },
     },
     starlight({
+      plugins: [starlightImageZoom()],
       title: 'Mechanistic Views',
-      description: 'An atlas of what mechanisms are, how we know them, when two are the same, and what follows from each stance',
+      description: 'A five-axis ontology for mechanistic interpretability: what mechanisms are, how we know them, when two are the same, and what follows from each stance',
       customCss: ['./src/styles/custom.css'],
       expressiveCode: {
         themes: ['github-dark', 'github-light'],
@@ -31,6 +35,8 @@ export default defineConfig({
       },
       components: {
         Pagination: './src/components/PageFooter.astro',
+        PageTitle: './src/components/PageTitle.astro',
+        ThemeSelect: './src/components/ThemeSelect.astro',
       },
       sidebar: [
         { label: 'Home', link: '/' },
@@ -40,7 +46,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', link: '/framework/' },
             { label: 'Methods', link: '/methods/' },
-            { label: 'MechVal Interface', link: '/mechval-interface/' },
+            { label: 'Mechanistic Validity Interface', link: '/mechval-interface/' },
             { label: 'Glossary', link: '/glossary/' },
           ],
         },
@@ -64,10 +70,29 @@ export default defineConfig({
           collapsed: true,
           items: [
             { label: 'Overview', link: '/formalism/' },
-            { label: 'Grassmannian Geometry', link: '/formalism/grassmannian/' },
-            { label: 'Gauge Quotients & Holonomy', link: '/formalism/gauge-holonomy/' },
-            { label: 'Sheaf Cohomology', link: '/formalism/sheaves/' },
-            { label: 'Stratification', link: '/formalism/stratification/' },
+            { label: 'Model Theory', link: '/formalism/model-theory/' },
+            { label: 'Measurement Algebra', link: '/formalism/measurement-algebra/' },
+            { label: 'Directed Graph', link: '/formalism/directed-graph/' },
+            { label: 'Role Graph', link: '/formalism/role-graph/' },
+            { label: 'Grassmannian', link: '/formalism/grassmannian/' },
+            { label: 'Fiber Bundle Quotient', link: '/formalism/fiber-bundle-quotient/' },
+            { label: 'Dynamical System', link: '/formalism/dynamical-system/' },
+            { label: 'Whitney Stratification', link: '/formalism/stratification/' },
+            { label: 'Causal Graph', link: '/formalism/causal-graph/' },
+            { label: 'Linear Classifier', link: '/formalism/linear-classifier/' },
+            { label: 'Dictionary', link: '/formalism/dictionary/' },
+            { label: 'Linear Projection', link: '/formalism/linear-projection/' },
+            {
+              label: 'Deep Dives',
+              collapsed: true,
+              items: [
+                { label: 'Overview', link: '/formalism/deep-dives/' },
+                { label: 'Grassmannian Geometry', link: '/formalism/deep-dives/grassmannian/' },
+                { label: 'Gauge Quotients & Holonomy', link: '/formalism/deep-dives/gauge-holonomy/' },
+                { label: 'Sheaf Cohomology', link: '/formalism/deep-dives/sheaves/' },
+                { label: 'Stratification', link: '/formalism/deep-dives/stratification/' },
+              ],
+            },
           ],
         },
         {
@@ -95,6 +120,10 @@ export default defineConfig({
           ],
         },
       ],
+    }),
+    mdx({
+      remarkPlugins: [remarkGfm, remarkMath],
+      rehypePlugins: [rehypeKatex],
     }),
   ],
 });

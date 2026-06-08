@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 540" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .col-header { font-size: 13px; font-weight: 600; fill: #64748b; text-transform: uppercase; letter-spacing: 1px; }
+      .card-name { font-size: 12.5px; font-weight: 600; fill: #1e293b; }
+      .card-desc { font-size: 9.5px; fill: #475569; }
+      .arrow-label { font-size: 10.5px; fill: #64748b; font-weight: 500; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Column headers -->
+  <text x="157" y="22" text-anchor="middle" class="col-header">Ontology</text>
+  <text x="407" y="22" text-anchor="middle" class="col-header">Identity</text>
+  <text x="657" y="22" text-anchor="middle" class="col-header">Formalism</text>
+
+  <!-- Arrow: increasing ontological commitment -->
+  <line x1="35" y1="447" x2="35" y2="69" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="16" y="258" text-anchor="middle" class="arrow-label" transform="rotate(-90, 16, 258)">Increasing ontological commitment</text>
+
+  <!-- ══════ LEFT: Ontology (views in commitment order) ══════ -->
+
+  <!-- 1. Instrumental (bottom) -->
+  <rect x="60" y="426" width="195" height="42" rx="8" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="443" text-anchor="middle" class="card-name">Instrumental</text>
+  <text x="157" y="458" text-anchor="middle" class="card-desc">useful predictive model</text>
+
+  <!-- 2. Perspectival -->
+  <rect x="60" y="372" width="195" height="42" rx="8" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="389" text-anchor="middle" class="card-name">Perspectival</text>
+  <text x="157" y="404" text-anchor="middle" class="card-desc">projection onto context</text>
+
+  <!-- 3. Object -->
+  <rect x="60" y="318" width="195" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="335" text-anchor="middle" class="card-name">Object</text>
+  <text x="157" y="350" text-anchor="middle" class="card-desc">concrete parts: heads, neurons</text>
+
+  <!-- 4. Role -->
+  <rect x="60" y="264" width="195" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="281" text-anchor="middle" class="card-name">Role</text>
+  <text x="157" y="296" text-anchor="middle" class="card-desc">functional role in computation</text>
+
+  <!-- 5. Subspace -->
+  <rect x="60" y="210" width="195" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="227" text-anchor="middle" class="card-name">Subspace</text>
+  <text x="157" y="242" text-anchor="middle" class="card-desc">causal subspace</text>
+
+  <!-- 6. Structural -->
+  <rect x="60" y="156" width="195" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="173" text-anchor="middle" class="card-name">Structural</text>
+  <text x="157" y="188" text-anchor="middle" class="card-desc">gauge-invariant structure</text>
+
+  <!-- 7. Process -->
+  <rect x="60" y="102" width="195" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="119" text-anchor="middle" class="card-name">Process</text>
+  <text x="157" y="134" text-anchor="middle" class="card-desc">formation trajectory</text>
+
+  <!-- 8. Stratified (top) -->
+  <rect x="60" y="48" width="195" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="157" y="65" text-anchor="middle" class="card-name">Stratified</text>
+  <text x="157" y="80" text-anchor="middle" class="card-desc">stratified mechanism space</text>
+
+  <!-- ══════ MIDDLE: Identity criteria ══════ -->
+
+  <rect x="305" y="426" width="205" height="42" rx="8" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="443" text-anchor="middle" class="card-name">Predictive equivalence</text>
+  <text x="407" y="458" text-anchor="middle" class="card-desc">same forecast accuracy</text>
+
+  <rect x="305" y="372" width="205" height="42" rx="8" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="389" text-anchor="middle" class="card-name">Cross-method coherence</text>
+  <text x="407" y="404" text-anchor="middle" class="card-desc">robust across methods</text>
+
+  <rect x="305" y="318" width="205" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="335" text-anchor="middle" class="card-name">Component overlap</text>
+  <text x="407" y="350" text-anchor="middle" class="card-desc">same parts identified</text>
+
+  <rect x="305" y="264" width="205" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="281" text-anchor="middle" class="card-name">Role equivalence</text>
+  <text x="407" y="296" text-anchor="middle" class="card-desc">same I/O mapping</text>
+
+  <rect x="305" y="210" width="205" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="227" text-anchor="middle" class="card-name">Subspace proximity</text>
+  <text x="407" y="242" text-anchor="middle" class="card-desc">Gr(k, d) distance &lt; θ</text>
+
+  <rect x="305" y="156" width="205" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="173" text-anchor="middle" class="card-name">Gauge-orbit membership</text>
+  <text x="407" y="188" text-anchor="middle" class="card-desc">symmetry g · x = y</text>
+
+  <rect x="305" y="102" width="205" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="119" text-anchor="middle" class="card-name">Dynamical-basin membership</text>
+  <text x="407" y="134" text-anchor="middle" class="card-desc">same attractor</text>
+
+  <rect x="305" y="48" width="205" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="407" y="65" text-anchor="middle" class="card-name">Stratum-local equivalence</text>
+  <text x="407" y="80" text-anchor="middle" class="card-desc">criterion varies locally</text>
+
+  <!-- ══════ RIGHT: Formalisms (paper Table 1) ══════ -->
+
+  <rect x="555" y="426" width="205" height="42" rx="8" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="443" text-anchor="middle" class="card-name">Model theory</text>
+  <text x="657" y="458" text-anchor="middle" class="card-desc">model classes, loss landscapes</text>
+
+  <rect x="555" y="372" width="205" height="42" rx="8" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="389" text-anchor="middle" class="card-name">Measurement algebra</text>
+  <text x="657" y="404" text-anchor="middle" class="card-desc">operator frames, convergence measures</text>
+
+  <rect x="555" y="318" width="205" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="335" text-anchor="middle" class="card-name">Directed graphs</text>
+  <text x="657" y="350" text-anchor="middle" class="card-desc">computational graphs, causal abstraction</text>
+
+  <rect x="555" y="264" width="205" height="42" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="281" text-anchor="middle" class="card-name">Functional decomposition</text>
+  <text x="657" y="296" text-anchor="middle" class="card-desc">role specifications, I/O contracts</text>
+
+  <rect x="555" y="210" width="205" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="227" text-anchor="middle" class="card-name">Grassmannian</text>
+  <text x="657" y="242" text-anchor="middle" class="card-desc">Gr(k, d), geodesics, projections</text>
+
+  <rect x="555" y="156" width="205" height="42" rx="8" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="173" text-anchor="middle" class="card-name">Fiber bundles</text>
+  <text x="657" y="188" text-anchor="middle" class="card-desc">parallel transport, holonomy</text>
+
+  <rect x="555" y="102" width="205" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="119" text-anchor="middle" class="card-name">Dynamical systems</text>
+  <text x="657" y="134" text-anchor="middle" class="card-desc">phase portraits, attractors, bifurcations</text>
+
+  <rect x="555" y="48" width="205" height="42" rx="8" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="657" y="65" text-anchor="middle" class="card-name">Whitney stratification</text>
+  <text x="657" y="80" text-anchor="middle" class="card-desc">strata, transversality</text>
+
+  <!-- ══════ ONTOLOGY → IDENTITY connections ══════ -->
+
+  <!-- Primary (horizontal) -->
+  <path d="M 255 447 L 305 447" fill="none" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 255 393 L 305 393" fill="none" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 255 339 L 305 339" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 255 285 L 305 285" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 255 231 L 305 231" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M 255 177 L 305 177" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M 255 123 L 305 123" fill="none" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 255 69 L 305 69" fill="none" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Secondary: cross-connections -->
+  <!-- Object → Role equivalence -->
+  <path d="M 255 345 C 272 345, 288 289, 305 289" fill="none" stroke="#7c3aed" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Subspace → Gauge-orbit -->
+  <path d="M 255 237 C 272 237, 288 183, 305 183" fill="none" stroke="#3b82f6" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Structural → Subspace proximity -->
+  <path d="M 255 171 C 272 171, 288 225, 305 225" fill="none" stroke="#3b82f6" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Stratified → Dynamical-basin -->
+  <path d="M 255 75 C 272 88, 288 117, 305 117" fill="none" stroke="#14b8a6" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Stratified → Gauge-orbit -->
+  <path d="M 255 78 C 272 105, 288 171, 305 171" fill="none" stroke="#14b8a6" stroke-opacity="0.1" stroke-width="1.5"/>
+
+  <!-- ══════ IDENTITY → FORMALISM connections ══════ -->
+
+  <!-- Primary (horizontal) -->
+  <path d="M 510 447 L 555 447" fill="none" stroke="#f43f5e" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 510 393 L 555 393" fill="none" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 510 339 L 555 339" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 510 285 L 555 285" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 510 231 L 555 231" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2.5"/>
+  <path d="M 510 177 L 555 177" fill="none" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2.5"/>
+  <path d="M 510 123 L 555 123" fill="none" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M 510 69 L 555 69" fill="none" stroke="#14b8a6" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Secondary: Stratified identity → multiple formalisms -->
+  <!-- Stratum-local → Dynamical systems -->
+  <path d="M 510 75 C 527 88, 540 117, 555 117" fill="none" stroke="#14b8a6" stroke-opacity="0.12" stroke-width="1.5"/>
+  <!-- Stratum-local → Fiber bundles -->
+  <path d="M 510 78 C 527 105, 540 171, 555 171" fill="none" stroke="#14b8a6" stroke-opacity="0.1" stroke-width="1.5"/>
+
+  <!-- Bottom tagline -->
+  <text x="415" y="505" text-anchor="middle" font-size="12" fill="#64748b" font-style="italic">Ontological commitment determines identity criterion determines formalism.</text>
+</svg>

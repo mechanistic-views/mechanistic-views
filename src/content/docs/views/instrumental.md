@@ -22,6 +22,10 @@ The ability to make cross-model identity claims. If mechanisms are just predicti
 
 Most interpretability research implicitly makes stronger claims than the instrumental view allows. "The circuit is the mechanism" implies something about what the model is actually doing inside, not just about what predicts its behavior. Safety applications in particular depend on claims that are not purely instrumental: "this model has a deceptive goal" is not paraphrasable as "this predictive shorthand is useful."
 
+## Evidence
+
+Under the instrumental view, the only evidence that matters is predictive and interventional utility: does the mechanism description correctly predict the model's behavior, and do interventions guided by the description produce the expected effects? No cross-domain triangulation or structural validation is required. Forecast accuracy and intervention success are sufficient.
+
 ## When to use it
 
 The instrumental view is appropriate as a *fallback* when stronger views produce contradictions or unresolvable disagreements. It is also appropriate at early stages of investigation when the goal is purely to find representations useful for prediction, before committing to a metaphysical stance.
@@ -32,6 +36,6 @@ A residual tension in the instrumental view: predictive utility is defined relat
 
 This is not a fatal objection, but it means the instrumental view is not fully anti-realist: it is committed to the reality of *behavioral regularities*, even if not to the reality of the internal structure. For safety-relevant interpretability (e.g., detecting deceptive goal representations), this may be insufficient — behavioral regularity is compatible with the mechanism operating differently under distribution shift, and there may be no behavioral signal that distinguishes the cases without making internal structural claims.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
-The instrumental view implies that the "existence" validity criteria in MechVal (construct validity, cross-domain triangulation) are not required — only predictive validity is. Most interpretability researchers will find this too weak for their purposes, but it is a coherent position. The view is best understood as a floor, not a ceiling: it states the minimum that mechanistic claims must satisfy, not the maximum they should aspire to.
+The instrumental view implies that the "existence" validity criteria in Mechanistic Validity (construct validity, cross-domain triangulation) are not required — only predictive validity is. Most interpretability researchers will find this too weak for their purposes, but it is a coherent position. The view is best understood as a floor, not a ceiling: it states the minimum that mechanistic claims must satisfy, not the maximum they should aspire to.

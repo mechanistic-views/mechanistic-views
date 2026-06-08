@@ -2,7 +2,7 @@
 title: Static vs. Process Descriptions
 ---
 
-# Decision: Static vs. Process Descriptions
+# Static vs. Process Descriptions
 
 **The fork.** Should a mechanism be described as a static object or as a process with a characteristic formation history?
 

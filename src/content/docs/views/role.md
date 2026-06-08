@@ -52,6 +52,6 @@ The role claim is stronger than the object claim in one way (it specifies *what 
 
 **Multiple roles per component.** A component may realize different roles under different prompt conditions, making role assignment context-dependent.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
 Relevant to external validity (cross-model generalization expressed as role preservation) and interpretive validity (role descriptions are Marr-level-2 claims, requiring component- or subspace-level mechanistic evidence).

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 245" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 15px; font-weight: 600; fill: #1e293b; }
+      .subtitle { font-size: 11.5px; fill: #64748b; }
+      .count { font-size: 10px; fill: #94a3b8; font-weight: 500; }
+      .number { font-size: 22px; font-weight: 700; }
+      .tagline { font-size: 12.5px; fill: #94a3b8; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Connecting arrows (centered in gaps) -->
+  <line x1="163" y1="95" x2="190" y2="95" stroke="#cbd5e1" stroke-width="1.5"/>
+  <polygon points="188,91 196,95 188,99" fill="#cbd5e1"/>
+  <line x1="318" y1="95" x2="345" y2="95" stroke="#cbd5e1" stroke-width="1.5"/>
+  <polygon points="343,91 351,95 343,99" fill="#cbd5e1"/>
+  <line x1="473" y1="95" x2="500" y2="95" stroke="#cbd5e1" stroke-width="1.5"/>
+  <polygon points="498,91 506,95 498,99" fill="#cbd5e1"/>
+  <line x1="628" y1="95" x2="655" y2="95" stroke="#cbd5e1" stroke-width="1.5"/>
+  <polygon points="653,91 661,95 653,99" fill="#cbd5e1"/>
+
+  <!-- 1: Ontology (purple) -->
+  <circle cx="100" cy="95" r="46" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  <circle cx="100" cy="95" r="46" fill="#7c3aed" fill-opacity="0.06"/>
+  <text x="100" y="103" text-anchor="middle" class="number" fill="#7c3aed">1</text>
+  <text x="100" y="28" text-anchor="middle" class="title">Ontology</text>
+  <text x="100" y="165" text-anchor="middle" class="subtitle">What kind of thing</text>
+  <text x="100" y="180" text-anchor="middle" class="subtitle">is a mechanism?</text>
+  <text x="100" y="198" text-anchor="middle" class="count">8 answers</text>
+
+  <!-- 2: Identity (blue) -->
+  <circle cx="255" cy="95" r="46" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <circle cx="255" cy="95" r="46" fill="#3b82f6" fill-opacity="0.06"/>
+  <text x="255" y="103" text-anchor="middle" class="number" fill="#3b82f6">2</text>
+  <text x="255" y="28" text-anchor="middle" class="title">Identity</text>
+  <text x="255" y="165" text-anchor="middle" class="subtitle">When are two</text>
+  <text x="255" y="180" text-anchor="middle" class="subtitle">the same?</text>
+  <text x="255" y="198" text-anchor="middle" class="count">8 criteria</text>
+
+  <!-- 3: Evidence (teal) -->
+  <circle cx="410" cy="95" r="46" fill="none" stroke="#14b8a6" stroke-width="2.5"/>
+  <circle cx="410" cy="95" r="46" fill="#14b8a6" fill-opacity="0.06"/>
+  <text x="410" y="103" text-anchor="middle" class="number" fill="#14b8a6">3</text>
+  <text x="410" y="28" text-anchor="middle" class="title">Evidence</text>
+  <text x="410" y="165" text-anchor="middle" class="subtitle">What warrants</text>
+  <text x="410" y="180" text-anchor="middle" class="subtitle">the claim?</text>
+  <text x="410" y="198" text-anchor="middle" class="count">3 domains</text>
+
+  <!-- 4: Formalism (amber) -->
+  <circle cx="565" cy="95" r="46" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="565" cy="95" r="46" fill="#f59e0b" fill-opacity="0.06"/>
+  <text x="565" y="103" text-anchor="middle" class="number" fill="#f59e0b">4</text>
+  <text x="565" y="28" text-anchor="middle" class="title">Formalism</text>
+  <text x="565" y="165" text-anchor="middle" class="subtitle">What math</text>
+  <text x="565" y="180" text-anchor="middle" class="subtitle">formalizes it?</text>
+  <text x="565" y="198" text-anchor="middle" class="count">8 structures</text>
+
+  <!-- 5: Target (rose) -->
+  <circle cx="720" cy="95" r="46" fill="none" stroke="#f43f5e" stroke-width="2.5"/>
+  <circle cx="720" cy="95" r="46" fill="#f43f5e" fill-opacity="0.06"/>
+  <text x="720" y="103" text-anchor="middle" class="number" fill="#f43f5e">5</text>
+  <text x="720" y="28" text-anchor="middle" class="title">Target</text>
+  <text x="720" y="165" text-anchor="middle" class="subtitle">What phenomenon</text>
+  <text x="720" y="180" text-anchor="middle" class="subtitle">is it about?</text>
+  <text x="720" y="198" text-anchor="middle" class="count">per claim</text>
+
+  <!-- Tagline -->
+  <text x="410" y="238" text-anchor="middle" class="tagline">A mechanistic view is a coherent bundle of answers to these five questions.</text>
+</svg>

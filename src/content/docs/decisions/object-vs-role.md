@@ -2,7 +2,7 @@
 title: Object vs. Role
 ---
 
-# Decision: Object vs. Role
+# Object vs. Role
 
 **The fork.** When identifying a mechanism, are you identifying the component or the functional role it plays?
 

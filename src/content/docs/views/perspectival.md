@@ -18,6 +18,10 @@ The view denies that there is a view-independent answer to questions like: "What
 
 That the measurements are real. Activation patching and DAS produce real, reproducible results. The perspectival view does not deny this; it denies that these results all converge on a unique underlying object called "the mechanism."
 
+## Evidence
+
+Under the perspectival view, evidence is always relative to a measurement procedure. A claim is warranted if it is robust within its method: reproducible across runs, stable across prompt distributions, and internally consistent. Cross-method convergence is not required for a perspectival claim, but when multiple methods do converge, that convergence is evidence that something view-independent is being tracked — which pushes toward a stronger view.
+
 ## The challenge this poses
 
 The perspectival view motivates the triangulation and convergence requirements in the subspace and structural views. If distinct methods converge on the same description (same subspace, same cohomology class), that convergence is evidence against the purely perspectival position: it suggests the methods are tracking something view-independent.
@@ -38,6 +42,6 @@ The perspectival view does not commit to a single formalism for expressing mecha
 
 This means the perspectival view cannot be used to prove theorems about mechanisms. It can characterize what measurements show and when they diverge, but it has no formal object to make claims about. This is its main limitation relative to the views that commit to specific ontologies.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
-The perspectival view implies that construct validity is always method-relative. A MechVal audit under the perspectival view produces a verdict about whether the claim is warranted relative to the methods used, not whether it is warranted absolutely.
+The perspectival view implies that construct validity is always method-relative. A Mechanistic Validity audit under the perspectival view produces a verdict about whether the claim is warranted relative to the methods used, not whether it is warranted absolutely.

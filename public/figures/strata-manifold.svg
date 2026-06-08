@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .axis-label { font-size: 14px; fill: #64748b; font-weight: 500; }
+      .stratum-label { font-size: 16px; font-weight: 700; }
+      .stratum-desc { font-size: 13px; }
+      .example-label { font-size: 13px; fill: #1e293b; font-weight: 500; }
+      .example-dot { stroke-width: 0; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="60" y="30" width="780" height="460" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Stratum 0: distributed / dense (bottom-left) -->
+  <path d="M 70 480 L 480 480 L 480 250 L 270 250 L 70 220 Z" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="200" y="380" class="stratum-label" fill="#1e40af">Stratum 0</text>
+  <text x="200" y="402" class="stratum-desc" fill="#3b82f6">distributed / dense</text>
+
+  <!-- Stratum 1: partially localized (top-left) -->
+  <path d="M 70 200 L 400 250 L 580 340 L 300 40 L 70 40 Z" fill="#22c55e" fill-opacity="0.15" stroke="#22c55e" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="220" y="140" class="stratum-label" fill="#15803d">Stratum 1</text>
+  <text x="220" y="162" class="stratum-desc" fill="#22c55e">partially localized</text>
+
+  <!-- Stratum 2: localized circuits (right) -->
+  <path d="M 500 480 L 830 480 L 830 100 L 600 40 L 500 40 L 500 250 Z" fill="#f97316" fill-opacity="0.15" stroke="#f97316" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="660" y="240" class="stratum-label" fill="#c2410c">Stratum 2</text>
+  <text x="660" y="262" class="stratum-desc" fill="#f97316">localized circuits</text>
+
+  <!-- Boundary (dashed line between strata) -->
+  <path d="M 480 480 L 480 250 L 500 250 L 500 40" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="8,5" stroke-opacity="0.6"/>
+  <text x="462" y="370" text-anchor="middle" font-size="13" fill="#7c3aed" font-weight="500" transform="rotate(-90, 462, 370)">boundary</text>
+
+  <!-- Example points -->
+  <!-- SAE features (S0) -->
+  <circle cx="250" cy="440" r="7" fill="#1e40af" class="example-dot"/>
+  <text x="268" y="445" class="example-label">SAE features</text>
+
+  <!-- IOI circuit (S2, near boundary) -->
+  <circle cx="530" cy="340" r="7" fill="#15803d" class="example-dot"/>
+  <text x="548" y="345" class="example-label">IOI circuit</text>
+
+  <!-- Induction heads (S2, high localization) -->
+  <circle cx="680" cy="120" r="7" fill="#c2410c" class="example-dot"/>
+  <text x="698" y="125" class="example-label">induction heads</text>
+
+  <!-- Grokking algorithm (S2, low specificity) -->
+  <circle cx="760" cy="400" r="7" fill="#dc2626" class="example-dot"/>
+  <text x="698" y="420" class="example-label">grokking</text>
+  <text x="698" y="436" class="example-label">algorithm</text>
+
+  <!-- Axes -->
+  <line x1="55" y1="490" x2="845" y2="490" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="843,486 851,490 843,494" fill="#94a3b8"/>
+  <text x="850" y="510" class="axis-label" text-anchor="end">localization</text>
+
+  <line x1="50" y1="495" x2="50" y2="25" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="46,27 50,19 54,27" fill="#94a3b8"/>
+  <text x="30" y="260" class="axis-label" text-anchor="middle" transform="rotate(-90, 30, 260)">structural specificity</text>
+</svg>

@@ -1,0 +1,16 @@
+---
+import references from '../data/references.json';
+
+const { id } = Astro.props;
+const ref = references[id];
+if (!ref) throw new Error(`Unknown citation key: ${id}`);
+---
+
+<span class="cite-wrapper">
+  <a href={ref.url} target="_blank" rel="noopener" class="cite-link">[{ref.authors.split(',')[0].trim()}, {ref.year}]</a>
+  <span class="cite-tooltip" role="tooltip">
+    <strong>{ref.title}</strong><br />
+    {ref.authors}<br />
+    <em>{ref.venue}, {ref.year}</em>
+  </span>
+</span>

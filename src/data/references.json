@@ -1,0 +1,37 @@
+{
+  "marr1982": {
+    "title": "Vision",
+    "authors": "Marr, D.",
+    "venue": "MIT Press",
+    "year": 1982,
+    "url": "https://mitpress.mit.edu/9780262514620/vision/"
+  },
+  "machamer2000": {
+    "title": "Thinking About Mechanisms",
+    "authors": "Machamer, P., Darden, L., Craver, C. F.",
+    "venue": "Philosophy of Science, 67(1)",
+    "year": 2000,
+    "url": "https://doi.org/10.1086/392759"
+  },
+  "craver2007": {
+    "title": "Explaining the Brain",
+    "authors": "Craver, C. F.",
+    "venue": "Oxford University Press",
+    "year": 2007,
+    "url": "https://doi.org/10.1093/acprof:oso/9780199299317.001.0001"
+  },
+  "bechtel1993": {
+    "title": "Discovering Complexity",
+    "authors": "Bechtel, W., Richardson, R. C.",
+    "venue": "Princeton University Press",
+    "year": 1993,
+    "url": "https://press.princeton.edu/books/paperback/9780691634494/discovering-complexity"
+  },
+  "wang2023": {
+    "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small",
+    "authors": "Wang, K., Variengien, A., Conmy, A., Shlegeris, B., Steinhardt, J.",
+    "venue": "ICLR",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2211.00593"
+  }
+}

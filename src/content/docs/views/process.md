@@ -51,6 +51,6 @@ Grokking: the phase transition is the formation event of the Fourier generalizat
 
 **Overreach.** Describing the training trajectory is not always part of explaining the final mechanism. The process view is needed when the phenomenon is inherently dynamic, not by default.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
 Adds a dimension that static views cannot address: the explanatory relevance of training history. Required for claims about emergence, phase transitions, or developmental dependencies. Formation criteria should be part of the construct validity statement.

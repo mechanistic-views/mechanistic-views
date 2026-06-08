@@ -2,7 +2,7 @@
 title: Localized vs. Distributed
 ---
 
-# Decision: Localized vs. Distributed
+# Localized vs. Distributed
 
 **The fork.** Can the mechanism be assigned to a specific circuit, or is it genuinely distributed?
 

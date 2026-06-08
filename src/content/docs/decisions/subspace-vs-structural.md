@@ -2,7 +2,7 @@
 title: Subspace vs. Structural
 ---
 
-# Decision: Subspace vs. Structural
+# Subspace vs. Structural
 
 **The fork.** Is Grassmannian identity (geodesic distance on $\mathrm{Gr}(k,d)$) sufficient, or is a gauge-invariant characterization required?
 

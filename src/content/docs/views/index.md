@@ -6,18 +6,38 @@ title: Views
 
 Each page presents one answer to the five axes — a coherent bundle of ontological, identity, epistemological, representational, and scope commitments.
 
-| View | Ontology | Identity | Core formalism |
-|---|---|---|---|
-| [Object](object/) | Component | Component overlap | Causal graph |
-| [Role](role/) | Functional role | Role equivalence | Role partition |
-| [Subspace](subspace/) | Causal subspace | Geodesic distance on $\mathrm{Gr}(k,d)$ | Grassmannian geometry |
-| [Structural](structural/) | Gauge orbit / invariant | Same gauge orbit | Principal bundle, holonomy |
-| [Process](process/) | Formation process | Same formation type | Dynamical systems, AGOP |
-| [Stratified](stratified/) | Stratum-dependent | Stratum-appropriate criterion | Stratified space, cosheaf |
-| [Perspectival](perspectival/) | Depends on observer | Relative to method | Measurement theory |
-| [Instrumental](instrumental/) | Tool for prediction | Predictive equivalence | Predictive models |
+| View | Ontology | Identity | Evidence | Formalism | Target |
+|---|---|---|---|---|---|
+| [Instrumental](/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/views/instrumental/#evidence) | [Model theory](/formalism/model-theory/) | Behavioral prediction |
+| [Perspectival](/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/views/perspectival/#evidence) | [Measurement algebra](/formalism/measurement-algebra/) | Method-relative |
+| [Object](/views/object/) | Concrete part | Component overlap | [Ablation, patching](/views/object/#evidence) | [Directed graph](/formalism/directed-graph/) | Specific behavior |
+| [Role](/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/views/role/#evidence) | [Role graph](/formalism/role-graph/) | Functional class |
+| [Subspace](/views/subspace/) | Causal subspace | Same projector; $d_{\mathrm{Gr}} < \theta$ | [DAS/IIA (linear)](/views/subspace/#evidence), [subspace stability](/formalism/grassmannian/#subspace-stability) | [Grassmannian $\mathrm{Gr}(k,d)$](/formalism/grassmannian/) | Representational variable |
+| [Structural](/views/structural/) | Gauge-invariant structure | Gauge-orbit membership | [Holonomy, composition scores](/views/structural/#evidence) | [Fiber bundle quotient](/formalism/fiber-bundle-quotient/) | Computation class |
+| [Process](/views/process/) | Formation trajectory | Same trajectory type | [Checkpoints, formation knockouts](/views/process/#evidence) | [Dynamical system](/formalism/dynamical-system/) | Mechanism origin |
+| [Stratified](/views/stratified/) | Stratum point | Stratum + local equivalence | [Dimensionality, localization](/views/stratified/#evidence) | [Whitney stratification](/formalism/stratification/) | Resolution-relative |
 
-The first six views make genuine metaphysical commitments about what mechanisms are. The perspectival and instrumental views are skeptical positions: they deny that metaphysical questions about mechanism identity are well-formed or useful.
+The views are not mutually exclusive: a single paper may use several, and convergence across views constitutes stronger evidence than any single view. The point is to distinguish them so that each view's commitments and limitations can be assessed independently.
+
+## View families
+
+The eight views group into three families of two (Identity, Mathematical, Process) plus two singletons (Methodological, Pragmatic), ordered by increasing ontological commitment.
+
+![Eight views organized by family](/mechanistic-views/figures/eight-views-families.svg)
+
+## Ontology determines identity determines formalism
+
+Each view's ontological commitment implies a specific identity criterion, which in turn implies a natural formalism. The chain is mostly 1-to-1: choosing what a mechanism *is* determines when two are *the same* determines what *math* you use.
+
+![Three-column chain: Ontology → Identity → Formalism](/mechanistic-views/figures/ontology-identity-formalism-v2.svg)
+
+## Ontological commitment ordering
+
+The views can be ordered by increasing ontological commitment — how much they claim about the existence and nature of the mechanism independent of any measurement procedure:
+
+$$\text{Instrumental} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
+
+Higher-commitment views make stronger claims but require more evidence. The instrumental view requires only predictive utility; the stratified view requires evidence across multiple strata and measurement resolutions. Most published interpretability work operates at the Object or Role level.
 
 ## Reading path
 

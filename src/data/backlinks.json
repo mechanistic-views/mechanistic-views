@@ -63,67 +63,93 @@
       "title": "Decisions"
     }
   ],
-  "/formalism/grassmannian/": [
+  "/formalism/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/formalism/deep-dives/grassmannian/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/formalism/grassmannian/",
+      "title": "Grassmannian"
+    },
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/deep-dives/gauge-holonomy/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/formalism/fiber-bundle-quotient/",
+      "title": "Fiber Bundle Quotient"
+    },
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/deep-dives/sheaves/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/deep-dives/stratification/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
     {
       "slug": "/formalism/",
       "title": "Formalisms"
     },
     {
       "slug": "/formalism/stratification/",
-      "title": "Stratification"
+      "title": "Whitney Stratification"
+    }
+  ],
+  "/views/object/": [
+    {
+      "slug": "/formalism/directed-graph/",
+      "title": "Directed Graph"
     },
     {
-      "slug": "/views/subspace/",
-      "title": "Subspace View"
-    }
-  ],
-  "/formalism/gauge-holonomy/": [
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/glossary/",
+      "title": "Glossary"
     },
     {
-      "slug": "/formalism/stratification/",
-      "title": "Stratification"
+      "slug": "/index/",
+      "title": "Mechanistic Views"
     },
-    {
-      "slug": "/views/structural/",
-      "title": "Structural View"
-    }
-  ],
-  "/formalism/sheaves/": [
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    },
-    {
-      "slug": "/views/structural/",
-      "title": "Structural View"
-    }
-  ],
-  "/formalism/stratification/": [
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
-    }
-  ],
-  "/framework/views/subspace/": [
-    {
-      "slug": "/framework/",
-      "title": "Framework"
-    }
-  ],
-  "/framework/decisions/single-vs-triangulated/": [
-    {
-      "slug": "/framework/",
-      "title": "Framework"
-    }
-  ],
-  "/views/subspace/": [
     {
       "slug": "/methods/",
       "title": "Methods"
@@ -133,13 +159,319 @@
       "title": "Views"
     }
   ],
-  "/views/object/": [
+  "/views/process/": [
+    {
+      "slug": "/formalism/dynamical-system/",
+      "title": "Dynamical System"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/structural/": [
+    {
+      "slug": "/formalism/fiber-bundle-quotient/",
+      "title": "Fiber Bundle Quotient"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/subspace/": [
+    {
+      "slug": "/formalism/grassmannian/",
+      "title": "Grassmannian"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/model-theory/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/measurement-algebra/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/directed-graph/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/formalism/role-graph/",
+      "title": "Role Graph"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/role-graph/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/grassmannian/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
+  "/formalism/fiber-bundle-quotient/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/dynamical-system/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/formalism/stratification/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ],
+  "/formalism/causal-graph/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/formalism/linear-classifier/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/formalism/dictionary/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/formalism/linear-projection/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/formalism/deep-dives/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/views/perspectival/": [
+    {
+      "slug": "/formalism/measurement-algebra/",
+      "title": "Measurement Algebra"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/views/instrumental/": [
+    {
+      "slug": "/formalism/model-theory/",
+      "title": "Model Theory"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
     {
       "slug": "/views/",
       "title": "Views"
     }
   ],
   "/views/role/": [
+    {
+      "slug": "/formalism/role-graph/",
+      "title": "Role Graph"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
     {
       "slug": "/views/",
       "title": "Views"
@@ -149,31 +481,91 @@
       "title": "Object View"
     }
   ],
-  "/views/structural/": [
-    {
-      "slug": "/views/",
-      "title": "Views"
-    }
-  ],
-  "/views/process/": [
-    {
-      "slug": "/views/",
-      "title": "Views"
-    }
-  ],
   "/views/stratified/": [
     {
-      "slug": "/views/",
-      "title": "Views"
-    }
-  ],
-  "/views/perspectival/": [
+      "slug": "/formalism/stratification/",
+      "title": "Whitney Stratification"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
     {
       "slug": "/views/",
       "title": "Views"
     }
   ],
-  "/views/instrumental/": [
+  "/mechanistic-views/figures/five-axes-pipeline-clean.svg/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/framework/decisions/single-vs-triangulated/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    }
+  ],
+  "/framework/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/views/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    }
+  ],
+  "/mechval-interface/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/methods/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/cases/": [
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/mechanistic-views/figures/methods-evidence-grid.svg/": [
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    }
+  ],
+  "/mechanistic-views/figures/eight-views-families.svg/": [
+    {
+      "slug": "/views/",
+      "title": "Views"
+    }
+  ],
+  "/mechanistic-views/figures/ontology-identity-formalism-v2.svg/": [
     {
       "slug": "/views/",
       "title": "Views"
@@ -183,6 +575,18 @@
     {
       "slug": "/views/stratified/",
       "title": "Stratified View"
+    }
+  ],
+  "/formalism/gauge-holonomy/": [
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    }
+  ],
+  "/formalism/sheaves/": [
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
     }
   ]
 }

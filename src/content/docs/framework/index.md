@@ -10,68 +10,58 @@ These assumptions are usually tacit; this site makes them explicit.
 
 ## The five axes
 
+![Five axes of a mechanistic view](/mechanistic-views/figures/five-axes-pipeline-clean.svg)
+
 A mechanistic view must answer five questions. The questions fall into distinct categories, which matter for how the answers relate to each other.
 
-**Metaphysical axes** — what the mechanism is and when two are the same:
+**Definitional axes** — what the mechanism is and when two are the same:
 
-**Ontology.** What kind of thing is a mechanism? Options include: a concrete component (head, neuron, feature), a functional role that can be multiply realized, a causal subspace in residual stream geometry, an invariant relational structure, a temporally extended process, or a combination of these at multiple strata.
+1. **Ontology.** What kind of thing is a mechanism? Options include: a concrete component (head, neuron, feature), a functional role that can be multiply realized ([Putnam 1967](https://doi.org/10.1017/CBO9780511625268.023)), a causal subspace in residual stream geometry, an invariant relational structure, a temporally extended process, or a combination of these at multiple strata. The concept of mechanism ontology in science follows [Machamer, Darden & Craver (2000)](https://doi.org/10.1086/392759).
 
-**Identity.** When are two mechanism descriptions referring to the same mechanism? This matters for cross-model comparison, for deciding when two competing circuit papers are contradicting each other versus measuring different things, and for tracking a mechanism across training checkpoints. The identity criterion must fit the ontology: the right criterion for a role (functional equivalence) differs from the right criterion for a subspace (geodesic distance on a Grassmannian).
+2. **Identity.** When are two mechanism descriptions referring to the same mechanism? This is a form of the classical identity problem in ontology ([Quine 1948](https://doi.org/10.2307/2181613)): no entity without identity criteria. This matters for cross-model comparison, for deciding when two competing circuit papers are contradicting each other versus measuring different things, and for tracking a mechanism across training checkpoints. The identity criterion must fit the ontology: the right criterion for a role (functional equivalence) differs from the right criterion for a subspace (geodesic distance on a Grassmannian). When two weight configurations compute the same function, the identity question becomes one of gauge equivalence ([Earman 2004](https://doi.org/10.1016/j.shpsb.2003.02.001)).
 
-**Epistemological axis** — what justifies the claim:
+**Evidential axis** — what justifies the claim:
 
-**Evidence.** What measurements would warrant a mechanism claim of this type? Different ontologies license different evidence. A component claim is most directly supported by ablation and patching. A subspace claim needs subspace recovery and causal tests that jointly converge. A structural claim needs measurements robust to reparameterization. Evidence and ontology are linked: an evidence type that does not track the claimed kind of object cannot confirm the claim.
+3. **Evidence.** What measurements would warrant a mechanism claim of this type? Different ontologies license different evidence. A component claim is most directly supported by ablation and patching. A subspace claim needs subspace recovery and causal tests that jointly converge. A structural claim needs measurements robust to reparameterization. Evidence and ontology are linked: an evidence type that does not track the claimed kind of object cannot confirm the claim.
 
-Three models of evidence are in play in the literature, corresponding to different epistemological traditions:
+   Three models of evidence are in play in the literature, corresponding to different epistemological traditions:
 
-- **Hypothetico-deductive (HD)**: a mechanistic hypothesis is supported when its predictions are confirmed. Activation patching is used HD-style when a researcher predicts "ablating head 4.4 should reduce accuracy on IOI" and observes the reduction.
-- **Bayesian**: evidence updates the probability of a mechanism hypothesis. This is the implicit model behind most "evidence accumulation" discourse: multiple independent tests move credence up. The triangulation requirement reflects the Bayesian insight that *independent* evidence is worth more than correlated evidence.
-- **Eliminative/triangulation**: evidence from structurally different domains eliminates distinct alternative hypotheses. A weight-space result rules out one class of confounders; an activation-space result rules out a different class; convergence establishes what survives both eliminations.
+   - **Hypothetico-deductive (HD)**: a mechanistic hypothesis is supported when its predictions are confirmed ([Popper 1959](https://doi.org/10.4324/9780203994627); [Hempel 1966](https://doi.org/10.1016/C2013-0-07291-0)). Activation patching is used HD-style when a researcher predicts "ablating head 4.4 should reduce accuracy on IOI" and observes the reduction.
+   - **Bayesian**: evidence updates the probability of a mechanism hypothesis ([Howson & Urbach 2006](https://doi.org/10.1007/978-3-662-11228-2)). This is the implicit model behind most "evidence accumulation" discourse: multiple independent tests move credence up. The triangulation requirement reflects the Bayesian insight that *independent* evidence is worth more than correlated evidence.
+   - **Eliminative/triangulation**: evidence from structurally different domains eliminates distinct alternative hypotheses ([Campbell & Fiske 1959](https://doi.org/10.1037/h0046016); [Woodward 2003](https://doi.org/10.1093/0195155270.001.0001)). A weight-space result rules out one class of confounders; an activation-space result rules out a different class; convergence establishes what survives both eliminations.
 
-The tier system in this site is most naturally read as tracking eliminative strength: Tier 1 is how-possibly (HD confirmation only), Tier 3–4 is how-actually (eliminative convergence across domains).
+   The tier system in this site is most naturally read as tracking eliminative strength: Tier 1 is how-possibly (HD confirmation only), Tier 3–4 is how-actually (eliminative convergence across domains).
 
 **Representational axis** — how the claim is expressed:
 
-**Formalism.** What mathematical language is used to represent the mechanism? A circuit diagram, a point on a Grassmannian, and a cosheaf cohomology class are different representational choices. The choice of formalism determines what can be stated precisely and what can be proved. Formalism is not itself a stance on what exists — two researchers can hold the same ontological view and express it in different formalisms — but the formalism constrains what the ontological view can commit to.
+4. **Formalism.** What mathematical language is used to represent the mechanism? A circuit diagram, a point on a Grassmannian, and a cosheaf cohomology class are different representational choices. The choice of formalism determines what can be stated precisely and what can be proved. Formalism is not itself a stance on what exists — two researchers can hold the same ontological view and express it in different formalisms — but the formalism constrains what the ontological view can commit to.
 
 **Scope axis** — what the claim is about:
 
-**Target.** What phenomenon is the mechanism supposed to explain? A mechanism of indirect object identification, of in-context learning, of grokking, and of factual recall carry different target-level commitments. The target determines the level of description at which the explanation must be pitched (corresponding to what Craver calls "constitutive relevance" in the philosophical literature on mechanistic explanation), and therefore which evidence types are relevant and what counts as explanatory success.
-
-## A note on "mechanism"
-
-The word "mechanism" is used here in the sense established in the interpretability literature: a computational structure inside a neural network responsible for a specific behavior.
-
-In the philosophy of science, "mechanism" carries more structure. The influential Machamer-Darden-Craver (MDC) account defines mechanisms as entities and activities organized to produce a phenomenon: they have a specific start condition, end condition, spatial and organizational layout, and temporal order (Machamer, Darden, and Craver, *Thinking About Mechanisms*, Philosophy of Science 67(1), 2000). Craver further distinguishes *how-possibly* models (a mechanism that could produce the phenomenon) from *how-actually* models (a mechanism that does produce it), with evidence requirements increasing accordingly. This distinction maps onto the tier system used in this site: Tier 1 claims are how-possibly; Tier 3–4 claims are how-actually.
-
-The interpretability sense diverges from MDC in two ways. First, it makes no commitment to spatial structure — neural network mechanisms are not organized in physical space. Second, the emphasis on interventionism (see [Subspace view](views/subspace/)) aligns more with Woodward's manipulationist account of causation (*Making Things Happen*, Oxford, 2003): a causal variable is identified by what happens when it is surgically manipulated, not by its role in an organized spatial structure.
-
-A further concept from philosophy of science that appears in this site is *constitutive relevance* (Craver, *Explaining the Brain*, Oxford, 2007): a component is constitutively relevant to a phenomenon if it is part of the mechanism producing it, as established by mutual manipulability — intervening on the component affects the phenomenon and vice versa. This is the criterion measured by activation patching and ablation, which is why those methods appear under the object and role views. When this distinction between MDC mechanisms and interpretability mechanisms matters, the text says so explicitly.
+5. **Target.** What phenomenon is the mechanism supposed to explain? A mechanism of indirect object identification, of in-context learning, of grokking, and of factual recall carry different target-level commitments. The target determines the level of description at which the explanation must be pitched (corresponding to what Craver calls "constitutive relevance" in the philosophical literature on mechanistic explanation), and therefore which evidence types are relevant and what counts as explanatory success.
 
 ## What a view is
 
-A view is a bundle of answers to the five axes. Formally, a mechanistic stance is a 5-tuple:
+A view is a bundle of answers to the five axes. Formally, a mechanistic view is a 5-tuple:
 
-$$\sigma = (O, I, E, F, T)$$
+$$\sigma = (O, {\sim}, E, F, T)$$
 
-where $O$ is the ontological type, $I$ is an identity criterion defined on objects of type $O$, $E$ is the evidence type, $F$ is the formalism, and $T$ is the target phenomenon.
+where $O$ is the ontological type (the set of entities that count as mechanisms), ${\sim} \subseteq O \times O$ is an equivalence relation (the identity criterion: $x \sim y$ means descriptions $x$ and $y$ refer to the same mechanism), $E$ is a set of evidential standards, $F$ is the formalism, and $T$ is the target phenomenon.
 
-**Well-formedness conditions.** A stance $\sigma$ is *coherent* if and only if:
-1. $I$ is well-defined on objects of type $O$ — the identity criterion can be applied to the claimed ontological entities.
-2. $E$ produces measurements that track $I$ — the evidence type is sensitive to the property that $I$ uses to distinguish mechanisms.
-3. $F$ can express claims of type $(O, I)$ — the formalism has the expressive power to represent the object and state the identity criterion.
+**Coherence conditions.** A view $\sigma$ is *coherent* if and only if:
+1. **Identity is grounded**: ${\sim}$ is definable using only the objects in $O$ and the language of $F$. A view whose identity criterion involves objects not in its own ontology is incoherent.
+2. **Evidence tracks identity**: for every measurement type $m \in E$, the claims $m$ can support are expressible in terms of ${\sim}$-classes, not finer-grained distinctions. Evidence that distinguishes objects within a ${\sim}$-class is picking up on a different ontology than the one declared.
+3. **Formalism is expressive**: every element of $O$ has a representation in $F$, and ${\sim}$ is computable in $F$.
 
-Incoherence arises when these conditions fail. Example: claiming $O =$ component but $I =$ geodesic distance on $\mathrm{Gr}(k,d)$ violates condition (1), because geodesic distance requires subspace objects, not component objects. Example: citing activation patching as $E$ for a gauge-orbit identity claim $I$ violates condition (2), because activation patching is head-index-dependent and therefore not sensitive to gauge-orbit membership. The bundle should be *coherent*: the identity criterion should be appropriate for the ontology, the evidence should be sufficient to establish the identity, the formalism should be able to express the claim, and the target should determine which aspects of the other axes are relevant.
+**Incoherent views produce contradictory demands.** If a view violates condition (2) — there exists a measurement $m \in E$ and objects $x, y \in O$ with $x \sim y$ but $m(x) \neq m(y)$ — then the view simultaneously asserts that $x$ and $y$ are the same mechanism (by ${\sim}$) and that they are different (by $m$). No experiment can satisfy both demands. This is immediate from the definitions.
 
-**What incoherence looks like.** A view is incoherent when its axes make incompatible demands. Example: claiming the object view ontology (mechanism = specific component) but using subspace identity (geodesic distance on $\mathrm{Gr}(k,d)$) — the identity criterion requires a subspace, but the ontology has no subspace to measure distance between. Another example: using the structural view identity criterion (same gauge orbit) while citing only activation patching as evidence — activation patching is gauge-covariant (head index-dependent), so it cannot establish gauge-orbit identity. A coherent view has evidence that tracks the identity criterion that tracks the ontology.
+A stronger consequence: incoherent views produce *systematic underdetermination*. Each new measurement either agrees with the identity criterion (offering no information about the discrepancy) or disagrees (introducing its own underdetermination). This is why debates between activation-patching advocates and DAS advocates cannot be settled by more of the same evidence when the participants hold different implicit views.
 
-Write a stance as:
+**Examples.** Claiming $O =$ component but ${\sim} =$ geodesic distance on $\mathrm{Gr}(k,d)$ violates condition (1): geodesic distance requires subspace objects, not component objects. Citing activation patching as $E$ for a gauge-orbit identity claim violates condition (2): activation patching is head-index-dependent and therefore not sensitive to gauge-orbit membership.
 
-$$\sigma = (O, I, E, F, T)$$
-
-For example, the subspace view bundles:
+The subspace view bundles:
 - $O$: mechanism as causal subspace
-- $I$: geodesic distance on $\mathrm{Gr}(k, d)$
+- ${\sim}$: same projector, or geodesic distance on $\mathrm{Gr}(k, d)$ below threshold
 - $E$: convergence of DAS-recovered and SVD-weight subspaces across seeds and architectures
 - $F$: Grassmannian geometry, transport maps, G-SCM
 - $T$: causal variables (e.g., the indirect object token in IOI)
@@ -92,32 +82,20 @@ The coherence check: does the identity criterion fit the ontology? Does the evid
 
 In practice, most interpretability papers mix axes implicitly. The axis framework makes the mixing explicit so it can be evaluated.
 
-## Why this helps
+## Why this matters
 
 Disagreements in mechanistic interpretability are often view-level disagreements. Two researchers looking at the same activation-patching result may disagree about what it shows, not because of different data, but because they hold different background views about what mechanism the data is evidence for.
 
 Making the view explicit does not automatically resolve the disagreement. But it locates the disagreement precisely, which makes it possible to design experiments that distinguish between views.
 
-## Underdetermination and the need for triangulation
+A persistent problem is **underdetermination**: multiple distinct mechanism hypotheses can be consistent with the same evidence. An activation-patching result that shows head 4.4 is necessary is consistent with (a) head 4.4 being the mechanism, (b) head 4.4 being one realizer of a role-level mechanism, (c) head 4.4 participating in a distributed mechanism whose activity happens to be concentrated there, and (d) head 4.4 being a measurement artifact of the patching protocol. These are not equivalent claims under different descriptions; they support different predictions and require different interventions.
 
-A persistent epistemological problem in mechanistic interpretability is **underdetermination**: multiple distinct mechanism hypotheses can be consistent with the same evidence. An activation-patching result that shows head 4.4 is necessary is consistent with (a) head 4.4 being the mechanism, (b) head 4.4 being one realizer of a role-level mechanism, (c) head 4.4 participating in a distributed mechanism whose activity happens to be concentrated there, and (d) head 4.4 being a measurement artifact of the patching protocol. These are not equivalent claims under different descriptions; they support different predictions and require different interventions.
+The triangulation requirement in this site — requiring convergent evidence across weight-space, activation-space, and dynamics-space domains — is a response to underdetermination. The single-domain evidence produces an underdetermined verdict; multi-domain convergence narrows the hypothesis space. This is a pragmatic application of the principle that *independent* evidence is stronger than repeated evidence from the same source. See [Single-method vs triangulated](decisions/single-vs-triangulated/).
 
-The triangulation requirement in this site — requiring convergent evidence across weight-space, activation-space, and dynamics-space domains — is a response to underdetermination. The single-domain evidence produces an underdetermined verdict; multi-domain convergence narrows the hypothesis space. This is a pragmatic application of the epistemological principle that *independent* evidence is stronger than repeated evidence from the same source. See [Single-method vs triangulated](decisions/single-vs-triangulated/).
+## Deeper commitments
 
-## The realism spectrum
+**Two senses of "mechanism."** The word "mechanism" is used here in the sense established in the interpretability literature: a computational structure inside a neural network responsible for a specific behavior. In the philosophy of science, "mechanism" carries more structure. The influential Machamer-Darden-Craver (MDC) account defines mechanisms as entities and activities organized to produce a phenomenon, with specific start conditions, end conditions, and temporal order ([Machamer, Darden & Craver 2000](https://doi.org/10.1086/392759)). Craver further distinguishes *how-possibly* models from *how-actually* models, with evidence requirements increasing accordingly — a distinction that maps onto this site's tier system (Tier 1 = how-possibly, Tier 3–4 = how-actually). The interpretability sense diverges from MDC in two ways: no commitment to spatial structure, and an emphasis on Woodward's manipulationist causation ([Woodward 2003](https://doi.org/10.1093/0195155270.001.0001)) over organized spatial layout. A related concept is *constitutive relevance* ([Craver 2007](https://doi.org/10.1093/acprof:oso/9780199299317.001.0001)): a component is constitutively relevant to a phenomenon if mutual manipulability holds — intervening on the component affects the phenomenon and vice versa. This is what activation patching and ablation measure.
 
-The eight views span a realism-to-instrumentalism spectrum. Understanding where each view falls matters for how strongly its conclusions can be stated.
+**The realism spectrum.** The eight views span a realism-to-instrumentalism spectrum. The structural view is the most strongly realist: a mechanism is the gauge orbit of weight configurations computing the same function, which exists independent of any measurement procedure. Perspectival views hold that mechanism descriptions are always relative to a measurement procedure — what exists is the procedure and its outputs (cf. [Massimi 2022](https://doi.org/10.1093/oso/9780197555620.001.0001)). Instrumentalist views hold that "mechanism" is useful shorthand for a predictive model. The subspace, role, process, and object views sit between full realism and perspectivalism. Choosing a view is implicitly a commitment about how realist one's conclusions are entitled to be.
 
-**Realist views** hold that mechanisms are real objects independent of how we measure them. The structural view is the most strongly realist: a mechanism is the gauge orbit of weight configurations computing the same function, which exists independent of any particular measurement procedure.
-
-**Perspectival views** hold that mechanism descriptions are always relative to a measurement procedure. What exists is the procedure and its outputs; whether there is a view-independent mechanism is bracketed. This position has precedent in the philosophy of science literature on perspectivalism (cf. Massimi, *Perspectival Realism*, Oxford, 2022), which holds that scientific representations are perspectival without being merely subjective.
-
-**Instrumentalist views** hold that "mechanism" is useful shorthand for a predictive/interventional model. The instrumental view here is the limiting case of this position.
-
-The subspace, role, process, and object views sit between full realism and perspectivalism. Choosing a view is implicitly a commitment about how realist one's conclusions are entitled to be.
-
-## The qua-problem
-
-The *qua-problem* (originally in philosophy of mathematics) arises whenever an entity can be described under multiple predicates: head 4.4 is "the same mechanism" as head 7.2 in another model *qua what?* Under the component description they are different; under the role description they may be the same; under the gauge-orbit description they may be the same if the orbits are isomorphic.
-
-Every mechanistic identity claim is implicitly a *qua*-claim. The five axes force that implicit claim to be stated explicitly: identity *qua* gauge orbit (structural view), *qua* role (role view), *qua* geodesic proximity (subspace view), *qua* formation process (process view). There is no view-independent answer to "are these the same mechanism?" — only answers relative to a specified identity criterion.
+**The qua-problem.** The *qua-problem* arises whenever an entity can be described under multiple predicates: head 4.4 is "the same mechanism" as head 7.2 in another model *qua what?* Under the component description they are different; under the role description they may be the same; under the gauge-orbit description they may be the same if the orbits are isomorphic. Every mechanistic identity claim is implicitly a *qua*-claim. The five axes force that implicit claim to be stated explicitly: identity *qua* gauge orbit (structural view), *qua* role (role view), *qua* geodesic proximity (subspace view), *qua* formation process (process view). There is no view-independent answer to "are these the same mechanism?" — only answers relative to a specified identity criterion.

@@ -6,25 +6,58 @@ title: Methods
 
 Common interpretability methods are not view-neutral. Each carries implicit axis commitments.
 
-## Method-to-view mapping
+## Five-axis classification
 
-| Method | Ontology implied | Identity implied | Evidence domain | Key limitations |
-|---|---|---|---|---|
-| Activation patching | Object or role | Component overlap | Activation-space, interventional | Fails for distributed mechanisms; confounded by backups |
-| Path patching | Object or role | Path-level components | Activation-space, interventional | Attribution may be non-unique |
-| Ablation / mean-ablation | Object | Component inclusion | Activation-space, interventional | Overestimates role when backups exist |
-| DAS / IIA | Subspace | Subspace up to rotation | Activation-space, interventional | Linearity assumption; IIA tests surgical intervention quality |
-| SAE features | Object (sparse) / Subspace ($\mathcal{M}_1$) | Feature overlap, cosine similarity, or IIA (if causally validated) | Activation-space, observational | Sparse reconstruction criterion ≠ causal criterion; features may not be causally active; feature splitting complicates identity |
-| SVD of weight matrices | Subspace or structural | Principal angles | Weight-space, observational | SVD subspace ≠ causal subspace without further validation |
-| Composition scores | Structural (permutation-invariant only) | Information-flow bound | Weight-space, observational | Upper bound only; does not confirm edge is causally active; invariant under head permutations but not under orthogonal rotations |
-| Linear probing | Subspace (weak) | Feature presence | Activation-space, observational | Non-causal; high accuracy ≠ causal role |
-| Causal scrubbing | Role or subspace | Causal abstraction alignment | Activation-space, interventional | Requires pre-specified causal graph; result depends on it |
-| AGOP / gradient sensitivity | Process | Gradient subspace convergence | Dynamics-space, observational | Tracks task sensitivity; convergence to causal subspace is conjecture |
-| Interchange interventions | Subspace | Subspace coincidence via DAS | Activation-space, interventional | Susceptible to Sutter et al. (2025) vacuity for unrestricted alignment; G-SCM (transport-respecting alignment) addresses this |
-| Logit lens / tuned lens | Subspace or object | Layer-level representation | Activation-space, observational | Observational only |
-| Edge attribution patching | Object or role | Edge-level components | Activation-space, interventional | Gradient approximation; may miss nonlinear effects |
+Each method carries implicit commitments across all five axes. Method links provided from [learnmechinterp.com](https://learnmechinterp.com).
 
-## Key observations
+| Method | Ontology | Identity (${\sim}$) | Evidence | Formalism | Target |
+|---|---|---|---|---|---|
+| [Activation patching](https://learnmechinterp.com/topics/activation-patching/) | [Object](/views/object/) | Component overlap | Activations | [Directed graph](/formalism/directed-graph/) | Task circuit |
+| [Path patching](https://learnmechinterp.com/topics/activation-patching/#path-patching) | [Object](/views/object/) | Component overlap | Activations | [Directed graph](/formalism/directed-graph/) | Task circuit |
+| [ACDC](https://learnmechinterp.com/topics/attribution-patching/) | [Object](/views/object/) | Component overlap | Activations | [Directed graph](/formalism/directed-graph/) | Task circuit |
+| [EAP](https://learnmechinterp.com/topics/attribution-patching/) | [Object](/views/object/) | Component overlap | Activations + Weights | [Directed graph](/formalism/directed-graph/) | Task circuit |
+| [Ablation](https://learnmechinterp.com/topics/activation-patching/) | [Object](/views/object/) | Component overlap | Activations | [Directed graph](/formalism/directed-graph/) | Importance |
+| [DAS / IIA](https://learnmechinterp.com/topics/causal-abstraction/) | [Role](/views/role/) | Role equivalence | Activations | [Causal graph](/formalism/causal-graph/) | Concept |
+| [Causal scrubbing](https://learnmechinterp.com/topics/causal-abstraction/) | [Role](/views/role/) | Role equivalence | Activations | [Causal graph](/formalism/causal-graph/) | Alignment |
+| [Linear probing](https://learnmechinterp.com/topics/probing-classifiers/) | [Role](/views/role/) | Role equivalence | Activations | [Linear classifier](/formalism/linear-classifier/) | Detection |
+| [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) | [Object](/views/object/) | Component overlap | Activations | [Dictionary](/formalism/dictionary/) | Feature catalog |
+| [Logit / tuned lens](https://learnmechinterp.com/topics/logit-lens-and-tuned-lens/) | [Object](/views/object/) | Component overlap | Activations | [Linear projection](/formalism/linear-projection/) | Layer readout |
+| [SVD of weights](https://learnmechinterp.com/topics/qk-ov-circuits/) | [Subspace](/views/subspace/) | Subspace proximity | Weights | [Grassmannian $\mathrm{Gr}(k,d)$](/formalism/grassmannian/) | Decomposition |
+| [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) | [Structural](/views/structural/) | Gauge orbit | Weights | [Fiber bundle quotient](/formalism/fiber-bundle-quotient/) | Info-flow bound |
+| [AGOP](https://arxiv.org/abs/2110.04005) | [Process](/views/process/) | Basin membership | Dynamics | [Dynamical system](/formalism/dynamical-system/) | Trajectory |
+
+<!-- TODO: add back once published
+| Factorization | [Subspace](/views/subspace/) | Subspace proximity | Weights | [Grassmannian](/formalism/grassmannian/) | Decomposition |
+| Factor EAP | [Subspace](/views/subspace/) | Subspace proximity | Weights + Activations | [Grassmannian](/formalism/grassmannian/) + graph | Task circuit |
+-->
+
+![Methods organized by evidence domain and type](/mechanistic-views/figures/methods-evidence-grid.svg)
+
+**Key patterns:**
+- Most methods are Object view + activation evidence. The field's default ontology is components (heads, neurons, features).
+- DAS uses Subspace *parameterization* but Role *identity* — it validates by interchange intervention success (IIA), not Grassmannian distance. The subspace is the search space, not the ontology.
+- The instrumental and perspectival views describe philosophical positions rather than method families. The structural, process, and stratified views are proposed as novel research programs — individual methods touch their territory (composition scores for structural, AGOP for process) but no method fully adopts their ontology.
+
+## Limitations and axis tensions
+
+Each method has practical limitations and, in several cases, internal tensions between the axes — the ontology implies one thing, the formalism or evidence assumes another.
+
+| Method | Evidence domain | Limitation | Axis tension |
+|---|---|---|---|
+| [Activation patching](https://learnmechinterp.com/topics/activation-patching/) | Activations, interventional | Fails for distributed mechanisms; confounded by backups | — |
+| [Path patching](https://learnmechinterp.com/topics/activation-patching/#path-patching) | Activations, interventional | Attribution may be non-unique | — |
+| [Ablation](https://learnmechinterp.com/topics/activation-patching/) | Activations, interventional | Overestimates role when backups exist | — |
+| [EAP](https://learnmechinterp.com/topics/attribution-patching/) | Activations + Weights, interventional | Gradient approximation; may miss nonlinear effects | — |
+| [DAS / IIA](https://learnmechinterp.com/topics/causal-abstraction/) | Activations, interventional | Linearity assumption; IIA tests surgical intervention quality | Searches over subspaces ([Grassmannian](/formalism/grassmannian/)) but evaluates with IIA ([causal graph](/formalism/causal-graph/) criterion) — the search formalism and the evaluation formalism operate at different levels |
+| [Causal scrubbing](https://learnmechinterp.com/topics/causal-abstraction/) | Activations, interventional | Result depends on the pre-specified causal graph | — |
+| [Linear probing](https://learnmechinterp.com/topics/probing-classifiers/) | Activations, observational | Non-causal; high accuracy does not establish causal role | Formalism ([linear classifier](/formalism/linear-classifier/)) tests linear accessibility, but conclusions are stated as role claims — accessibility does not establish use |
+| [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) | Activations, observational | Sparse reconstruction criterion is not a causal criterion; feature splitting complicates identity | [Dictionary](/formalism/dictionary/) optimizes reconstruction, but features are interpreted as components ([object view](/views/object/)) — bridged only by independent causal validation |
+| [Logit / tuned lens](https://learnmechinterp.com/topics/logit-lens-and-tuned-lens/) | Activations, observational | Observational only | [Linear projection](/formalism/linear-projection/) shows what is decodable at each layer, but conclusions are stated about specific layers ([object-level](/views/object/)) — presence does not establish causal role |
+| [SVD of weights](https://learnmechinterp.com/topics/qk-ov-circuits/) | Weights, observational | SVD subspace is not necessarily the causal subspace | — |
+| [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) | Weights, observational | Upper bound only; does not confirm edge is causally active | Presented as [structural-view](/views/structural/) evidence, but invariant only under head permutations, not the full gauge group — partial invariance, not full |
+| [AGOP](https://arxiv.org/abs/2110.04005) | Dynamics, observational | Tracks task sensitivity; convergence to causal subspace is conjecture | — |
+
+## Cross-cutting observations
 
 **No single method suffices.** Each evidence domain is individually non-injective on mechanism space: two distinct mechanisms can look identical in any one domain.
 
@@ -32,17 +65,9 @@ Common interpretability methods are not view-neutral. Each carries implicit axis
 
 **Weight-space methods are more portable.** SVD, composition scores, and invariant subspace analysis operate on weights, which exist before any prompt. Weight-domain evidence is invariant to prompt distribution and more directly comparable across architectures.
 
-**DAS/IIA requires a view commitment.** DAS identifies a subspace up to rotation — the subspace view's identity criterion. Applying DAS while implicitly holding the object view creates a mismatch.
+**IIA bears on both intervention quality and causal graph validity.** Low IIA has two distinct interpretations: (A) the subspace swap is non-surgical and disturbs other variables, or (B) the proposed causal graph is wrong and changing this variable *should* change downstream behavior. These require different responses. See the [Subspace View](/views/subspace/) page.
 
-**IIA bears on both intervention quality and causal graph validity.** Low IIA has two distinct interpretations: (A) the subspace swap is non-surgical and disturbs other variables, or (B) the proposed causal graph is wrong and changing this variable *should* change downstream behavior. These require different responses. See the [Subspace View](views/subspace/) page.
-
-## Minimal triangulation for Tier 3 (subspace view)
-
-1. **Activation-space interventional**: DAS/IIA with IIA reported and interpreted as surgical-intervention quality
-2. **Weight-space structural**: SVD or composition score analysis showing the subspace is latent in weights
-3. **At least one of**: dynamics-space evidence (AGOP convergence), cross-seed consistency, or cross-architecture transfer
-
-Two of the three domains alone leaves an identifiability gap.
+Note: for per-view triangulation method requirements, see [Mechanistic Validity Interface](/mechval-interface/#minimal-triangulation-for-tier-3).
 
 ## Statistical caveats
 

@@ -1,20 +1,20 @@
 ---
-title: MechVal Interface
+title: Mechanistic Validity Interface
 ---
 
-# MechVal Interface
+# Mechanistic Validity Interface
 
-Mechanistic Views and Mechanistic Validity (MechVal) are companion frameworks with different scopes.
+Mechanistic Views and [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) are companion frameworks with different scopes.
 
-**MechVal** asks: is a mechanistic claim warranted by the evidence provided? It supplies 27 operational criteria across 5 validity lenses and a 5-tier evidence taxonomy.
+**[Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/)** asks: is a mechanistic claim warranted by the evidence provided? It supplies 27 operational criteria across 5 validity lenses and a 5-tier evidence taxonomy.
 
 **Mechanistic Views** asks: what background view makes the claim meaningful in the first place?
 
-The questions are distinct but dependent. A MechVal audit assumes the claim's concepts — mechanism, identity, evidence — are well-defined. Mechanistic Views supplies those definitions, making the MechVal criteria applicable.
+The questions are distinct but dependent. A Mechanistic Validity audit assumes the claim's concepts — mechanism, identity, evidence — are well-defined. Mechanistic Views supplies those definitions, making the Mechanistic Validity criteria applicable.
 
 ## How the validity lenses map to view commitments
 
-| MechVal lens | What it validates | View-level commitment it presupposes |
+| Mechanistic Validity lens | What it validates | View-level commitment it presupposes |
 |---|---|---|
 | Construct validity | The mechanism concept is well-specified | Ontology and identity axes |
 | Measurement validity | The measurement procedure is stable | Evidence axis — what is being measured must be identified first |
@@ -26,11 +26,11 @@ The questions are distinct but dependent. A MechVal audit assumes the claim's co
 
 The target axis determines what explanatory level is required. Marr's three levels: (1) computational theory — *what* the system computes and why; (2) algorithm and representation — *how* it carries out the computation (the circuit structure, roles, data structures); (3) physical implementation — the specific weights, neurons, or hardware realizing the algorithm.
 
-A Marr-level-1 claim (the model computes function $f$) is satisfied by behavioral evidence. A Marr-level-2 claim (it does so via circuit or role structure $C$) requires component- or subspace-level mechanistic evidence. A Marr-level-3 claim (it does so using these specific weight values) requires weight-space evidence. This dependence on the target axis is not automatic in MechVal and must be stated by the researcher.
+A Marr-level-1 claim (the model computes function $f$) is satisfied by behavioral evidence. A Marr-level-2 claim (it does so via circuit or role structure $C$) requires component- or subspace-level mechanistic evidence. A Marr-level-3 claim (it does so using these specific weight values) requires weight-space evidence. This dependence on the target axis is not automatic in Mechanistic Validity and must be stated by the researcher.
 
 ## The five-tier taxonomy
 
-MechVal uses five evidence tiers, assigned relative to a stated view:
+Mechanistic Validity uses five evidence tiers, assigned relative to a stated view:
 
 | Tier | Label | Description |
 |---|---|---|
@@ -42,9 +42,37 @@ MechVal uses five evidence tiers, assigned relative to a stated view:
 
 Tier assignments are view-relative: the same evidence can warrant Tier 3 under the object view and only Tier 2 under the subspace view, because the subspace view requires cross-domain triangulation where the object view does not.
 
+## Minimal triangulation for Tier 3
+
+Each view requires convergent evidence from at least two independent domains. Two of any three domains alone leaves an identifiability gap.
+
+**Object view:**
+
+1. **Activation-space interventional**: activation patching or ablation showing the component is necessary
+2. **Weight-space structural**: composition scores or SVD showing the component participates in a weight-space circuit
+3. **At least one of**: cross-prompt robustness (same component is necessary on held-out distributions), cross-seed consistency, or path patching confirming the causal pathway
+
+**Role view:**
+
+1. **Activation-space interventional**: role-specific causal test (DAS/IIA for the role, or causal scrubbing against a role-level causal graph)
+2. **Independence from specific components**: the role survives component knockouts (backup behavior), or is realized by different components in different models
+3. **At least one of**: cross-architecture transfer (same role found in a different model family), cross-task generalization (role serves the same function on related tasks), or weight-space evidence that the role structure is latent
+
+**Subspace view:**
+
+1. **Activation-space interventional**: DAS/IIA with IIA reported and interpreted as surgical-intervention quality
+2. **Weight-space structural**: SVD or composition score analysis showing the subspace is latent in weights
+3. **At least one of**: dynamics-space evidence (AGOP convergence), cross-seed consistency, or cross-architecture transfer
+
+**Structural view:**
+
+1. **Weight-space invariant**: composition scores, holonomy, or other gauge-invariant quantities showing the structure exists in weights independent of basis choice
+2. **Activation-space confirmation**: patching or ablation results that are consistent across reparameterizations of the model (not just one basis)
+3. **At least one of**: cross-architecture transfer (same invariant structure in a different model family), or formal verification that the claimed invariance holds under the full gauge group (not just a subgroup)
+
 ## The geometric realization of the validity chain
 
-The MechVal validity chain can in principle be realized as Grassmannian convergence conditions. These realizations are not yet empirically validated:
+The Mechanistic Validity validity chain can in principle be realized as Grassmannian convergence conditions. These realizations are not yet empirically validated:
 
 - **Construct validity**: weight-space, activation-space, and dynamics-space subspace estimates lie within geodesic $\epsilon_C$ of each other on $\mathrm{Gr}(k, d)$
 - **Measurement validity**: Fréchet variance of subspace estimates across seeds and prompts below $\epsilon_M$
@@ -54,7 +82,7 @@ The MechVal validity chain can in principle be realized as Grassmannian converge
 
 ## Caveats for structural-view criteria
 
-When using structural-view identity criteria in a MechVal audit:
+When using structural-view identity criteria in a Mechanistic Validity audit:
 - State whether the model is at a generic point (free gauge action)
 - Specify the connection used for holonomy estimates
 - Specify the base sections used for cosheaf construction

@@ -36,7 +36,7 @@ A pluralist ontology. A model may contain mechanisms at several strata simultane
 
 Applying the wrong criterion across strata produces incorrect conclusions.
 
-## Evidence by stratum
+## Evidence
 
 - $\mathcal{M}_1$: feature direction recovery plus causal ablation
 - $\mathcal{M}_k$: DAS and weight-space subspace recovery with cross-domain triangulation
@@ -74,6 +74,6 @@ In the stratified view, different strata correspond to different resolution leve
 
 The analogy is structural, not literal. There is no Hamiltonian, no partition function, and no notion of energy scale. But the intuition — that what a mechanism "is" depends on the resolution at which you look — carries over directly. A mechanism that looks like a single feature from one measurement procedure may resolve into a 3-dimensional subspace under finer analysis, just as a coarse-grained field theory reveals constituent degrees of freedom at higher energy.
 
-## Relationship to MechVal
+## Relationship to Mechanistic Validity
 
-Allows MechVal evidence standards to vary by mechanism type. The stratum assignment is an input to the MechVal audit.
+Allows Mechanistic Validity evidence standards to vary by mechanism type. The stratum assignment is an input to the Mechanistic Validity audit.
