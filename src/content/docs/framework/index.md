@@ -40,6 +40,14 @@ A mechanistic view must answer five questions. The questions fall into distinct 
 
 5. **Target.** What phenomenon is the mechanism supposed to explain? A mechanism of indirect object identification, of in-context learning, of grokking, and of factual recall carry different target-level commitments. The target determines the level of description at which the explanation must be pitched (corresponding to what Craver calls "constitutive relevance" in the philosophical literature on mechanistic explanation), and therefore which evidence types are relevant and what counts as explanatory success.
 
+## The determination chain
+
+The five answers are not independent. What a mechanism is determines when two are the same, which determines what formalism is needed:
+
+$$\text{Ontology} \;\longrightarrow\; \text{Identity} \;\longrightarrow\; \text{Formalism}$$
+
+Under the object view, mechanisms are specific components, identity is component overlap, and the formalism is a directed graph. Under the role view, mechanisms are functional roles, identity is role equivalence, and the formalism is a role graph. Possible mismatches arise between these three axes: using subspace math while holding a component-overlap notion of identity, or using patching evidence (object-level) to support a structural-level claim. These mismatches are a common source of incoherence in practice.
+
 ## What a view is
 
 A view is a bundle of answers to the five axes. Formally, a mechanistic view is a 5-tuple:
@@ -90,7 +98,21 @@ Making the view explicit does not automatically resolve the disagreement. But it
 
 A persistent problem is **underdetermination**: multiple distinct mechanism hypotheses can be consistent with the same evidence. An activation-patching result that shows head 4.4 is necessary is consistent with (a) head 4.4 being the mechanism, (b) head 4.4 being one realizer of a role-level mechanism, (c) head 4.4 participating in a distributed mechanism whose activity happens to be concentrated there, and (d) head 4.4 being a measurement artifact of the patching protocol. These are not equivalent claims under different descriptions; they support different predictions and require different interventions.
 
-The triangulation requirement in this site — requiring convergent evidence across weight-space, activation-space, and dynamics-space domains — is a response to underdetermination. The single-domain evidence produces an underdetermined verdict; multi-domain convergence narrows the hypothesis space. This is a pragmatic application of the principle that *independent* evidence is stronger than repeated evidence from the same source. See [Single-method vs triangulated](decisions/single-vs-triangulated/).
+The triangulation requirement in this site — requiring convergent evidence across weight-space, activation-space, and dynamics-space domains — is a response to underdetermination. The single-domain evidence produces an underdetermined verdict; multi-domain convergence narrows the hypothesis space. This is a pragmatic application of the principle that *independent* evidence is stronger than repeated evidence from the same source. See [Single-method vs triangulated](/decisions/single-vs-triangulated/).
+
+**Cross-model comparison.** The claim that two models implement "the same" mechanism requires a notion of identity that works across models. Component indices (head 9.9 in model A, head 7.3 in model B) are trivially not cross-model. Functional roles may be comparable, if independently specified. Geometric structure may be, if a canonical mapping is defined. Which notion is assumed determines whether "the same mechanism" is meaningful across architectures.
+
+**Generalization.** Finding a circuit invites a natural question: does its presence guarantee specific behavior on inputs the model has never seen? Under an object view, circuit presence is about specific components on a specific distribution — it says nothing about novel inputs. Under a subspace or higher view, the circuit is defined by structure that is increasingly robust: a subspace is stable under perturbation, a gauge-invariant structure survives reparameterization. The stronger the view, the stronger the generalization claim.
+
+**Post-hoc explanation.** In circuit discovery, components are identified first and functional roles assigned afterward — labels like "name mover" describe observed behavior, not independent predictions. Any observed behavior can be given a plausible role label, making the functional story difficult to falsify. The backup name movers in the IOI circuit ([Wang et al. 2022](https://arxiv.org/abs/2211.00593)) illustrate this: knock out the "name movers" and other heads take on the same role. A role claim becomes falsifiable when the role is predicted from independent evidence — structure, training dynamics, or cross-model transfer — rather than read off the same activations that identified the component.
+
+## Relationship to Marr's levels
+
+Marr's tri-level account — computational, algorithmic, implementational — organizes *explanatory targets*: what a system does, how it does it, what substrate realizes the process. The five axes here organize *ontological commitments*: what kind of object the mechanism is, when two are the same, what evidence can support the claim. These are orthogonal. Two researchers can agree that IOI is an algorithmic-level finding — a procedure involving duplicate token heads, S-inhibition heads, and name movers — and still disagree about two things: what a circuit is as a formal object, and what underlying mechanism the circuit describes.
+
+Is it just a useful predictive model? A projection of the method used to find it? A set of specific components? A role structure that any components could fill? A subspace? A gauge-invariant pattern in the weights? A trajectory that formed during training? A multi-resolution object that changes depending on the scale at which you look?
+
+These are eight different claims about what exists inside the network, each corresponding to a mechanistic view.
 
 ## Deeper commitments
 

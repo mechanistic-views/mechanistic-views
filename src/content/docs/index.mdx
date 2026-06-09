@@ -29,15 +29,7 @@ A mechanistic view is the set of commitments — explicit or implicit — underl
 
 ![Five axes of a mechanistic view: Ontology, Identity, Evidence, Formalism, Target](/mechanistic-views/figures/five-axes-pipeline-clean.svg)
 
-Ontology, evidence, and target come from the philosophy of science <Cite id="machamer2000" /> <Cite id="craver2007" /> <Cite id="bechtel1993"/>: ontology defines what kind of entity a mechanism is, evidence defines what counts as support for mechanistic claims, and target defines what the mechanism is an explanation of.
-
-Identity and formalism are additions specific to neural networks. Identity is necessary because reparameterization allows two different-looking mechanisms to be computationally identical. Formalism is necessary because a neural network mechanism is a mathematical object, not a physical one, so the formalism doesn't describe the mechanism — it determines what the mechanism is.
-
-The five answers are not independent. What a mechanism is determines when two are the same, which determines what formalism is needed:
-
-$$\text{Ontology} \;\longrightarrow\; \text{Identity} \;\longrightarrow\; \text{Formalism}$$
-
-This is the **determination chain**. Under the object view, mechanisms are specific components, identity is component overlap, and the formalism is a directed graph. Under the role view, mechanisms are functional roles, identity is role equivalence, and the formalism is a role graph. Possible mismatches arise between these three axes: using subspace math while holding a component-overlap notion of identity, or using patching evidence (object-level) to support a structural-level claim.
+The five answers are not independent — what a mechanism is constrains when two are the same, which constrains what formalism is needed. See [Framework](/framework/) for the formal definition, coherence conditions, and why these constraints matter.
 
 ## Eight mechanistic views
 
@@ -58,42 +50,9 @@ Higher-commitment views make stronger claims but require more evidence. We propo
 | [Process](/views/process/) | Formation trajectory | Same trajectory type | [Checkpoints, formation knockouts](/views/process/#evidence) | [Dynamical system](/formalism/dynamical-system/) | Mechanism origin |
 | [Stratified](/views/stratified/) | Stratum point | Stratum + local equivalence | [Dimensionality, localization](/views/stratified/#evidence) | [Whitney stratification](/formalism/stratification/) | Resolution-relative |
 
-
-
-
-## Coherence
-
-Not every combination of answers to the five axes is consistent. A view is **coherent** if the identity criterion fits the ontology, the evidence tracks the identity criterion, and the formalism can express both. When these conditions fail, the view produces contradictory demands — the identity criterion says two descriptions are the same mechanism while the evidence says they are different, and no experiment can satisfy both.
-
-This is not a theoretical concern. A common pattern in the literature is to declare that mechanisms are gauge-invariant structures (invariant under symmetry transformations that preserve the model's computation) but then cite activation-patching results as evidence — without checking whether the result survives such transformations. If it doesn't, the evidence contradicts the declared view.
-
-
-## Why this matters
-
-**Underdetermination.** Activation patching replaces a component's output and measures how behavior changes, establishing causal relevance. But does causal relevance establish a mechanism? Under the object view, perhaps. Under the role view, only if the functional role is independently specified. Under the subspace view, not unless the relevant variable is localized to a low-dimensional subspace. This cannot be resolved by more patching — the question is what the evidence *can* establish, not what it *does* establish.
-
-**Cross-model comparison.** The claim that two models implement "the same" mechanism requires a notion of identity that works across models. Component indices (head 9.9 in model A, head 7.3 in model B) are trivially not cross-model. Functional roles may be comparable, if independently specified. Geometric structure may be, if a canonical mapping is defined. Which notion is assumed determines whether "the same mechanism" is meaningful across architectures.
-
-**Generalization.** Finding a circuit invites a natural question: does its presence guarantee specific behavior on inputs the model has never seen? Under an object view, circuit presence is about specific components on a specific distribution — it says nothing about novel inputs. Under a subspace or higher view, the circuit is defined by structure that is increasingly robust: a subspace is stable under perturbation, a gauge-invariant structure survives reparameterization. The stronger the view, the stronger the generalization claim.
-
-**Post-hoc explanation.** In circuit discovery, components are identified first and functional roles assigned afterward — labels like "name mover" describe observed behavior, not independent predictions. Any observed behavior can be given a plausible role label, making the functional story difficult to falsify. Wang et al.'s <Cite id="wang2023" /> backup name movers illustrate this: knock out the "name movers" and other heads take on the same role. A role claim becomes falsifiable when the role is predicted from independent evidence — structure, training dynamics, or cross-model transfer — rather than read off the same activations that identified the component.
-
-
-
-## Relationship to Marr's levels
-
-Marr's tri-level account <Cite id="marr1982" /> — computational, algorithmic, implementational — organizes *explanatory targets*: what a system does, how it does it, what substrate realizes the process. The five axes here organize *ontological commitments*: what kind of object the mechanism is, when two are the same, what evidence can support the claim. These are orthogonal. Two researchers can agree that IOI is an algorithmic-level finding — a procedure involving duplicate token heads, S-inhibition heads, and name movers — and still disagree about two things: what a circuit is as a formal object, and what underlying mechanism the circuit describes.
-
-Is it just a useful predictive model? A projection of the method used to find it? A set of specific components? A role structure that any components could fill? A subspace? A gauge-invariant pattern in the weights? A trajectory that formed during training? A multi-resolution object that changes depending on the scale at which you look?
-
-These are eight different claims about what exists inside the network, each corresponding to a mechanistic view.
-
-
 ## Relationship to Mechanistic Validity
 
 Mechanistic Views defines what a mechanism is — what kind of object you're claiming exists, when two are the same, what formalism expresses the claim. [*Mechanistic Validity*](https://mechanistic-validity.github.io/mechanistic-validity/) is the evaluation counterpart: a six-layer pipeline from description modes to evidence families, calibrated metrics, falsifiable criteria, validity types, and tiered verdicts. Which validity types apply and what counts as passing them depends on the view — a subspace claim requires different evidence than a component claim.
-
-
 
 ## Reading path
 
