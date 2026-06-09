@@ -6,7 +6,7 @@ title: Grassmannian Geometry
 
 > **Formal status key**: **[Definition]** standard mathematical definition. **[Theorem]** established result. **[Conjecture]** plausible but unproven. **[Open]** open question. Applies to all Formalisms pages.
 
-The Grassmannian is the natural ambient space for mechanism claims under the subspace and structural views.
+This is the full mathematical treatment of the [Grassmannian formalism](/formalism/grassmannian/), which underpins the [subspace view](/views/subspace/). For the accessible overview, start with the [parent page](/formalism/grassmannian/).
 
 ## Concrete intuition before the definitions
 
@@ -87,3 +87,11 @@ For comparing subspace estimates across seeds or prompts, the Fréchet (Riemanni
 **Fréchet variance**: $\sigma^2_F = \frac{1}{n}\sum_i d(\bar{S}, S_i)^2$
 
 Mechanistic Validity's measurement validity criterion can be operationalized as Fréchet variance below threshold $\epsilon_M$ across seeds and prompts.
+
+## See also
+
+- [Grassmannian formalism](/formalism/grassmannian/) — accessible overview without proofs
+- [Subspace view](/views/subspace/) — the view that uses the Grassmannian as its primary formalism
+- [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge-invariant structure on top of Grassmannian geometry
+- [Stratification deep dive](stratification/) — how Grassmannians at different $k$ assemble into a stratified space
+- [DAS/IIA on learnmechinterp](https://learnmechinterp.com/topics/causal-abstraction/) — the primary method for recovering Grassmannian points

@@ -4,6 +4,8 @@ title: Gauge Quotients and Holonomy
 
 # Gauge Quotients and Holonomy
 
+This is the full mathematical treatment of the [fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/), which underpins the [structural view](/views/structural/). For the accessible overview, start with the [parent page](/formalism/fiber-bundle-quotient/).
+
 Transformer parameter space has symmetries. Two weight configurations related by certain transformations implement the same input-output function. These **gauge transformations** define equivalence classes. Any mechanism claim that depends on a coordinate inside an equivalence class is a potential parameterization artifact.
 
 Holonomy is a gauge-invariant quantity that can serve as a mechanism fingerprint. The construction here is formally analogous to holonomy in gauge theory (Yang-Mills, electromagnetism). The analogy is productive but limited: in physics, holonomy has physical significance grounded in the Ambrose-Singer theorem relating holonomy to field strength, and the connection is the dynamical variable with equations of motion from a Lagrangian. In transformers, the gauge redundancy arises from the parameterization of the function, not from any dynamical principle, and the connection is chosen by convention rather than derived. Claims about holonomy-based mechanism identity should be understood within this more limited formal analogy.
@@ -90,3 +92,11 @@ Not applied to transformer circuits at scale (OQ 5.2).
 ## Stability and the connection-dependence caveat
 
 High holonomy curvature indicates geometric instability under fine-tuning. Stability predictions depend on the connection choice and should specify it.
+
+## See also
+
+- [Fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/) — accessible overview without proofs
+- [Structural view](/views/structural/) — the view that uses gauge orbits as mechanism identity
+- [Grassmannian deep dive](grassmannian/) — the subspace geometry that holonomy acts on
+- [Sheaf Cohomology deep dive](sheaves/) — a complementary topological invariant for circuit localizability
+- [Composition scores on learnmechinterp](https://learnmechinterp.com/topics/composition-and-virtual-heads/) — partially gauge-invariant weight-space measurements

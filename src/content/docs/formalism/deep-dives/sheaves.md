@@ -4,6 +4,8 @@ title: Sheaf Cohomology
 
 # Sheaf Cohomology
 
+This is the full mathematical treatment of cosheaf cohomology for circuit localizability, relevant to the [structural view](/views/structural/) and [stratified view](/views/stratified/). Related to the [fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/).
+
 Sheaf cohomology answers a specific question: can local descriptions of a mechanism be consistently assembled into a global one?
 
 This is a topological question about the mechanism's structure. If the answer is no, then no method will produce a complete localization, because none exists.
@@ -99,3 +101,11 @@ Whether to augment the layer graph with 2-cells is a modeling choice. Without au
 ## Further reading
 
 Hansen, J. and Ghrist, R. (2021). "Toward a spectral theory of cellular sheaves." *Journal of Applied and Computational Topology* 5(1): 1–55.
+
+## See also
+
+- [Structural view](/views/structural/) — uses cosheaf cohomology for coverage equivalence
+- [Stratified view](/views/stratified/) — the $\mathcal{M}_\infty$ stratum is characterized by non-zero $H^1$
+- [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — complementary gauge-invariant characterization
+- [Stratification deep dive](stratification/) — spectral sequences for augmented circuit complexes
+- [Localized vs. Distributed decision](/decisions/localized-vs-distributed/) — practical implications of $H^1 \neq 0$

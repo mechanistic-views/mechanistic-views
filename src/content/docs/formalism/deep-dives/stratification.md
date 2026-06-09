@@ -6,6 +6,8 @@ title: Stratification
 
 > **Formal status key**: **[Definition]** standard mathematical definition. **[Theorem]** established result. **[Conjecture]** plausible but unproven. **[Open]** open question.
 
+This is the full mathematical treatment of the [Whitney stratification formalism](/formalism/stratification/), which underpins the [stratified view](/views/stratified/). For the accessible overview, start with the [parent page](/formalism/stratification/).
+
 A **stratified space** is a topological space decomposed into smooth pieces called strata, arranged so that the strata fit together in a controlled way.
 
 ## Why the mechanism space is not a manifold
@@ -64,3 +66,12 @@ For computing cosheaf cohomology on a stratified complex augmented with 2-cells,
 - $\mathcal{M}_\infty$: demonstrating $H^0 = 0$ and $H^1 \neq 0$ (subject to caveats in the Sheaf Cohomology page)
 
 Stratum assignment is a prior question. There is currently no canonical algorithm for it.
+
+## See also
+
+- [Whitney stratification formalism](/formalism/stratification/) — accessible overview without proofs
+- [Stratified view](/views/stratified/) — the view that uses stratification as its organizing principle
+- [Grassmannian deep dive](grassmannian/) — the geometry of individual strata $\mathcal{M}_k$
+- [Sheaf Cohomology deep dive](sheaves/) — $H^1 \neq 0$ as evidence for the $\mathcal{M}_\infty$ stratum
+- [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge structure within each stratum
+- [Grokking case study](/cases/grokking/) — example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)

@@ -59,6 +59,14 @@
       "title": "Subspace vs. Structural"
     },
     {
+      "slug": "/formalism/deep-dives/grassmannian/",
+      "title": "Grassmannian Geometry"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
       "slug": "/formalism/dictionary/",
       "title": "Dictionary"
     },
@@ -137,6 +145,14 @@
       "title": "Subspace vs. Structural"
     },
     {
+      "slug": "/formalism/deep-dives/grassmannian/",
+      "title": "Grassmannian Geometry"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
       "slug": "/formalism/dictionary/",
       "title": "Dictionary"
     },
@@ -191,6 +207,14 @@
       "title": "Case Study — Grokking"
     },
     {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
       "slug": "/formalism/fiber-bundle-quotient/",
       "title": "Fiber Bundle Quotient"
     },
@@ -239,6 +263,18 @@
     {
       "slug": "/decisions/subspace-vs-structural/",
       "title": "Subspace vs. Structural"
+    },
+    {
+      "slug": "/formalism/deep-dives/gauge-holonomy/",
+      "title": "Gauge Quotients and Holonomy"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
     },
     {
       "slug": "/formalism/fiber-bundle-quotient/",
@@ -439,6 +475,10 @@
       "title": "Static vs. Process Descriptions"
     },
     {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
       "slug": "/formalism/dynamical-system/",
       "title": "Dynamical System"
     },
@@ -479,6 +519,10 @@
     {
       "slug": "/decisions/",
       "title": "Decisions"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
     }
   ],
   "/decisions/single-vs-triangulated/": [
@@ -501,6 +545,18 @@
     {
       "slug": "/decisions/localized-vs-distributed/",
       "title": "Localized vs. Distributed"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
     },
     {
       "slug": "/formalism/dictionary/",
@@ -599,6 +655,18 @@
       "title": "Subspace vs. Structural"
     },
     {
+      "slug": "/formalism/deep-dives/gauge-holonomy/",
+      "title": "Gauge Quotients and Holonomy"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
+    },
+    {
       "slug": "/formalism/dynamical-system/",
       "title": "Dynamical System"
     },
@@ -691,25 +759,11 @@
       "title": "Role View"
     }
   ],
-  "/formalism/": [
-    {
-      "slug": "/formalism/deep-dives/",
-      "title": "Deep Dives"
-    },
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
-    }
-  ],
   "/formalism/deep-dives/grassmannian/": [
+    {
+      "slug": "/formalism/deep-dives/gauge-holonomy/",
+      "title": "Gauge Quotients and Holonomy"
+    },
     {
       "slug": "/formalism/deep-dives/",
       "title": "Deep Dives"
@@ -727,14 +781,48 @@
       "title": "Formalisms"
     },
     {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
       "slug": "/views/subspace/",
       "title": "Subspace View"
     }
   ],
-  "/formalism/deep-dives/gauge-holonomy/": [
+  "/formalism/deep-dives/sheaves/": [
+    {
+      "slug": "/formalism/deep-dives/gauge-holonomy/",
+      "title": "Gauge Quotients and Holonomy"
+    },
     {
       "slug": "/formalism/deep-dives/",
       "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    }
+  ],
+  "/formalism/deep-dives/gauge-holonomy/": [
+    {
+      "slug": "/formalism/deep-dives/grassmannian/",
+      "title": "Grassmannian Geometry"
+    },
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
     },
     {
       "slug": "/formalism/deep-dives/stratification/",
@@ -753,24 +841,18 @@
       "title": "Structural View"
     }
   ],
-  "/formalism/deep-dives/sheaves/": [
-    {
-      "slug": "/formalism/deep-dives/",
-      "title": "Deep Dives"
-    },
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    },
-    {
-      "slug": "/views/structural/",
-      "title": "Structural View"
-    }
-  ],
   "/formalism/deep-dives/stratification/": [
     {
+      "slug": "/formalism/deep-dives/grassmannian/",
+      "title": "Grassmannian Geometry"
+    },
+    {
       "slug": "/formalism/deep-dives/",
       "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
     },
     {
       "slug": "/formalism/",
@@ -779,6 +861,24 @@
     {
       "slug": "/formalism/stratification/",
       "title": "Whitney Stratification"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ],
+  "/formalism/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
     },
     {
       "slug": "/views/stratified/",
@@ -815,6 +915,10 @@
     {
       "slug": "/formalism/linear-classifier/",
       "title": "Linear Classifier"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
     },
     {
       "slug": "/methods/",
@@ -867,6 +971,10 @@
       "title": "Linear Projection"
     },
     {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
       "slug": "/methods/",
       "title": "Methods"
     },
@@ -879,6 +987,10 @@
     {
       "slug": "/formalism/",
       "title": "Formalisms"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
     },
     {
       "slug": "/methods/",
