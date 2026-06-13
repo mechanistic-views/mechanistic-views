@@ -6,15 +6,15 @@ title: Subspace vs. Structural
 
 **The fork.** Is Grassmannian identity (geodesic distance on $\mathrm{Gr}(k,d)$) sufficient, or is a gauge-invariant characterization required?
 
-## Option A: [Subspace](/views/subspace/) identity
+## Option A: [Subspace](/mechanistic-views/views/subspace/) identity
 
-Two mechanisms are the same when their subspaces are close on $\mathrm{Gr}(k,d)$. See the [Grassmannian formalism](/formalism/grassmannian/) for the distance metric.
+Two mechanisms are the same when their subspaces are close on $\mathrm{Gr}(k,d)$. See the [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/) for the distance metric.
 
 **When it goes wrong.** Two models in different gauge orbits may have nearby-looking subspaces because of basis coincidence — false positive. Two models in the same orbit may look different due to basis choice — false negative.
 
-## Option B: [Structural](/views/structural/) identity
+## Option B: [Structural](/mechanistic-views/views/structural/) identity
 
-Two mechanisms are the same when they lie in the same gauge orbit. See the [fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/).
+Two mechanisms are the same when they lie in the same gauge orbit. See the [fiber bundle quotient formalism](/mechanistic-views/formalism/fiber-bundle-quotient/).
 
 **Technical conditions.** The fiber bundle structure (needed for holonomy) holds only when $\mathcal{G}$ acts freely — i.e., at generic points. At non-generic points (identical heads), only the quotient space structure applies, not the bundle. The holonomy criterion also depends on the connection choice.
 
@@ -28,4 +28,4 @@ Two mechanisms are the same when they lie in the same gauge orbit. See the [fibe
 
 ## Recommended default
 
-[Subspace view](/views/subspace/) for single-model claims and preliminary cross-model comparisons, with gauge normalization applied. [Structural view](/views/structural/) (with holonomy and generic-position check) for strong cross-model identity claims where computational cost is acceptable.
+[Subspace view](/mechanistic-views/views/subspace/) for single-model claims and preliminary cross-model comparisons, with gauge normalization applied. [Structural view](/mechanistic-views/views/structural/) (with holonomy and generic-position check) for strong cross-model identity claims where computational cost is acceptable.

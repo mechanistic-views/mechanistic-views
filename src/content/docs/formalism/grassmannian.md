@@ -4,7 +4,7 @@ title: Grassmannian
 
 # Grassmannian
 
-The formalism for the [subspace view](/views/subspace/).
+The formalism for the [subspace view](/mechanistic-views/views/subspace/).
 
 ## What it is
 
@@ -32,12 +32,12 @@ Stability is measured using the *Fréchet variance* on the Grassmannian: recover
 
 Cross-seed consistency (same training data, different random seeds) tests measurement reliability. Cross-prompt consistency (same model, different input distributions) tests whether the subspace generalizes beyond the distribution used to find it. Both are required for a subspace claim to be considered established.
 
-See the [deep dive](/formalism/deep-dives/grassmannian/#fréchet-mean-and-variance) for the mathematical definition and computation.
+See the [deep dive](/mechanistic-views/formalism/deep-dives/grassmannian/#fréchet-mean-and-variance) for the mathematical definition and computation.
 
 ## Deep dive
 
-For the full mathematical treatment — principal angles, transport maps, Fréchet mean and variance, computational tractability — see the [Grassmannian Geometry deep dive](/formalism/deep-dives/grassmannian/).
+For the full mathematical treatment — principal angles, transport maps, Fréchet mean and variance, computational tractability — see the [Grassmannian Geometry deep dive](/mechanistic-views/formalism/deep-dives/grassmannian/).
 
 ## Relationship to other formalisms
 
-The Grassmannian is the natural setting for comparing subspaces across models and seeds. [Dictionary](/formalism/dictionary/) features (from SAEs) are points in $\mathrm{Gr}(1, d)$, the simplest case. The [fiber bundle quotient](/formalism/fiber-bundle-quotient/) uses gauge orbits as identity criteria — a finer-grained notion than subspace proximity, since two subspaces can be Grassmannian-close but in different gauge orbits. The [Whitney stratification](/formalism/stratification/) organizes all Grassmannians $\mathrm{Gr}(k, d)$ into a single stratified space, where the stratum boundary captures how mechanisms change dimensionality.
+The Grassmannian is the natural setting for comparing subspaces across models and seeds. [Dictionary](/mechanistic-views/formalism/dictionary/) features (from SAEs) are points in $\mathrm{Gr}(1, d)$, the simplest case. The [fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/) uses gauge orbits as identity criteria — a finer-grained notion than subspace proximity, since two subspaces can be Grassmannian-close but in different gauge orbits. The [Whitney stratification](/mechanistic-views/formalism/stratification/) organizes all Grassmannians $\mathrm{Gr}(k, d)$ into a single stratified space, where the stratum boundary captures how mechanisms change dimensionality.

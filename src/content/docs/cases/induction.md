@@ -6,21 +6,21 @@ title: Case Study — Induction Heads
 
 **The phenomenon.** Induction heads implement prefix matching: given $[A][B]\ldots[A]$, predict $[B]$. [Olsson et al. (2022)](https://learnmechinterp.com/topics/induction-heads/) described them in detail and proposed they underlie in-context learning.
 
-## [Object view](/views/object/)
+## [Object view](/mechanistic-views/views/object/)
 
 A previous-token head writes the previous token's identity to the residual stream; an induction head queries for tokens whose preceding context matches the current position. Ablating identified heads impairs next-token prediction on repeated sequences; composition score between the pair is high.
 
-## [Role view](/views/role/)
+## [Role view](/mechanistic-views/views/role/)
 
 A two-role structure: (copy-previous role, attend-to-matching-prefix role). Different models implement these roles with different specific heads. Cross-model role transfer qualitatively established.
 
-## [Subspace view](/views/subspace/)
+## [Subspace view](/mechanistic-views/views/subspace/)
 
 The induction variable is approximately the identity of the token to be predicted. This occupies a subspace at the output of the induction head's OV circuit.
 
-**Outstanding.** [DAS](/views/subspace/#evidence) has not been systematically applied to recover this subspace and measure its [Grassmannian](/formalism/grassmannian/) distance from the $W^{OV}$ SVD subspace.
+**Outstanding.** [DAS](/mechanistic-views/views/subspace/#evidence) has not been systematically applied to recover this subspace and measure its [Grassmannian](/mechanistic-views/formalism/grassmannian/) distance from the $W^{OV}$ SVD subspace.
 
-## [Process view](/views/process/)
+## [Process view](/mechanistic-views/views/process/)
 
 Olsson et al. (2022) showed induction heads form suddenly at a specific training step — a phase transition with a sharp loss decrease. Before, in-context learning is near-absent; after, it is present.
 
@@ -30,21 +30,21 @@ The process-view claim: this corresponds to a formation event — the mechanism 
 
 ## Current evidence state
 
-- **Tier 3** under the [object](/views/object/) and [role](/views/role/) views: necessity, sufficiency, and cross-model role transfer well-established
-- **Tier 2** under the [process view](/views/process/): phase transition documented; full dynamical account preliminary
-- **Tier 1** under the [subspace](/views/subspace/) and [structural](/views/structural/) views
+- **Tier 3** under the [object](/mechanistic-views/views/object/) and [role](/mechanistic-views/views/role/) views: necessity, sufficiency, and cross-model role transfer well-established
+- **Tier 2** under the [process view](/mechanistic-views/views/process/): phase transition documented; full dynamical account preliminary
+- **Tier 1** under the [subspace](/mechanistic-views/views/subspace/) and [structural](/mechanistic-views/views/structural/) views
 
 ## What would move to higher tiers
 
-**[Subspace view](/views/subspace/), Tier 1 → 2** (single-domain causal evidence):
-- [DAS](/views/subspace/#evidence) recovery of the induction variable subspace with IIA reported
-- [Grassmannian](/formalism/grassmannian/) distance measurement between the $W^{OV}$ SVD subspace and the DAS-recovered subspace
+**[Subspace view](/mechanistic-views/views/subspace/), Tier 1 → 2** (single-domain causal evidence):
+- [DAS](/mechanistic-views/views/subspace/#evidence) recovery of the induction variable subspace with IIA reported
+- [Grassmannian](/mechanistic-views/formalism/grassmannian/) distance measurement between the $W^{OV}$ SVD subspace and the DAS-recovered subspace
 
-**[Process view](/views/process/), Tier 2 → 3** (two-domain + cross-model consistency):
+**[Process view](/mechanistic-views/views/process/), Tier 2 → 3** (two-domain + cross-model consistency):
 - AGOP trajectory analysis showing subspace convergence precedes behavioral transition across seeds
 - Quantitative account of transition timing from weight-decay schedule parameters
 
-**[Structural view](/views/structural/), Tier 1 → 2** (single-domain evidence):
+**[Structural view](/mechanistic-views/views/structural/), Tier 1 → 2** (single-domain evidence):
 - Cosheaf construction for the induction circuit with $H^\bullet$ computed
 - Comparison of composition-score-based and patching-based circuit proposals for coverage equivalence
 

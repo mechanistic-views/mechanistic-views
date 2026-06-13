@@ -22,11 +22,11 @@ The limitation: the sparsity objective optimizes for *reconstruction* quality, n
 
 ## Relationship to other formalisms
 
-Dictionary features are points in $\mathrm{Gr}(1, d)$ — the simplest objects on the [Grassmannian](/formalism/grassmannian/). The [subspace view](/views/subspace/) generalizes from single directions to $k$-dimensional subspaces. The [stratified view](/views/stratified/) places dictionary features at the $\mathcal{M}_1$ stratum and asks when they should be grouped into higher-dimensional mechanisms.
+Dictionary features are points in $\mathrm{Gr}(1, d)$ — the simplest objects on the [Grassmannian](/mechanistic-views/formalism/grassmannian/). The [subspace view](/mechanistic-views/views/subspace/) generalizes from single directions to $k$-dimensional subspaces. The [stratified view](/mechanistic-views/views/stratified/) places dictionary features at the $\mathcal{M}_1$ stratum and asks when they should be grouped into higher-dimensional mechanisms.
 
 ## Further reading
 
 - Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Directions in Language Models" (2023) — SAE features as interpretable directions
 - Bricken et al., "Towards Monosemanticity" (2023) — scaling SAEs to large models
-- See the [SAE features discussion](/views/subspace/#sae-features-and-the-subspace-view) on the subspace view page for when SAE features and causal subspaces agree or diverge
-- See the [methods page](/methods/) for how [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) fit into the broader evidence landscape
+- See the [SAE features discussion](/mechanistic-views/views/subspace/#sae-features-and-the-subspace-view) on the subspace view page for when SAE features and causal subspaces agree or diverge
+- See the [methods page](/mechanistic-views/methods/) for how [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) fit into the broader evidence landscape

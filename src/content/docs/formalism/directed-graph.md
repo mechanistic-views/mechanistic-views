@@ -4,7 +4,7 @@ title: Directed Graph
 
 # Directed Graph
 
-The formalism for the [object view](/views/object/).
+The formalism for the [object view](/mechanistic-views/views/object/).
 
 ## What it is
 
@@ -24,4 +24,4 @@ Circuit discovery methods like [activation patching](https://learnmechinterp.com
 
 ## Relationship to other formalisms
 
-The directed graph is the simplest circuit formalism. The [role graph](/formalism/role-graph/) uses the same graph structure but labels nodes with functional roles instead of component identities. The [causal graph](/formalism/causal-graph/) (used by causal scrubbing and causal abstraction) is a DAG over high-level variables rather than model components — it tests whether the model's computation respects a proposed causal structure.
+The directed graph is the simplest circuit formalism. The [role graph](/mechanistic-views/formalism/role-graph/) uses the same graph structure but labels nodes with functional roles instead of component identities. The [causal graph](/mechanistic-views/formalism/causal-graph/) (used by causal scrubbing and causal abstraction) is a DAG over high-level variables rather than model components — it tests whether the model's computation respects a proposed causal structure.

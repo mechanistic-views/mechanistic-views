@@ -9,7 +9,7 @@ import Cite from '../../components/Cite.astro';
 
 *A five-axis ontology for mechanistic interpretability*
 
-Neural networks can write fluent text, answer complex questions, and solve problems that resist explicit programming — but we only partially understand the internal computations that produce these capabilities. Mechanistic interpretability investigates this, and the field has identified circuits, features, causal subspaces, formation dynamics, and more, across a range of models and tasks. Individual components have been assigned functional roles like "name movers" and "induction heads." But what exactly is a "name mover"? Is it a specific component (head 9.9 in layer 9 of this particular model)? A functional role that any component could play, in any model? A direction in the model's internal representation space? A structural pattern in the weight matrices?
+Neural networks are remarkably capable, but the internal mechanisms that produce these capabilities are still only partly understood. Mechanistic interpretability investigates this, and the field has identified circuits, features, causal subspaces, formation dynamics, and more, across a range of models and tasks. Individual components have been assigned functional roles like "name movers" and "induction heads." But what exactly is a "name mover"? Is it a specific component (head 9.9 in layer 9 of this particular model)? A functional role that any component could play, in any model? A direction in the model's internal representation space? A structural pattern in the weight matrices?
 
 These are not the same claim. Each assumes something different about what a mechanism is, what counts as evidence, and what follows from it. The same result means different things under different assumptions. Without explicit answers to these questions, a mechanistic claim is incomplete.
 
@@ -29,7 +29,7 @@ A mechanistic view is the set of commitments — explicit or implicit — underl
 
 ![Five axes of a mechanistic view: Ontology, Identity, Evidence, Formalism, Target](/mechanistic-views/figures/five-axes-pipeline-clean.svg)
 
-The five answers are not independent — what a mechanism is constrains when two are the same, which constrains what formalism is needed. See [Framework](/framework/) for the formal definition, coherence conditions, and why these constraints matter.
+The five answers are not independent — what a mechanism is constrains when two are the same, which constrains what formalism is needed. See [Framework](/mechanistic-views/framework/) for the formal definition, coherence conditions, and why these constraints matter.
 
 ## Eight mechanistic views
 
@@ -41,14 +41,14 @@ Higher-commitment views make stronger claims but require more evidence. We propo
 
 | View | Ontology | Identity | Evidence | Formalism | Target |
 |---|---|---|---|---|---|
-| [Instrumental](/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/views/instrumental/#evidence) | [Model theory](/formalism/model-theory/) | Behavioral prediction |
-| [Perspectival](/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/views/perspectival/#evidence) | [Measurement algebra](/formalism/measurement-algebra/) | Method-relative |
-| [Object](/views/object/) | Concrete part | Component overlap | [Ablation, patching](/views/object/#evidence) | [Directed graph](/formalism/directed-graph/) | Specific behavior |
-| [Role](/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/views/role/#evidence) | [Role graph](/formalism/role-graph/) | Functional class |
-| [Subspace](/views/subspace/) | Causal subspace | Same projector; $d_{\mathrm{Gr}} < \theta$ | [DAS/IIA (linear)](/views/subspace/#evidence), [subspace stability](/formalism/grassmannian/#subspace-stability) | [Grassmannian $\mathrm{Gr}(k,d)$](/formalism/grassmannian/) | Representational variable |
-| [Structural](/views/structural/) | Gauge-invariant structure | Gauge-orbit membership | [Holonomy, composition scores](/views/structural/#evidence) | [Fiber bundle quotient](/formalism/fiber-bundle-quotient/) | Computation class |
-| [Process](/views/process/) | Formation trajectory | Same trajectory type | [Checkpoints, formation knockouts](/views/process/#evidence) | [Dynamical system](/formalism/dynamical-system/) | Mechanism origin |
-| [Stratified](/views/stratified/) | Stratum point | Stratum + local equivalence | [Dimensionality, localization](/views/stratified/#evidence) | [Whitney stratification](/formalism/stratification/) | Resolution-relative |
+| [Instrumental](/mechanistic-views/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/mechanistic-views/views/instrumental/#evidence) | [Model theory](/mechanistic-views/formalism/model-theory/) | Behavioral prediction |
+| [Perspectival](/mechanistic-views/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/mechanistic-views/views/perspectival/#evidence) | [Measurement algebra](/mechanistic-views/formalism/measurement-algebra/) | Method-relative |
+| [Object](/mechanistic-views/views/object/) | Concrete part | Component overlap | [Ablation, patching](/mechanistic-views/views/object/#evidence) | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Specific behavior |
+| [Role](/mechanistic-views/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/mechanistic-views/views/role/#evidence) | [Role graph](/mechanistic-views/formalism/role-graph/) | Functional class |
+| [Subspace](/mechanistic-views/views/subspace/) | Causal subspace | Same projector; $d_{\mathrm{Gr}} < \theta$ | [DAS/IIA (linear)](/mechanistic-views/views/subspace/#evidence), [subspace stability](/mechanistic-views/formalism/grassmannian/#subspace-stability) | [Grassmannian $\mathrm{Gr}(k,d)$](/mechanistic-views/formalism/grassmannian/) | Representational variable |
+| [Structural](/mechanistic-views/views/structural/) | Gauge-invariant structure | Gauge-orbit membership | [Holonomy, composition scores](/mechanistic-views/views/structural/#evidence) | [Fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/) | Computation class |
+| [Process](/mechanistic-views/views/process/) | Formation trajectory | Same trajectory type | [Checkpoints, formation knockouts](/mechanistic-views/views/process/#evidence) | [Dynamical system](/mechanistic-views/formalism/dynamical-system/) | Mechanism origin |
+| [Stratified](/mechanistic-views/views/stratified/) | Stratum point | Stratum + local equivalence | [Dimensionality, localization](/mechanistic-views/views/stratified/#evidence) | [Whitney stratification](/mechanistic-views/formalism/stratification/) | Resolution-relative |
 
 ## Relationship to Mechanistic Validity
 
@@ -56,6 +56,6 @@ Mechanistic Views defines what a mechanism is — what kind of object you're cla
 
 ## Reading path
 
-Start with **[Framework](/framework/)** for the formal definition and coherence conditions. Then read one or two view pages — **[Object](/views/object/)** and **[Subspace](/views/subspace/)** cover the two most common background assumptions in the current literature. **[Structural](/views/structural/)** introduces the gauge-invariance argument. The **[Cases](/cases/)** section shows the views applied to real examples: IOI, induction heads, grokking, hallucination, and self-knowledge. The **[Methods](/methods/)** page classifies 15 common interpretability methods by their implicit view commitments.
+Start with **[Framework](/mechanistic-views/framework/)** for the formal definition and coherence conditions. Then read one or two view pages — **[Object](/mechanistic-views/views/object/)** and **[Subspace](/mechanistic-views/views/subspace/)** cover the two most common background assumptions in the current literature. **[Structural](/mechanistic-views/views/structural/)** introduces the gauge-invariance argument. The **[Cases](/mechanistic-views/cases/)** section shows the views applied to real examples: IOI, induction heads, grokking, hallucination, and self-knowledge. The **[Methods](/mechanistic-views/methods/)** page classifies 15 common interpretability methods by their implicit view commitments.
 
-The **[Formalisms](/formalism/)** section covers the mathematical objects referenced by the views: Grassmannians, gauge quotients, sheaves, holonomy, stratification. The Grassmannian page is accessible with linear algebra alone; the others benefit from graduate-level background.
+The **[Formalisms](/mechanistic-views/formalism/)** section covers the mathematical objects referenced by the views: Grassmannians, gauge quotients, sheaves, holonomy, stratification. The Grassmannian page is accessible with linear algebra alone; the others benefit from graduate-level background.

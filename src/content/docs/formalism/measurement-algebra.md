@@ -4,7 +4,7 @@ title: Measurement Algebra
 
 # Measurement Algebra
 
-The formalism for the [perspectival view](/views/perspectival/).
+The formalism for the [perspectival view](/mechanistic-views/views/perspectival/).
 
 ## What it is
 

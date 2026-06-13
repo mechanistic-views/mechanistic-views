@@ -4,7 +4,7 @@ title: Gauge Quotients and Holonomy
 
 # Gauge Quotients and Holonomy
 
-This is the full mathematical treatment of the [fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/), which underpins the [structural view](/views/structural/). For the accessible overview, start with the [parent page](/formalism/fiber-bundle-quotient/).
+This is the full mathematical treatment of the [fiber bundle quotient formalism](/mechanistic-views/formalism/fiber-bundle-quotient/), which underpins the [structural view](/mechanistic-views/views/structural/). For the accessible overview, start with the [parent page](/mechanistic-views/formalism/fiber-bundle-quotient/).
 
 Transformer parameter space has symmetries. Two weight configurations related by certain transformations implement the same input-output function. These **gauge transformations** define equivalence classes. Any mechanism claim that depends on a coordinate inside an equivalence class is a potential parameterization artifact.
 
@@ -95,8 +95,8 @@ High holonomy curvature indicates geometric instability under fine-tuning. Stabi
 
 ## See also
 
-- [Fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/) — accessible overview without proofs
-- [Structural view](/views/structural/) — the view that uses gauge orbits as mechanism identity
+- [Fiber bundle quotient formalism](/mechanistic-views/formalism/fiber-bundle-quotient/) — accessible overview without proofs
+- [Structural view](/mechanistic-views/views/structural/) — the view that uses gauge orbits as mechanism identity
 - [Grassmannian deep dive](grassmannian/) — the subspace geometry that holonomy acts on
 - [Sheaf Cohomology deep dive](sheaves/) — a complementary topological invariant for circuit localizability
 - [Composition scores on learnmechinterp](https://learnmechinterp.com/topics/composition-and-virtual-heads/) — partially gauge-invariant weight-space measurements

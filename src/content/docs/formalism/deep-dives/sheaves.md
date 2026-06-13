@@ -4,7 +4,7 @@ title: Sheaf Cohomology
 
 # Sheaf Cohomology
 
-This is the full mathematical treatment of cosheaf cohomology for circuit localizability, relevant to the [structural view](/views/structural/) and [stratified view](/views/stratified/). Related to the [fiber bundle quotient formalism](/formalism/fiber-bundle-quotient/).
+This is the full mathematical treatment of cosheaf cohomology for circuit localizability, relevant to the [structural view](/mechanistic-views/views/structural/) and [stratified view](/mechanistic-views/views/stratified/). Related to the [fiber bundle quotient formalism](/mechanistic-views/formalism/fiber-bundle-quotient/).
 
 Sheaf cohomology answers a specific question: can local descriptions of a mechanism be consistently assembled into a global one?
 
@@ -104,8 +104,8 @@ Hansen, J. and Ghrist, R. (2021). "Toward a spectral theory of cellular sheaves.
 
 ## See also
 
-- [Structural view](/views/structural/) — uses cosheaf cohomology for coverage equivalence
-- [Stratified view](/views/stratified/) — the $\mathcal{M}_\infty$ stratum is characterized by non-zero $H^1$
+- [Structural view](/mechanistic-views/views/structural/) — uses cosheaf cohomology for coverage equivalence
+- [Stratified view](/mechanistic-views/views/stratified/) — the $\mathcal{M}_\infty$ stratum is characterized by non-zero $H^1$
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — complementary gauge-invariant characterization
 - [Stratification deep dive](stratification/) — spectral sequences for augmented circuit complexes
-- [Localized vs. Distributed decision](/decisions/localized-vs-distributed/) — practical implications of $H^1 \neq 0$
+- [Localized vs. Distributed decision](/mechanistic-views/decisions/localized-vs-distributed/) — practical implications of $H^1 \neq 0$

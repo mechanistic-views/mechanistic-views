@@ -6,7 +6,7 @@ title: Stratification
 
 > **Formal status key**: **[Definition]** standard mathematical definition. **[Theorem]** established result. **[Conjecture]** plausible but unproven. **[Open]** open question.
 
-This is the full mathematical treatment of the [Whitney stratification formalism](/formalism/stratification/), which underpins the [stratified view](/views/stratified/). For the accessible overview, start with the [parent page](/formalism/stratification/).
+This is the full mathematical treatment of the [Whitney stratification formalism](/mechanistic-views/formalism/stratification/), which underpins the [stratified view](/mechanistic-views/views/stratified/). For the accessible overview, start with the [parent page](/mechanistic-views/formalism/stratification/).
 
 A **stratified space** is a topological space decomposed into smooth pieces called strata, arranged so that the strata fit together in a controlled way.
 
@@ -69,9 +69,9 @@ Stratum assignment is a prior question. There is currently no canonical algorith
 
 ## See also
 
-- [Whitney stratification formalism](/formalism/stratification/) — accessible overview without proofs
-- [Stratified view](/views/stratified/) — the view that uses stratification as its organizing principle
+- [Whitney stratification formalism](/mechanistic-views/formalism/stratification/) — accessible overview without proofs
+- [Stratified view](/mechanistic-views/views/stratified/) — the view that uses stratification as its organizing principle
 - [Grassmannian deep dive](grassmannian/) — the geometry of individual strata $\mathcal{M}_k$
 - [Sheaf Cohomology deep dive](sheaves/) — $H^1 \neq 0$ as evidence for the $\mathcal{M}_\infty$ stratum
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge structure within each stratum
-- [Grokking case study](/cases/grokking/) — example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)
+- [Grokking case study](/mechanistic-views/cases/grokking/) — example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)

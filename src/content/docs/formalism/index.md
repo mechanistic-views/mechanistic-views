@@ -4,7 +4,13 @@ title: Formalisms
 
 # Formalisms
 
-Each of the eight mechanistic views uses a different mathematical language to express its claims. These pages introduce each formalism — what it is, how the view uses it, and where to learn more.
+Each of the eight mechanistic views uses a different mathematical language to express its claims. These pages introduce each formalism: what it is, how the view uses it, and where to learn more.
+
+## How formalisms relate
+
+Formalisms build on each other. Colors match the view each formalism serves; gray cards are method-level tools not tied to a single view. Dashed borders mark cross-cutting frameworks drawn on by multiple views.
+
+![Formalism network](/mechanistic-views/figures/formalism-network.svg)
 
 ## Pages
 
@@ -27,6 +33,14 @@ These are not tied to a single view but are used by specific interpretability me
 - [Linear Classifier](linear-classifier/) — used by linear probing
 - [Dictionary](dictionary/) — used by sparse autoencoders (SAEs)
 - [Linear Projection](linear-projection/) — used by logit lens and tuned lens
+
+## Cross-cutting formalisms
+
+These mathematical frameworks are drawn on by multiple views:
+
+- [Information Theory](information-theory/) — mutual information, capacity; used by the object, role, and subspace views
+- [Category Theory](category-theory/) — functors, natural transformations; used by the role and structural views
+- [Representation Theory](representation-theory/) — group representations, equivariance; used by the subspace and structural views
 
 ## Deep dives
 

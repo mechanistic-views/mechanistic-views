@@ -4,7 +4,11 @@ title: Subspace View
 
 # Subspace View
 
-The subspace view treats mechanisms as causal subspaces of the residual stream. A mechanism's variable is located in a low-dimensional subspace — a geometric object independent of any particular coordinate system.
+The object and role views both suffer from a coordinate problem: different methods recover different circuits, and rotating the basis moves "the mechanism" to different neurons without changing the computation. The subspace view resolves this by stepping up one level of abstraction — the mechanism is not a component or a role, but a low-dimensional subspace of the residual stream.
+
+Subspaces are coordinate-free. They don't depend on which basis you use, which means two methods that disagree about which heads matter can agree about which subspace the computation lives in. This is the key insight: method disagreement at the component level is *expected* when the underlying object is a subspace projected onto different component bases. DAS (distributed alignment search) is the primary tool — it finds the subspace where swapping activations between two inputs makes the model behave as if one causal variable changed.
+
+The subspace view is where most of the mathematical structure in this framework begins to bite. The natural space of subspaces is the Grassmannian, which has a canonical metric (principal angles), a notion of averaging (Frechet mean), and a baseline distribution (Marchenko-Pastur). This gives the view precise, falsifiable identity criteria that the object and role views lack. The cost: it assumes the mechanism is linearly encoded, which fails for nonlinear or context-switching representations.
 
 ## Thesis
 
@@ -44,11 +48,11 @@ Three independently non-injective sources:
 - **Weight-space structural**: [SVD of $W^{OV} = W^O W^V$](https://learnmechinterp.com/topics/qk-ov-circuits/), invariant subspace decomposition
 - **Dynamics-space**: [AGOP](https://arxiv.org/abs/2110.04005) convergence toward the eventual DAS subspace during training
 
-Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a **general position condition** — the requirement that no pair of distinct mechanisms looks identical across all three domains simultaneously. This has not been formally verified for natural transformer mechanisms. See the [Single-Method vs. Triangulated Evidence](/decisions/single-vs-triangulated/) page for discussion.
+Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a **general position condition** — the requirement that no pair of distinct mechanisms looks identical across all three domains simultaneously. This has not been formally verified for natural transformer mechanisms. See the [Single-Method vs. Triangulated Evidence](/mechanistic-views/decisions/single-vs-triangulated/) page for discussion.
 
 ## Formalism
 
-[Grassmannian geometry](/formalism/grassmannian/). The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. In principle, requiring alignment maps to respect transport structure addresses the Sutter et al. (2025) vacuity result, though the G-SCM has not yet been empirically validated on natural transformer circuits. See the [Grassmannian deep dive](/formalism/deep-dives/grassmannian/) for the full mathematical treatment.
+[Grassmannian geometry](/mechanistic-views/formalism/grassmannian/). The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. In principle, requiring alignment maps to respect transport structure addresses the Sutter et al. (2025) vacuity result, though the G-SCM has not yet been empirically validated on natural transformer circuits. See the [Grassmannian deep dive](/mechanistic-views/formalism/deep-dives/grassmannian/) for the full mathematical treatment.
 
 ## What it explains
 
@@ -89,11 +93,31 @@ Sparse autoencoders (SAEs) have become the dominant practical method for recover
 
 ## Relationship to Mechanistic Validity
 
-Gives concrete objects for construct validity (a point on a manifold) and measurement validity (Fréchet variance across seeds). IIA as a surgical-intervention test is a diagnostic for internal validity.
+The subspace view resolves the object and role views' coordinate-dependence problems — subspaces are invariant under rotation, so convergent validity and measurement invariance become possible. It still cannot establish gauge-orbit identity or rule out alternative subspace decompositions without exhaustive search.
+
+| Lens | Covered | Possible | Impossible | Score |
+|---|---|---|---|---|
+| [Construct](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/construct) | [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability), [C2 Structural plausibility](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/structural-plausibility), [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity) | [C3 Task specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/task-specificity), [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | — | 3/5 |
+| [Internal](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/internal) | [I1 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity), [I2 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency), [I3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/specificity) | [I4 Consistency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/consistency), [I5 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control) | — | 3/5 |
+| [External](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/external) | [E4 Effect magnitude](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/effect-magnitude), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | [E1 Reach](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/intervention-reach), [E2 Graded response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response), [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity), [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | — | 2/6 |
+| [Measurement](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/measurement) | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance), [M3 Baseline separation](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/baseline-separation), [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability) | [M4 Sensitivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/sensitivity), [M5 Calibration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/calibration), [M6 Coverage](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/construct-coverage) | — | 3/6 |
+| [Interpretive](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/interpretive) | [V1 Level declaration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-declaration), [V3 Narrative coherence](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/narrative-coherence) | [V2 Level-evidence match](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-evidence-match), [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion), [V5 Scope honesty](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/scope-honesty) | — | 2/5 |
+
+**Covered** = the view's standard methods directly produce this evidence. **Possible** = testable under this view, but not standard practice. **Impossible** = the view's ontology structurally cannot satisfy this criterion.
+
+**Why convergent validity (C5) is now covered.** Principal angles on the Grassmannian measure agreement between subspaces recovered by different methods (DAS vs. weight SVD vs. SAE directions). This is the subspace view's key advantage: method disagreement at the component level can coexist with agreement at the subspace level.
+
+**Why measurement invariance (M2) is now covered.** Subspaces are points on $\mathrm{Gr}(k,d)$, invariant under orthogonal rotation. Changing the basis does not change the subspace. Fréchet variance across seeds quantifies stability directly on the manifold.
+
+**Why specificity (I3) is now covered.** DAS/IIA directly tests whether the intervention is surgical — high IIA means the swap changed only the target variable. Low IIA diagnoses either non-surgical intervention or wrong causal graph.
+
+**Why cross-architecture (E6) is only possible, not covered.** Cross-architecture geodesic distance on $\mathrm{Gr}(k,d)$ is well-defined in principle but requires matching embedding dimensions across architectures, which is non-trivial. The [structural view](/mechanistic-views/views/structural/) handles this more naturally via gauge-orbit isomorphism.
+
+**No impossible criteria.** The subspace view has no structurally impossible criteria — every lens is at least partially addressable. Its limitations are practical (methods not yet developed or validated) rather than ontological.
 
 ## Further reading
 
 - Geiger et al., "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations" (2024) — DAS, the primary subspace-view method
 - Elhage et al., "Toy Models of Superposition" (2022) — why features may be represented in superposition, motivating the subspace rather than neuron view
 - Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Directions in Language Models" (2023) — SAE features as candidate $\mathrm{Gr}(1, d)$ mechanisms
-- For related views: [Object view](/views/object/) (identifies mechanisms with components, not subspaces), [Role view](/views/role/) (uses subspaces as search space but role equivalence as identity), [Structural view](/views/structural/) (invariant properties of subspaces under gauge transformations)
+- For related views: [Object view](/mechanistic-views/views/object/) (identifies mechanisms with components, not subspaces), [Role view](/mechanistic-views/views/role/) (uses subspaces as search space but role equivalence as identity), [Structural view](/mechanistic-views/views/structural/) (invariant properties of subspaces under gauge transformations)

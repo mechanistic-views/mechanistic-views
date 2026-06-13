@@ -4,7 +4,7 @@ title: Model Theory
 
 # Model Theory
 
-The formalism for the [instrumental view](/views/instrumental/).
+The formalism for the [instrumental view](/mechanistic-views/views/instrumental/).
 
 ## What it is
 

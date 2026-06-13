@@ -33,7 +33,7 @@ details.worked-example > summary::marker {
 }
 
 :root {
-  --sl-content-width: 55rem;
+  --sl-content-width: 50rem;
   --sl-font: 'Inter', system-ui, sans-serif;
   --sl-font-system-mono: 'JetBrains Mono', ui-monospace, monospace;
   --sl-color-accent-low: #2e1065;

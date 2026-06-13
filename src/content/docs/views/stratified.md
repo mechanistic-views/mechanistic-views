@@ -4,7 +4,11 @@ title: Stratified View
 
 # Stratified View
 
-The stratified view treats mechanism space as a stratified space. A mechanism's nature — what it is, how it is individuated, what evidence identifies it — depends on which stratum of mechanism space it occupies.
+Some mechanisms are single directions in activation space (SAE features). Some are multi-dimensional subspaces (DAS-recovered variables). Some are fully distributed across the entire residual stream and have no low-dimensional description at all. These are not the same kind of object, and they should not be evaluated by the same criteria.
+
+The stratified view is the meta-view: it says there is no single correct answer to "what is a mechanism?" because different mechanisms live in different strata of a stratified space. A mechanism in $\mathcal{M}_1$ (a single direction) has different identity criteria, different evidence standards, and different mathematical descriptions than a mechanism in $\mathcal{M}_k$ (a $k$-dimensional subspace) or $\mathcal{M}_\infty$ (fully distributed). The other views are special cases — the object view operates in $\mathcal{M}_1$, the subspace view in $\mathcal{M}_k$, the structural view across strata via gauge invariance.
+
+This is the highest-commitment view. It requires evidence not just that a mechanism exists, but that you have correctly identified which stratum it occupies — and different strata require different kinds of evidence. The payoff is that it explains why different methods give different answers (they are probing different strata) and why "dark matter" in circuits exists (it lives in $\mathcal{M}_\infty$, which component-level methods cannot see). The cost is that cosheaf cohomology and stratum assignment are not yet practical at scale.
 
 ## Thesis
 
@@ -17,8 +21,8 @@ $$\mathcal{M} = \mathcal{M}_1 \sqcup \mathcal{M}_2 \sqcup \cdots \sqcup \mathcal
 - **$\mathcal{M}_1$**: single feature direction; a point in $\mathrm{Gr}(1, d) \cong \mathbb{RP}^{d-1}$. [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) and directional probes.
 - **$\mathcal{M}_k$ for $k \geq 2$**: $k$-dimensional causal subspace; point in $\mathrm{Gr}(k,d)/\mathcal{G}$. Identified by [DAS](https://learnmechinterp.com/topics/causal-abstraction/).
 - **Flag strata**: nested sequences $S_1 \subset \cdots \subset S_m$; relevant for attention patterns with hierarchical structure.
-- **Nonlinear manifold strata**: mechanisms with nonlinear encoding structure within a flat [Grassmannian](/formalism/grassmannian/) stratum, e.g., the circular Fourier structure in [grokking](/cases/grokking/) (which lives in $\mathcal{M}_2$ but encodes the causal variable on $S^1 \subset \mathcal{M}_2$ rather than linearly); require Riemannian geometry on the embedded submanifold, not just Grassmannian geometry.
-- **$\mathcal{M}_\infty$**: genuinely distributed mechanisms; no finite-dimensional representative. Working hypothesis (see [Stratification](/formalism/stratification/)).
+- **Nonlinear manifold strata**: mechanisms with nonlinear encoding structure within a flat [Grassmannian](/mechanistic-views/formalism/grassmannian/) stratum, e.g., the circular Fourier structure in [grokking](/mechanistic-views/cases/grokking/) (which lives in $\mathcal{M}_2$ but encodes the causal variable on $S^1 \subset \mathcal{M}_2$ rather than linearly); require Riemannian geometry on the embedded submanifold, not just Grassmannian geometry.
+- **$\mathcal{M}_\infty$**: genuinely distributed mechanisms; no finite-dimensional representative. Working hypothesis (see [Stratification](/mechanistic-views/formalism/stratification/)).
 
 ## What exists
 
@@ -46,7 +50,7 @@ Multi-domain triangulation applies at every stratum.
 
 ## Formalism
 
-[Grassmannian](/formalism/grassmannian/) and flag manifolds, gauge quotients, holonomy, cellular cosheaf cohomology, spectral sequences, [Whitney stratifications](/formalism/stratification/). See the [Formalisms](/formalism/) section and the [Stratification deep dive](/formalism/deep-dives/stratification/).
+[Grassmannian](/mechanistic-views/formalism/grassmannian/) and flag manifolds, gauge quotients, holonomy, cellular cosheaf cohomology, spectral sequences, [Whitney stratifications](/mechanistic-views/formalism/stratification/). See the [Formalisms](/mechanistic-views/formalism/) section and the [Stratification deep dive](/mechanistic-views/formalism/deep-dives/stratification/).
 
 ## What it explains
 
@@ -76,10 +80,22 @@ The analogy is structural, not literal. There is no Hamiltonian, no partition fu
 
 ## Relationship to Mechanistic Validity
 
-Allows Mechanistic Validity evidence standards to vary by mechanism type. The stratum assignment is an input to the Mechanistic Validity audit.
+The stratified view has the broadest validity coverage of any view — it subsumes the structural view's criteria and adds resolution-dependent evidence standards. Its unique contribution is that validity criteria themselves vary by stratum: a $\mathcal{M}_1$ mechanism requires different evidence than a $\mathcal{M}_k$ or $\mathcal{M}_\infty$ mechanism. Its limitations are practical: cosheaf cohomology is not yet computable at scale, and stratum assignment has no canonical algorithm.
+
+| Lens | Covered | Possible | Impossible | Score |
+|---|---|---|---|---|
+| [Construct](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/construct) | [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability), [C2 Structural plausibility](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/structural-plausibility), [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality), [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity) | [C3 Task specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/task-specificity) | — | 4/5 |
+| [Internal](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/internal) | [I1 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity), [I2 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency), [I3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/specificity) | [I4 Consistency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/consistency), [I5 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control) | — | 3/5 |
+| [External](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/external) | [E4 Effect magnitude](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/effect-magnitude), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness), [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | [E1 Reach](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/intervention-reach), [E2 Graded response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response), [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | — | 3/6 |
+| [Measurement](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/measurement) | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability), [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance), [M3 Baseline separation](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/baseline-separation) | [M4 Sensitivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/sensitivity), [M5 Calibration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/calibration), [M6 Coverage](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/construct-coverage) | — | 3/6 |
+| [Interpretive](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/interpretive) | [V1 Level declaration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-declaration), [V3 Narrative coherence](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/narrative-coherence), [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | [V2 Level-evidence match](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-evidence-match), [V5 Scope honesty](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/scope-honesty) | — | 3/5 |
+
+**Covered** = the view's standard methods directly produce this evidence. **Possible** = testable under this view, but not standard practice. **Impossible** = the view's ontology structurally cannot satisfy this criterion.
+
+**No impossible criteria.** The stratified view inherits the structural view's full coverage and adds resolution-dependence. Every criterion is at least possible in principle. Its practical limitations are computational: cosheaf cohomology is expensive, stratum assignment is not automated, and the $\mathcal{M}_\infty$ stratum lacks the smooth structure needed for full stratification theory.
 
 ## Further reading
 
-- The [Subspace view](/views/subspace/) and [Structural view](/views/structural/) each apply within individual strata; the stratified view is the meta-framework that organizes them
-- See the [Grokking case study](/cases/grokking/) for an example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)
-- The [Stratification deep dive](/formalism/deep-dives/stratification/) covers Whitney conditions, frontier condition, and Thom-Mather control data
+- The [Subspace view](/mechanistic-views/views/subspace/) and [Structural view](/mechanistic-views/views/structural/) each apply within individual strata; the stratified view is the meta-framework that organizes them
+- See the [Grokking case study](/mechanistic-views/cases/grokking/) for an example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)
+- The [Stratification deep dive](/mechanistic-views/formalism/deep-dives/stratification/) covers Whitney conditions, frontier condition, and Thom-Mather control data

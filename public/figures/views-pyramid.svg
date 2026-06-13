@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 540" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
   <defs>
     <style>
       .layer-name { font-size: 15px; font-weight: 700; fill: #1e293b; }
-      .layer-desc { font-size: 11.5px; font-style: italic; }
-      .arrow-label { font-size: 11px; fill: #64748b; font-weight: 500; }
+      .layer-desc { font-size: 14px; font-weight: 600; font-style: italic; fill: #475569; }
+      .arrow-label { font-size: 13px; fill: #64748b; font-weight: 600; }
     </style>
     <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
       <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
@@ -11,51 +11,53 @@
   </defs>
 
   <!-- Arrow following left-edge slope of pyramid -->
-  <line x1="70" y1="448" x2="250" y2="76" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-  <text x="133" y="249" text-anchor="middle" class="arrow-label" transform="rotate(-64, 133, 249)">Increasing ontological commitment</text>
+  <line x1="68" y1="448" x2="218" y2="56" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="116" y="239" text-anchor="middle" class="arrow-label" transform="rotate(-69, 116, 239)">Increasing ontological commitment</text>
 
-  <!-- Layer 7 (top, narrowest): Stratified -->
-  <rect x="265" y="50" width="290" height="52" rx="10" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="295" y="81" font-size="15" font-weight="700" fill="#6d28d9">7.</text>
-  <text x="321" y="81" class="layer-name">Stratified</text>
-  <text x="440" y="81" class="layer-desc" fill="#6d28d9">strata with varying identity</text>
+  <!-- Centered pyramid: center=420, step=25px per side per layer -->
 
-  <!-- Layer 6: Structural -->
-  <rect x="235" y="112" width="350" height="52" rx="10" fill="#6366f1" fill-opacity="0.08" stroke="#6366f1" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="265" y="143" font-size="15" font-weight="700" fill="#4f46e5">6.</text>
-  <text x="291" y="143" class="layer-name">Structural</text>
-  <text x="440" y="143" class="layer-desc" fill="#4f46e5">gauge orbits, holonomy</text>
+  <!-- Layer 7 (top, narrowest): Stratified — center 420, half 180, x=240 w=360 -->
+  <rect x="240" y="50" width="360" height="52" rx="10" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="270" y="81" font-size="15" font-weight="700" fill="#1e293b">7.</text>
+  <text x="296" y="81" class="layer-name">Stratified</text>
+  <text x="590" y="81" text-anchor="end" class="layer-desc">strata with varying identity</text>
 
-  <!-- Layer 5: Process -->
-  <rect x="205" y="174" width="410" height="52" rx="10" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="235" y="205" font-size="15" font-weight="700" fill="#2563eb">5.</text>
-  <text x="261" y="205" class="layer-name">Process</text>
-  <text x="440" y="205" class="layer-desc" fill="#2563eb">formation trajectories</text>
+  <!-- Layer 6: Structural — center 420, half 205, x=215 w=410 -->
+  <rect x="215" y="112" width="410" height="52" rx="10" fill="#6366f1" fill-opacity="0.08" stroke="#6366f1" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="245" y="143" font-size="15" font-weight="700" fill="#1e293b">6.</text>
+  <text x="271" y="143" class="layer-name">Structural</text>
+  <text x="615" y="143" text-anchor="end" class="layer-desc">invariant weight structure</text>
 
-  <!-- Layer 4: Subspace -->
-  <rect x="175" y="236" width="470" height="52" rx="10" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="205" y="267" font-size="15" font-weight="700" fill="#0d9488">4.</text>
-  <text x="231" y="267" class="layer-name">Subspace</text>
-  <text x="440" y="267" class="layer-desc" fill="#0d9488">causal subspaces on Gr(k, d)</text>
+  <!-- Layer 5: Process — center 420, half 230, x=190 w=460 -->
+  <rect x="190" y="174" width="460" height="52" rx="10" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="220" y="205" font-size="15" font-weight="700" fill="#1e293b">5.</text>
+  <text x="246" y="205" class="layer-name">Process</text>
+  <text x="640" y="205" text-anchor="end" class="layer-desc">formation trajectories</text>
 
-  <!-- Layer 3: Object / Role -->
-  <rect x="145" y="298" width="530" height="52" rx="10" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="175" y="329" font-size="15" font-weight="700" fill="#059669">3.</text>
-  <text x="201" y="329" class="layer-name">Object / Role</text>
-  <text x="440" y="329" class="layer-desc" fill="#059669">components and functions</text>
+  <!-- Layer 4: Subspace — center 420, half 255, x=165 w=510 -->
+  <rect x="165" y="236" width="510" height="52" rx="10" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="195" y="267" font-size="15" font-weight="700" fill="#1e293b">4.</text>
+  <text x="221" y="267" class="layer-name">Subspace</text>
+  <text x="665" y="267" text-anchor="end" class="layer-desc">causal subspaces on Gr(k, d)</text>
 
-  <!-- Layer 2: Perspectival -->
-  <rect x="115" y="360" width="590" height="52" rx="10" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="145" y="391" font-size="15" font-weight="700" fill="#d97706">2.</text>
+  <!-- Layer 3: Object / Role — center 420, half 280, x=140 w=560 -->
+  <rect x="140" y="298" width="560" height="52" rx="10" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="170" y="329" font-size="15" font-weight="700" fill="#1e293b">3.</text>
+  <text x="196" y="329" class="layer-name">Object / Role</text>
+  <text x="690" y="329" text-anchor="end" class="layer-desc">components and functions</text>
+
+  <!-- Layer 2: Perspectival — center 420, half 305, x=115 w=610 -->
+  <rect x="115" y="360" width="610" height="52" rx="10" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="145" y="391" font-size="15" font-weight="700" fill="#1e293b">2.</text>
   <text x="171" y="391" class="layer-name">Perspectival</text>
-  <text x="440" y="391" class="layer-desc" fill="#d97706">methods as partial projections</text>
+  <text x="715" y="391" text-anchor="end" class="layer-desc">methods as partial projections</text>
 
-  <!-- Layer 1 (bottom, widest): Instrumental -->
-  <rect x="85" y="422" width="650" height="52" rx="10" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="115" y="453" font-size="15" font-weight="700" fill="#e11d48">1.</text>
-  <text x="141" y="453" class="layer-name">Instrumental</text>
-  <text x="440" y="453" class="layer-desc" fill="#e11d48">predictive utility only</text>
+  <!-- Layer 1 (bottom, widest): Instrumental — center 420, half 330, x=90 w=660 -->
+  <rect x="90" y="422" width="660" height="52" rx="10" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="120" y="453" font-size="15" font-weight="700" fill="#1e293b">1.</text>
+  <text x="146" y="453" class="layer-name">Instrumental</text>
+  <text x="740" y="453" text-anchor="end" class="layer-desc">predictive utility only</text>
 
   <!-- Bottom tagline -->
-  <text x="410" y="510" text-anchor="middle" font-size="12.5" fill="#94a3b8" font-style="italic">Each layer subsumes the ones below. Stronger claims require higher ontological commitment.</text>
+  <text x="420" y="510" text-anchor="middle" font-size="12.5" fill="#94a3b8" font-style="italic">Each layer subsumes the ones below. Stronger claims require higher ontological commitment.</text>
 </svg>

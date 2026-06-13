@@ -4,7 +4,7 @@ title: Dynamical System
 
 # Dynamical System
 
-The formalism for the [process view](/views/process/).
+The formalism for the [process view](/mechanistic-views/views/process/).
 
 ## What it is
 
@@ -24,4 +24,4 @@ Evidence for the process view comes from training checkpoints, formation knockou
 
 ## Relationship to other formalisms
 
-The dynamical system formalism describes the *trajectory* through weight space; the [Grassmannian](/formalism/grassmannian/) and [fiber bundle quotient](/formalism/fiber-bundle-quotient/) describe the *endpoint* of that trajectory (the trained model's subspaces and invariant structures). [AGOP](https://arxiv.org/abs/2110.04005) connects the two: it tracks the convergence of a subspace estimate across training, producing a trajectory on $\mathrm{Gr}(k, d)$. See the [Grokking](/cases/grokking/) and [Induction](/cases/induction/) case studies for concrete examples of formation trajectories.
+The dynamical system formalism describes the *trajectory* through weight space; the [Grassmannian](/mechanistic-views/formalism/grassmannian/) and [fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/) describe the *endpoint* of that trajectory (the trained model's subspaces and invariant structures). [AGOP](https://arxiv.org/abs/2110.04005) connects the two: it tracks the convergence of a subspace estimate across training, producing a trajectory on $\mathrm{Gr}(k, d)$. See the [Grokking](/mechanistic-views/cases/grokking/) and [Induction](/mechanistic-views/cases/induction/) case studies for concrete examples of formation trajectories.

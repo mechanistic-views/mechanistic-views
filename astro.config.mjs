@@ -25,6 +25,7 @@ export default defineConfig({
     starlight({
       plugins: [starlightImageZoom()],
       title: 'Mechanistic Views',
+      lastUpdated: false,
       description: 'A five-axis ontology for mechanistic interpretability: what mechanisms are, how we know them, when two are the same, and what follows from each stance',
       customCss: ['./src/styles/custom.css'],
       expressiveCode: {
@@ -48,6 +49,7 @@ export default defineConfig({
             { label: 'Methods', link: '/methods/' },
             { label: 'Mechanistic Validity Interface', link: '/mechval-interface/' },
             { label: 'Glossary', link: '/glossary/' },
+            { label: 'About & Citation', link: '/about_cite/' },
           ],
         },
         {
@@ -63,6 +65,7 @@ export default defineConfig({
             { label: 'Stratified', link: '/views/stratified/' },
             { label: 'Perspectival', link: '/views/perspectival/' },
             { label: 'Instrumental', link: '/views/instrumental/' },
+            { label: 'View Mappings', link: '/views/mappings/' },
           ],
         },
         {
@@ -82,6 +85,9 @@ export default defineConfig({
             { label: 'Linear Classifier', link: '/formalism/linear-classifier/' },
             { label: 'Dictionary', link: '/formalism/dictionary/' },
             { label: 'Linear Projection', link: '/formalism/linear-projection/' },
+            { label: 'Information Theory', link: '/formalism/information-theory/' },
+            { label: 'Category Theory', link: '/formalism/category-theory/' },
+            { label: 'Representation Theory', link: '/formalism/representation-theory/' },
             {
               label: 'Deep Dives',
               collapsed: true,
@@ -117,6 +123,38 @@ export default defineConfig({
             { label: 'Grokking', link: '/cases/grokking/' },
             { label: 'Hallucination', link: '/cases/hallucination/' },
             { label: 'Self-Knowledge', link: '/cases/self-knowledge/' },
+          ],
+        },
+        {
+          label: 'Open Problem Map',
+          collapsed: false,
+          items: [
+            { label: 'Overview', link: '/open-problems/' },
+            { label: 'Decomposition Identity', link: '/open-problems/decomposition-identity/' },
+            { label: 'Circuit Disagreements', link: '/open-problems/circuit-disagreements/' },
+            { label: 'Intervention Limits', link: '/open-problems/intervention-limits/' },
+            { label: 'Linear Assumption', link: '/open-problems/linear-assumption/' },
+            { label: 'Safety Evidence Gaps', link: '/open-problems/safety-evidence-gaps/' },
+            { label: 'Cross-Model Identity', link: '/open-problems/cross-model-identity/' },
+            { label: 'Validation Methodology', link: '/open-problems/validation-methodology/' },
+            { label: 'Training Dynamics', link: '/open-problems/training-dynamics/' },
+            { label: 'Resolution & Completeness', link: '/open-problems/resolution-completeness/' },
+            { label: 'Superposition', link: '/open-problems/superposition/' },
+            { label: 'Unit of Analysis', link: '/open-problems/unit-of-analysis/' },
+            { label: 'SAE "True" Features', link: '/open-problems/sae-true-features/' },
+            { label: 'CoT Faithfulness', link: '/open-problems/cot-faithfulness/' },
+            { label: 'Probe Features', link: '/open-problems/probe-features/' },
+            { label: 'Deceptive Alignment', link: '/open-problems/deceptive-alignment/' },
+            { label: 'World Models', link: '/open-problems/world-models/' },
+            {
+              label: 'Source Mappings',
+              collapsed: true,
+              items: [
+                { label: 'Schmidt Trustworthy AI Agenda', link: '/open-problems/schmidt-agenda/' },
+                { label: 'Steinhardt: Evaluating Behaviors', link: '/open-problems/steinhardt-behaviors/' },
+                { label: 'Barez et al.: MI Needs Philosophy', link: '/open-problems/barez-philosophy/' },
+              ],
+            },
           ],
         },
       ],

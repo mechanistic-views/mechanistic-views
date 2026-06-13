@@ -47,4 +47,4 @@ Two domains: required for cross-seed or cross-model identity claims.
 
 All three domains: required for safety-relevant or intervention-design claims.
 
-See the [methods page](/methods/) for how each method maps to evidence domains, and the [Mechanistic Validity Interface](/mechval-interface/) for per-view triangulation requirements.
+See the [methods page](/mechanistic-views/methods/) for how each method maps to evidence domains, and the [Mechanistic Validity Interface](/mechanistic-views/mechval-interface/) for per-view triangulation requirements.

@@ -14,17 +14,17 @@ title: Case Study — Self-Knowledge
 
 These are distinguishable empirically. The type distinction is a scientific question, not a philosophical one.
 
-## [Object view](/views/object/)
+## [Object view](/mechanistic-views/views/object/)
 
 If Type 2 self-knowledge exists, there is a component set mediating internal states to self-referential outputs. Test: ablating the proposed component should impair uncertainty tracking while preserving normal task performance.
 
 **The counterfactual difficulty.** Constructing "same task, different internal uncertainty" as a minimal pair is hard without also changing distributional context.
 
-## [Subspace view](/views/subspace/)
+## [Subspace view](/mechanistic-views/views/subspace/)
 
-Hypothesis: a subspace $S_\text{self}$ in the [Grassmannian](/formalism/grassmannian/) $\mathrm{Gr}(k, d)$ whose projection tracks a property of internal state (uncertainty, representation quality) and causally influences self-referential outputs.
+Hypothesis: a subspace $S_\text{self}$ in the [Grassmannian](/mechanistic-views/formalism/grassmannian/) $\mathrm{Gr}(k, d)$ whose projection tracks a property of internal state (uncertainty, representation quality) and causally influences self-referential outputs.
 
-[DAS](/views/subspace/#evidence) can in principle recover this via minimal pairs: forward passes where internal uncertainty is high versus low. Activation steering on the hypothesized subspace is a cleaner approach (it bypasses prompt statistics).
+[DAS](/mechanistic-views/views/subspace/#evidence) can in principle recover this via minimal pairs: forward passes where internal uncertainty is high versus low. Activation steering on the hypothesized subspace is a cleaner approach (it bypasses prompt statistics).
 
 ## The distributional confound
 
@@ -36,11 +36,11 @@ If $S_\text{self}$ causally suppresses confident-but-wrong outputs when its proj
 
 ## Current evidence state
 
-- **Tier 1** across all views: no published work applies [DAS](/views/subspace/#evidence) or systematic patching to self-knowledge with appropriate controls for the distributional confound
+- **Tier 1** across all views: no published work applies [DAS](/mechanistic-views/views/subspace/#evidence) or systematic patching to self-knowledge with appropriate controls for the distributional confound
 
 ## What would move to Tier 2
 
-- [DAS](/views/subspace/#evidence) on minimal pairs spanning known variation in model confidence, with IIA reported
+- [DAS](/mechanistic-views/views/subspace/#evidence) on minimal pairs spanning known variation in model confidence, with IIA reported
 - Activation steering showing the proposed subspace causally affects self-referential outputs independently of prompt statistics
 - Weight-space analysis of the internal-state-to-output pathway
 

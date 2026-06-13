@@ -6,7 +6,7 @@ title: Grassmannian Geometry
 
 > **Formal status key**: **[Definition]** standard mathematical definition. **[Theorem]** established result. **[Conjecture]** plausible but unproven. **[Open]** open question. Applies to all Formalisms pages.
 
-This is the full mathematical treatment of the [Grassmannian formalism](/formalism/grassmannian/), which underpins the [subspace view](/views/subspace/). For the accessible overview, start with the [parent page](/formalism/grassmannian/).
+This is the full mathematical treatment of the [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/), which underpins the [subspace view](/mechanistic-views/views/subspace/). For the accessible overview, start with the [parent page](/mechanistic-views/formalism/grassmannian/).
 
 ## Concrete intuition before the definitions
 
@@ -90,8 +90,8 @@ Mechanistic Validity's measurement validity criterion can be operationalized as 
 
 ## See also
 
-- [Grassmannian formalism](/formalism/grassmannian/) — accessible overview without proofs
-- [Subspace view](/views/subspace/) — the view that uses the Grassmannian as its primary formalism
+- [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/) — accessible overview without proofs
+- [Subspace view](/mechanistic-views/views/subspace/) — the view that uses the Grassmannian as its primary formalism
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge-invariant structure on top of Grassmannian geometry
 - [Stratification deep dive](stratification/) — how Grassmannians at different $k$ assemble into a stratified space
 - [DAS/IIA on learnmechinterp](https://learnmechinterp.com/topics/causal-abstraction/) — the primary method for recovering Grassmannian points

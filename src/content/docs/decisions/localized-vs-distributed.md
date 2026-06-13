@@ -38,4 +38,4 @@ These are not equivalent. Conflating them leads to wrong conclusions: (A) calls 
 
 ## Recommended default
 
-Default to localization for well-studied tasks. Treat distribution as the working hypothesis when $r$ is persistently high despite multiple recovery attempts. Do not treat $H^1 \neq 0$ for one cosheaf proposal as proof of irreducible distribution. See the [stratified view](/views/stratified/) for how different strata ($\mathcal{M}_k$ vs $\mathcal{M}_\infty$) correspond to localized vs distributed mechanisms.
+Default to localization for well-studied tasks. Treat distribution as the working hypothesis when $r$ is persistently high despite multiple recovery attempts. Do not treat $H^1 \neq 0$ for one cosheaf proposal as proof of irreducible distribution. See the [stratified view](/mechanistic-views/views/stratified/) for how different strata ($\mathcal{M}_k$ vs $\mathcal{M}_\infty$) correspond to localized vs distributed mechanisms.

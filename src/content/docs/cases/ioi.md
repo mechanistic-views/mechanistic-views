@@ -6,23 +6,23 @@ title: Case Study — IOI
 
 **The phenomenon.** Given "When Mary and John went to the store, John gave a drink to", a transformer predicts "Mary". [Wang et al. (2023)](https://learnmechinterp.com/topics/ioi-circuit/) identified the relevant circuit in GPT-2 Small.
 
-## [Object view](/views/object/)
+## [Object view](/mechanistic-views/views/object/)
 
 The mechanism is the component set: name-movers, backup name-movers, negative name-movers, S-inhibition heads, duplicate token heads, and induction heads. Activation patching and path patching show these heads are necessary and approximately sufficient for the logit difference between indirect object and subject names.
 
 **Limitation.** The circuit accounts for roughly 70–80% of the full model's logit difference on standard prompts, leaving a persistent gap. Whether this gap reflects incomplete recovery or genuine distribution is an open question.
 
-## [Role view](/views/role/)
+## [Role view](/mechanistic-views/views/role/)
 
 The mechanism is the role structure: S-inhibition role, duplicate-token role, name-mover role. The backup name movers finding suggests roles are more stable than components — when name movers are knocked out, other heads compensate by taking on the same role (Wang et al., §3.4). However, systematic cross-seed or cross-model role transfer has not been published.
 
-## [Subspace view](/views/subspace/)
+## [Subspace view](/mechanistic-views/views/subspace/)
 
-The IOI mechanism is a set of causal subspaces, one per relevant variable. Each is a point on the [Grassmannian](/formalism/grassmannian/) $\mathrm{Gr}(k, d)$.
+The IOI mechanism is a set of causal subspaces, one per relevant variable. Each is a point on the [Grassmannian](/mechanistic-views/formalism/grassmannian/) $\mathrm{Gr}(k, d)$.
 
-**Outstanding.** Systematic [Grassmannian](/formalism/grassmannian/) distance measurement between weight-space SVD subspaces and [DAS-recovered subspaces](/views/subspace/#evidence) across seeds has not been published.
+**Outstanding.** Systematic [Grassmannian](/mechanistic-views/formalism/grassmannian/) distance measurement between weight-space SVD subspaces and [DAS-recovered subspaces](/mechanistic-views/views/subspace/#evidence) across seeds has not been published.
 
-## [Structural view](/views/structural/)
+## [Structural view](/mechanistic-views/views/structural/)
 
 Competing IOI circuit proposals may be coverage-equivalent — same cosheaf cohomology — in which case the apparent disagreement is a measurement artifact.
 
@@ -30,15 +30,15 @@ Competing IOI circuit proposals may be coverage-equivalent — same cosheaf coho
 
 ## Current evidence state
 
-- **Tier 3** under the [object view](/views/object/) for standard prompts
-- **Tier 2** under the [subspace](/views/subspace/) and [role](/views/role/) views
-- **Tier 1** under the [structural view](/views/structural/)
+- **Tier 3** under the [object view](/mechanistic-views/views/object/) for standard prompts
+- **Tier 2** under the [subspace](/mechanistic-views/views/subspace/) and [role](/mechanistic-views/views/role/) views
+- **Tier 1** under the [structural view](/mechanistic-views/views/structural/)
 
 ## What would move to higher tiers
 
 **Subspace view, Tier 3 → 4** (three-domain triangulation + cross-architecture generalization):
-- Systematic [DAS](/views/subspace/#evidence) recovery with IIA reported across seeds and architectures
-- Cross-seed [Grassmannian](/formalism/grassmannian/) distance measurement between weight-space SVD and DAS subspaces
+- Systematic [DAS](/mechanistic-views/views/subspace/#evidence) recovery with IIA reported across seeds and architectures
+- Cross-seed [Grassmannian](/mechanistic-views/formalism/grassmannian/) distance measurement between weight-space SVD and DAS subspaces
 - AGOP trajectory analysis of IOI mechanism formation
 
 **Role view, Tier 2 → 3** (two-domain + cross-model consistency):

@@ -4,11 +4,11 @@ title: Role Graph
 
 # Role Graph
 
-The formalism for the [role view](/views/role/).
+The formalism for the [role view](/mechanistic-views/views/role/).
 
 ## What it is
 
-A role graph is a directed graph whose nodes are functional roles rather than specific components. Where a circuit graph (the [object view's formalism](/formalism/directed-graph/)) labels nodes with concrete component identities (head 9.9, MLP 10), a role graph labels nodes with the function each component performs — "duplicate token detector", "S-inhibition head", "name mover."
+A role graph is a directed graph whose nodes are functional roles rather than specific components. Where a circuit graph (the [object view's formalism](/mechanistic-views/formalism/directed-graph/)) labels nodes with concrete component identities (head 9.9, MLP 10), a role graph labels nodes with the function each component performs — "duplicate token detector", "S-inhibition head", "name mover."
 
 The edges in a role graph represent functional dependencies: the output of one role feeds into another. The structure is the same as a directed graph, but the semantics are different — the nodes are abstract roles that any component could fill, not fixed component identities.
 
@@ -24,4 +24,4 @@ This is what makes the role view useful for cross-model comparison: the role gra
 
 ## Relationship to other formalisms
 
-The role graph and the [directed graph](/formalism/directed-graph/) are structurally identical (both are DAGs). The difference is semantic: directed graph nodes are component identities (head 9.9), role graph nodes are functional labels (name-mover). The [causal graph](/formalism/causal-graph/) is more abstract still — its nodes are high-level causal variables (subject gender), not model components or functional roles. See the [IOI case study](/cases/ioi/) for a concrete example where the same circuit is described at all three levels.
+The role graph and the [directed graph](/mechanistic-views/formalism/directed-graph/) are structurally identical (both are DAGs). The difference is semantic: directed graph nodes are component identities (head 9.9), role graph nodes are functional labels (name-mover). The [causal graph](/mechanistic-views/formalism/causal-graph/) is more abstract still — its nodes are high-level causal variables (subject gender), not model components or functional roles. See the [IOI case study](/mechanistic-views/cases/ioi/) for a concrete example where the same circuit is described at all three levels.

@@ -1,5 +1,5 @@
 {
-  "/views/process/": [
+  "/mechanistic-views/views/process/": [
     {
       "slug": "/cases/grokking/",
       "title": "Case Study — Grokking"
@@ -33,11 +33,27 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/training-dynamics/",
+      "title": "Training Dynamics"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
     }
   ],
-  "/formalism/grassmannian/": [
+  "/mechanistic-views/formalism/grassmannian/": [
     {
       "slug": "/cases/grokking/",
       "title": "Case Study — Grokking"
@@ -79,8 +95,8 @@
       "title": "Fiber Bundle Quotient"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
     },
     {
       "slug": "/formalism/linear-classifier/",
@@ -89,6 +105,10 @@
     {
       "slug": "/formalism/linear-projection/",
       "title": "Linear Projection"
+    },
+    {
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
     },
     {
       "slug": "/glossary/",
@@ -103,6 +123,18 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
@@ -115,7 +147,7 @@
       "title": "Subspace View"
     }
   ],
-  "/views/subspace/": [
+  "/mechanistic-views/views/subspace/": [
     {
       "slug": "/cases/grokking/",
       "title": "Case Study — Grokking"
@@ -161,6 +193,14 @@
       "title": "Grassmannian"
     },
     {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
+    },
+    {
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
+    },
+    {
       "slug": "/glossary/",
       "title": "Glossary"
     },
@@ -173,8 +213,56 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/cross-model-identity/",
+      "title": "Cross-Model Identity"
+    },
+    {
+      "slug": "/open-problems/decomposition-identity/",
+      "title": "Decomposition Identity"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/intervention-limits/",
+      "title": "Intervention Limits"
+    },
+    {
+      "slug": "/open-problems/linear-assumption/",
+      "title": "Linear Assumption"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/safety-evidence-gaps/",
+      "title": "Safety Evidence Gaps"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
     },
     {
       "slug": "/views/object/",
@@ -201,7 +289,7 @@
       "title": "Structural View"
     }
   ],
-  "/formalism/stratification/": [
+  "/mechanistic-views/formalism/stratification/": [
     {
       "slug": "/cases/grokking/",
       "title": "Case Study — Grokking"
@@ -223,10 +311,6 @@
       "title": "Grassmannian"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    },
-    {
       "slug": "/glossary/",
       "title": "Glossary"
     },
@@ -243,7 +327,7 @@
       "title": "Stratified View"
     }
   ],
-  "/views/structural/": [
+  "/mechanistic-views/views/structural/": [
     {
       "slug": "/cases/grokking/",
       "title": "Case Study — Grokking"
@@ -265,6 +349,10 @@
       "title": "Subspace vs. Structural"
     },
     {
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
+    },
+    {
       "slug": "/formalism/deep-dives/gauge-holonomy/",
       "title": "Gauge Quotients and Holonomy"
     },
@@ -281,6 +369,10 @@
       "title": "Fiber Bundle Quotient"
     },
     {
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
+    },
+    {
       "slug": "/glossary/",
       "title": "Glossary"
     },
@@ -291,6 +383,22 @@
     {
       "slug": "/methods/",
       "title": "Methods"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/intervention-limits/",
+      "title": "Intervention Limits"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
     },
     {
       "slug": "/views/",
@@ -313,7 +421,7 @@
       "title": "Subspace View"
     }
   ],
-  "/views/object/": [
+  "/mechanistic-views/views/object/": [
     {
       "slug": "/cases/hallucination/",
       "title": "Case Study — Hallucination"
@@ -347,6 +455,10 @@
       "title": "Directed Graph"
     },
     {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
+    },
+    {
       "slug": "/glossary/",
       "title": "Glossary"
     },
@@ -359,8 +471,56 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/circuit-disagreements/",
+      "title": "Circuit Disagreements"
+    },
+    {
+      "slug": "/open-problems/cross-model-identity/",
+      "title": "Cross-Model Identity"
+    },
+    {
+      "slug": "/open-problems/decomposition-identity/",
+      "title": "Decomposition Identity"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/intervention-limits/",
+      "title": "Intervention Limits"
+    },
+    {
+      "slug": "/open-problems/linear-assumption/",
+      "title": "Linear Assumption"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/safety-evidence-gaps/",
+      "title": "Safety Evidence Gaps"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
     },
     {
       "slug": "/views/process/",
@@ -379,7 +539,7 @@
       "title": "Subspace View"
     }
   ],
-  "/views/role/": [
+  "/mechanistic-views/views/role/": [
     {
       "slug": "/cases/hallucination/",
       "title": "Case Study — Hallucination"
@@ -401,6 +561,14 @@
       "title": "Object vs. Role"
     },
     {
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
+    },
+    {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
+    },
+    {
       "slug": "/formalism/role-graph/",
       "title": "Role Graph"
     },
@@ -417,8 +585,44 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/circuit-disagreements/",
+      "title": "Circuit Disagreements"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/cross-model-identity/",
+      "title": "Cross-Model Identity"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/resolution-completeness/",
+      "title": "Resolution & Completeness"
+    },
+    {
+      "slug": "/open-problems/steinhardt-behaviors/",
+      "title": "Steinhardt: Evaluating Behaviors"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
     },
     {
       "slug": "/views/object/",
@@ -433,62 +637,18 @@
     {
       "slug": "/cases/",
       "title": "Cases"
-    },
-    {
-      "slug": "/decisions/object-vs-role/",
-      "title": "Object vs. Role"
-    },
-    {
-      "slug": "/formalism/role-graph/",
-      "title": "Role Graph"
-    },
-    {
-      "slug": "/views/object/",
-      "title": "Object View"
-    },
-    {
-      "slug": "/views/role/",
-      "title": "Role View"
     }
   ],
   "/cases/induction/": [
     {
       "slug": "/cases/",
       "title": "Cases"
-    },
-    {
-      "slug": "/formalism/dynamical-system/",
-      "title": "Dynamical System"
-    },
-    {
-      "slug": "/views/process/",
-      "title": "Process View"
     }
   ],
   "/cases/grokking/": [
     {
       "slug": "/cases/",
       "title": "Cases"
-    },
-    {
-      "slug": "/decisions/static-vs-process/",
-      "title": "Static vs. Process Descriptions"
-    },
-    {
-      "slug": "/formalism/deep-dives/stratification/",
-      "title": "Stratification"
-    },
-    {
-      "slug": "/formalism/dynamical-system/",
-      "title": "Dynamical System"
-    },
-    {
-      "slug": "/views/process/",
-      "title": "Process View"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
     }
   ],
   "/cases/hallucination/": [
@@ -519,20 +679,12 @@
     {
       "slug": "/decisions/",
       "title": "Decisions"
-    },
-    {
-      "slug": "/formalism/deep-dives/sheaves/",
-      "title": "Sheaf Cohomology"
     }
   ],
   "/decisions/single-vs-triangulated/": [
     {
       "slug": "/decisions/",
       "title": "Decisions"
-    },
-    {
-      "slug": "/views/subspace/",
-      "title": "Subspace View"
     }
   ],
   "/decisions/static-vs-process/": [
@@ -541,7 +693,7 @@
       "title": "Decisions"
     }
   ],
-  "/views/stratified/": [
+  "/mechanistic-views/views/stratified/": [
     {
       "slug": "/decisions/localized-vs-distributed/",
       "title": "Localized vs. Distributed"
@@ -571,6 +723,22 @@
       "title": "Mechanistic Views"
     },
     {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/resolution-completeness/",
+      "title": "Resolution & Completeness"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
@@ -579,7 +747,25 @@
       "title": "Process View"
     }
   ],
-  "/methods/": [
+  "/mechanistic-views/cases/ioi/": [
+    {
+      "slug": "/decisions/object-vs-role/",
+      "title": "Object vs. Role"
+    },
+    {
+      "slug": "/formalism/role-graph/",
+      "title": "Role Graph"
+    },
+    {
+      "slug": "/views/object/",
+      "title": "Object View"
+    },
+    {
+      "slug": "/views/role/",
+      "title": "Role View"
+    }
+  ],
+  "/mechanistic-views/methods/": [
     {
       "slug": "/decisions/single-vs-triangulated/",
       "title": "Single-Method vs. Triangulated Evidence"
@@ -591,6 +777,10 @@
     {
       "slug": "/formalism/dictionary/",
       "title": "Dictionary"
+    },
+    {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
     },
     {
       "slug": "/formalism/linear-classifier/",
@@ -609,7 +799,7 @@
       "title": "Mechanistic Views"
     }
   ],
-  "/mechval-interface/": [
+  "/mechanistic-views/mechval-interface/": [
     {
       "slug": "/decisions/single-vs-triangulated/",
       "title": "Single-Method vs. Triangulated Evidence"
@@ -621,16 +811,38 @@
     {
       "slug": "/methods/",
       "title": "Methods"
+    },
+    {
+      "slug": "/views/object/",
+      "title": "Object View"
     }
   ],
-  "/formalism/dynamical-system/": [
+  "/mechanistic-views/cases/grokking/": [
     {
       "slug": "/decisions/static-vs-process/",
       "title": "Static vs. Process Descriptions"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/formalism/dynamical-system/",
+      "title": "Dynamical System"
+    },
+    {
+      "slug": "/views/process/",
+      "title": "Process View"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ],
+  "/mechanistic-views/formalism/dynamical-system/": [
+    {
+      "slug": "/decisions/static-vs-process/",
+      "title": "Static vs. Process Descriptions"
     },
     {
       "slug": "/index/",
@@ -649,10 +861,14 @@
       "title": "Process View"
     }
   ],
-  "/formalism/fiber-bundle-quotient/": [
+  "/mechanistic-views/formalism/fiber-bundle-quotient/": [
     {
       "slug": "/decisions/subspace-vs-structural/",
       "title": "Subspace vs. Structural"
+    },
+    {
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
     },
     {
       "slug": "/formalism/deep-dives/gauge-holonomy/",
@@ -675,8 +891,8 @@
       "title": "Grassmannian"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
     },
     {
       "slug": "/glossary/",
@@ -699,14 +915,42 @@
       "title": "Structural View"
     }
   ],
-  "/formalism/directed-graph/": [
+  "/mechanistic-views/formalism/role-graph/": [
+    {
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
+    },
     {
       "slug": "/formalism/causal-graph/",
       "title": "Causal Graph"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/formalism/directed-graph/",
+      "title": "Directed Graph"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/role/",
+      "title": "Role View"
+    }
+  ],
+  "/mechanistic-views/formalism/representation-theory/": [
+    {
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
+    }
+  ],
+  "/mechanistic-views/formalism/directed-graph/": [
+    {
+      "slug": "/formalism/causal-graph/",
+      "title": "Causal Graph"
     },
     {
       "slug": "/formalism/role-graph/",
@@ -733,32 +977,6 @@
       "title": "Object View"
     }
   ],
-  "/formalism/role-graph/": [
-    {
-      "slug": "/formalism/causal-graph/",
-      "title": "Causal Graph"
-    },
-    {
-      "slug": "/formalism/directed-graph/",
-      "title": "Directed Graph"
-    },
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/role/",
-      "title": "Role View"
-    }
-  ],
   "/formalism/deep-dives/grassmannian/": [
     {
       "slug": "/formalism/deep-dives/gauge-holonomy/",
@@ -773,20 +991,8 @@
       "title": "Stratification"
     },
     {
-      "slug": "/formalism/grassmannian/",
-      "title": "Grassmannian"
-    },
-    {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
-    },
-    {
-      "slug": "/views/subspace/",
-      "title": "Subspace View"
     }
   ],
   "/formalism/deep-dives/sheaves/": [
@@ -805,10 +1011,6 @@
     {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
-    {
-      "slug": "/views/structural/",
-      "title": "Structural View"
     }
   ],
   "/formalism/deep-dives/gauge-holonomy/": [
@@ -829,16 +1031,8 @@
       "title": "Stratification"
     },
     {
-      "slug": "/formalism/fiber-bundle-quotient/",
-      "title": "Fiber Bundle Quotient"
-    },
-    {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
-    {
-      "slug": "/views/structural/",
-      "title": "Structural View"
     }
   ],
   "/formalism/deep-dives/stratification/": [
@@ -857,17 +1051,9 @@
     {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
-    {
-      "slug": "/formalism/stratification/",
-      "title": "Whitney Stratification"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
     }
   ],
-  "/formalism/": [
+  "/mechanistic-views/formalism/": [
     {
       "slug": "/formalism/deep-dives/",
       "title": "Deep Dives"
@@ -885,14 +1071,16 @@
       "title": "Stratified View"
     }
   ],
-  "/formalism/causal-graph/": [
+  "/mechanistic-views/decisions/localized-vs-distributed/": [
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
+    }
+  ],
+  "/mechanistic-views/formalism/causal-graph/": [
     {
       "slug": "/formalism/directed-graph/",
       "title": "Directed Graph"
-    },
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
     },
     {
       "slug": "/formalism/role-graph/",
@@ -903,18 +1091,56 @@
       "title": "Methods"
     }
   ],
-  "/formalism/dictionary/": [
+  "/mechanistic-views/cases/induction/": [
+    {
+      "slug": "/formalism/dynamical-system/",
+      "title": "Dynamical System"
+    },
+    {
+      "slug": "/views/process/",
+      "title": "Process View"
+    }
+  ],
+  "/mechanistic-views/formalism/deep-dives/gauge-holonomy/": [
+    {
+      "slug": "/formalism/fiber-bundle-quotient/",
+      "title": "Fiber Bundle Quotient"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    }
+  ],
+  "/mechanistic-views/formalism/deep-dives/grassmannian/": [
     {
       "slug": "/formalism/grassmannian/",
       "title": "Grassmannian"
     },
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
+  "/mechanistic-views/formalism/dictionary/": [
+    {
+      "slug": "/formalism/grassmannian/",
+      "title": "Grassmannian"
+    },
+    {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
     },
     {
       "slug": "/formalism/linear-classifier/",
       "title": "Linear Classifier"
+    },
+    {
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
     },
     {
       "slug": "/glossary/",
@@ -925,46 +1151,112 @@
       "title": "Methods"
     }
   ],
+  "/mechanistic-views/figures/formalism-network.svg/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
   "/formalism/model-theory/": [
     {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/instrumental/",
-      "title": "Instrumental View"
     }
   ],
   "/formalism/measurement-algebra/": [
     {
       "slug": "/formalism/",
       "title": "Formalisms"
-    },
+    }
+  ],
+  "/formalism/directed-graph/": [
     {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/role-graph/": [
     {
-      "slug": "/views/",
-      "title": "Views"
-    },
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/grassmannian/": [
     {
-      "slug": "/views/perspectival/",
-      "title": "Perspectival View"
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/fiber-bundle-quotient/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/dynamical-system/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/stratification/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/causal-graph/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
     }
   ],
   "/formalism/linear-classifier/": [
     {
       "slug": "/formalism/",
       "title": "Formalisms"
+    }
+  ],
+  "/formalism/dictionary/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/linear-projection/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/information-theory/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/category-theory/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/representation-theory/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/formalism/deep-dives/": [
+    {
+      "slug": "/formalism/",
+      "title": "Formalisms"
+    }
+  ],
+  "/mechanistic-views/formalism/linear-classifier/": [
+    {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
     },
     {
       "slug": "/formalism/linear-projection/",
@@ -983,11 +1275,175 @@
       "title": "Role View"
     }
   ],
-  "/formalism/linear-projection/": [
+  "/mechanistic-views/views/perspectival/": [
     {
-      "slug": "/formalism/",
-      "title": "Formalisms"
+      "slug": "/formalism/measurement-algebra/",
+      "title": "Measurement Algebra"
     },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/decomposition-identity/",
+      "title": "Decomposition Identity"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/linear-assumption/",
+      "title": "Linear Assumption"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/validation-methodology/",
+      "title": "Validation Methodology"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/instrumental/",
+      "title": "Instrumental View"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    }
+  ],
+  "/mechanistic-views/views/instrumental/": [
+    {
+      "slug": "/formalism/model-theory/",
+      "title": "Model Theory"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/open-problems/circuit-disagreements/",
+      "title": "Circuit Disagreements"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/resolution-completeness/",
+      "title": "Resolution & Completeness"
+    },
+    {
+      "slug": "/open-problems/safety-evidence-gaps/",
+      "title": "Safety Evidence Gaps"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/steinhardt-behaviors/",
+      "title": "Steinhardt: Evaluating Behaviors"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    },
+    {
+      "slug": "/views/perspectival/",
+      "title": "Perspectival View"
+    }
+  ],
+  "/mechanistic-views/formalism/category-theory/": [
+    {
+      "slug": "/formalism/representation-theory/",
+      "title": "Representation Theory"
+    }
+  ],
+  "/mechanistic-views/formalism/deep-dives/stratification/": [
+    {
+      "slug": "/formalism/stratification/",
+      "title": "Whitney Stratification"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    }
+  ],
+  "/mechanistic-views/figures/five-axes-pipeline-clean.svg/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/mechanistic-views/decisions/single-vs-triangulated/": [
+    {
+      "slug": "/framework/",
+      "title": "Framework"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
+  "/mechanistic-views/framework/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    }
+  ],
+  "/mechanistic-views/views/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    }
+  ],
+  "/mechanistic-views/formalism/linear-projection/": [
     {
       "slug": "/glossary/",
       "title": "Glossary"
@@ -997,17 +1453,7 @@
       "title": "Methods"
     }
   ],
-  "/formalism/deep-dives/": [
-    {
-      "slug": "/formalism/",
-      "title": "Formalisms"
-    }
-  ],
-  "/views/perspectival/": [
-    {
-      "slug": "/formalism/measurement-algebra/",
-      "title": "Measurement Algebra"
-    },
+  "/mechanistic-views/formalism/model-theory/": [
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
@@ -1021,11 +1467,7 @@
       "title": "Instrumental View"
     }
   ],
-  "/views/instrumental/": [
-    {
-      "slug": "/formalism/model-theory/",
-      "title": "Model Theory"
-    },
+  "/mechanistic-views/formalism/measurement-algebra/": [
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
@@ -1039,39 +1481,7 @@
       "title": "Perspectival View"
     }
   ],
-  "/mechanistic-views/figures/five-axes-pipeline-clean.svg/": [
-    {
-      "slug": "/framework/",
-      "title": "Framework"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    }
-  ],
-  "/framework/decisions/single-vs-triangulated/": [
-    {
-      "slug": "/framework/",
-      "title": "Framework"
-    }
-  ],
-  "/framework/": [
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    }
-  ],
-  "/views/": [
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
-    }
-  ],
-  "/cases/": [
+  "/mechanistic-views/cases/": [
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
@@ -1083,16 +1493,182 @@
       "title": "Methods"
     }
   ],
-  "/mechanistic-views/figures/eight-views-families.svg/": [
+  "/mechanistic-views/open-problems/validation-methodology/": [
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/safety-evidence-gaps/": [
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Case Study — Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/steinhardt-behaviors/",
+      "title": "Steinhardt: Evaluating Behaviors"
+    }
+  ],
+  "/mechanistic-views/open-problems/sae-true-features/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    }
+  ],
+  "/mechanistic-views/open-problems/cot-faithfulness/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/probe-features/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/decomposition-identity/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    }
+  ],
+  "/mechanistic-views/open-problems/superposition/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    }
+  ],
+  "/mechanistic-views/open-problems/circuit-disagreements/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    }
+  ],
+  "/mechanistic-views/open-problems/unit-of-analysis/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/intervention-limits/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/linear-assumption/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Case Study — Do Probes Find Features the Model Uses?"
+    }
+  ],
+  "/mechanistic-views/open-problems/cross-model-identity/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    }
+  ],
+  "/mechanistic-views/open-problems/training-dynamics/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    }
+  ],
+  "/mechanistic-views/open-problems/resolution-completeness/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problems"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    }
+  ],
+  "/mechanistic-views/open-problems/": [
     {
       "slug": "/views/",
       "title": "Views"
     }
   ],
-  "/mechanistic-views/figures/ontology-identity-formalism-v2.svg/": [
+  "/views/mappings/": [
     {
       "slug": "/views/",
       "title": "Views"
+    }
+  ],
+  "/mechanistic-views/figures/views-pyramid.svg/": [
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    }
+  ],
+  "/mechanistic-views/figures/eight-views-families-v2.svg/": [
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    }
+  ],
+  "/mechanistic-views/figures/ontology-identity-formalism-v2.svg/": [
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    }
+  ],
+  "/views/role/": [
+    {
+      "slug": "/views/object/",
+      "title": "Object View"
+    }
+  ],
+  "/mechanistic-views/formalism/deep-dives/sheaves/": [
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
     }
   ]
 }

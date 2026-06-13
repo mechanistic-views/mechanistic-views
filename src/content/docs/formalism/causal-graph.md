@@ -22,10 +22,10 @@ The formalism does not discover the graph; it tests a proposed one. The result d
 
 ## Relationship to other formalisms
 
-The causal graph is a high-level formalism — its nodes are variables like "subject gender" or "indirect object identity", not model components. The [directed graph](/formalism/directed-graph/) used by the [object view](/views/object/) places model components (heads, MLPs) as nodes instead. The [role graph](/formalism/role-graph/) is intermediate: its nodes are functional roles that abstract away from specific components but are more fine-grained than causal variables.
+The causal graph is a high-level formalism — its nodes are variables like "subject gender" or "indirect object identity", not model components. The [directed graph](/mechanistic-views/formalism/directed-graph/) used by the [object view](/mechanistic-views/views/object/) places model components (heads, MLPs) as nodes instead. The [role graph](/mechanistic-views/formalism/role-graph/) is intermediate: its nodes are functional roles that abstract away from specific components but are more fine-grained than causal variables.
 
 ## Further reading
 
 - Pearl, *Causality* (2009) — the foundational treatment of SCMs and the do-operator
 - Geiger et al., "Causal Abstraction for Faithful Model Interpretation" (2021) — applies causal graphs to neural network interpretability
-- See the [methods page](/methods/) for how causal graphs are used in [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) and [causal scrubbing](https://learnmechinterp.com/topics/causal-abstraction/)
+- See the [methods page](/mechanistic-views/methods/) for how causal graphs are used in [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) and [causal scrubbing](https://learnmechinterp.com/topics/causal-abstraction/)

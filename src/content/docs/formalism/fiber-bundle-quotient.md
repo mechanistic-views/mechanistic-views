@@ -4,7 +4,7 @@ title: Fiber Bundle Quotient
 
 # Fiber Bundle Quotient
 
-The formalism for the [structural view](/views/structural/).
+The formalism for the [structural view](/mechanistic-views/views/structural/).
 
 ## What it is
 
@@ -34,8 +34,8 @@ The fiber bundle quotient also supports *holonomy*: a gauge-invariant fingerprin
 
 ## Deep dive
 
-For the full mathematical treatment — fiber bundle construction, connection choices, holonomy computation, the freeness requirement, and tractability — see the [Gauge Quotients and Holonomy deep dive](/formalism/deep-dives/gauge-holonomy/).
+For the full mathematical treatment — fiber bundle construction, connection choices, holonomy computation, the freeness requirement, and tractability — see the [Gauge Quotients and Holonomy deep dive](/mechanistic-views/formalism/deep-dives/gauge-holonomy/).
 
 ## Relationship to other formalisms
 
-The fiber bundle quotient is the most structurally rich formalism in the framework. The [Grassmannian](/formalism/grassmannian/) captures subspace identity but not the full gauge structure; the quotient captures both. The [Whitney stratification](/formalism/stratification/) organizes mechanisms by dimensionality within the stratified view, while the fiber bundle quotient organizes them by gauge orbit within the structural view — related but distinct classification schemes.
+The fiber bundle quotient is the most structurally rich formalism in the framework. The [Grassmannian](/mechanistic-views/formalism/grassmannian/) captures subspace identity but not the full gauge structure; the quotient captures both. The [Whitney stratification](/mechanistic-views/formalism/stratification/) organizes mechanisms by dimensionality within the stratified view, while the fiber bundle quotient organizes them by gauge orbit within the structural view — related but distinct classification schemes.

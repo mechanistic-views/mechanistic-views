@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 480" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .fam-label { font-size: 13px; font-weight: 700; letter-spacing: 0.3px; }
+      .card-name { font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .card-desc { font-size: 10.5px; fill: #475569; font-weight: 500; }
+      .section-label { font-size: 13px; font-weight: 700; letter-spacing: 0.3px; }
+    </style>
+  </defs>
+
+  <!-- ══════ Graph-Theoretic Family ══════ -->
+  <rect x="40" y="48" width="230" height="200" rx="12" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="155" y="42" text-anchor="middle" class="fam-label" fill="#7c3aed">Graph-Theoretic</text>
+
+  <rect x="58" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="78" text-anchor="middle" class="card-name">Directed Graph</text>
+  <text x="155" y="94" text-anchor="middle" class="card-desc">Object view</text>
+
+  <rect x="58" y="118" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="136" text-anchor="middle" class="card-name">Role Graph</text>
+  <text x="155" y="152" text-anchor="middle" class="card-desc">Role view</text>
+
+  <rect x="58" y="176" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="194" text-anchor="middle" class="card-name">Causal Graph</text>
+  <text x="155" y="210" text-anchor="middle" class="card-desc">causal scrubbing, abstraction</text>
+
+  <!-- ══════ Geometric Family ══════ -->
+  <rect x="310" y="48" width="230" height="200" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="425" y="42" text-anchor="middle" class="fam-label" fill="#3b82f6">Geometric</text>
+
+  <rect x="328" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="425" y="78" text-anchor="middle" class="card-name">Grassmannian</text>
+  <text x="425" y="94" text-anchor="middle" class="card-desc">Subspace view</text>
+
+  <rect x="328" y="118" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="425" y="136" text-anchor="middle" class="card-name">Fiber Bundle Quotient</text>
+  <text x="425" y="152" text-anchor="middle" class="card-desc">Structural view</text>
+
+  <rect x="328" y="176" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="425" y="194" text-anchor="middle" class="card-name">Linear Projection</text>
+  <text x="425" y="210" text-anchor="middle" class="card-desc">logit lens, tuned lens</text>
+
+  <!-- ══════ Dynamical Family ══════ -->
+  <rect x="580" y="48" width="230" height="142" rx="12" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="695" y="42" text-anchor="middle" class="fam-label" fill="#14b8a6">Dynamical</text>
+
+  <rect x="598" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="695" y="78" text-anchor="middle" class="card-name">Dynamical System</text>
+  <text x="695" y="94" text-anchor="middle" class="card-desc">Process view</text>
+
+  <rect x="598" y="118" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="695" y="136" text-anchor="middle" class="card-name">Whitney Stratification</text>
+  <text x="695" y="152" text-anchor="middle" class="card-desc">Stratified view</text>
+
+  <!-- ══════ Algebraic Family ══════ -->
+  <rect x="850" y="48" width="230" height="200" rx="12" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="965" y="42" text-anchor="middle" class="fam-label" fill="#f59e0b">Algebraic</text>
+
+  <rect x="868" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="965" y="78" text-anchor="middle" class="card-name">Model Theory</text>
+  <text x="965" y="94" text-anchor="middle" class="card-desc">Instrumental view</text>
+
+  <rect x="868" y="118" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="965" y="136" text-anchor="middle" class="card-name">Measurement Algebra</text>
+  <text x="965" y="152" text-anchor="middle" class="card-desc">Perspectival view</text>
+
+  <rect x="868" y="176" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f59e0b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="965" y="194" text-anchor="middle" class="card-name">Dictionary</text>
+  <text x="965" y="210" text-anchor="middle" class="card-desc">sparse autoencoders</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="285" x2="1070" y2="285" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- ══════ Method-Level (below divider) ══════ -->
+  <text x="565" y="310" text-anchor="middle" class="section-label" fill="#64748b">Method-Level</text>
+
+  <rect x="328" y="325" width="194" height="44" rx="8" fill="#64748b" fill-opacity="0.08" stroke="#64748b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="425" y="343" text-anchor="middle" class="card-name">Linear Classifier</text>
+  <text x="425" y="359" text-anchor="middle" class="card-desc">linear probing</text>
+
+  <rect x="558" y="325" width="194" height="44" rx="8" fill="#64748b" fill-opacity="0.08" stroke="#64748b" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="655" y="343" text-anchor="middle" class="card-name">Linear Projection</text>
+  <text x="655" y="359" text-anchor="middle" class="card-desc">logit lens, tuned lens</text>
+
+  <!-- Bottom tagline -->
+  <text x="565" y="420" text-anchor="middle" font-size="13" fill="#475569" font-weight="600" font-style="italic">View-level formalisms are grouped by mathematical lineage. Method-level formalisms serve specific techniques.</text>
+</svg>

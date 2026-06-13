@@ -4,7 +4,7 @@ title: Whitney Stratification
 
 # Whitney Stratification
 
-The formalism for the [stratified view](/views/stratified/).
+The formalism for the [stratified view](/mechanistic-views/views/stratified/).
 
 ## What it is
 
@@ -26,4 +26,4 @@ The stratified view is resolution-relative: the same computation may appear as a
 
 ## Deep dive
 
-For the full mathematical treatment — Whitney conditions A and B, the frontier condition, Thom-Mather control data, the $\mathcal{M}_\infty$ stratum, and computational tractability — see the [Stratification deep dive](/formalism/deep-dives/stratification/).
+For the full mathematical treatment — Whitney conditions A and B, the frontier condition, Thom-Mather control data, the $\mathcal{M}_\infty$ stratum, and computational tractability — see the [Stratification deep dive](/mechanistic-views/formalism/deep-dives/stratification/).
