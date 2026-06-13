@@ -60,7 +60,7 @@ If you're drawing safety conclusions from CoT alone, you are at the Instrumental
 | Criterion | Status | What it tells you |
 |---|---|---|
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | Central | Do CoT explanations agree with other methods? |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | Critical | Can you distinguish faithful CoT from post-hoc rationalization? |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | Critical | Can you distinguish faithful CoT from post-hoc rationalization? |
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | Critical | Is the correlation between CoT and computation genuine or confounded? |
 | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) | Relevant | Does the same input produce consistent CoT explanations? |
 

@@ -46,7 +46,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 **Dark matter ratio.** (Full model logit difference) / (circuit logit difference). Ratio 1.0 means the circuit fully explains the model's behavior. Above 1.0 means incomplete coverage — which may reflect missing components or genuinely distributed computation.
 
-**AGOP (Average Gradient Outer Product).** A training-time sensitivity measure ([Radhakrishnan et al. 2022](https://arxiv.org/abs/2110.04005)). AGOP trajectories sometimes converge to the eventual DAS causal subspace before behavioral detection. Evidence for the [process view](/mechanistic-views/views/process/).
+**AGOP (Average Gradient Outer Product).** A training-time sensitivity measure (Radhakrishnan et al., 2024). AGOP trajectories sometimes converge to the eventual DAS causal subspace before behavioral detection. Evidence for the [process view](/mechanistic-views/views/process/).
 
 **Multi-domain triangulation.** Convergent evidence across structurally different domains (weight-space, activation-space, dynamics-space). Each domain alone is non-injective on mechanism space — two distinct mechanisms can look identical in one domain. See [Methods](/mechanistic-views/methods/#cross-cutting-observations).
 
@@ -58,7 +58,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 **Path patching.** Variant of activation patching that tests specific information-flow paths. See [activation patching on learnmechinterp](https://learnmechinterp.com/topics/activation-patching/#path-patching).
 
-**SAE (Sparse Autoencoder).** Learns an overcomplete [dictionary](/mechanistic-views/formalism/dictionary/) of feature directions from a model's activations. Each feature is a candidate $\mathrm{Gr}(1, d)$ mechanism. The sparsity criterion is reconstruction-based, not causal — causal validation (steering, ablation) is needed to establish that a feature is a mechanism. See [sparse autoencoders on learnmechinterp](https://learnmechinterp.com/topics/sparse-autoencoders/) and the [SAE features discussion](/mechanistic-views/views/subspace/#sae-features-and-the-subspace-view) on the subspace view page.
+**SAE (Sparse Autoencoder).** Learns an overcomplete [dictionary](/mechanistic-views/formalism/dictionary/) of directions from a model's activations. Each direction is a candidate $\mathrm{Gr}(1, d)$ mechanism. The sparsity criterion is reconstruction-based, not causal — causal validation (steering, ablation) is needed to establish that a direction is a mechanism. See [sparse autoencoders on learnmechinterp](https://learnmechinterp.com/topics/sparse-autoencoders/) and the [SAE channels discussion](/mechanistic-views/views/subspace/#sae-channels-and-the-subspace-view) on the subspace view page.
 
 **Linear probing.** Trains a [linear classifier](/mechanistic-views/formalism/linear-classifier/) on intermediate activations to test whether a concept is linearly represented. Observational, not causal. See [probing classifiers on learnmechinterp](https://learnmechinterp.com/topics/probing-classifiers/).
 

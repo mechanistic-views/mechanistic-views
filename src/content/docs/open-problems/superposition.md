@@ -56,7 +56,7 @@ The field's current approach — train SAEs to "solve" superposition — is cohe
 1. If you're training SAEs to decompose superposition, you're making an **Object-view** commitment. State it explicitly.
 2. If the subspaces SAEs find are stable across widths ([C5 Convergent](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/)), that's evidence the Object assumption is productive even if not literally true.
 3. If they're not stable — if features split, merge, and absorb unpredictably — that's evidence the representation is better described at the Subspace level.
-4. Discriminant validity ([V3](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/)) is critical: do SAEs find qualitatively different structure in trained models vs. random models? If not, "superposition" may be a property of high-dimensional geometry, not of learned representations.
+4. Discriminant validity (V3) is critical: do SAEs find qualitatively different structure in trained models vs. random models? If not, "superposition" may be a property of high-dimensional geometry, not of learned representations.
 
 ## Resolution status: **Dissolved**
 
@@ -68,8 +68,8 @@ The framework dissolves the debate. "How do we solve superposition?" is an Objec
 |---|---|---|
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | Central | Do different decomposition methods agree on the structure? |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | Central | Is the decomposition stable across measurement choices? |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | Critical | Is the structure real or a property of high-dimensional geometry? |
-| [C4 Boundary specification](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/boundary-specification/) | Relevant | Where does one feature's subspace end and another's begin? |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | Critical | Is the structure real or a property of high-dimensional geometry? |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | Relevant | Where does one feature's subspace end and another's begin? |
 
 ## See also
 

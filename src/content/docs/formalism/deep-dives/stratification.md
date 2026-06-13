@@ -74,4 +74,3 @@ Stratum assignment is a prior question. There is currently no canonical algorith
 - [Grassmannian deep dive](grassmannian/) — the geometry of individual strata $\mathcal{M}_k$
 - [Sheaf Cohomology deep dive](sheaves/) — $H^1 \neq 0$ as evidence for the $\mathcal{M}_\infty$ stratum
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge structure within each stratum
-- [Grokking case study](/mechanistic-views/cases/grokking/) — example of a nonlinear manifold stratum ($S^1 \subset \mathcal{M}_2$)

@@ -28,7 +28,7 @@ Representation theory and the [Grassmannian](/mechanistic-views/formalism/grassm
 
 The connection to [category theory](/mechanistic-views/formalism/category-theory/) is formal: a representation is a functor from a group (viewed as a category with one object) to the category of vector spaces. Equivariant maps are natural transformations between such functors. This makes representation theory a special case of the categorical framework.
 
-The [dictionary](/mechanistic-views/formalism/dictionary/) formalism finds directions in activation space; representation theory asks whether those directions transform coherently under symmetries. A dictionary feature that is part of an irreducible representation cannot be understood in isolation from the other features in that representation.
+The [dictionary](/mechanistic-views/formalism/dictionary/) formalism finds directions in activation space; representation theory asks whether those directions transform coherently under symmetries. A dictionary element that is part of an irreducible representation cannot be understood in isolation from the other elements in that representation.
 
 ## Further reading
 

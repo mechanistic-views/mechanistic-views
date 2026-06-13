@@ -30,7 +30,7 @@ A world model, in the Structural view, is a [gauge-invariant](/mechanistic-views
 
 **What this would require.** Showing that the model's internal causal graph (not just its activations) mirrors the world's causal graph. This means: manipulating one state variable and showing that downstream state variables update as the world's causal structure predicts — not just that the model's *output* changes, but that its *internal representations* of other state variables change accordingly.
 
-**The evidence gap.** Mechanistic Validity [E4 Counterfactual validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/counterfactual-validity/) is the relevant criterion: does intervening on the model's world-state representation produce the same downstream effects as intervening on the actual world state? No published work has demonstrated this at the Structural level for a full world model (as opposed to individual state predicates).
+**The evidence gap.** Mechanistic Validity [E4 Effect magnitude](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/effect-magnitude) is the relevant criterion: does intervening on the model's world-state representation produce the same downstream effects as intervening on the actual world state? No published work has demonstrated this at the Structural level for a full world model (as opposed to individual state predicates).
 
 ### [Process view](/mechanistic-views/views/process/) — when and how does it form?
 
@@ -66,9 +66,9 @@ The framework clarifies that "world model" means different things at different v
 
 | Criterion | Status | What it tells you |
 |---|---|---|
-| [E4 Counterfactual validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/counterfactual-validity/) | Critical | Does intervening on the model's world representation produce world-consistent downstream effects? |
+| [E4 Effect magnitude](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/effect-magnitude) | Critical | Does intervening on the model's world representation produce world-consistent downstream effects? |
 | [I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/) | Central | Does the world model subspace causally drive behavior? |
-| [C1 Operationalization](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/operationalization/) | Central | What does "world model" mean operationally? |
+| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | Central | What does "world model" mean operationally? |
 | [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/) | Critical | Could statistical shortcuts explain the same behavior? |
 
 ## See also

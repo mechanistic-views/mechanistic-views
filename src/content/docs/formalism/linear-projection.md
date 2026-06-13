@@ -10,7 +10,7 @@ A method-level formalism used by the logit lens and tuned lens.
 
 A linear projection maps a vector from one space to another via a matrix multiplication: $y = Wx + b$. In the context of transformers, the key projection is the unembedding matrix $W_U$, which maps residual stream vectors to logits over the vocabulary.
 
-See [Projection (linear algebra)](https://en.wikipedia.org/wiki/Projection_(linear_algebra)) on Wikipedia.
+See [Projection (linear algebra)](https://en.wikipedia.org/wiki/Projection_%28linear_algebra%29) on Wikipedia.
 
 ## How it is used in interpretability
 

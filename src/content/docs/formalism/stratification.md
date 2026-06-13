@@ -12,7 +12,7 @@ A stratified space is a topological space decomposed into smooth pieces called *
 
 The canonical example: consider all subspaces of $\mathbb{R}^d$ of all dimensions simultaneously. The 1-dimensional subspaces form one smooth piece, the 2-dimensional subspaces form another, and so on. A sequence of 2-dimensional subspaces can converge to a 1-dimensional subspace (as one direction collapses), so these pieces are not disjoint manifolds — they are strata of a single stratified space.
 
-See [Whitney conditions](https://en.wikipedia.org/wiki/Whitney_conditions) and [Stratification](https://en.wikipedia.org/wiki/Stratification_(mathematics)) on Wikipedia.
+See [Whitney conditions](https://en.wikipedia.org/wiki/Whitney_conditions) and [Stratification](https://en.wikipedia.org/wiki/Stratification_%28mathematics%29) on Wikipedia.
 
 ## How the stratified view uses it
 

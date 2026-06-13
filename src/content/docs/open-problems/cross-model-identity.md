@@ -30,7 +30,7 @@ This is the [E6 Cross-architecture generalization](https://mechanistic-validity.
 | [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture/) | **Impossible** | Possible (same role) | Covered (Grassmannian distance) |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | **Impossible** (basis-dependent) | Possible (role is basis-independent) | Covered (subspace is basis-independent) |
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | Fails across methods | Possible if roles converge | Testable via cross-method subspace overlap |
-| [E4 Model scale](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/model-scale/) | Components change with scale | Roles may persist | Subspaces may persist (testable) |
+| [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | Components change with scale | Roles may persist | Subspaces may persist (testable) |
 
 ## Sources
 

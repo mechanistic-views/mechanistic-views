@@ -32,10 +32,10 @@ This section maps most directly onto [Mechanistic Validity](https://mechanistic-
 
 | Agenda requirement | Mechanistic Validity criterion |
 |---|---|
-| "Construct validity for latent properties" (§2.1) | [C1 Operationalization](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/operationalization/), [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) |
-| "Predictive validity and contextualization" (§2.1) | [E1 Task transfer](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/task-transfer/), [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/) |
+| "Construct validity for latent properties" (§2.1) | [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability), [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) |
+| "Predictive validity and contextualization" (§2.1) | [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) |
 | "Evidence standards for decision-relevant evaluations" (§2.1) | The full mechval framework — this is what it's for |
-| "Robust under realistic conditions" (§2.1) | [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/), [E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/) |
+| "Robust under realistic conditions" (§2.1) | [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) |
 | "Strategy-proof evaluations" (§2.1) | [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/) — can the model game the evaluation? |
 | "Reasoning trace monitorability" (§2.1) | [Perspectival](/mechanistic-views/views/perspectival/) concern — is the trace faithful (real mechanism) or strategic (method artifact)? |
 
@@ -43,7 +43,7 @@ The interventions section (§2.2) asks the key view-level question directly:
 
 > "When do mechanistic interventions (e.g., targeting features, circuits, or learned representations) offer advantages over behavioral post-training methods?"
 
-In our language: **when does [Object](/mechanistic-views/views/object/)/[Subspace](/mechanistic-views/views/subspace/) evidence beat [Instrumental](/mechanistic-views/views/instrumental/) evidence for safety?** The answer is: when you need generalization guarantees that Instrumental evidence structurally cannot provide — specifically [E1 Task transfer](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/task-transfer/), [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/), and [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/).
+In our language: **when does [Object](/mechanistic-views/views/object/)/[Subspace](/mechanistic-views/views/subspace/) evidence beat [Instrumental](/mechanistic-views/views/instrumental/) evidence for safety?** The answer is: when you need generalization guarantees that Instrumental evidence structurally cannot provide — specifically [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness), and [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/).
 
 ### Section 3: Oversight under capability gaps
 

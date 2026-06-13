@@ -34,7 +34,7 @@ Deceptive alignment detection requires finding a computational structure — a [
 
 If deceptive alignment exists, the Process view asks: when did it form during training? Was there a phase transition? Can you identify training checkpoints before and after the deceptive mechanism appeared? Could you intervene during training to prevent it?
 
-**The insight.** Process evidence provides a complementary angle: even if you can't find the deception mechanism in a finished model (Structural analysis failed), you might detect the *formation* of deceptive behavior during training ([E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/)). A mechanism that appears suddenly late in training, correlated with exposure to evaluation-like data, is suspicious in ways a mechanism that developed gradually is not.
+**The insight.** Process evidence provides a complementary angle: even if you can't find the deception mechanism in a finished model (Structural analysis failed), you might detect the *formation* of deceptive behavior during training ([E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness)). A mechanism that appears suddenly late in training, correlated with exposure to evaluation-like data, is suspicious in ways a mechanism that developed gradually is not.
 
 ## The resolution
 
@@ -63,8 +63,8 @@ The framework identifies the evidence requirements precisely: Instrumental evide
 |---|---|---|
 | [I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/) | Central | Does intervening on the mechanism produce deceptive behavior? |
 | [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/) | Critical | Could another mechanism explain the same evidence? |
-| [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/) | Critical | Does detection generalize beyond the evaluation distribution? |
-| [E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/) | Relevant | Is the mechanism stable through training? |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Critical | Does detection generalize beyond the evaluation distribution? |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Relevant | Is the mechanism stable through training? |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | Relevant | Is detection robust to reparameterization? |
 
 ## See also

@@ -33,8 +33,12 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/schmidt-agenda/",
@@ -45,12 +49,20 @@
       "title": "Training Dynamics"
     },
     {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
     {
       "slug": "/views/mappings/",
       "title": "View Mappings"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
     }
   ],
   "/mechanistic-views/formalism/grassmannian/": [
@@ -213,8 +225,16 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/cross-model-identity/",
       "title": "Cross-Model Identity"
+    },
+    {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
     },
     {
       "slug": "/open-problems/decomposition-identity/",
@@ -222,7 +242,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/intervention-limits/",
@@ -255,6 +275,10 @@
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
     },
     {
       "slug": "/views/",
@@ -385,12 +409,20 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/cot-faithfulness/",
       "title": "Case Study — Is Chain-of-Thought Faithful?"
     },
     {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/intervention-limits/",
@@ -399,6 +431,10 @@
     {
       "slug": "/open-problems/superposition/",
       "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
     },
     {
       "slug": "/views/",
@@ -411,6 +447,10 @@
     {
       "slug": "/views/perspectival/",
       "title": "Perspectival View"
+    },
+    {
+      "slug": "/views/process/",
+      "title": "Process View"
     },
     {
       "slug": "/views/stratified/",
@@ -471,6 +511,10 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/circuit-disagreements/",
       "title": "Circuit Disagreements"
     },
@@ -484,7 +528,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/intervention-limits/",
@@ -529,6 +573,10 @@
     {
       "slug": "/views/role/",
       "title": "Role View"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
     },
     {
       "slug": "/views/structural/",
@@ -585,6 +633,10 @@
       "title": "Methods"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/circuit-disagreements/",
       "title": "Circuit Disagreements"
     },
@@ -598,7 +650,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/probe-features/",
@@ -724,7 +776,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/resolution-completeness/",
@@ -743,26 +795,14 @@
       "title": "Views"
     },
     {
-      "slug": "/views/process/",
-      "title": "Process View"
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
     }
   ],
   "/mechanistic-views/cases/ioi/": [
     {
       "slug": "/decisions/object-vs-role/",
       "title": "Object vs. Role"
-    },
-    {
-      "slug": "/formalism/role-graph/",
-      "title": "Role Graph"
-    },
-    {
-      "slug": "/views/object/",
-      "title": "Object View"
-    },
-    {
-      "slug": "/views/role/",
-      "title": "Role View"
     }
   ],
   "/mechanistic-views/methods/": [
@@ -811,32 +851,12 @@
     {
       "slug": "/methods/",
       "title": "Methods"
-    },
-    {
-      "slug": "/views/object/",
-      "title": "Object View"
     }
   ],
   "/mechanistic-views/cases/grokking/": [
     {
       "slug": "/decisions/static-vs-process/",
       "title": "Static vs. Process Descriptions"
-    },
-    {
-      "slug": "/formalism/deep-dives/stratification/",
-      "title": "Stratification"
-    },
-    {
-      "slug": "/formalism/dynamical-system/",
-      "title": "Dynamical System"
-    },
-    {
-      "slug": "/views/process/",
-      "title": "Process View"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
     }
   ],
   "/mechanistic-views/formalism/dynamical-system/": [
@@ -1071,12 +1091,6 @@
       "title": "Stratified View"
     }
   ],
-  "/mechanistic-views/decisions/localized-vs-distributed/": [
-    {
-      "slug": "/formalism/deep-dives/sheaves/",
-      "title": "Sheaf Cohomology"
-    }
-  ],
   "/mechanistic-views/formalism/causal-graph/": [
     {
       "slug": "/formalism/directed-graph/",
@@ -1089,16 +1103,6 @@
     {
       "slug": "/methods/",
       "title": "Methods"
-    }
-  ],
-  "/mechanistic-views/cases/induction/": [
-    {
-      "slug": "/formalism/dynamical-system/",
-      "title": "Dynamical System"
-    },
-    {
-      "slug": "/views/process/",
-      "title": "Process View"
     }
   ],
   "/mechanistic-views/formalism/deep-dives/gauge-holonomy/": [
@@ -1285,6 +1289,10 @@
       "title": "Mechanistic Views"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/cot-faithfulness/",
       "title": "Case Study — Is Chain-of-Thought Faithful?"
     },
@@ -1294,7 +1302,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/linear-assumption/",
@@ -1331,6 +1339,10 @@
     {
       "slug": "/views/mappings/",
       "title": "View Mappings"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
     }
   ],
   "/mechanistic-views/views/instrumental/": [
@@ -1343,6 +1355,10 @@
       "title": "Mechanistic Views"
     },
     {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/open-problems/circuit-disagreements/",
       "title": "Circuit Disagreements"
     },
@@ -1351,8 +1367,12 @@
       "title": "Case Study — Is Chain-of-Thought Faithful?"
     },
     {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/probe-features/",
@@ -1373,6 +1393,10 @@
     {
       "slug": "/open-problems/steinhardt-behaviors/",
       "title": "Steinhardt: Evaluating Behaviors"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
     },
     {
       "slug": "/views/",
@@ -1413,16 +1437,6 @@
       "title": "Mechanistic Views"
     }
   ],
-  "/mechanistic-views/decisions/single-vs-triangulated/": [
-    {
-      "slug": "/framework/",
-      "title": "Framework"
-    },
-    {
-      "slug": "/views/subspace/",
-      "title": "Subspace View"
-    }
-  ],
   "/mechanistic-views/framework/": [
     {
       "slug": "/glossary/",
@@ -1437,6 +1451,10 @@
     {
       "slug": "/glossary/",
       "title": "Glossary"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/schmidt-agenda/",
@@ -1481,16 +1499,66 @@
       "title": "Perspectival View"
     }
   ],
-  "/mechanistic-views/cases/": [
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    }
-  ],
   "/mechanistic-views/figures/methods-evidence-grid.svg/": [
     {
       "slug": "/methods/",
       "title": "Methods"
+    }
+  ],
+  "/mechanistic-views/open-problems/decomposition-identity/": [
+    {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    }
+  ],
+  "/mechanistic-views/open-problems/sae-true-features/": [
+    {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    }
+  ],
+  "/mechanistic-views/open-problems/probe-features/": [
+    {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
+    }
+  ],
+  "/mechanistic-views/open-problems/deceptive-alignment/": [
+    {
+      "slug": "/open-problems/barez-philosophy/",
+      "title": "Barez et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/validation-methodology/": [
@@ -1500,7 +1568,7 @@
     },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/safety-evidence-gaps/": [
@@ -1509,8 +1577,12 @@
       "title": "Case Study — Is Chain-of-Thought Faithful?"
     },
     {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/probe-features/",
@@ -1525,46 +1597,44 @@
       "title": "Steinhardt: Evaluating Behaviors"
     }
   ],
-  "/mechanistic-views/open-problems/sae-true-features/": [
+  "/mechanistic-views/open-problems/training-dynamics/": [
     {
-      "slug": "/open-problems/",
-      "title": "Open Problems"
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
     },
     {
-      "slug": "/open-problems/superposition/",
-      "title": "Superposition"
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/cot-faithfulness/": [
     {
-      "slug": "/open-problems/",
-      "title": "Open Problems"
-    }
-  ],
-  "/mechanistic-views/open-problems/probe-features/": [
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     }
   ],
-  "/mechanistic-views/open-problems/decomposition-identity/": [
+  "/mechanistic-views/open-problems/barez-philosophy/": [
     {
-      "slug": "/open-problems/",
-      "title": "Open Problems"
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
+      "slug": "/open-problems/decomposition-identity/",
+      "title": "Decomposition Identity"
     },
     {
       "slug": "/open-problems/sae-true-features/",
       "title": "Case Study — Do SAEs Recover the 'True' Features?"
-    },
-    {
-      "slug": "/open-problems/superposition/",
-      "title": "Superposition"
     }
   ],
   "/mechanistic-views/open-problems/superposition/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/sae-true-features/",
@@ -1574,7 +1644,7 @@
   "/mechanistic-views/open-problems/circuit-disagreements/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/unit-of-analysis/",
@@ -1584,55 +1654,53 @@
   "/mechanistic-views/open-problems/unit-of-analysis/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/intervention-limits/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/linear-assumption/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/probe-features/",
       "title": "Case Study — Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
     }
   ],
   "/mechanistic-views/open-problems/cross-model-identity/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
-    }
-  ],
-  "/mechanistic-views/open-problems/training-dynamics/": [
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problems"
     }
   ],
   "/mechanistic-views/open-problems/resolution-completeness/": [
     {
       "slug": "/open-problems/",
-      "title": "Open Problems"
+      "title": "Open Problem Map"
     },
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
     }
   ],
-  "/mechanistic-views/open-problems/": [
+  "/mechanistic-views/open-problems/world-models/": [
     {
-      "slug": "/views/",
-      "title": "Views"
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
     }
   ],
   "/views/mappings/": [
@@ -1659,13 +1727,11 @@
       "title": "View Mappings"
     }
   ],
-  "/views/role/": [
-    {
-      "slug": "/views/object/",
-      "title": "Object View"
-    }
-  ],
   "/mechanistic-views/formalism/deep-dives/sheaves/": [
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
+    },
     {
       "slug": "/views/structural/",
       "title": "Structural View"

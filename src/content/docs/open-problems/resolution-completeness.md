@@ -20,11 +20,11 @@ The capability-propensity distinction maps onto the [Instrumental](/mechanistic-
 
 | Criterion | Current status | What's missing |
 |---|---|---|
-| [V1 Completeness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/completeness/) | **Unknown** — no systematic measure of how much behavior is explained | Requires resolution specification: "complete at which granularity?" |
-| [C4 Boundary specification](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/boundary-specification/) | **Incomplete** — mechanism boundaries depend on resolution | The same mechanism has different boundaries at different resolutions; current work doesn't specify which |
-| [C1 Operationalization](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/operationalization/) | **Confused** — capability and propensity are conflated | "This circuit does X" conflates "can do X" with "tends to do X" — different operationalizations with different validity requirements |
-| [E3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/specificity/) | **Untested** at most resolutions | A mechanism that is specific at one resolution may be non-specific at another |
-| [V2 Parsimony](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/parsimony/) | **Resolution-dependent** — finer resolution means less parsimonious | There's a natural Pareto frontier between resolution and parsimony that the field hasn't characterized |
+| [V5 Scope honesty](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/scope-honesty) | **Unknown** — no systematic measure of how much behavior is explained | Requires resolution specification: "complete at which granularity?" |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | **Incomplete** — mechanism boundaries depend on resolution | The same mechanism has different boundaries at different resolutions; current work doesn't specify which |
+| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | **Confused** — capability and propensity are conflated | "This circuit does X" conflates "can do X" with "tends to do X" — different operationalizations with different validity requirements |
+| [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | **Untested** at most resolutions | A mechanism that is specific at one resolution may be non-specific at another |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | **Resolution-dependent** — finer resolution means less parsimonious | There's a natural Pareto frontier between resolution and parsimony that the field hasn't characterized |
 
 ## Sources
 

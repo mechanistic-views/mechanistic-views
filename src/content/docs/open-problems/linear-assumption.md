@@ -22,9 +22,9 @@ The Subspace view is not inherently linear; Grassmannian geometry can describe c
 
 | Criterion | Status | Why |
 |---|---|---|
-| [C1 Operationalization](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/operationalization/) | **Violated** — if "concept = direction" is wrong, the operationalization is wrong | The concept is defined as a direction, but the real representation may be a manifold |
+| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | **Violated** — if "concept = direction" is wrong, the operationalization is wrong | The concept is defined as a direction, but the real representation may be a manifold |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | **Violated** — different linear projections of a circle give different "directions" | The direction you find depends on which part of the circle your data samples |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | **Violated** — DAS in random models means the method can't discriminate real from absent structure | A method that always finds something cannot distinguish "found real structure" from "found nothing" |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | **Violated** — DAS in random models means the method can't discriminate real from absent structure | A method that always finds something cannot distinguish "found real structure" from "found nothing" |
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | **Violated** — optimization freedom in DAS is an uncontrolled confound | The subspace found by DAS may reflect optimization dynamics, not model structure |
 
 The fix is methodological: nonlinear representation discovery (circles, manifolds), proper random baselines for DAS, and methods that test whether the linear assumption holds before relying on it. These are active research directions but not yet standard practice.

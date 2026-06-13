@@ -28,5 +28,5 @@ Dictionary features are points in $\mathrm{Gr}(1, d)$ — the simplest objects o
 
 - Cunningham et al., "Sparse Autoencoders Find Highly Interpretable Directions in Language Models" (2023) — SAE features as interpretable directions
 - Bricken et al., "Towards Monosemanticity" (2023) — scaling SAEs to large models
-- See the [SAE features discussion](/mechanistic-views/views/subspace/#sae-features-and-the-subspace-view) on the subspace view page for when SAE features and causal subspaces agree or diverge
+- See the [SAE channels discussion](/mechanistic-views/views/subspace/#sae-channels-and-the-subspace-view) on the subspace view page for when SAE channels and causal subspaces agree or diverge
 - See the [methods page](/mechanistic-views/methods/) for how [SAE features](https://learnmechinterp.com/topics/sparse-autoencoders/) fit into the broader evidence landscape

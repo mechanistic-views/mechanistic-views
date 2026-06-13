@@ -25,7 +25,7 @@ The [Structural view](/mechanistic-views/views/structural/) partially resolves t
 | [I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/) | **Unreliable** — reconfiguration inflates or deflates necessity scores | Ablation tests necessity of the component *in the original network*, but reconfiguration means you're testing a different network |
 | [I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/) | **Unreliable** — multi-component interactions mean a "sufficient" subset may only work because of interactions with the complement | Sufficiency of a subset requires the subset to function independently, but independence is exactly what fails |
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | **Violated** — side effects are uncontrolled confounds | Every ablation confounds "this component contributes to the target task" with "this component is needed for network stability" |
-| [E3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/specificity/) | **Untested** — ablation studies rarely measure effects on non-target tasks | Without specificity testing, you can't distinguish "this head does IOI" from "this head does everything" |
+| [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | **Untested** — ablation studies rarely measure effects on non-target tasks | Without specificity testing, you can't distinguish "this head does IOI" from "this head does everything" |
 
 ## Sources
 

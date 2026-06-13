@@ -23,9 +23,9 @@ The [Schmidt Sciences 2026 "Trustworthy AI" research agenda](https://www.schmidt
 | [I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/) | Covered (steering works) | Covered (ablation shows necessity + sufficiency) | Covered |
 | [I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/) | Not tested | Covered (ablation) | Covered |
 | [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion/) | **Impossible** | Possible | Covered (subspace uniqueness) |
-| [E1 Task transfer](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/task-transfer/) | **Not tested** | Possible but not standard | Testable via subspace stability |
-| [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/) | **Not tested** | Possible but not standard | Testable via Grassmannian distance |
-| [E3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/specificity/) | **Not tested** | Testable via targeted ablation | Testable via subspace orthogonality |
+| [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | **Not tested** | Possible but not standard | Testable via subspace stability |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | **Not tested** | Possible but not standard | Testable via Grassmannian distance |
+| [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | **Not tested** | Testable via targeted ablation | Testable via subspace orthogonality |
 
 The pattern: Instrumental evidence covers sufficiency (the lever works) but leaves necessity, alternative exclusion, and all external validity criteria untested. A safety case built on Instrumental evidence has at least five untested validity criteria. Moving to Object evidence fills necessity and makes external criteria testable. Moving to Subspace evidence covers alternative exclusion and makes external criteria measurable.
 

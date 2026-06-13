@@ -24,8 +24,8 @@ The [Perspectival view](/mechanistic-views/views/perspectival/) offers a sharper
 |---|---|---|
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | **Impossible** — different SAE widths yield different features, no convergence | **Possible** — different decompositions should span the same subspace |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | **Impossible** — features change with hyperparameters | **Covered** — subspace is hyperparameter-invariant (testable via Grassmannian distance) |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | **Violated** — SAEs find features in noise, can't discriminate real from artifact | **Possible** — real subspaces should be distinguishable from random subspaces by stability |
-| [C4 Boundary specification](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/boundary-specification/) | **Violated** — no principled boundary between one feature and its splits | **Possible** — subspace dimensionality gives a natural boundary |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | **Violated** — SAEs find features in noise, can't discriminate real from artifact | **Possible** — real subspaces should be distinguishable from random subspaces by stability |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | **Violated** — no principled boundary between one feature and its splits | **Possible** — subspace dimensionality gives a natural boundary |
 
 The decomposition identity problem makes four validity criteria impossible or violated under the Object view. All four become possible or covered under the Subspace view. This is the single largest validity gain from moving up one level on the commitment ladder.
 

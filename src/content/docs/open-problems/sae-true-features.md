@@ -42,7 +42,7 @@ The field argues because researchers at different views mean different things by
 
 **The practical fix:** stop asking "are these the true features?" and start asking:
 1. **Subspace convergence** — do SAEs at different widths span similar subspaces? (Grassmannian distance)
-2. **Discriminant validity** — do SAEs find qualitatively different structure in trained vs. random models? ([V3 Discriminant](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/))
+2. **Discriminant validity** — do SAEs find qualitatively different structure in trained vs. random models? (V3 Discriminant)
 3. **Causal relevance** — do the features (or subspaces) have causal effects on model behavior? ([I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/), [I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/))
 
 These are answerable. "Are these the true features?" is not.
@@ -53,8 +53,8 @@ These are answerable. "Are these the true features?" is not.
 |---|---|---|
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | Central | Do different SAE configurations agree? |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | Central | Are features stable across measurement choices (width, seed)? |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | Critical | Can you distinguish trained-model features from noise-model features? |
-| [C4 Boundary specification](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/boundary-specification/) | Relevant | Where does one feature end and another begin? |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | Critical | Can you distinguish trained-model features from noise-model features? |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | Relevant | Where does one feature end and another begin? |
 
 ## See also
 
@@ -68,7 +68,7 @@ These are answerable. "Are these the true features?" is not.
 
 A concrete instance of this problem: [Bricken et al. (2023)](https://transformer-circuits.pub/2023/monosemantic-features/index.html) and subsequent work showed that safety-relevant SAE features can be *absorbed* into more general features at higher SAE widths. A "deception" feature at width 4096 may disappear at width 16384 — not because deception stopped being represented, but because the representation was redistributed across finer-grained features.
 
-Under the Object view, this is alarming: a feature you were monitoring vanished. Under the Subspace view, it's expected: the subspace is stable even as the basis changes. The safety question becomes: is the *subspace* still detectable, even if the individual feature isn't? If yes, monitor the subspace, not the feature. If no, the representation genuinely changed — a much more serious concern that requires [E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/) evidence.
+Under the Object view, this is alarming: a feature you were monitoring vanished. Under the Subspace view, it's expected: the subspace is stable even as the basis changes. The safety question becomes: is the *subspace* still detectable, even if the individual feature isn't? If yes, monitor the subspace, not the feature. If no, the representation genuinely changed — a much more serious concern that requires [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) evidence.
 
 ## Resolution status: **Dissolved**
 

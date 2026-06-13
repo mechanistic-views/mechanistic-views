@@ -64,10 +64,10 @@ There is no single right unit. The question dissolves when you recognize that di
 
 | Criterion | Status | What it tells you |
 |---|---|---|
-| [C4 Boundary specification](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/boundary-specification/) | Central | Are the boundaries of the unit well-defined? |
+| [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | Central | Are the boundaries of the unit well-defined? |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | Central | Are findings stable across unit choices? |
 | [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture/) | Critical | Does the unit allow cross-model comparison? |
-| [C1 Operationalization](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/operationalization/) | Relevant | Can the unit be measured consistently? |
+| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | Relevant | Can the unit be measured consistently? |
 
 ## See also
 

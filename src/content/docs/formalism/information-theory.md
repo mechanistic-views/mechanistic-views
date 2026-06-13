@@ -26,7 +26,7 @@ Information-theoretic measures also depend on the choice of target variable, whi
 
 Information theory quantifies what the [linear classifier](/mechanistic-views/formalism/linear-classifier/) detects: a probe with high accuracy implies high mutual information, but the converse is not always true (information may be encoded nonlinearly). The [Grassmannian](/mechanistic-views/formalism/grassmannian/) provides a geometric view of the same structure: a $k$-dimensional subspace that maximizes explained variance for a concept is closely related to the subspace that maximizes mutual information with it.
 
-The [dictionary](/mechanistic-views/formalism/dictionary/) formalism decomposes activations into sparse features, each of which can be evaluated information-theoretically: how much mutual information does feature $i$ carry about concept $c$?
+The [dictionary](/mechanistic-views/formalism/dictionary/) formalism decomposes activations into sparse dictionary elements, each of which can be evaluated information-theoretically: how much mutual information does element $i$ carry about concept $c$?
 
 ## Further reading
 

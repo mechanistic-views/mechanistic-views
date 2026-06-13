@@ -27,8 +27,8 @@ The Perspectival view doesn't say interpretability is impossible. It says that s
 | Criterion | Status | Problem |
 |---|---|---|
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | **Violated** — discovery-validation circularity is an uncontrolled confound | The discovery procedure biases the validation |
-| [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/) | **Untested** — most studies don't test cross-distribution | Without distribution shift testing, interpretability illusions go undetected |
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | **Violated** — without random baselines, can't distinguish real from artifactual | If random models also yield "features," the method can't discriminate |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | **Untested** — most studies don't test cross-distribution | Without distribution shift testing, interpretability illusions go undetected |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | **Violated** — without random baselines, can't distinguish real from artifactual | If random models also yield "features," the method can't discriminate |
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | **Untested** — single-method studies dominate | Cross-method convergence is the strongest defense against method artifacts, but is rarely tested |
 | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) | **Unknown** — few studies test whether the same method finds the same mechanism on re-run | Test-retest reliability of circuit discovery methods is largely unreported |
 

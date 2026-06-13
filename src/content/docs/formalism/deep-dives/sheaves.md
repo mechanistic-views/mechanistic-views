@@ -108,4 +108,3 @@ Hansen, J. and Ghrist, R. (2021). "Toward a spectral theory of cellular sheaves.
 - [Stratified view](/mechanistic-views/views/stratified/) — the $\mathcal{M}_\infty$ stratum is characterized by non-zero $H^1$
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — complementary gauge-invariant characterization
 - [Stratification deep dive](stratification/) — spectral sequences for augmented circuit complexes
-- [Localized vs. Distributed decision](/mechanistic-views/decisions/localized-vs-distributed/) — practical implications of $H^1 \neq 0$

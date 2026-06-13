@@ -12,7 +12,7 @@ A fiber bundle is a space that locally looks like a product of two spaces — a 
 
 A *quotient* by a group action collapses all points related by the group's symmetries into a single equivalence class. The fiber bundle quotient $\mathcal{W}/\mathcal{G}$ divides the space of all weight configurations $\mathcal{W}$ by the gauge group $\mathcal{G}$ — the symmetries that preserve the model's input-output function. Each point in the quotient represents a functionally distinct model, with all redundant parameterizations collapsed.
 
-See [Fiber bundle](https://en.wikipedia.org/wiki/Fiber_bundle) and [Quotient space](https://en.wikipedia.org/wiki/Quotient_space_(topology)) on Wikipedia.
+See [Fiber bundle](https://en.wikipedia.org/wiki/Fiber_bundle) and [Quotient space](https://en.wikipedia.org/wiki/Quotient_space_%28topology%29) on Wikipedia.
 
 ## Gauge symmetries in transformers
 

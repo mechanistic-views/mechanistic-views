@@ -18,7 +18,7 @@ The eight views group into three families of two (Identity, Mathematical, Proces
 
 ## Ontology determines identity determines formalism
 
-Each view's ontological commitment implies a specific identity criterion, which in turn implies a natural formalism. The chain is mostly 1-to-1: choosing what a mechanism *is* determines when two are *the same* determines what *math* you use.
+Each view's ontological commitment implies a specific identity criterion, which in turn implies a natural formalism. The chain from ontology to identity is tight; the chain from identity to formalism is many-to-many (a single view can use multiple formalisms, and a single formalism can serve multiple views). But the determination direction is fixed: choosing what a mechanism *is* determines when two are *the same* determines what *math* is natural.
 
 ![Three-column chain: Ontology → Identity → Formalism](/mechanistic-views/figures/ontology-identity-formalism-v2.svg)
 

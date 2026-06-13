@@ -24,7 +24,7 @@ Each method carries implicit commitments across all five axes. Method links prov
 | [Logit / tuned lens](https://learnmechinterp.com/topics/logit-lens-and-tuned-lens/) | [Object](/mechanistic-views/views/object/) | Component overlap | Activations | [Linear projection](/mechanistic-views/formalism/linear-projection/) | Layer readout |
 | [SVD of weights](https://learnmechinterp.com/topics/qk-ov-circuits/) | [Subspace](/mechanistic-views/views/subspace/) | Subspace proximity | Weights | [Grassmannian $\mathrm{Gr}(k,d)$](/mechanistic-views/formalism/grassmannian/) | Decomposition |
 | [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) | [Structural](/mechanistic-views/views/structural/) | Gauge orbit | Weights | [Fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/) | Info-flow bound |
-| [AGOP](https://arxiv.org/abs/2110.04005) | [Process](/mechanistic-views/views/process/) | Basin membership | Dynamics | [Dynamical system](/mechanistic-views/formalism/dynamical-system/) | Trajectory |
+| AGOP (Radhakrishnan et al.) | [Process](/mechanistic-views/views/process/) | Basin membership | Dynamics | [Dynamical system](/mechanistic-views/formalism/dynamical-system/) | Trajectory |
 
 <!-- TODO: add back once published
 | Factorization | [Subspace](/mechanistic-views/views/subspace/) | Subspace proximity | Weights | [Grassmannian](/mechanistic-views/formalism/grassmannian/) | Decomposition |
@@ -55,7 +55,7 @@ Each method has practical limitations and, in several cases, internal tensions b
 | [Logit / tuned lens](https://learnmechinterp.com/topics/logit-lens-and-tuned-lens/) | Activations, observational | Observational only | [Linear projection](/mechanistic-views/formalism/linear-projection/) shows what is decodable at each layer, but conclusions are stated about specific layers ([object-level](/mechanistic-views/views/object/)) — presence does not establish causal role |
 | [SVD of weights](https://learnmechinterp.com/topics/qk-ov-circuits/) | Weights, observational | SVD subspace is not necessarily the causal subspace | — |
 | [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) | Weights, observational | Upper bound only; does not confirm edge is causally active | Presented as [structural-view](/mechanistic-views/views/structural/) evidence, but invariant only under head permutations, not the full gauge group — partial invariance, not full |
-| [AGOP](https://arxiv.org/abs/2110.04005) | Dynamics, observational | Tracks task sensitivity; convergence to causal subspace is conjecture | — |
+| AGOP (Radhakrishnan et al.) | Dynamics, observational | Tracks task sensitivity; convergence to causal subspace is conjecture | — |
 
 ## Cross-cutting observations
 

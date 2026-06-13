@@ -18,16 +18,16 @@ These problems belong naturally to the [Process view](/mechanistic-views/views/p
 
 Most current MI operates at the Object, Role, or Subspace level — all static views. Adding Process-view evidence doesn't replace static analysis; it supplements it. A mechanism described at the Subspace level (a stable causal subspace) with Process-level evidence (it forms reliably, survives fine-tuning, and emerges at a specific phase transition) has substantially stronger validity than either analysis alone.
 
-The Process view is unique in that it provides evidence for criteria that no static view can address: [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) (cross-seed), [E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/) (pre/post fine-tuning), and formation order (which mechanisms are developmental prerequisites for others).
+The Process view is unique in that it provides evidence for criteria that no static view can address: [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) (cross-seed), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) (pre/post fine-tuning), and formation order (which mechanisms are developmental prerequisites for others).
 
 ## Mechanistic validity impact
 
 | Criterion | Static views | With Process view |
 |---|---|---|
 | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) | Possible (re-run method) | **Covered** (cross-seed comparison is built-in) |
-| [E5 Temporal stability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/temporal-stability/) | Not testable | **Covered** (stability across training checkpoints) |
-| [E2 Distribution shift](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/distribution-shift/) | Testable but static | **Strengthened** (mechanism that survives fine-tuning on new distribution is more robust) |
-| [I3 Dose-response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/dose-response/) | Static dose-response | **Strengthened** (formation trajectory shows gradual development, not just static graded effect) |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Not testable | **Covered** (stability across training checkpoints) |
+| [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Testable but static | **Strengthened** (mechanism that survives fine-tuning on new distribution is more robust) |
+| [I3 Dose-response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response) | Static dose-response | **Strengthened** (formation trajectory shows gradual development, not just static graded effect) |
 
 ## Sources
 

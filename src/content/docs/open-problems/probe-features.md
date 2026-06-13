@@ -58,9 +58,9 @@ The probe wars happened because researchers made claims at one view using eviden
 
 **The practical fix:** match the evidence to the claim.
 1. "This property is linearly decodable" — Instrumental. Probe accuracy suffices.
-2. "This property is encoded differently in trained vs. random models" — Perspectival. Need discriminant validity ([V3](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/)).
+2. "This property is encoded differently in trained vs. random models" — Perspectival. Need discriminant validity (V3).
 3. "This property is causally active in the model's computation" — Subspace. Need DAS/IIA ([I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/)).
-4. "This property is functionally necessary for the model's behavior" — Role. Need ablation + specificity ([I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/), [E3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/specificity/)).
+4. "This property is functionally necessary for the model's behavior" — Role. Need ablation + specificity ([I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/), [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity)).
 
 Each is a valid claim. They are not the same claim.
 
@@ -68,11 +68,11 @@ Each is a valid claim. They are not the same claim.
 
 | Criterion | Status | What it tells you |
 |---|---|---|
-| [V3 Discriminant validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/discriminant-validity/) | Critical | Can you distinguish real encoding from probe artifact? |
+| [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | Critical | Can you distinguish real encoding from probe artifact? |
 | [I1 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency/) | Central | Does intervening on the subspace produce the expected behavior? |
 | [I2 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity/) | Central | Does removing the subspace degrade the expected behavior? |
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | Critical | Is probe accuracy confounded by activation geometry? |
-| [E3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/specificity/) | Relevant | Does the feature affect only the relevant behavior? |
+| [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | Relevant | Does the feature affect only the relevant behavior? |
 
 ## Resolution status: **Dissolved**
 
