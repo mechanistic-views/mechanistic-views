@@ -4,28 +4,40 @@ title: Subspace vs. Structural
 
 # Subspace vs. Structural
 
-**The fork.** Is Grassmannian identity (geodesic distance on $\mathrm{Gr}(k,d)$) sufficient, or is a gauge-invariant characterization required?
+**The fork.** When comparing mechanisms across models, is it enough to check that their subspaces are close, or do you need a characterization that accounts for internal symmetries of the network?
 
-## Option A: [Subspace](/mechanistic-views/views/subspace/) identity
+This decision matters whenever you compare two models that may represent the same computation in different coordinate systems. Transformers have internal symmetries -- you can permute attention heads within a layer, or apply certain rotations to weight matrices, without changing the model's input-output behavior. These symmetry transformations form what is called a *gauge orbit*: the set of all weight configurations that compute the same function.
 
-Two mechanisms are the same when their subspaces are close on $\mathrm{Gr}(k,d)$. See the [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/) for the distance metric.
+## When you face this decision
 
-**When it goes wrong.** Two models in different gauge orbits may have nearby-looking subspaces because of basis coincidence — false positive. Two models in the same orbit may look different due to basis choice — false negative.
+Suppose you have trained two copies of GPT-2 Small from different seeds. You run DAS (Distributed Alignment Search) on both and find subspaces for a "gender" variable in the residual stream. The two subspaces are close on the Grassmannian (the mathematical space of linear subspaces -- measured by the angles between them). Can you conclude the two models represent gender the same way?
 
-## Option B: [Structural](/mechanistic-views/views/structural/) identity
+Maybe. Or maybe the proximity is a coincidence of the coordinate systems the two models happened to land in. Without accounting for the gauge symmetry, you cannot distinguish "genuinely similar representation" from "similar-looking by accident of basis."
 
-Two mechanisms are the same when they lie in the same gauge orbit. See the [fiber bundle quotient formalism](/mechanistic-views/formalism/fiber-bundle-quotient/).
+## Option A: Subspace identity
 
-**Technical conditions.** The fiber bundle structure (needed for holonomy) holds only when $\mathcal{G}$ acts freely — i.e., at generic points. At non-generic points (identical heads), only the quotient space structure applies, not the bundle. The holonomy criterion also depends on the connection choice.
+Two mechanisms are the same when their subspaces are close on the Grassmannian $\mathrm{Gr}(k, d)$, measured by principal angles. This is the natural criterion for DAS-style analyses: DAS finds a projector $QQ^\top$ that is already invariant under rotations *within* the subspace, so the subspace itself is a coordinate-free object.
 
-**When it goes wrong.** If gauge normalization is impractical or holonomy cannot be computed, the structural view demands something the current toolkit cannot deliver.
+**What it buys you.** Practical tractability. Grassmannian distance is straightforward to compute, has well-understood statistics (random matrix baselines from Marchenko-Pastur theory), and integrates directly with existing DAS tooling.
+
+**What goes wrong.** Two models in different gauge orbits may have nearby-looking subspaces because of basis coincidence -- a false positive. Conversely, two models in the *same* gauge orbit may look different because their weight matrices happen to put the same subspace in different coordinates -- a false negative. Raw Grassmannian distance without gauge alignment conflates representational similarity with coordinate similarity.
+
+## Option B: Structural identity
+
+Two mechanisms are the same when they lie in the same gauge orbit -- that is, when one can be transformed into the other by applying the network's internal symmetries (head permutations, certain rotational symmetries). This is captured formally by the fiber bundle quotient construction: the space of weight configurations modulo gauge transformations.
+
+**What it buys you.** A characterization that is genuinely invariant to internal symmetries. If two models are in the same gauge orbit, they compute the same function in a strong sense, and any subspace-level comparison that says otherwise is misleading.
+
+**What goes wrong.** Computing gauge orbits and holonomy (a measure of how the gauge connection "twists" around the orbit) is expensive and currently requires specialized tooling that most practitioners do not have. The fiber bundle structure also breaks down at non-generic points -- for example, when two attention heads in the same layer have identical weights, the gauge group does not act freely, and the bundle formalism does not apply cleanly. If you cannot actually compute the structural characterization, demanding it just blocks progress.
 
 ## Distinguishing experiments
 
-**Gauge normalization test.** Measure cross-seed Grassmannian distance before and after head-permutation alignment. If distance drops significantly, raw Grassmannian distance was confounded by gauge redundancy.
+**Gauge normalization test.** Measure cross-seed Grassmannian distance before and after head-permutation alignment (reordering heads to minimize distance). If the distance drops significantly after alignment, the raw Grassmannian distance was confounded by gauge redundancy, and the subspace view alone was misleading.
 
-**Functional test.** Take two mechanisms with close Grassmannian distance but suspected different gauge orbits. Do they respond identically to the same causal queries? Behavioral divergence shows the Grassmannian distance was misleading.
+**Functional divergence test.** Find two mechanisms with close Grassmannian distance but suspected different gauge orbits. Run the same causal interventions (e.g., activation patching on the same prompts) on both. If they respond differently despite similar subspaces, the Grassmannian distance was a false positive -- the subspace similarity did not reflect functional similarity.
 
 ## Recommended default
 
-[Subspace view](/mechanistic-views/views/subspace/) for single-model claims and preliminary cross-model comparisons, with gauge normalization applied. [Structural view](/mechanistic-views/views/structural/) (with holonomy and generic-position check) for strong cross-model identity claims where computational cost is acceptable.
+Use the **subspace view** for single-model analyses and preliminary cross-model comparisons. It is the more practical starting point, and for many research questions it is sufficient. Apply gauge normalization (head-permutation alignment) before comparing across seeds or models -- this is cheap and eliminates the most common source of false positives.
+
+Use the **structural view** for strong cross-model identity claims where you need to rule out basis coincidence. This is warranted when the stakes are high (e.g., claiming that two architectures implement the same mechanism) and when the computational cost of gauge-orbit analysis is acceptable. Be honest about the current limitations: if you cannot compute holonomy or verify the generic-position condition, say so.

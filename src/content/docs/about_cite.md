@@ -14,8 +14,6 @@ My goal is to collaborate with voices within MI, philosophy, causal inference, a
 
 If you are interested in contributing, please reach out to me via email. Any opinions are valuable, and disagreements are crucial for refining the framework. 
 
-I speak from no position of authority, and by no means intend to disparage the hard work done by people in the field. 
-
 Thanks,
 Elliot
 

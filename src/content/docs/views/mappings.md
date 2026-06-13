@@ -28,7 +28,7 @@ In practice, these diagrams can be used as a lookup table: find the view that ma
 
 ## Other positions in the literature
 
-Several coherent positions appear in the interpretability literature that are not listed as separate views here. In each case, the position either collapses into one of the eight views, adds a constraint to an existing view, or lacks practical methods for trained models.
+Several coherent positions appear in the interpretability literature that are not listed as separate views here. In each case, we argue the position maps onto one of the eight views, adds a constraint to an existing view, or lacks practical methods for trained models.
 
 **Algorithmic** (RASP, Tracr). Treats mechanisms as formal programs the network implements. A coherent philosophical position, but the only cases where "this network implements algorithm X" can be verified are toy models or very simple circuits where the algorithm is already obvious. For real models, the computation is too distributed and approximate to extract a clean program. Algorithmic claims about trained models reduce to detailed role descriptions in practice.
 

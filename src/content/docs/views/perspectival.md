@@ -4,7 +4,7 @@ title: Perspectival View
 
 # Perspectival View
 
-Run activation patching and you get one circuit. Run DAS and you get a different description. Run ACDC and you get a third. The perspectival view says: none of these is "the real mechanism." Each is a valid description relative to the method that produced it. There is no method-independent ground truth to recover.
+Run activation patching and you get one circuit. Run DAS (distributed alignment search) and you get a different description. Run ACDC (Automatic Circuit DisCovery) and you get a third. The perspectival view says: none of these is "the real mechanism." Each is a valid description relative to the method that produced it. There is no method-independent ground truth to recover.
 
 This is a skeptical position, but not a nihilistic one. It takes measurement seriously — more seriously than the realist views, which treat method disagreement as noise to be averaged out. The perspectival view says method disagreement is informative: it tells you that the "mechanism" looks different depending on how you look at it, which is itself a fact about the model.
 
@@ -18,7 +18,7 @@ A mechanism description is always relative to a measurement procedure. Different
 
 **Why convergence is so valuable.** Cross-method coherence (when methods *do* agree) is the strongest evidence you can get under this view. If methods with non-overlapping assumptions produce the same description, something view-independent is being tracked — which pushes toward a stronger realist view.
 
-**Why "which method found the real mechanism?" may be the wrong question.** If the mechanism genuinely looks different from different measurement standpoints, asking which method is right is like asking whether light is "really" a wave or "really" a particle.
+**Why "which method found the real mechanism?" may be the wrong question.** If the mechanism genuinely looks different from different measurement standpoints, asking which method found the "real" mechanism may presuppose that a unique answer exists.
 
 ## What this view says
 
@@ -34,7 +34,7 @@ This position is consistent with Michela Massimi's *perspectival realism* (Oxfor
 
 The perspectival view is most useful when methods persistently diverge. If DAS, SAEs, and activation patching all identify different "mechanisms" for the same behavior with no convergence, the perspectival view is the appropriate diagnostic framing: the divergence is real evidence that the methods are picking up different things, and the question "which method found the real mechanism?" may be ill-posed.
 
-It motivates the triangulation and convergence requirements in the stronger views. If distinct methods converge on the same description — same subspace, same cohomology class — that convergence is evidence against the purely perspectival position and pushes toward the [subspace](/mechanistic-views/views/subspace/) or [structural](/mechanistic-views/views/structural/) view.
+It motivates the triangulation and convergence requirements in the stronger views. If distinct methods converge on the same description — same subspace, same cohomology class (a topological invariant measuring global consistency of local descriptions) — that convergence is evidence against the purely perspectival position and pushes toward the [subspace](/mechanistic-views/views/subspace/) or [structural](/mechanistic-views/views/structural/) view.
 
 Its main limitation: you cannot prove theorems about mechanisms. The perspectival view has no formal object to make claims about. It can characterize what measurements show and when they diverge, but cannot make positive claims about what the model is doing independent of measurement.
 

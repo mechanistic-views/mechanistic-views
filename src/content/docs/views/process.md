@@ -34,7 +34,7 @@ The process view is needed when the phenomenon is inherently dynamic: phase tran
 
 **Computationally expensive.** Requires checkpoint analysis across many training runs with many saved checkpoints. This is impractical for large models where each checkpoint is tens of gigabytes.
 
-**Formation criterion ambiguity.** Different criteria — behavioral threshold, AGOP convergence, weight-space structure — can give different formation times for the same mechanism. The formation criterion must be stated explicitly, and the choice changes the claim.
+**Formation criterion ambiguity.** Different criteria — behavioral threshold, AGOP (average gradient outer product — a matrix summarizing the gradient structure of the learned function) convergence, weight-space structure — can give different formation times for the same mechanism. The formation criterion must be stated explicitly, and the choice changes the claim.
 
 **Overreach.** Not every mechanism needs a developmental explanation. Describing the training trajectory is informative when the phenomenon is dynamic, but adding "it formed at step 5000" to a mechanism description does not always add explanatory power. The process view is needed when the phenomenon is inherently dynamic, not by default.
 

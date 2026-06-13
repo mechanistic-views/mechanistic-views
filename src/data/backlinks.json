@@ -136,11 +136,11 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     },
     {
       "slug": "/open-problems/superposition/",
@@ -254,11 +254,11 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     },
     {
       "slug": "/open-problems/safety-evidence-gaps/",
@@ -414,7 +414,7 @@
     },
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/deceptive-alignment/",
@@ -540,7 +540,7 @@
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     },
     {
       "slug": "/open-problems/safety-evidence-gaps/",
@@ -642,7 +642,7 @@
     },
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/cross-model-identity/",
@@ -654,7 +654,7 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/resolution-completeness/",
@@ -1294,7 +1294,7 @@
     },
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/decomposition-identity/",
@@ -1310,11 +1310,11 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     },
     {
       "slug": "/open-problems/schmidt-agenda/",
@@ -1364,7 +1364,7 @@
     },
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/deceptive-alignment/",
@@ -1376,7 +1376,7 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/resolution-completeness/",
@@ -1516,7 +1516,7 @@
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     },
     {
       "slug": "/open-problems/superposition/",
@@ -1564,7 +1564,7 @@
   "/mechanistic-views/open-problems/validation-methodology/": [
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/",
@@ -1574,7 +1574,7 @@
   "/mechanistic-views/open-problems/safety-evidence-gaps/": [
     {
       "slug": "/open-problems/cot-faithfulness/",
-      "title": "Case Study — Is Chain-of-Thought Faithful?"
+      "title": "Is Chain-of-Thought Faithful?"
     },
     {
       "slug": "/open-problems/deceptive-alignment/",
@@ -1586,7 +1586,7 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/schmidt-agenda/",
@@ -1628,7 +1628,7 @@
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     }
   ],
   "/mechanistic-views/open-problems/superposition/": [
@@ -1638,7 +1638,7 @@
     },
     {
       "slug": "/open-problems/sae-true-features/",
-      "title": "Case Study — Do SAEs Recover the 'True' Features?"
+      "title": "Do SAEs Recover the 'True' Features?"
     }
   ],
   "/mechanistic-views/open-problems/circuit-disagreements/": [
@@ -1670,7 +1670,7 @@
     },
     {
       "slug": "/open-problems/probe-features/",
-      "title": "Case Study — Do Probes Find Features the Model Uses?"
+      "title": "Do Probes Find Features the Model Uses?"
     },
     {
       "slug": "/open-problems/world-models/",

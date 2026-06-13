@@ -22,13 +22,13 @@ A mechanism is an equivalence class under gauge symmetry: all weight configurati
 
 A **gauge orbit** is the set of all weight configurations related to each other by function-preserving transformations. Think of it this way: if you take a trained transformer and permute its heads, rotate its residual stream basis, and rescale its weights in any way that preserves the input-output mapping, every configuration you can reach by doing this is in the same gauge orbit as the original. All these configurations compute exactly the same function — they differ only in how that function happens to be written down in the weights. The gauge orbit IS the mechanism: it captures everything about the computation while stripping away the arbitrary choices of how to parameterize it.
 
-Two mechanisms are the same when they lie in the same gauge orbit. This resolves the alternative-exclusion problem that plagues the object view: if two component sets are gauge-equivalent, they are not alternative explanations — they are the same explanation expressed in different coordinates.
+Two mechanisms are the same when they lie in the same gauge orbit. This resolves the alternative-exclusion problem that limits the object view: if two component sets are gauge-equivalent, they are not alternative explanations — they are the same explanation expressed in different coordinates.
 
 The structural view also uses **holonomy** — what happens when you transport a subspace through the network along a closed loop of weight matrices. If the subspace comes back rotated, that rotation (the holonomy) is a gauge-invariant fingerprint characterizing the mechanism. Two mechanisms with different holonomy groups are provably different, regardless of how their components are arranged.
 
-The view's objects also include **cosheaf cohomology classes** — topological invariants that track whether a mechanism can be decomposed into locally consistent pieces. When the cohomology is nontrivial ($H^1 \neq 0$), the mechanism has genuinely distributed structure that no local circuit description captures.
+The view's objects also include **cosheaf cohomology classes** — topological invariants that track whether a mechanism can be decomposed into locally consistent pieces. When the cohomology is nontrivial ($H^1 \neq 0$), the mechanism has genuinely distributed structure that no local circuit description captures. (Not yet computed for any transformer at scale.)
 
-This is the strongest static realist position. It resolves nearly every problem the lower views face: cross-architecture identity, convergent validity, alternative exclusion, measurement invariance. The cost is computational. Holonomy, cosheaf cohomology, and gauge-orbit comparison are hard to compute at scale. The view also requires specifying the right symmetry group — LayerNorm breaks the full rotation symmetry, and using the wrong gauge group produces wrong identity judgments. In practice, the structural view is more of a theoretical ceiling than a practical toolkit: it tells you what the right answer looks like, even when you can't compute it yet.
+This is the most ontologically committed static position. It addresses the identity, convergence, and invariance problems that the lower views face, though at the cost of computability. Holonomy, cosheaf cohomology, and gauge-orbit comparison are hard to compute at scale. The view also requires specifying the right symmetry group — LayerNorm breaks the full rotation symmetry, and using the wrong gauge group produces wrong identity judgments. In practice, the structural view is more of a theoretical ceiling than a practical toolkit: it tells you what the right answer looks like, even when you can't compute it yet.
 
 ## When it works and when it doesn't
 
@@ -74,7 +74,7 @@ Behavioral equivalence is coarser: two mechanisms can compute differently but ha
 
 ### Relationship to Mechanistic Validity
 
-The structural view has the broadest validity coverage of any static view — gauge invariance gives it measurement invariance, cross-architecture identity, and convergent validity by construction.
+The structural view addresses the most validity criteria among static views, under the assumption that the correct gauge group is specified.
 
 | Lens | Covered | Possible | Impossible | Score |
 |---|---|---|---|---|

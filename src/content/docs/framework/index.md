@@ -63,7 +63,7 @@ where $O$ is the ontological type (the set of entities that count as mechanisms)
 
 **Incoherent views produce contradictory demands.** If a view violates condition (2) — there exists a measurement $m \in E$ and objects $x, y \in O$ with $x \sim y$ but $m(x) \neq m(y)$ — then the view simultaneously asserts that $x$ and $y$ are the same mechanism (by ${\sim}$) and that they are different (by $m$). No experiment can satisfy both demands. This is immediate from the definitions.
 
-A stronger consequence: incoherent views produce *systematic underdetermination*. Each new measurement either agrees with the identity criterion (offering no information about the discrepancy) or disagrees (introducing its own underdetermination). This is why debates between activation-patching advocates and DAS advocates cannot be settled by more of the same evidence when the participants hold different implicit views.
+A stronger consequence: incoherent views produce *systematic underdetermination*. Each new measurement either agrees with the identity criterion (offering no information about the discrepancy) or disagrees (introducing its own underdetermination). This may be one reason why debates between activation-patching advocates and DAS advocates are difficult to settle by more of the same evidence when the participants hold different implicit views.
 
 **Examples.** Claiming $O =$ component but ${\sim} =$ geodesic distance on $\mathrm{Gr}(k,d)$ violates condition (1): geodesic distance requires subspace objects, not component objects. Citing activation patching as $E$ for a gauge-orbit identity claim violates condition (2): activation patching is head-index-dependent and therefore not sensitive to gauge-orbit membership.
 
@@ -102,7 +102,7 @@ The triangulation requirement in this site — requiring convergent evidence acr
 
 **Cross-model comparison.** The claim that two models implement "the same" mechanism requires a notion of identity that works across models. Component indices (head 9.9 in model A, head 7.3 in model B) are trivially not cross-model. Functional roles may be comparable, if independently specified. Geometric structure may be, if a canonical mapping is defined. Which notion is assumed determines whether "the same mechanism" is meaningful across architectures.
 
-**Generalization.** Finding a circuit invites a natural question: does its presence guarantee specific behavior on inputs the model has never seen? Under an object view, circuit presence is about specific components on a specific distribution — it says nothing about novel inputs. Under a subspace or higher view, the circuit is defined by structure that is increasingly robust: a subspace is stable under perturbation, a gauge-invariant structure survives reparameterization. The stronger the view, the stronger the generalization claim.
+**Generalization.** Finding a circuit invites a natural question: does its presence guarantee specific behavior on inputs the model has never seen? Under an object view, circuit presence is about specific components on a specific distribution — it says nothing about novel inputs. Under a subspace or higher view, the circuit is defined by structure that is increasingly robust: a subspace is stable under perturbation, a gauge-invariant structure survives reparameterization. The stronger the ontological commitment, the broader the class of situations to which the claim applies — if warranted by evidence.
 
 **Post-hoc explanation.** In circuit discovery, components are identified first and functional roles assigned afterward — labels like "name mover" describe observed behavior, not independent predictions. Any observed behavior can be given a plausible role label, making the functional story difficult to falsify. The backup name movers in the IOI circuit ([Wang et al. 2022](https://arxiv.org/abs/2211.00593)) illustrate this: knock out the "name movers" and other heads take on the same role. A role claim becomes falsifiable when the role is predicted from independent evidence — structure, training dynamics, or cross-model transfer — rather than read off the same activations that identified the component.
 
@@ -110,9 +110,7 @@ The triangulation requirement in this site — requiring convergent evidence acr
 
 Marr's tri-level account — computational, algorithmic, implementational — organizes *explanatory targets*: what a system does, how it does it, what substrate realizes the process. The five axes here organize *ontological commitments*: what kind of object the mechanism is, when two are the same, what evidence can support the claim. These are orthogonal. Two researchers can agree that IOI is an algorithmic-level finding — a procedure involving duplicate token heads, S-inhibition heads, and name movers — and still disagree about two things: what a circuit is as a formal object, and what underlying mechanism the circuit describes.
 
-Is it just a useful predictive model? A projection of the method used to find it? A set of specific components? A role structure that any components could fill? A subspace? A gauge-invariant pattern in the weights? A trajectory that formed during training? A multi-resolution object that changes depending on the scale at which you look?
-
-These are eight different claims about what exists inside the network, each corresponding to a mechanistic view.
+These correspond to the eight mechanistic views defined above — each gives a different answer.
 
 ## Deeper commitments
 

@@ -16,15 +16,15 @@ Mechanisms come in different geometric types. The type determines the correct me
 
 The space of mechanisms is not a flat list but a nested filtration — each stratum includes the ones below it as limiting cases. A curved manifold mechanism is "approximately linear" near its center. A distributed mechanism may have a locally consistent approximation in some regions. Stratum assignment is a question of resolution: at what zoom level does the mechanism's specific geometric character become the leading-order description?
 
-- **Directions ($\mathcal{M}_1$):** Single directions in the residual stream. SAE-recovered channels and directional probes. The simplest and most common type. Identity: angular distance between directions.
+- **Directions ($\mathcal{M}_1$):** Single directions in the residual stream (the main vector that flows through the transformer, read and written by each layer). SAE-recovered (sparse autoencoder) channels and directional probes. The simplest and most common type. Identity: angular distance between directions.
 
-- **Linear subspaces ($\mathcal{M}_k$):** $k$-dimensional causal subspaces. Identified by DAS. The mechanism is a point on the Grassmannian $\mathrm{Gr}(k,d)$, invariant under orthogonal rotation within the subspace. Identity: principal angles.
+- **Linear subspaces ($\mathcal{M}_k$):** $k$-dimensional causal subspaces. Identified by DAS (distributed alignment search — a method that finds subspaces where swapping activations reproduces causal effects). The mechanism is a point on the Grassmannian $\mathrm{Gr}(k,d)$ — the space of all $k$-dimensional linear subspaces of $\mathbb{R}^d$ — invariant under orthogonal rotation within the subspace. Identity: principal angles (the canonical set of angles measuring the difference between two subspaces).
 
 - **Flags:** Nested sequences of subspaces $S_1 \subset \cdots \subset S_m$. Relevant for hierarchical attention patterns where query/key structure refines value subspaces at multiple resolution levels.
 
-- **Curved manifolds ($\mathcal{M}_\Sigma$):** Mechanisms with nonlinear encoding structure. The grokking circle ($S^1$), concept manifolds in LLMs. Linear methods fail here — the correct metric comes from pulling back the behavioral output metric to the activation manifold. Three independent 2026 papers (manifold steering, Curveball steering, Riemannian-manifold steering) confirm that geodesic interventions along curved manifolds outperform linear steering.
+- **Curved manifolds ($\mathcal{M}_\Sigma$):** Mechanisms with nonlinear encoding structure. The grokking circle ($S^1$), concept manifolds in LLMs. Linear methods fail here — the correct metric comes from pulling back the behavioral output metric to the activation manifold. Recent work on manifold steering suggests that geodesic interventions along curved manifolds can outperform linear steering.
 
-- **Fiber bundles ($\mathcal{M}_\Phi$):** Mechanisms where the neural implementation of a concept varies systematically with context. Polysemanticity is nontrivial holonomy — the "meaning" of a direction twists as you transport it around different contexts. Emerging and largely theoretical.
+- **Fiber bundles ($\mathcal{M}_\Phi$):** Mechanisms where the neural implementation of a concept varies systematically with context. Polysemanticity is nontrivial holonomy — the rotation a direction accumulates when you trace it through different contexts, so that its "meaning" twists depending on where you look. Emerging and largely theoretical.
 
 - **Distributed ($\mathcal{M}_D$):** Mechanisms that cannot be decomposed into locally consistent pieces. Dark matter in circuits. When local circuit descriptions fail to glue into a global account, there is a genuine distributed mechanism that no finite set of components captures.
 
@@ -32,7 +32,7 @@ The space of mechanisms is not a flat list but a nested filtration — each stra
 
 The most important idea in the stratified view: different interpretability methods are *coordinate charts* on mechanism space. Each chart gives a local, partial, coordinate-dependent view.
 
-SAEs chart $\mathcal{M}_1$ — they find directions that explain activation variance with sparse codes. DAS charts $\mathcal{M}_k$ — it finds subspaces where interchange interventions reproduce causal effects. Circuit discovery (ACDC, EAP, activation patching) charts the component space of the [object view](/mechanistic-views/views/object/). Manifold steering charts $\mathcal{M}_\Sigma$ — it finds curved paths along which interventions produce smooth behavioral changes.
+SAEs (sparse autoencoders) chart $\mathcal{M}_1$ — they find directions that explain activation variance with sparse codes. DAS charts $\mathcal{M}_k$ — it finds subspaces where interchange interventions reproduce causal effects. Circuit discovery methods (ACDC, EAP, activation patching) chart the component space of the [object view](/mechanistic-views/views/object/). Manifold steering charts $\mathcal{M}_\Sigma$ — it finds curved paths along which interventions produce smooth behavioral changes.
 
 When two methods disagree about "the mechanism," the first question is: are they charting the same stratum? If an SAE decomposes a 3-dimensional subspace into multiple 1-dimensional features, it is not wrong — it is projecting an $\mathcal{M}_k$ mechanism into $\mathcal{M}_1$ coordinates, which necessarily fragments the picture. The *dilution ratio* (number of SAE features per intrinsic dimension) quantifies this fragmentation.
 
@@ -46,7 +46,7 @@ When two methods *do* agree — when DAS and weight-space SVD converge on the sa
 
 **Why the Linear Representation Hypothesis works but misleads.** Many mechanisms are approximately linear (low distortion ratio), making $\mathcal{M}_1$ tools work well enough in practice. But the mechanisms where linearity breaks are exactly where interventions go wrong — curved manifolds require geodesic steering, and the error from ignoring curvature is quantifiable.
 
-**The Sutter vacuousness problem.** Arbitrary nonlinear alignment maps make causal abstraction vacuous — any model can be mapped to any algorithm with 100% IIA (Sutter et al., 2025). The stratified view offers a resolution: unrestricted maps can permute strata freely, destroying geometric structure. Restricting to *stratum-preserving maps* — linear for $\mathcal{M}_k$, smooth with bounded curvature for $\mathcal{M}_\Sigma$, bundle morphisms for $\mathcal{M}_\Phi$ — should restore non-vacuousness. This is the stratified view's strongest theoretical argument, but it remains a conjecture.
+**The Sutter vacuousness problem.** Arbitrary nonlinear alignment maps make causal abstraction vacuous — any model can be mapped to any algorithm with 100% IIA (interchange intervention accuracy) (Sutter et al., 2025). The stratified view offers a resolution: unrestricted maps can permute strata freely, destroying geometric structure. Restricting to *stratum-preserving maps* — linear for $\mathcal{M}_k$, smooth with bounded curvature for $\mathcal{M}_\Sigma$, bundle morphisms for $\mathcal{M}_\Phi$ — should restore non-vacuousness. This is the stratified view's most distinctive theoretical prediction, but it remains an untested conjecture.
 
 **Level misalignment.** The most common error in MI papers: claiming algorithmic-level understanding from implementational-level evidence. The docstring variable-binding circuit is the canonical example — the implementational evidence (specific heads attend from docstring to function positions) is solid, but the algorithmic claim (variable binding rather than positional copying) is underdetermined by that evidence. The stratified view makes this visible by requiring that evidence and claims live at the same level.
 
@@ -56,13 +56,13 @@ The [perspectival view](/mechanistic-views/views/perspectival/) is the only view
 
 The evidence bears on this debate directly. When independent methods with non-overlapping assumptions converge on the same geometric object (as in grokking, where weight decomposition, activation probing, and training dynamics all identify the same Fourier structure), that convergence is evidence against perspectivalism. When methods persistently diverge (as in IOI under different ablation methods), perspectivalism gains ground.
 
-The stratified view predicts: methods converge when evidence is collected at the right stratum, and diverge when it is not. Perspectivalism predicts divergence as the baseline. This is a testable distinction.
+The stratified view predicts: methods converge when evidence is collected at the right stratum, and diverge when it is not. Perspectivalism predicts divergence as the baseline. This would be a testable distinction if stratum assignment were independent of the convergence outcome — a caveat the Duhem-Quine problem below makes concrete.
 
 ## When it works and when it doesn't
 
 The stratified view is strongest when methods disagree and you need to understand why, when the mechanism might not be linear, when you need to choose between competing methods, or when safety analysis requires knowing what kind of structure to look for.
 
-It struggles with stratum assignment — there is no canonical algorithm for determining which stratum a mechanism occupies. Three diagnostics exist (distortion ratio, dilution ratio, sheaf inconsistency score), but their thresholds are empirical, not principled. The higher strata ($\mathcal{M}_\Phi$, $\mathcal{M}_D$) are computationally expensive to work with and largely untested on real LLMs. And the Duhem-Quine problem haunts every prediction: if a hypothesis fails, "we assigned the wrong stratum" is always available as an escape. The fix is pre-registered stratum assignments from independent diagnostics before running behavioral tests.
+It struggles with stratum assignment — there is no canonical algorithm for determining which stratum a mechanism occupies. Three diagnostics exist (distortion ratio, dilution ratio, sheaf inconsistency score), but their thresholds are empirical, not principled. The higher strata ($\mathcal{M}_\Phi$, $\mathcal{M}_D$) are computationally expensive to work with and largely untested on real LLMs. And the Duhem-Quine problem (the observation that a failed prediction can always be blamed on auxiliary assumptions rather than the core hypothesis) haunts every prediction: if a hypothesis fails, "we assigned the wrong stratum" is always available as an escape. The fix is pre-registered stratum assignments from independent diagnostics before running behavioral tests.
 
 ---
 
@@ -112,7 +112,7 @@ The strongest predictions the stratified view generates:
 
 ### Relationship to Mechanistic Validity
 
-The stratified view has the broadest validity coverage of any view — it inherits the structural view's criteria and adds resolution-dependent evidence standards. Its unique contribution is that validity criteria themselves vary by stratum: an $\mathcal{M}_1$ mechanism requires different evidence than an $\mathcal{M}_k$ or $\mathcal{M}_D$ mechanism. Its limitations are practical: cosheaf cohomology is not yet computable at scale, and stratum assignment has no canonical algorithm.
+The stratified view addresses the most validity criteria — it inherits the structural view's criteria and adds resolution-dependent evidence standards. Its unique contribution is that validity criteria themselves vary by stratum: an $\mathcal{M}_1$ mechanism requires different evidence than an $\mathcal{M}_k$ or $\mathcal{M}_D$ mechanism. Its limitations are practical: cosheaf cohomology is not yet computable at scale, and stratum assignment has no canonical algorithm.
 
 | Lens | Covered | Possible | Impossible | Score |
 |---|---|---|---|---|

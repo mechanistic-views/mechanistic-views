@@ -4,47 +4,50 @@ title: Single-Method vs. Triangulated Evidence
 
 # Single-Method vs. Triangulated Evidence
 
-**The fork.** When is one strong source sufficient, and when is convergent evidence from independent domains required?
+**The fork.** When is one strong experiment enough to support a mechanistic claim, and when do you need converging evidence from independent domains?
 
-## Why single-domain evidence is insufficient
+This is an epistemological decision, not a methodological one. It determines how much confidence your evidence can support -- and getting it wrong means either overclaiming (treating preliminary evidence as established) or wasting effort (demanding three-domain evidence for a claim that does not need it).
 
-The epistemological problem here is **underdetermination**: multiple distinct mechanism hypotheses are consistent with evidence from any single domain.
+## When you face this decision
 
-- Weight-space evidence alone is consistent with any mechanism that produces the same weight structures (which can include mechanisms with identical weights but different causal roles).
-- Activation-space evidence alone is consistent with mechanisms that produce the same activation patterns on the observed prompt distribution (different mechanisms may produce identical activations within-distribution while diverging out-of-distribution).
-- Dynamics-space evidence alone is consistent with mechanisms that have the same training trajectory (different final mechanisms can form via the same dynamics if the trajectory is underspecified).
+You have run activation patching on GPT-2 Small's IOI circuit and found that head 9.1 is necessary for name-moving. Clean result, large effect size. Can you publish the claim "head 9.1 implements name-moving"?
 
-The triangulation requirement does not eliminate underdetermination — no finite body of evidence can do that — but it *reduces* the hypothesis space by requiring consistency across domains with structurally different failure modes. A hypothesis that explains all three domains is not trivially underdetermined.
+With activation patching alone, several alternative explanations remain live. Head 9.1 might be necessary because it is part of a backup circuit that engages when the primary mechanism is disrupted. Its necessity might be an artifact of the specific prompt distribution you tested on. And you have no evidence about *how* the head implements name-moving -- only that removing it breaks things. The claim is supported but underdetermined: multiple distinct mechanisms are consistent with the same activation patching results.
 
-The joint map across all three domains is injective for any pair of mechanisms that are not identical in all three domains simultaneously — a condition that is plausible but has not been formally verified for natural transformer mechanisms. This is a standing open question; the claim here is only that convergent evidence across domains is stronger than any single domain, which is uncontroversial.
+The question is whether this level of underdetermination is acceptable for your purposes.
 
 ## Option A: Single strong source
 
-Sufficient when the claim is scoped narrowly enough that the domain's known failure modes do not apply, and the method distinguishes the proposed mechanism from all plausible alternatives within that scope.
+One domain of evidence is sufficient when the claim is scoped narrowly enough that the domain's known failure modes do not apply, and the method distinguishes the proposed mechanism from all plausible alternatives within that scope.
 
-**Commits you to.** Tier 2 (Preliminary). Specifying which failure modes would overturn the claim and what cross-domain tests would confirm it.
+**What it buys you.** Speed. You can make a claim and move on. For early-stage investigation, this is often the right call -- you are generating hypotheses, not establishing ground truth.
+
+**What it commits you to.** Stating explicitly which failure modes would overturn the claim and what cross-domain tests would confirm it. A single-method claim should be framed as preliminary: "activation patching shows head 9.1 is necessary for IOI under this prompt distribution."
 
 ## Option B: Triangulation required
 
-Required for: mechanism identity claims, cross-model generalization, mechanism formation, safety-relevant interventions.
+Evidence from at least two of three genuinely independent domains is required when the claim needs to be robust -- for mechanism identity claims, cross-model generalization, or safety-relevant conclusions.
 
-**Commits you to.** Evidence from at least two of the three independent domains with genuinely different failure modes.
+**What it buys you.** Robustness against domain-specific failure modes. If weight-space analysis and activation-space analysis both point to the same mechanism, the chance that both are wrong in the same way is much lower than for either alone.
+
+**What it commits you to.** Significantly more experimental work, and understanding which domains are actually independent.
 
 ## The non-independence trap
 
-[Activation patching](https://learnmechinterp.com/topics/activation-patching/) and [DAS](https://learnmechinterp.com/topics/causal-abstraction/) are both activation-space methods. They share failure modes: both fail for distributed mechanisms, both depend on prompt distribution, both are confounded by backup circuits. They are not independent triangulation.
+Not all methods are independent. Activation patching and DAS (Distributed Alignment Search) are both activation-space methods. They share failure modes: both fail for distributed mechanisms, both depend on prompt distribution, both are confounded by backup circuits. Using both does not constitute triangulation -- it is two views from the same vantage point.
 
-The three genuinely independent domains and their distinct failure modes:
-- **Weight-space**: invariant to prompt distribution; fails for low-rank causally active structures that composition score analysis misses
-- **Activation-space**: sensitive to prompt distribution; fails when the mechanism is not activated by the specific prompts used
-- **Dynamics-space**: captures formation; fails when different training trajectories converge to the same final mechanism
+The three genuinely independent evidence domains are:
+
+- **Weight-space**: Analysis of the model's parameters directly (composition scores, SVD of weight matrices, weight-space circuit structure). Invariant to prompt distribution. Fails when causally active structures have low weight-space signatures.
+- **Activation-space**: Analysis of what the model computes on specific inputs (activation patching, DAS/IIA, SAE channel activations). IIA (Interchange Intervention Accuracy) measures whether swapping activations in a subspace changes behavior as predicted by a causal model. Sensitive to prompt distribution. Fails when the mechanism is not activated by the specific prompts used.
+- **Dynamics-space**: Analysis of how the mechanism formed during training (checkpoint trajectories, AGOP convergence, phase transitions). Captures formation order and prerequisites. Fails when different training trajectories converge to the same final mechanism.
+
+Each domain is individually non-injective on mechanism space -- multiple distinct mechanisms can produce the same evidence within a single domain. Convergence across domains with structurally different failure modes does not eliminate underdetermination, but it substantially reduces the space of consistent hypotheses.
 
 ## Recommended default
 
-Single-method: acceptable at Tier 2 for single-model, single-task claims.
+**Single-method**: acceptable for single-model, single-task claims at the preliminary stage. Frame these claims with appropriate scope.
 
-Two domains: required for cross-seed or cross-model identity claims.
+**Two domains**: required for cross-seed or cross-model identity claims. Weight-space plus activation-space is the most common and practical combination.
 
-All three domains: required for safety-relevant or intervention-design claims.
-
-See the [methods page](/mechanistic-views/methods/) for how each method maps to evidence domains, and the [Mechanistic Validity Interface](/mechanistic-views/mechval-interface/) for per-view triangulation requirements.
+**All three domains**: required for safety-relevant claims or claims that will inform intervention design. If you are going to act on a mechanistic finding -- using it to edit a model, design a monitor, or argue that a model is safe -- the evidence bar should be high.

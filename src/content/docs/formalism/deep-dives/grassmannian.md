@@ -70,7 +70,7 @@ $$\tau_W: \mathrm{Gr}(k, d_\text{in}) \to \mathrm{Gr}(k', d_\text{out}), \quad \
 
 where $k' = \mathrm{rank}(W|_S)$. For nonlinear modules, transport is approximated via the expected Jacobian: $\tau_f(S) \approx \overline{\mathrm{span}(\mathbb{E}[J_f(x)] \cdot S)}$ where the expectation is over the input distribution. This is an approximation; its accuracy degrades when the nonlinearity is large relative to the distribution width, or when the Jacobian varies substantially across the distribution.
 
-The **G-SCM** uses transport maps as edges: nodes are subspaces, edges are weight-induced transports. An alignment that does not respect transport structure violates the causal independence assumptions of the SCM.
+We propose the **G-SCM**, which uses transport maps as edges: nodes are subspaces, edges are weight-induced transports. An alignment that does not respect transport structure would violate the causal independence assumptions of the SCM.
 
 ## Computational tractability
 

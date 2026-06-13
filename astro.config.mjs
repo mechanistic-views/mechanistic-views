@@ -66,6 +66,7 @@ export default defineConfig({
             { label: 'Process', link: '/views/process/' },
             { label: 'Stratified', link: '/views/stratified/' },
             { label: 'View Mappings', link: '/views/mappings/' },
+            { label: 'View Assessment', link: '/views/assessment/' },
           ],
         },
         {

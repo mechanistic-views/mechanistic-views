@@ -6,7 +6,7 @@ title: Object View
 
 The object view is the default stance in most interpretability work today. When someone says "head 9.1 is a name mover" or "this SAE channel fires on French text," they are making an object-view claim: the mechanism is a specific, concrete part of the network, and you study it by poking at it — ablating it, patching it, measuring what happens when it's gone.
 
-This is the simplest realist position. It says mechanisms are real things you can point to: this head, that neuron, these edges in a circuit graph. The evidence is causal and direct — remove the component, see if the behavior breaks. Most circuit discovery work (ACDC, activation patching, EAP) operates in this view, producing directed graphs of components as output.
+This is the simplest realist position. It says mechanisms are real things you can point to: this head, that neuron, these edges in a circuit graph. The evidence is causal and direct — remove the component, see if the behavior breaks. Most circuit discovery work (ACDC — Automatic Circuit DisCovery, activation patching, EAP — Edge Attribution Patching) operates in this view, producing directed graphs of components as output.
 
 ## Thesis
 

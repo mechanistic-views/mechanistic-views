@@ -68,7 +68,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 **Formation criterion.** The threshold or condition used to declare that a mechanism has "formed" during training. Different criteria (behavioral threshold, AGOP convergence, weight-space structure) can disagree in timing. Process-view claims must specify which criterion is used. See [Process view](/mechanistic-views/views/process/).
 
-**G-SCM (Grassmannian Structural Causal Model).** Extension of Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. Requiring alignment maps to respect transport structure is expected to address vacuity concerns (Sutter et al. 2025). See the [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/).
+**G-SCM (Grassmannian Structural Causal Model).** A proposed extension of Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. Requiring alignment maps to respect transport structure is expected to address vacuity concerns (Sutter et al. 2025). See the [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/).
 
 **Gauge-invariant.** A property that depends only on the gauge orbit $[\theta] \in \mathcal{W}/\mathcal{G}$, not on any particular weight configuration within it. Examples: singular values of $W^{OV}$, principal angles, effective rank. See the [structural view](/mechanistic-views/views/structural/) and [fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/).
 

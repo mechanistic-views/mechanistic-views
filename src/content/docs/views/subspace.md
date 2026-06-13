@@ -10,7 +10,7 @@ Subspaces are coordinate-free. They don't depend on which basis you use, which m
 
 ## Thesis
 
-A mechanism is a subspace $S \in \mathrm{Gr}(k, d)$ such that intervening on the projection of the residual stream onto $S$ causes the model to behave as if the corresponding high-level variable had changed.
+A mechanism is a subspace $S \in \mathrm{Gr}(k, d)$ — the space of all $k$-dimensional linear subspaces of $\mathbb{R}^d$ — such that intervening on the projection of the residual stream onto $S$ causes the model to behave as if the corresponding high-level variable had changed.
 
 ## What it explains
 
@@ -22,15 +22,15 @@ A mechanism is a subspace $S \in \mathrm{Gr}(k, d)$ such that intervening on the
 
 ## What this view says
 
-The mechanism is a point on the Grassmannian $\mathrm{Gr}(k, d)$ — the space of $k$-dimensional linear subspaces of $\mathbb{R}^d$. DAS identifies a projector $QQ^\top$ that is invariant under $Q \mapsto QR$ for any $R \in O(k)$: a subspace, not a specific matrix. Two mechanisms are the same when they are the same point on the Grassmannian — equivalently, when their principal angles are all zero.
+The mechanism is a point on the Grassmannian $\mathrm{Gr}(k, d)$. DAS identifies a projector $QQ^\top$ that is invariant under $Q \mapsto QR$ for any $R \in O(k)$ (the group of rotations and reflections within the subspace): a subspace, not a specific matrix. Two mechanisms are the same when they are the same point on the Grassmannian — equivalently, when their principal angles (the canonical set of angles measuring the difference between two subspaces) are all zero.
 
-The Grassmannian comes with a canonical distance (principal angles), a notion of averaging (Frechet mean), and baseline distributions from random matrix theory (Marchenko-Pastur). This gives the subspace view precise, falsifiable identity criteria: you can measure how close two claimed subspaces are, whether convergence across methods is statistically significant, and whether the subspace is distinguishable from random noise.
+The Grassmannian comes with a canonical distance (principal angles), a notion of averaging (Frechet mean — the generalization of an average to curved spaces), and baseline distributions from random matrix theory (Marchenko-Pastur — the distribution of singular values for random matrices, used as a null model). This gives the subspace view precise, falsifiable identity criteria: you can measure how close two claimed subspaces are, whether convergence across methods is statistically significant, and whether the subspace is distinguishable from random noise.
 
 The subspace view assumes the mechanism is linearly encoded. When that assumption fails — nonlinear or context-switching representations, curved manifolds like the [grokking](https://arxiv.org/abs/2301.05217) circle — Riemannian geometry is needed instead of Grassmannian geometry. See the [stratified view](/mechanistic-views/views/stratified/) for how linear and nonlinear subspace structure relate.
 
 ## When it works and when it doesn't
 
-The subspace view is strongest when the causal variable is linearly encoded in the residual stream. For many known circuits — IOI, gender bias, factual recall — DAS finds subspaces with high IIA, confirming that the linear encoding assumption holds.
+The subspace view is strongest when the causal variable is linearly encoded in the residual stream. For many known circuits — IOI, gender bias, factual recall — DAS finds subspaces with high IIA (interchange intervention accuracy — the fraction of examples where swapping the subspace's activations produces the expected output), confirming that the linear encoding assumption holds.
 
 **Linearity.** The central assumption. When the causal variable is encoded on a curved manifold (as in grokking, where the mechanism lives on $S^1$), linear subspace methods will miss the structure. The correct metric comes from the manifold geometry, not from the Grassmannian.
 
@@ -91,7 +91,7 @@ As dictionary size $n$ increases, some channels split into more specific ones (f
 
 ### Formalism
 
-[Grassmannian geometry](/mechanistic-views/formalism/grassmannian/). The **Grassmannian SCM (G-SCM)** extends Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. See the [Grassmannian deep dive](/mechanistic-views/formalism/deep-dives/grassmannian/) for the full mathematical treatment.
+[Grassmannian geometry](/mechanistic-views/formalism/grassmannian/). We propose the **Grassmannian SCM (G-SCM)**, an extension of Pearl's SCM with subspaces as nodes and weight-induced transport maps as edges. See the [Grassmannian deep dive](/mechanistic-views/formalism/deep-dives/grassmannian/) for the full mathematical treatment.
 
 ### Relationship to Mechanistic Validity
 
