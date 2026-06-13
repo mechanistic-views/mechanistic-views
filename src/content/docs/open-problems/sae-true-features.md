@@ -1,5 +1,5 @@
 ---
-title: "Case Study — Do SAEs Recover the 'True' Features?"
+title: "Do SAEs Recover the 'True' Features?"
 ---
 
 # Do SAEs Recover the "True" Features?

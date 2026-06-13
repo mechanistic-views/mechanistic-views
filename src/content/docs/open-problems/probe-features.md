@@ -1,5 +1,5 @@
 ---
-title: "Case Study — Do Probes Find Features the Model Uses?"
+title: "Do Probes Find Features the Model Uses?"
 ---
 
 # Do Probes Find Features the Model Actually Uses?

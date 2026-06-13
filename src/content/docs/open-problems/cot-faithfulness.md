@@ -1,5 +1,5 @@
 ---
-title: "Case Study — Is Chain-of-Thought Faithful?"
+title: "Is Chain-of-Thought Faithful?"
 ---
 
 # Is Chain-of-Thought Faithful to the Model's Reasoning?
