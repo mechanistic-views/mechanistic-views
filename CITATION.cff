@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "Mechanistic Views"
+title: "Mechanistic Views: A Five-Axis Ontology for Mechanistic Interpretability"
 authors:
   - family-names: Tower
     given-names: Elliot
@@ -9,3 +9,4 @@ authors:
 type: software
 license: MIT
 repository-code: "https://github.com/mechanistic-views/mechanistic-views"
+doi: "10.5281/zenodo.21196311"
