@@ -1,0 +1,23 @@
+{
+  "title": "Mechanistic Views",
+  "upload_type": "software",
+  "description": "Visualization tools for mechanistic validity assessments.",
+  "creators": [
+    {
+      "name": "Tower, Elliot",
+      "orcid": "0000-0001-7004-8884"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mechanistic validity",
+    "visualization"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/mechanistic-views/mechanistic-views",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
