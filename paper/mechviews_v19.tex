@@ -70,10 +70,10 @@ graphs to Grassmannian distances and fiber-bundle holonomy, classify
 common methods by their implicit view commitments, and apply the
 framework to three worked examples.  Surveying open problems in
 mechanistic interpretability across eight sources, we find 17 distinct
-problem types: eight are ill-posed through view--evidence mismatch and
-resolve under view declaration, two are reframed once the required
-evidence type is identified, and seven are experimentally unblocked by
-adopting a different view.
+problem types.  Eight are \emph{clarified}: ill-posed through
+view--evidence mismatch, and resolved by declaring the view.  Two are
+\emph{reframed} once the required evidence type is identified.  Seven are
+\emph{scoped}: experimentally unblocked by adopting a different view.
 Better methods within the same view cannot reach the last category, and
 four of the seven need views for which no method yet exists.
 We close with a realism criterion.  A method cannot rule out its own
@@ -84,7 +84,7 @@ mode, so that two views in different families fail for unrelated reasons.
 \end{abstract}
 
 \newpage
-{\small\setlength{\parskip}{0pt}\tableofcontents}
+{\small\setlength{\parskip}{0pt}\setcounter{tocdepth}{3}\tableofcontents}
 \newpage
 
 %% ---------------------------------------------------------------
@@ -2535,6 +2535,7 @@ Kayo Yin and Jacob Steinhardt.
 \newpage
 %% ---------------------------------------------------------------
 \appendix
+\addtocontents{toc}{\protect\vspace{1em}\protect\noindent\textbf{Appendices}\protect\par\protect\vspace{0.3em}}
 \section{Coherence Violations: A Diagnostic Checklist}\label{app:checklist}
 %% ---------------------------------------------------------------
 
@@ -2682,7 +2683,7 @@ identifies which view owns the problem).
 
 These questions become answerable once the view is specified.
 
-\paragraph{Decomposition identity.}
+\subsubsection{Decomposition identity}
 SAE features change with dictionary width---which decomposition is
 ``real''?  Under the object view, this is a problem: the enumeration
 depends on resolution.  Under the subspace view, it is expected: the
@@ -2692,37 +2693,37 @@ in noise~\citep{leask2025} is a perspectival-view prediction:
 decompositions are partly method artifact, requiring cross-method
 validation.
 
-\paragraph{SAE ``true'' features.}
+\subsubsection{SAE ``true'' features}
 ``Do SAEs recover the true features?'' presupposes an object-view
 ontology in which discrete features are the fundamental units.  Under
 the subspace view, the question becomes whether the subspace converges
 across widths and seeds---measurable via Grassmannian distance.
 
-\paragraph{Superposition.}
+\subsubsection{Superposition}
 ``How do models represent more features than dimensions?'' is a
 problem under the object view (feature entanglement to decompose), a
 geometric fact under the subspace view (expected overlap), and a
 presupposition under the perspectival view (it assumes discrete
 features exist to be ``superposed'').
 
-\paragraph{Circuit disagreements.}
+\subsubsection{Circuit disagreements}
 ACDC, EAP, and activation patching find different circuits for the same
 task.  Under the object view, at most one can be correct.  Under the
 role view, each method identifies components that play the relevant
 role under its own intervention semantics---they need not agree, and
 disagreement is diagnostic of different implicit identity criteria.
 
-\paragraph{Unit of analysis.}
+\subsubsection{Unit of analysis}
 Are attention heads, neurons, or subspaces the right unit?  The unit
 depends on the view: object view uses architectural components, role
 view uses functional roles, subspace view uses causal subspaces.
 
-\paragraph{Probe features.}
+\subsubsection{Probe features}
 ``Does the model use feature~$X$?'' means four different things:
 decodable (instrumental), more than artifact (perspectival), causally
 active (subspace), or functionally necessary (role).
 
-\paragraph{Cross-model identity.}
+\subsubsection{Cross-model identity}
 ``Same features across models'' requires specifying the identity
 criterion.  Same top-activating examples (instrumental) is weak.
 Same ablation effect (object) is architecture-dependent.  Same
@@ -2731,7 +2732,7 @@ gauge orbit (structural) is the strongest criterion.  Most
 universality claims use instrumental evidence for structural
 conclusions.
 
-\paragraph{DAS in random models.}
+\subsubsection{DAS in random models}
 Unconstrained DAS achieving high IIA on random
 models~\citep{sutter2025} is a perspectival-view prediction:
 unrestricted nonlinear alignment always finds structure, so
@@ -2742,14 +2743,14 @@ what it finds in a real model needs stronger validation.
 These questions remain empirically open, but the framework clarifies
 what evidence would answer them.
 
-\paragraph{CoT faithfulness.}
+\subsubsection{CoT faithfulness}
 ``Is chain-of-thought faithful?'' is four questions: does CoT predict
 behavior (instrumental), converge with other methods (perspectival),
 describe real functional roles (role), or map onto the computational
 graph (structural)?  The safety-relevant notion requires cross-method
 convergence that no one has demonstrated.
 
-\paragraph{World models.}
+\subsubsection{World models}
 Current evidence that models encode state predicates linearly is
 subspace-level (the encoding exists).  Whether these encodings form a
 causal world model---in which the model's internal causal graph mirrors
@@ -2762,7 +2763,7 @@ existence.
 These are real and structural, arising from the limits of the view
 being used.
 
-\paragraph{Intervention limits.}
+\subsubsection{Intervention limits}
 Ablation-based methods face three Object-view ceilings: reconfiguration
 (the remaining network compensates), interaction effects (single-component
 ablation misses synergies), and side effects (ablating multi-functional
@@ -2770,7 +2771,7 @@ components conflates necessity with general stability).  Moving to the
 subspace view (orthogonal interventions) or structural view
 (gauge-invariant properties) partially resolves each.
 
-\paragraph{Linear assumption.}
+\subsubsection{Linear assumption}
 Circular and manifold representations challenge the assumption that
 concepts are encoded as linear directions.  This is a subspace-view
 ceiling: the formalism assumes linear subspaces, and some concepts
@@ -2778,7 +2779,7 @@ appear to be encoded otherwise.  Which concepts are linear and which
 are not remains open \citep{anwar2024}, so the ceiling is one the view
 may meet rather than one it has already hit.
 
-\paragraph{Safety evidence gaps.}
+\subsubsection{Safety evidence gaps}
 Prominent safety findings (refusal direction ablation, representation
 engineering for truthfulness) are instrumental evidence: they establish
 that a direction is a sufficient behavioral lever, not that it is the
@@ -2786,7 +2787,7 @@ mechanism.  Safety monitoring requires at minimum object evidence
 (necessity plus sufficiency) and ideally subspace evidence (stability
 across distributions).
 
-\paragraph{Validation methodology.}
+\subsubsection{Validation methodology}
 Three foundational threats to MI evidence: validation circularity
 (testing on the discovery distribution), interpretability illusions
 (distribution-dependent feature labels), and lack of random baselines
@@ -2794,7 +2795,7 @@ Three foundational threats to MI evidence: validation circularity
 the perspectival view and resolved by requiring convergent evidence
 across methods and distributions.
 
-\paragraph{Training dynamics.}
+\subsubsection{Training dynamics}
 Most MI analyzes static snapshots, but mechanisms form and can be
 destroyed during training.  Fine-tuning silently destroys
 circuits; adversarial training can relocate mechanisms; phase
@@ -2802,14 +2803,14 @@ transitions create mechanisms suddenly.  These belong to the process
 view, which uniquely provides evidence for cross-seed reliability
 and robustness to continued training.
 
-\paragraph{Resolution and completeness.}
+\subsubsection{Resolution and completeness}
 ``How much do we understand?'' is ill-posed without specifying
 resolution.  Known circuits explain nearly everything at coarse
 granularity but effectively nothing at fine granularity.  This is
 stratified-view territory: the interesting objects are the stable
 strata and the structure that survives coarse-graining.
 
-\paragraph{Deceptive alignment.}
+\subsubsection{Deceptive alignment}
 Detecting deceptive alignment requires evidence far above what current
 methods produce.  Instrumental evidence (steering vectors, probes) is
 structurally insufficient: competent deception is behaviorally identical
