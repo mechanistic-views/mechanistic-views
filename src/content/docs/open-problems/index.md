@@ -84,9 +84,9 @@ The one genuine scope boundary is **multi-agent mechanistic interpretability**. 
 | [Sharkey et al. "Open Problems in MI"](https://arxiv.org/abs/2501.16496) | 2026 | 67 | Comprehensive survey (30 authors) |
 | [Nanda "200 Concrete Open Problems"](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability) | 2022 | 200 | Enumerated research questions |
 | [Apollo Research project ideas](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8) | 2024 | 45+ | Safety-oriented MI projects |
-| [Schmidt Sciences "Trustworthy AI" agenda](https://www.schmidtsciences.org/trustworthy-ai-research-agenda/) | 2026 | 35 | Evaluation validity, deception, oversight |
+| [Schmidt Sciences "Trustworthy AI" agenda](https://www.schmidtsciences.org/trustworthy-ai-research-agenda/) | 2026 | 38 | Evaluation validity, deception, oversight |
 | [Steinhardt "The Case for Evaluating Model Behaviors"](https://www.lesswrong.com/posts/J5KkwYnnaeNX7hL2s/the-case-for-evaluating-model-behaviors) | 2026 | 37 | Behavioral propensity measurement |
 | [Orgad, Barez et al. "Interpretability Can Be Actionable"](https://arxiv.org/abs/2605.11161) | ICML 2026 | 48 | Actionability and comparative advantage |
 | [MIB: Mechanistic Interpretability Benchmark](https://openreview.net/forum?id=sSrOwve6vb) | 2025 | — | Standardized causal localization evaluation |
-| [Barez et al. "MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) | 2026 | — | Conceptual foundations and epistemic status |
+| [Williams et al. "MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) | 2025 | — | Conceptual foundations and epistemic status |
 | [ICML 2026 MI Workshop CFP](https://mechinterpworkshop.com/cfp/) | 2026 | — | Field-level open questions |

@@ -1,10 +1,10 @@
 ---
-title: "Barez et al.: MI Needs Philosophy"
+title: "Williams et al.: MI Needs Philosophy"
 ---
 
-# Barez et al.: "Mechanistic Interpretability Needs Philosophy"
+# Williams et al.: "Mechanistic Interpretability Needs Philosophy"
 
-[Williams, Oldenburg, Dhar et al. (2026)](https://arxiv.org/abs/2506.18852) argue that MI needs philosophy as an ongoing partner — for clarifying concepts, refining methods, and navigating epistemic complexity. They illustrate this through three open problems from the MI literature, each of which maps onto view-level confusions in our framework.
+[Williams, Oldenburg, Fierro et al. (2025)](https://arxiv.org/abs/2506.18852) argue that MI needs philosophy as an ongoing partner — for clarifying concepts, refining methods, and navigating epistemic complexity. They illustrate this through three open problems from the MI literature, each of which maps onto view-level confusions in our framework.
 
 ## Problem 1: How should we decompose networks? (§2.1)
 

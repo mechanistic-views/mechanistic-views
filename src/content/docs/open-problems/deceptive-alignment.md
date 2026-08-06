@@ -73,4 +73,4 @@ The framework identifies the evidence requirements precisely: Instrumental evide
 - [Training Dynamics](/mechanistic-views/open-problems/training-dynamics/) — adversarial training can relocate mechanisms
 - [CoT Faithfulness](/mechanistic-views/open-problems/cot-faithfulness/) — a related problem where model outputs may not reflect internal computation
 - [Structural view](/mechanistic-views/views/structural/) — the view that provides adversarially-robust evidence
-- ["MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) §2.3 — deception requires intentions/beliefs models may lack ([full mapping](/mechanistic-views/open-problems/barez-philosophy/))
+- ["MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) §2.3 — deception requires intentions/beliefs models may lack ([full mapping](/mechanistic-views/open-problems/williams-philosophy/))

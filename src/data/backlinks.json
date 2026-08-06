@@ -13,10 +13,6 @@
       "title": "Case Study — Induction Heads"
     },
     {
-      "slug": "/decisions/static-vs-process/",
-      "title": "Static vs. Process Descriptions"
-    },
-    {
       "slug": "/formalism/dynamical-system/",
       "title": "Dynamical System"
     },
@@ -81,10 +77,6 @@
     {
       "slug": "/cases/self-knowledge/",
       "title": "Case Study — Self-Knowledge"
-    },
-    {
-      "slug": "/decisions/subspace-vs-structural/",
-      "title": "Subspace vs. Structural"
     },
     {
       "slug": "/formalism/deep-dives/grassmannian/",
@@ -185,10 +177,6 @@
       "title": "Case Study — Self-Knowledge"
     },
     {
-      "slug": "/decisions/subspace-vs-structural/",
-      "title": "Subspace vs. Structural"
-    },
-    {
       "slug": "/formalism/deep-dives/grassmannian/",
       "title": "Grassmannian Geometry"
     },
@@ -223,10 +211,6 @@
     {
       "slug": "/methods/",
       "title": "Methods"
-    },
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/cross-model-identity/",
@@ -275,6 +259,10 @@
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/world-models/",
@@ -369,10 +357,6 @@
       "title": "Case Study — IOI"
     },
     {
-      "slug": "/decisions/subspace-vs-structural/",
-      "title": "Subspace vs. Structural"
-    },
-    {
       "slug": "/formalism/category-theory/",
       "title": "Category Theory"
     },
@@ -409,10 +393,6 @@
       "title": "Methods"
     },
     {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
       "slug": "/open-problems/cot-faithfulness/",
       "title": "Is Chain-of-Thought Faithful?"
     },
@@ -431,6 +411,10 @@
     {
       "slug": "/open-problems/superposition/",
       "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/world-models/",
@@ -483,10 +467,6 @@
       "title": "Case Study — Self-Knowledge"
     },
     {
-      "slug": "/decisions/object-vs-role/",
-      "title": "Object vs. Role"
-    },
-    {
       "slug": "/formalism/causal-graph/",
       "title": "Causal Graph"
     },
@@ -509,10 +489,6 @@
     {
       "slug": "/methods/",
       "title": "Methods"
-    },
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/circuit-disagreements/",
@@ -557,6 +533,10 @@
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     },
     {
       "slug": "/views/",
@@ -605,10 +585,6 @@
       "title": "Case Study — IOI"
     },
     {
-      "slug": "/decisions/object-vs-role/",
-      "title": "Object vs. Role"
-    },
-    {
       "slug": "/formalism/category-theory/",
       "title": "Category Theory"
     },
@@ -631,10 +607,6 @@
     {
       "slug": "/methods/",
       "title": "Methods"
-    },
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/circuit-disagreements/",
@@ -667,6 +639,10 @@
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     },
     {
       "slug": "/views/",
@@ -745,147 +721,33 @@
       "title": "Decisions"
     }
   ],
-  "/mechanistic-views/views/stratified/": [
+  "/mechanistic-views/formalism/role-graph/": [
     {
-      "slug": "/decisions/localized-vs-distributed/",
-      "title": "Localized vs. Distributed"
-    },
-    {
-      "slug": "/formalism/deep-dives/",
-      "title": "Deep Dives"
-    },
-    {
-      "slug": "/formalism/deep-dives/sheaves/",
-      "title": "Sheaf Cohomology"
-    },
-    {
-      "slug": "/formalism/deep-dives/stratification/",
-      "title": "Stratification"
-    },
-    {
-      "slug": "/formalism/dictionary/",
-      "title": "Dictionary"
-    },
-    {
-      "slug": "/formalism/stratification/",
-      "title": "Whitney Stratification"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/resolution-completeness/",
-      "title": "Resolution & Completeness"
-    },
-    {
-      "slug": "/open-problems/schmidt-agenda/",
-      "title": "Schmidt Trustworthy AI Agenda"
-    },
-    {
-      "slug": "/open-problems/unit-of-analysis/",
-      "title": "Unit of Analysis"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/subspace/",
-      "title": "Subspace View"
-    }
-  ],
-  "/mechanistic-views/cases/ioi/": [
-    {
-      "slug": "/decisions/object-vs-role/",
-      "title": "Object vs. Role"
-    }
-  ],
-  "/mechanistic-views/methods/": [
-    {
-      "slug": "/decisions/single-vs-triangulated/",
-      "title": "Single-Method vs. Triangulated Evidence"
+      "slug": "/formalism/category-theory/",
+      "title": "Category Theory"
     },
     {
       "slug": "/formalism/causal-graph/",
       "title": "Causal Graph"
     },
     {
-      "slug": "/formalism/dictionary/",
-      "title": "Dictionary"
-    },
-    {
-      "slug": "/formalism/information-theory/",
-      "title": "Information Theory"
-    },
-    {
-      "slug": "/formalism/linear-classifier/",
-      "title": "Linear Classifier"
-    },
-    {
-      "slug": "/formalism/linear-projection/",
-      "title": "Linear Projection"
-    },
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
+      "slug": "/formalism/directed-graph/",
+      "title": "Directed Graph"
     },
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
-    }
-  ],
-  "/mechanistic-views/mechval-interface/": [
-    {
-      "slug": "/decisions/single-vs-triangulated/",
-      "title": "Single-Method vs. Triangulated Evidence"
-    },
-    {
-      "slug": "/glossary/",
-      "title": "Glossary"
-    },
-    {
-      "slug": "/methods/",
-      "title": "Methods"
-    }
-  ],
-  "/mechanistic-views/cases/grokking/": [
-    {
-      "slug": "/decisions/static-vs-process/",
-      "title": "Static vs. Process Descriptions"
-    }
-  ],
-  "/mechanistic-views/formalism/dynamical-system/": [
-    {
-      "slug": "/decisions/static-vs-process/",
-      "title": "Static vs. Process Descriptions"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/methods/",
-      "title": "Methods"
     },
     {
       "slug": "/views/",
       "title": "Views"
     },
     {
-      "slug": "/views/process/",
-      "title": "Process View"
+      "slug": "/views/role/",
+      "title": "Role View"
     }
   ],
   "/mechanistic-views/formalism/fiber-bundle-quotient/": [
-    {
-      "slug": "/decisions/subspace-vs-structural/",
-      "title": "Subspace vs. Structural"
-    },
     {
       "slug": "/formalism/category-theory/",
       "title": "Category Theory"
@@ -935,32 +797,6 @@
       "title": "Structural View"
     }
   ],
-  "/mechanistic-views/formalism/role-graph/": [
-    {
-      "slug": "/formalism/category-theory/",
-      "title": "Category Theory"
-    },
-    {
-      "slug": "/formalism/causal-graph/",
-      "title": "Causal Graph"
-    },
-    {
-      "slug": "/formalism/directed-graph/",
-      "title": "Directed Graph"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/role/",
-      "title": "Role View"
-    }
-  ],
   "/mechanistic-views/formalism/representation-theory/": [
     {
       "slug": "/formalism/category-theory/",
@@ -995,6 +831,36 @@
     {
       "slug": "/views/object/",
       "title": "Object View"
+    }
+  ],
+  "/mechanistic-views/methods/": [
+    {
+      "slug": "/formalism/causal-graph/",
+      "title": "Causal Graph"
+    },
+    {
+      "slug": "/formalism/dictionary/",
+      "title": "Dictionary"
+    },
+    {
+      "slug": "/formalism/information-theory/",
+      "title": "Information Theory"
+    },
+    {
+      "slug": "/formalism/linear-classifier/",
+      "title": "Linear Classifier"
+    },
+    {
+      "slug": "/formalism/linear-projection/",
+      "title": "Linear Projection"
+    },
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
     }
   ],
   "/formalism/deep-dives/grassmannian/": [
@@ -1089,6 +955,56 @@
     {
       "slug": "/views/stratified/",
       "title": "Stratified View"
+    }
+  ],
+  "/mechanistic-views/views/stratified/": [
+    {
+      "slug": "/formalism/deep-dives/",
+      "title": "Deep Dives"
+    },
+    {
+      "slug": "/formalism/deep-dives/sheaves/",
+      "title": "Sheaf Cohomology"
+    },
+    {
+      "slug": "/formalism/deep-dives/stratification/",
+      "title": "Stratification"
+    },
+    {
+      "slug": "/formalism/dictionary/",
+      "title": "Dictionary"
+    },
+    {
+      "slug": "/formalism/stratification/",
+      "title": "Whitney Stratification"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/resolution-completeness/",
+      "title": "Resolution & Completeness"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/unit-of-analysis/",
+      "title": "Unit of Analysis"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
     }
   ],
   "/mechanistic-views/formalism/causal-graph/": [
@@ -1289,10 +1205,6 @@
       "title": "Mechanistic Views"
     },
     {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
       "slug": "/open-problems/cot-faithfulness/",
       "title": "Is Chain-of-Thought Faithful?"
     },
@@ -1329,6 +1241,10 @@
       "title": "Validation Methodology"
     },
     {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
@@ -1353,10 +1269,6 @@
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/circuit-disagreements/",
@@ -1393,6 +1305,10 @@
     {
       "slug": "/open-problems/steinhardt-behaviors/",
       "title": "Steinhardt: Evaluating Behaviors"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     },
     {
       "slug": "/open-problems/world-models/",
@@ -1459,6 +1375,20 @@
     {
       "slug": "/open-problems/schmidt-agenda/",
       "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/views/assessment/",
+      "title": "View Assessment"
+    }
+  ],
+  "/mechanistic-views/mechval-interface/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
     }
   ],
   "/mechanistic-views/formalism/linear-projection/": [
@@ -1499,66 +1429,28 @@
       "title": "Perspectival View"
     }
   ],
+  "/mechanistic-views/formalism/dynamical-system/": [
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/process/",
+      "title": "Process View"
+    }
+  ],
   "/mechanistic-views/figures/methods-evidence-grid.svg/": [
     {
       "slug": "/methods/",
       "title": "Methods"
-    }
-  ],
-  "/mechanistic-views/open-problems/decomposition-identity/": [
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/sae-true-features/",
-      "title": "Do SAEs Recover the 'True' Features?"
-    },
-    {
-      "slug": "/open-problems/superposition/",
-      "title": "Superposition"
-    }
-  ],
-  "/mechanistic-views/open-problems/sae-true-features/": [
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/superposition/",
-      "title": "Superposition"
-    }
-  ],
-  "/mechanistic-views/open-problems/probe-features/": [
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/world-models/",
-      "title": "World Models"
-    }
-  ],
-  "/mechanistic-views/open-problems/deceptive-alignment/": [
-    {
-      "slug": "/open-problems/barez-philosophy/",
-      "title": "Barez et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
     }
   ],
   "/mechanistic-views/open-problems/validation-methodology/": [
@@ -1617,7 +1509,7 @@
       "title": "Open Problem Map"
     }
   ],
-  "/mechanistic-views/open-problems/barez-philosophy/": [
+  "/mechanistic-views/open-problems/williams-philosophy/": [
     {
       "slug": "/open-problems/deceptive-alignment/",
       "title": "Deceptive Alignment"
@@ -1629,6 +1521,52 @@
     {
       "slug": "/open-problems/sae-true-features/",
       "title": "Do SAEs Recover the 'True' Features?"
+    }
+  ],
+  "/mechanistic-views/open-problems/sae-true-features/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
+    }
+  ],
+  "/mechanistic-views/open-problems/probe-features/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
+    }
+  ],
+  "/mechanistic-views/open-problems/decomposition-identity/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     }
   ],
   "/mechanistic-views/open-problems/superposition/": [
@@ -1695,6 +1633,16 @@
     {
       "slug": "/open-problems/unit-of-analysis/",
       "title": "Unit of Analysis"
+    }
+  ],
+  "/mechanistic-views/open-problems/deceptive-alignment/": [
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
     }
   ],
   "/mechanistic-views/open-problems/world-models/": [

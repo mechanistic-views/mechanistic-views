@@ -38,4 +38,4 @@ The decomposition identity problem makes four validity criteria impossible or vi
 - **Templeton et al. (2024)**: Scaling monosemanticity on Claude 3.5 Sonnet
 - **Bricken et al. (2023)**: Towards monosemanticity (original SAE features paper)
 - **Cunningham et al. (2023)**: Sparse autoencoders find interpretable features in language models
-- **Williams, Oldenburg, Dhar et al. (2026)**: "MI Needs Philosophy" §2.1 — no single correct decomposition; "explanatory pluralism" ([full mapping](/mechanistic-views/open-problems/barez-philosophy/))
+- **Williams, Oldenburg, Fierro et al. (2025)**: "MI Needs Philosophy" §2.1 — no single correct decomposition; "explanatory pluralism" ([full mapping](/mechanistic-views/open-problems/williams-philosophy/))

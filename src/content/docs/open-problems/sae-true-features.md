@@ -62,7 +62,7 @@ These are answerable. "Are these the true features?" is not.
 - [Superposition](/mechanistic-views/open-problems/superposition/) — the related question of whether superposition is a problem or a property
 - [Subspace view](/mechanistic-views/views/subspace/) — the view that resolves the convergence question
 - [Perspectival view](/mechanistic-views/views/perspectival/) — the view that predicts method-dependence
-- ["MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) §2.2 — vehicle/content distinction maps onto Object/Role for features ([full mapping](/mechanistic-views/open-problems/barez-philosophy/))
+- ["MI Needs Philosophy"](https://arxiv.org/abs/2506.18852) §2.2 — vehicle/content distinction maps onto Object/Role for features ([full mapping](/mechanistic-views/open-problems/williams-philosophy/))
 
 ## Feature absorption
 
