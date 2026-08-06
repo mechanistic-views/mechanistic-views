@@ -1638,36 +1638,52 @@ than an unstated assumption.
 
 \subsection{Common coherence violations}
 
-Table~\ref{tab:violations} lists the five most common patterns
-in which the evidence type and the claim type are mismatched.
-Each row diagnoses the violation and identifies the evidence that
-would resolve it.
+Table~\ref{tab:violations} lists six phrasings in common use whose
+evidence and claim sit under different views.  Each row names the view the
+evidence reaches, the view the claim asserts, and the declaration that
+would close the gap.  None requires a further experiment: what is missing
+in every case is a statement of which claim is being made.
 
 \begin{table}[H]
 \centering
-\small
-\begin{tabular}{p{0.20\linewidth}p{0.35\linewidth}p{0.35\linewidth}}
+\footnotesize
+\begin{tabular}{p{0.24\linewidth}p{0.17\linewidth}p{0.15\linewidth}p{0.30\linewidth}}
 \toprule
-\textbf{Violation} & \textbf{What it looks like} & \textbf{What would fix it} \\
+\textbf{What gets written} & \textbf{Evidence reaches} & \textbf{Claim asserts} & \textbf{What it needs} \\
 \midrule
-Object evidence, Role claim
-  & ``Head~$X$ is a name mover'' (ablation only)
-  & Role-specific prediction test on held-out constructions \\[4pt]
-Unconstrained DAS
-  & ``87\% IIA'' without specifying alignment class
-  & State alignment class; rerun with linear constraint \citep{sutter2025} \\[4pt]
-Object claim, Structural conclusion
-  & ``Circuit is robust to fine-tuning''
-  & Reparameterization stability test \\[4pt]
-Process claim, no checkpoint evidence
-  & ``Mechanism formed via phase transition''
-  & Report composition score evolution across checkpoints \\[4pt]
-Contrastive mechanism stated absolutely
-  & ``The bias circuit encodes gender''
-  & Report foil set; vary foil systematically \\
+``Head~$X$ is a name mover'' (from ablation)
+  & a component set \emph{(object)}
+  & a functional role \emph{(role)}
+  & a role specification independent of the procedure that found it \\[4pt]
+``\emph{The} circuit for task~$T$''
+  & one circuit under one criterion \emph{(object)}
+  & the unique mechanism
+  & which identity criterion is in use, and what other criteria return
+    \citep{meloux2025} \\[4pt]
+``This direction \emph{is} refusal'' (from a steering result)
+  & predictive control \emph{(instrumental)}
+  & a constituent of the model \emph{(subspace)}
+  & which of the two is claimed; predictive equivalence reaches the first
+    alone \\[4pt]
+``The deception feature''
+  & a direction separating two prompt sets \emph{(contrastive)}
+  & a property of the model \emph{(object)}
+  & which two sets it separates, since the feature is defined by that
+    pairing \\[4pt]
+``We localized it to head~9.9'' (offered as the explanation)
+  & component identity \emph{(object)}
+  & an explanation
+  & what the component does; the object view supplies which components,
+    and a role supplies what they do \\[4pt]
+``Ablating it changed nothing, so it is not involved''
+  & absence under one view
+  & absence in general
+  & whether other views support it: a view failure leaves the claim
+    standing \\
 \bottomrule
 \end{tabular}
-\caption{Five common coherence violations and their resolutions.}
+\caption{Six phrasings whose evidence and claim sit under different views.
+Each is closed by a declaration rather than by a further experiment.}
 \label{tab:violations}
 \end{table}
 
