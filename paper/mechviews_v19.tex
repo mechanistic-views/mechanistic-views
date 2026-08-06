@@ -1,4 +1,4 @@
-% Mechanistic Views: The Hidden Commitments Behind Mechanistic Claims
+% Mechanistic Views: An Atlas of Hidden Commitments and a Realism Criterion for Mechanistic Claims
 \pdfoutput=1
 
 \documentclass{article}
@@ -25,7 +25,7 @@
 \newcommand{\calE}{\mathcal{E}}
 \newcommand{\IIA}{\mathrm{IIA}}
 
-\title{Mechanistic Views: The Hidden Commitments Behind Mechanistic Claims}
+\title{Mechanistic Views: An Atlas of Hidden Commitments and a Realism Criterion for Mechanistic Claims}
 
 \author{\name Elliot Tower \\
       \email elliot@elliottower.ai}
@@ -277,6 +277,25 @@ scoring candidates on sparsity, generality, selectivity and
 faithfulness.  Scoring presupposes that the candidates are commensurable,
 which is what the identity axis supplies and what \citet{meloux2025} and
 \citet{chen2026} show does not come for free.
+
+\paragraph{Relationship to the philosophy of scientific discovery.}
+Philosophers of science have asked interpretability for this and said
+they cannot supply it.  \citet{kastner2024} argue that explaining trained
+networks calls for the coordinated discovery strategies of the life
+sciences, and note that the relevant components need not be the units the
+architecture provides: identifying them ``will often go beyond
+investigating the functional roles of pre-individuated {ANN} structures
+like neurons and layers,'' and may instead require ``more exotic and
+distributed structures like circuits, high-level representations, and
+representational subspaces.''  \citet{rabiza2025} reaches the same list
+independently, naming ``neurons, layers, circuits, or activation
+patterns'' as the candidates a mechanistic strategy must choose among.
+Neither says how to choose, and \citeauthor{kastner2024} say so outright:
+the criteria a system must satisfy for mechanistic discovery are ``a
+complex topic we cannot address in this paper.''  Four candidate
+component types, named twice, with the selection criterion left open both
+times.  The nine views are that criterion, and the atlas is what makes
+the choice reportable rather than tacit.
 
 
 %% ---------------------------------------------------------------
@@ -1669,6 +1688,58 @@ the account of why the two methods differ in the first place.  The three
 arrivals disagree about vocabulary and agree about the diagnosis, which
 is what makes the agreement worth reporting.
 
+\paragraph{A realism criterion.}
+The families give a test for the question convergence is usually asked to
+settle: whether a reported structure belongs to the model or to the method
+that found it.  A method cannot rule out its own characteristic artifact;
+only a method that fails differently can.  Agreement is therefore evidence
+of reality when it holds across views whose failure modes are unrelated,
+and evidence of nothing when the agreeing views share one.  Because
+\S\ref{sec:families} partitions the atlas by primary failure mode, the
+condition is checkable: treat a mechanism as a feature of the model when
+its support crosses at least two families, and as a candidate otherwise.
+Two is the minimum the argument requires rather than a tuned threshold.
+Within one family a single characteristic artifact could produce the whole
+agreement; two families is the smallest number at which no one method's
+artifact explains both results.
+
+Counting agreeing views will not substitute for crossing a family
+boundary.  \citet{stegenga2017} distinguish \emph{ontic} independence---%
+evidence resting on different materials, assumptions or theories---from
+probabilistic independence, and show the first is not sufficient for the
+second: ontically independent lines can jointly confirm a hypothesis less
+than each does alone, and in the worst case can together favour a rival.
+Views are ontically independent by construction, since that is what makes
+them distinct views.  A tally of how many agree therefore measures the
+wrong quantity, which is the objection \citet{stegenga2009} raises against
+robustness arguments generally and \citet{wimsatt1981} anticipates in
+setting them out.
+
+What licenses the inference is error control rather than diversity.
+\citet{kuorikoski2016} rationalise triangulation as reasoning from data to
+phenomenon whose value lies in controlling for the likely errors of
+particular data-generating procedures.  The family partition makes that
+reasoning structural: two views in different families fail for unrelated
+reasons, so a structure surviving both has cleared two sets of assumptions
+rather than one set twice.  This is also what a finer inventory of units
+cannot supply.  \citet{mueller2025mediator} order mediators by search
+tractability, separating units that can be enumerated from those requiring
+optimisation; a finer unit is not a differently-failing one, and only the
+second buys independence.
+
+The criterion is binary rather than graded, and the distinction matters.
+A graded version---a weighted count of supporting views---requires weights,
+and no principled assignment of them is available; it would also report a
+number where the useful output is a list.  What a claim should carry is its
+view-support set: which views were tried, which agreed, and which families
+they fall in, so that a reader can see whether the agreement crosses a
+boundary.  The cost is that claims cannot be ranked against one another,
+and we accept it.  One caveat belongs with the criterion.  Assigning a view
+to a family is a judgement about which of its failure modes dominates, and
+that judgement is revisable as methods change; a partition that turned out
+to group two views sharing a failure mode would license agreements it
+should not.
+
 \subsection{Descriptive and generative views}
 
 The object and role views primarily organize existing empirical
@@ -2087,6 +2158,18 @@ Phyllis McKay Illari and Jon Williamson.
 \newblock \emph{European Journal for Philosophy of Science},
   2\penalty0 (1):\penalty0 119--135, 2012.
 
+\bibitem[K\"astner \& Crook(2024)]{kastner2024}
+Lena K\"astner and Barnaby Crook.
+\newblock Explaining {AI} through mechanistic interpretability.
+\newblock \emph{European Journal for Philosophy of Science}, 14:\penalty0 52,
+  2024.
+\newblock \url{https://doi.org/10.1007/s13194-024-00614-4}.
+
+\bibitem[Kuorikoski \& Marchionni(2016)]{kuorikoski2016}
+Jaakko Kuorikoski and Caterina Marchionni.
+\newblock Evidential diversity and the triangulation of phenomena.
+\newblock \emph{Philosophy of Science}, 83\penalty0 (2):\penalty0 227--247, 2016.
+
 \bibitem[Lanham et~al.(2023)]{lanham2023measuring}
 Tamera Lanham, Anna Chen, Ansh Radhakrishnan, Benoit Steiner, Carson Denison,
   Danny Hernandez, Dustin Li, Esin Durmus, Evan Hubinger, Jackson Kernion,
@@ -2234,6 +2317,13 @@ Naomi Saphra and Sarah Wiegreffe.
   480--498, 2024.
 \newblock \url{https://aclanthology.org/2024.blackboxnlp-1.30/}.
 
+\bibitem[Rabiza(2025)]{rabiza2025}
+Marcin Rabiza.
+\newblock A mechanistic explanatory strategy for {XAI}.
+\newblock In Vincent~C. M\"uller, Leonard Dung, Guido L\"ohr, and Aliya Rumana,
+  editors, \emph{Philosophy of Artificial Intelligence: The State of the Art},
+  Synthese Library. Springer Nature, forthcoming.
+
 \bibitem[Sharkey et~al.(2025)]{sharkey2025}
 Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindsey, Jeff Wu, Lucius
   Bushnaq, Nicholas Goldowsky-Dill, Stefan Heimersheim, et~al.
@@ -2244,6 +2334,16 @@ Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindsey, Jeff Wu, Lucius
 Jacob Steinhardt.
 \newblock The case for evaluating model behaviors.
 \newblock Alignment Forum, May 2026.
+
+\bibitem[Stegenga(2009)]{stegenga2009}
+Jacob Stegenga.
+\newblock Robustness, discordance, and relevance.
+\newblock \emph{Philosophy of Science}, 76\penalty0 (5):\penalty0 650--661, 2009.
+
+\bibitem[Stegenga \& Menon(2017)]{stegenga2017}
+Jacob Stegenga and Tarun Menon.
+\newblock Robustness and independent evidence.
+\newblock \emph{Philosophy of Science}, 84\penalty0 (3):\penalty0 414--435, 2017.
 
 \bibitem[Sun \& Toneva(2026)]{sun2026}
 Alan Sun and Mariya Toneva.
@@ -2343,6 +2443,12 @@ Iwan Williams, Ninell Oldenburg, Ruchira Dhar, Joshua Hatherley, Constanza
   S{\o}gaard.
 \newblock Mechanistic interpretability needs philosophy.
 \newblock arXiv:2506.18852, 2025.
+
+\bibitem[Wimsatt(1981)]{wimsatt1981}
+William~C. Wimsatt.
+\newblock Robustness, reliability, and overdetermination.
+\newblock In Marilynn~B. Brewer and Barry~E. Collins, editors, \emph{Scientific
+  Inquiry and the Social Sciences}, pages 124--163. Jossey-Bass, 1981.
 
 \bibitem[Wilson(1971)]{wilson1971}
 Kenneth G.\ Wilson.
