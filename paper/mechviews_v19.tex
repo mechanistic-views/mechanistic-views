@@ -37,8 +37,8 @@
 Mechanistic interpretability has produced circuits, features, and causal
 subspaces---each resting on an implicit answer to a prior question:
 what kind of thing is a mechanism?
-These are not terminological variants.  They differ in ontology, and
-ontological differences propagate: what a mechanism \emph{is} determines
+The difference between them is ontological, and ontological differences
+propagate: what a mechanism \emph{is} determines
 when two descriptions pick out the \emph{same} one, what \emph{evidence}
 can warrant a claim, and what \emph{inferences} may be drawn from it.
 A mechanistic claim therefore has no determinate content until its view is
@@ -77,6 +77,11 @@ adopting a different view.
 The last category matters most: better methods within the same view
 cannot reach these, and four of the seven need views for which no
 method yet exists.
+We close with a realism criterion.  A method cannot rule out its own
+characteristic artifact, so a reported structure counts as a feature of
+the model rather than of the measurement when its support crosses at
+least two view families---families being partitioned by primary failure
+mode, so that two views in different families fail for unrelated reasons.
 \end{abstract}
 
 
@@ -140,7 +145,10 @@ typically presume that (internal) model reasoning works in specific ways,''
 and that ``these presumptions often lead to abstractions that are
 dubious.''  They pose the consequence as an empirical question---which
 abstractions a network in fact contains.  This paper takes it as a prior
-one: which commitments a claim has made, and how to tell.
+one: which commitments a claim has made, and how to tell.  Practitioners report the
+consequence directly: in a survey of the interpretability and analysis
+community, \citet{mosbach2024} find a quarter of respondents naming a lack of
+big-picture and unified understanding as the field's central problem.
 
 \paragraph{Three motivating cases.}
 
@@ -233,8 +241,13 @@ the mechanism is, when two are the same, and what evidence can support
 the claim.  Marr's levels do not distinguish views: two researchers
 at the same Marr level can hold different mechanistic views (object vs.\
 subspace vs.\ structural).  The nine views are complementary to Marr's
-hierarchy, not a refinement of it: both are needed, and neither
-subsumes the other.
+hierarchy rather than a refinement of it; both are needed, and neither
+subsumes the other.  \citet{davies2024} argue that Marr's second level
+does subdivide for trained networks, into the study of representations
+(semantic interpretation) and of algorithms (algorithmic interpretation).
+That subdivision is real and it still does not distinguish views: both of
+their categories name what is studied, and neither carries a criterion
+for when two studies studied the same thing.
 
 \paragraph{Relationship to identifiability results.}
 A parallel line of work asks whether interpretability's own criteria pick
@@ -546,6 +559,7 @@ configurations under symmetries that preserve the computation),
 temporally extended processes (formation pathways or execution
 trajectories), points in a stratified mechanism space, measurement
 perspectives, and predictive models.
+  Interpretability's own survey literature carves along a neighbouring line: \citet{rauker2023} classify methods by which part of the computational graph they explain---weights, neurons, subnetworks, or latent representations---while treating that division as an engineering convenience rather than a commitment.  The ontology axis asks what the divided thing \emph{is}.
 
 \paragraph{Identity ($\sim$).}
 When do two mechanism descriptions denote the same mechanism?  Options
@@ -993,8 +1007,7 @@ whether the index can be trusted.  Three measurements follow.
 \emph{Effective dimensionality}: the participation ratio of the
 eigenspectrum of the causal subspace, which reports how many directions
 carry the effect without requiring a variance threshold
-\textcolor{red}{[CITE: participation ratio as effective-dimensionality
-estimator]}.  \emph{Localizability}: the smallest fraction of components
+\citep{gao2017}.  \emph{Localizability}: the smallest fraction of components
 whose ablation recovers a fixed fraction of the full causal effect,
 which separates a mechanism concentrated in a handful of heads from one
 spread across a layer.  \emph{Stratum stability}: both quantities
@@ -1485,7 +1498,10 @@ resolution.
 \subsection{Object vs.\ role}
 
 The question is whether a mechanism claim is about a specific component
-or about a functional role that component plays.  Under the \emph{object
+or about a functional role that component plays.  The field's own practical
+review records the ambiguity as ordinary practice: \citet{rai2024} note that
+``prior works have defined circuits with various assumptions and at different
+levels of granularity,'' illustrating one task carved at three of them.  Under the \emph{object
 view}, the claim is about the component; under the \emph{role view},
 it is about the function.
 
@@ -1739,6 +1755,26 @@ to a family is a judgement about which of its failure modes dominates, and
 that judgement is revisable as methods change; a partition that turned out
 to group two views sharing a failure mode would license agreements it
 should not.
+
+\paragraph{Two ways an experiment fails.}
+A negative result under a view admits two readings, and the support set
+separates them.  In a \emph{claim failure} the view was the right lens and
+the experiment failed: the mechanism is absent, or present but not as
+described, and the claim is weaker for it.  In a \emph{view failure} the
+mechanism is there---other views support it---and the view used cannot see
+it, because its structure is not visible under that ontology.  The
+responses differ accordingly.  A claim failure lowers what the claim can
+support.  A view failure removes that view from the claim's support set
+and leaves the claim standing.
+
+Telling them apart requires the support set, which is one reason to report
+it.  A failure under a claim's only supporting view is a claim failure by
+default, since nothing else vouches for the mechanism.  A failure under
+one of several supporting views is a view failure while the remainder
+still cross a family boundary, and becomes a claim failure once they do
+not.  A negative result reported without the support set leaves the two
+indistinguishable---which is part of why null results in interpretability
+are difficult to interpret, and why so few are published.
 
 \subsection{Descriptive and generative views}
 
@@ -2073,6 +2109,12 @@ Lindley Darden.
   Interfield Relations, and Anomaly Resolution}.
 \newblock Cambridge University Press, Cambridge, 2006.
 
+\bibitem[Davies \& Khakzar(2024)]{davies2024}
+Adam Davies and Ashkan Khakzar.
+\newblock The cognitive revolution in interpretability: From explaining
+  behavior to interpreting representations and algorithms.
+\newblock arXiv:2408.05859, 2024.
+
 \bibitem[Earman(1992)]{earman1992}
 John Earman.
 \newblock \emph{Bayes or Bust? A Critical Examination of Bayesian Confirmation
@@ -2102,11 +2144,22 @@ Sheridan Feucht, Eric Todd, Byron Wallace, and David Bau.
 \newblock In \emph{Conference on Language Modeling (COLM)}, 2025.
 \newblock arXiv:2504.03022.
 
+\bibitem[Ferrando et~al.(2024)]{ferrando2024}
+Javier Ferrando, Gabriele Sarti, Arianna Bisazza, and Marta~R. Costa-juss\`a.
+\newblock A primer on the inner workings of transformer-based language models.
+\newblock arXiv:2405.00208, 2024.
+
 \bibitem[Franco et~al.(2026)]{franco2026}
 Gabriel Franco, Lucas~M.\ Tassis, Azalea Rohr, and Mark Crovella.
 \newblock Finding highly interpretable prompt-specific circuits in language
   models.
 \newblock arXiv:2602.13483, 2026.
+
+\bibitem[Gao et~al.(2017)]{gao2017}
+Peiran Gao, Eric Trautmann, Byron Yu, Gopal Santhanam, Stephen Ryu, Krishna
+  Shenoy, and Surya Ganguli.
+\newblock A theory of multineuronal dimensionality, dynamics and measurement.
+\newblock bioRxiv 214262, 2017.
 
 \bibitem[Geiger et~al.(2021)]{geiger2021}
 Atticus Geiger, Hanson Lu, Thomas Icard, and Christopher Potts.
@@ -2259,6 +2312,13 @@ Aaron Mueller, Jannik Brinkmann, Millicent Li, Samuel Marks, Koyena Pal, Nikhil
 \newblock \emph{Computational Linguistics}, 2025.
 \newblock arXiv:2408.01416.
 
+\bibitem[Mosbach et~al.(2024)]{mosbach2024}
+Marius Mosbach, Vagrant Gautam, Tom\'as Vergara-Browne, Dietrich Klakow, and
+  Mor Geva.
+\newblock From insights to actions: The impact of interpretability and analysis
+  research on {NLP}.
+\newblock arXiv:2406.12618, 2024.
+
 \bibitem[Nakahara(2003)]{nakahara2003}
 Mikio Nakahara.
 \newblock \emph{Geometry, Topology and Physics}.
@@ -2295,6 +2355,19 @@ Alethea Power, Yuri Burda, Harri Edwards, Igor Babuschkin, and Vedant Misra.
 \newblock Grokking: Generalization beyond overfitting on small algorithmic
   datasets.
 \newblock arXiv:2201.02177, 2022.
+
+\bibitem[Rai et~al.(2024)]{rai2024}
+Daking Rai, Yilun Zhou, Shi Feng, Abulhair Saparov, and Ziyu Yao.
+\newblock A practical review of mechanistic interpretability for
+  transformer-based language models.
+\newblock arXiv:2407.02646, 2024.
+
+\bibitem[R\"auker et~al.(2023)]{rauker2023}
+Tilman R\"auker, Anson Ho, Stephen Casper, and Dylan Hadfield-Menell.
+\newblock Toward transparent {AI}: A survey on interpreting the inner
+  structures of deep neural networks.
+\newblock In \emph{IEEE Conference on Secure and Trustworthy Machine Learning
+  (SaTML)}, 2023.
 
 \bibitem[Quine(1948)]{quine1948}
 Willard Van~Orman Quine.
@@ -3146,7 +3219,10 @@ the failure mode.
 \subsection{Probe features}\label{app:cs_probe}
 
 Does a model ``use'' a linguistic feature just because a probe can decode
-it? The ``probing wars'' of 2019--2022~\citep{hewitt2019, belinkov2022}
+it?  \citet{ferrando2024} put the gap plainly: highly accurate probes
+``indicate a correlation between input representations and labels, but do not
+provide evidence that the model is using the encoded information for its
+predictions.'' The ``probing wars'' of 2019--2022~\citep{hewitt2019, belinkov2022}
 debated whether probes discover real representations or impose structure.
 The framework suggests it was a view disagreement disguised as a
 methodological one.
