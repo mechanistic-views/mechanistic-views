@@ -1444,7 +1444,7 @@ Under the Object view, features are discrete, countable parts of the model's rep
 This framing encounters a difficulty it lacks the internal resources to resolve. Different SAE widths yield different feature sets: a $4\times$-width SAE finds features that a $16\times$-width SAE splits further, and a $34\times$-width SAE splits further still \citep{templeton2024}. Which width gives the ``right'' features? The Object view requires a determinate inventory of parts, but the inventory changes with the magnifying glass. No principled criterion within the view selects a canonical width.
 
 \paragraph{Subspace view.}
-The Subspace view reframes features as subspaces rather than individual directions. Superposition is geometric: subspaces can overlap, and in high-dimensional spaces, approximate orthogonality is abundant enough that substantial overlap is expected. The question shifts from ``how do we disentangle features?'' to ``how much do representational subspaces interfere, and does that interference degrade downstream computation?''
+The Subspace view reframes features as subspaces rather than individual directions. Superposition is not a compression artifact but a geometric property: subspaces can overlap, and in high-dimensional spaces, approximate orthogonality is abundant enough that substantial overlap is expected rather than pathological. The question shifts from ``how do we disentangle features?'' to ``how much do representational subspaces interfere, and does that interference degrade downstream computation?''
 
 This reframing makes the SAE width problem dissolve into a measurable quantity. Different SAE widths correspond to different granularities of subspace decomposition, and the relationship between them can be characterized by Grassmannian distances between the recovered subspaces across widths and random seeds. If subspaces converge, they identify robust geometric structure; if they fragment, the decomposition at that granularity is an artifact.
 
@@ -1926,11 +1926,8 @@ Several questions are raised by the framework and not resolved:
 \item \emph{Completeness of the atlas.}  The nine views are identified
       by reading the literature, not derived from the five axes.  Whether
       there are important views not represented---a Marr computational-level
-      view \citep{marr1982}, a population-level statistical view---is an open
-      question.  One candidate already has a literature: the semantic
-      interpretation program \citet{davies2024} survey studies latent
-      representations as the object of analysis, which the subspace and role
-      views cover only in part.
+      view \citep{marr1982}, a representational-content view, a
+      population-level statistical view---is an open question.
 \item \emph{Sufficiency of the five axes.}  The five axes may be too many
       or too few.  Evidence and formalism are tightly constrained by
       ontology and identity (the determination chain), raising the question
@@ -3061,7 +3058,8 @@ Activation patching from a ``correct-answer'' forward pass into a
 localizing the failure to specific mid-to-late layers. However, if the
 correct and incorrect candidates share computational components, the
 object view cannot cleanly localize the failure to a specific component
-that ``causes'' hallucination. The pathology is a competition between parts functioning as designed.
+that ``causes'' hallucination. The pathology is not a broken part but a
+competition between parts functioning as designed.
 
 \paragraph{Role view.}
 The mechanism is the fact-retrieval role: a functional capacity
