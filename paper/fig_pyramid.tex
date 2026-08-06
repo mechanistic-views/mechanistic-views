@@ -1,0 +1,84 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\definecolor{lay5}{RGB}{109, 40, 217}   % purple — Stratified (top)
+\definecolor{lay4}{RGB}{37, 99, 235}    % blue — Structural
+\definecolor{lay3}{RGB}{13, 148, 136}   % teal — Subspace
+\definecolor{lay2}{RGB}{217, 119, 6}    % amber — Object / Role
+\definecolor{lay1}{RGB}{225, 29, 72}    % rose — Instrumental (bottom)
+\definecolor{txtdark}{RGB}{30, 41, 59}
+\definecolor{txtsub}{RGB}{71, 85, 105}
+\definecolor{txtmuted}{RGB}{100, 116, 139}
+\definecolor{arrcol}{RGB}{148, 163, 184}
+
+\begin{document}
+\begin{tikzpicture}[
+  every node/.style={font=\sffamily},
+  layer/.style 2 args={
+    draw=#1!40, fill=#1!6, rounded corners=5pt,
+    line width=1.2pt, minimum height=1.05cm, inner sep=0pt, align=center,
+  },
+  lnum/.style={font=\sffamily\bfseries},
+  lname/.style={font=\sffamily\bfseries, text=txtdark},
+  ldesc/.style={font=\sffamily\small\itshape},
+  side/.style={font=\sffamily\footnotesize},
+]
+
+\def\hstep{1.15}  % horizontal indent per layer
+\def\vstep{1.45}  % vertical spacing
+
+% Layer 1 (bottom, widest): Instrumental
+\node[layer={lay1}{}, minimum width=14cm]
+  (L1) at (0, 0) {};
+\node[lnum, text=lay1] at ([xshift=-5.8cm]L1.center) {1.};
+\node[lname] at ([xshift=-4.5cm]L1.center) {Instrumental};
+\node[ldesc, text=lay1] at ([xshift=3cm]L1.center) {Predictive utility only};
+\node[side, text=lay1, right=0.3cm of L1.east] {Predictive models};
+
+% Layer 2: Object / Role
+\node[layer={lay2}{}, minimum width=14cm-2*\hstep cm]
+  (L2) at (0, \vstep) {};
+\node[lnum, text=lay2] at ([xshift=-5.2cm]L2.center) {2.};
+\node[lname] at ([xshift=-3.8cm]L2.center) {Object / Role};
+\node[ldesc, text=lay2] at ([xshift=3cm]L2.center) {Components and functions};
+\node[side, text=lay2, right=0.3cm of L2.east] {Causal graphs};
+
+% Layer 3: Subspace
+\node[layer={lay3}{}, minimum width=14cm-4*\hstep cm]
+  (L3) at (0, 2*\vstep) {};
+\node[lnum, text=lay3] at ([xshift=-4.6cm]L3.center) {3.};
+\node[lname] at ([xshift=-3.2cm]L3.center) {Subspace};
+\node[ldesc, text=lay3] at ([xshift=2.8cm]L3.center) {Causal subspaces on $\mathrm{Gr}(k,d)$};
+\node[side, text=lay3, right=0.3cm of L3.east] {Grassmannian geometry};
+
+% Layer 4: Structural
+\node[layer={lay4}{}, minimum width=14cm-6*\hstep cm]
+  (L4) at (0, 3*\vstep) {};
+\node[lnum, text=lay4] at ([xshift=-3.9cm]L4.center) {4.};
+\node[lname] at ([xshift=-2.5cm]L4.center) {Structural};
+\node[ldesc, text=lay4] at ([xshift=2.2cm]L4.center) {Gauge orbits and holonomy};
+\node[side, text=lay4, right=0.3cm of L4.east] {Fiber bundles};
+
+% Layer 5 (top, narrowest): Stratified
+\node[layer={lay5}{}, minimum width=14cm-8*\hstep cm]
+  (L5) at (0, 4*\vstep) {};
+\node[lnum, text=lay5] at ([xshift=-3.2cm]L5.center) {5.};
+\node[lname] at ([xshift=-1.6cm]L5.center) {Stratified};
+\node[ldesc, text=lay5] at ([xshift=2cm]L5.center) {Strata with varying identity};
+\node[side, text=lay5, right=0.3cm of L5.east] {Whitney stratification};
+
+% Left arrow
+\draw[-{Stealth[length=5pt]}, arrcol, line width=1.2pt]
+  ([xshift=-0.8cm]L1.west) -- ([xshift=-0.8cm]L5.west);
+\node[font=\sffamily\footnotesize, text=txtmuted, rotate=90, anchor=south]
+  at ([xshift=-1.4cm]L3.west) {Increasing ontological commitment};
+
+% Bottom tagline
+\node[font=\sffamily\small\itshape, text=txtmuted, below=0.7cm of L1]
+  {Each layer subsumes the ones below it. Stronger claims require higher commitment.};
+
+\end{tikzpicture}
+\end{document}

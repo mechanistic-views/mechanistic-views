@@ -1,0 +1,128 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit, arrows.meta, calc, backgrounds}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+%% Colors — muted academic palette
+\definecolor{idfam}{RGB}{109, 40, 217}    % purple
+\definecolor{mathfam}{RGB}{37, 99, 235}   % blue
+\definecolor{procfam}{RGB}{13, 148, 136}  % teal
+\definecolor{perspfam}{RGB}{217, 119, 6}  % amber
+\definecolor{instrfam}{RGB}{225, 29, 72}  % rose
+\definecolor{txtdark}{RGB}{30, 41, 59}    % slate-800
+\definecolor{txtsub}{RGB}{71, 85, 105}    % slate-600
+\definecolor{txtmuted}{RGB}{100, 116, 139}% slate-500
+\definecolor{rule}{RGB}{226, 232, 240}    % slate-200
+
+\begin{document}
+\begin{tikzpicture}[
+  every node/.style={font=\sffamily},
+  fambox/.style 2 args={
+    draw=#1!50, fill=#1!4, rounded corners=6pt,
+    line width=1pt, inner sep=10pt,
+  },
+  vcard/.style 2 args={
+    draw=#1!40, fill=white, rounded corners=4pt,
+    minimum width=4.2cm, minimum height=1.2cm,
+    align=center, inner sep=5pt,
+  },
+  vname/.style={font=\sffamily\bfseries, text=txtdark},
+  vdesc/.style={font=\sffamily\small, text=txtsub},
+  flabel/.style={font=\sffamily\small\bfseries},
+  elabel/.style={font=\sffamily\small\itshape, text=txtmuted},
+  seclabel/.style={font=\sffamily\footnotesize, text=txtmuted,
+    letter widths=0.08em},
+  arr/.style={-{Stealth[length=4pt, width=3pt]}, line width=1pt},
+  xarr/.style={-{Stealth[length=4pt, width=3pt]}, line width=1pt, rule!80!black},
+  dasharr/.style={dashed, rule!80!black, line width=0.8pt},
+]
+
+%% ── Top row: three families ──────────────────────────────────
+
+% Identity family
+\node[vcard={idfam}{}] (obj) at (0, 0) {};
+\node[vname] at ([yshift=2pt]obj.center) {Object View};
+\node[vdesc] at ([yshift=-12pt]obj.center) {concrete parts: heads, neurons};
+
+\node[vcard={idfam}{}, below=0.5cm of obj] (rol) {};
+\node[vname] at ([yshift=2pt]rol.center) {Role View};
+\node[vdesc] at ([yshift=-12pt]rol.center) {functional roles, multiply realized};
+
+\node[fambox={idfam}{}, fit=(obj)(rol)] (idbox) {};
+\node[flabel, text=idfam, above=2pt of idbox] {Identity Family};
+
+\draw[arr, idfam!50] (obj.south) -- (rol.north);
+\node[elabel, right=2pt] at ($(obj.south)!0.5!(rol.north)$) {inflation risk};
+
+% Mathematical family
+\node[vcard={mathfam}{}] (sub) at (6.6, 0) {};
+\node[vname] at ([yshift=2pt]sub.center) {Subspace View};
+\node[vdesc] at ([yshift=-12pt]sub.center) {causal subspaces on $\mathrm{Gr}(k,d)$};
+
+\node[vcard={mathfam}{}, below=0.5cm of sub] (str) {};
+\node[vname] at ([yshift=2pt]str.center) {Structural View};
+\node[vdesc] at ([yshift=-12pt]str.center) {gauge orbits, holonomy};
+
+\node[fambox={mathfam}{}, fit=(sub)(str)] (mathbox) {};
+\node[flabel, text=mathfam, above=2pt of mathbox] {Mathematical Family};
+
+\draw[arr, mathfam!50] (sub.south) -- (str.north);
+\node[elabel, right=2pt] at ($(sub.south)!0.5!(str.north)$) {gauge question};
+
+% Process family
+\node[vcard={procfam}{}] (pro) at (13.2, 0) {};
+\node[vname] at ([yshift=2pt]pro.center) {Process View};
+\node[vdesc] at ([yshift=-12pt]pro.center) {formation trajectories};
+
+\node[vcard={procfam}{}, below=0.5cm of pro] (strat) {};
+\node[vname] at ([yshift=2pt]strat.center) {Stratified View};
+\node[vdesc] at ([yshift=-12pt]strat.center) {strata with varying identity};
+
+\node[fambox={procfam}{}, fit=(pro)(strat)] (procbox) {};
+\node[flabel, text=procfam, above=2pt of procbox] {Process Family};
+
+\draw[arr, procfam!50] (pro.south) -- (strat.north);
+\node[elabel, right=2pt] at ($(pro.south)!0.5!(strat.north)$) {resolution};
+
+%% ── Cross-family arrows ─────────────────────────────────────
+
+\draw[xarr] (idbox.east) -- (mathbox.west)
+  node[midway, above=3pt, elabel] {static / dynamic};
+
+\draw[xarr] (mathbox.east) -- (procbox.west);
+
+%% ── Divider ─────────────────────────────────────────────────
+
+\draw[rule, line width=0.8pt]
+  ([yshift=-1.2cm]idbox.south west) -- ([yshift=-1.2cm]procbox.south east);
+
+%% ── Bottom row: singletons ──────────────────────────────────
+
+\node[vcard={perspfam}{}, minimum width=7cm, minimum height=1.5cm]
+  (persp) at (2.4, -5.2) {};
+\node[vname] at ([yshift=4pt]persp.center) {Perspectival View};
+\node[vdesc] at ([yshift=-12pt]persp.center) {methods as partial projections of mechanism structure};
+\node[seclabel, above=4pt of persp]
+  {\MakeUppercase{\footnotesize Methodological}};
+
+\node[vcard={instrfam}{}, minimum width=7cm, minimum height=1.5cm]
+  (instr) at (10.8, -5.2) {};
+\node[vname] at ([yshift=4pt]instr.center) {Instrumental View};
+\node[vdesc] at ([yshift=-12pt]instr.center) {useful predictive models, not real objects};
+\node[seclabel, above=4pt of instr]
+  {\MakeUppercase{\footnotesize Pragmatic}};
+
+% method vs. utility connector
+\draw[dasharr] (persp.east) -- (instr.west)
+  node[midway, above=3pt, font=\sffamily\itshape, text=txtmuted] {method vs.\ utility};
+
+%% ── Tagline ─────────────────────────────────────────────────
+
+\node[font=\sffamily\small\itshape, text=txtmuted, align=center]
+  at (6.6, -6.8)
+  {The first six views make metaphysical commitments.\\
+   The perspectival and instrumental views are skeptical positions.};
+
+\end{tikzpicture}
+\end{document}

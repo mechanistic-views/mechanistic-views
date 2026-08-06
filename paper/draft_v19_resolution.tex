@@ -1,0 +1,142 @@
+% ############################################################
+% VERDICT AFTER HOSTILE REVIEW: DO NOT ADD THIS SECTION.
+% The paper already states its thesis, as an axiom, better.
+%
+% mechviews_v19.tex:386-390, coherence condition (ii):
+%   "Evidence tracks identity: measurements should not distinguish
+%    objects that the identity criterion declares equivalent. (Evidence
+%    that discriminates within an identity class is tracking a
+%    finer-grained ontology than the one declared.)"
+% That IS over-resolution relative to a declared identity criterion --
+% the three-place claim this section announces as new. VERIFIED by
+% reading the lines.
+% The free-parameter half is at :1062-1071 (analyst-choice family,
+% "an artifact of a choice made before any measurement was taken"), and
+% :1299 already runs the sharpens-vs-over-resolves discriminator on the
+% SAE-width case. The Stratified view at :849-853 already makes identity
+% resolution-parameterized and names under-resolution as a failure mode.
+%
+% ALSO FALSE, and I told Elliot the opposite earlier -- CORRECTED:
+% Cao & Yamins' L5PC 7-layer MLP is NOT an over-resolution case.
+% cao_yamins_part1.txt:1243-1246 -- it fails 3M++ "because it does not
+% satisfy a model-to-mechanism mapping ... the components of the MLP do
+% not map to real-world components." That is NON-CORRESPONDENCE, a
+% different failure. There is still no worked over-resolution case
+% anywhere in the sources.
+%
+% GEIGER OWNS THE RELATIVIZATION. Remark 32 (:1022): "An alignment
+% induces a unique partial function omega^pi that maps from low-level
+% hard interventions to high-level hard interventions" -- intervention
+% distinguishability indexed to the declared alignment. Definition 38
+% (value merge) IS a declared identity criterion. Sec 3.6 catalogs PCA,
+% SAEs, probes and DAS as four coexisting featurizations of one vector,
+% i.e. several criteria at once. DAS SEARCHES alignments, so "Geiger
+% fixes an alignment" is false about the cited paper.
+%
+% FANG & ZHANG (Erkenntnis) ALREADY RELATIVIZES, AND HAS THEOREMS:
+% :274-277 the cause-variable is a partition induced by an equivalence
+% relation, relative to Y; footnote 12 (:656-659) relative to a chosen
+% possibility space; footnote 15 (:868-869) base level "may involve some
+% convention or decision". Theorem 1 (:498-499) "determinate causes sink
+% down" is the over-resolution case with a proof; non-preservation under
+% coarse-graining (:731-735) is under-resolution.
+% AND IT HAS THE COUNTER-THESIS: :432-434, "there is a UNIQUE
+% proportional cause-variable ... for a given effect-variable."
+%
+% WHAT TO DO INSTEAD:
+%  - Move the matched/under/over vocabulary into Sec 4 as three
+%    sentences, cited to Yablo and Cao & Yamins. It is useful shared
+%    wording. It cannot carry a subsection.
+%  - Fold the sharpens-vs-over-resolves criteria into Sec 5 next to
+%    :1299, where the SAE case already runs them.
+%  - The ONE live claim: a single interpretability explanandum supports
+%    four inequivalent identity criteria (component set, role, subspace,
+%    gauge orbit). Fang & Zhang's uniqueness theorem is the named
+%    opponent. This must be DEMONSTRATED on a case where the four
+%    criteria disagree about one target. Asserted, it is worthless.
+%  - The path-patching example below is WRONG: mechviews_v19.tex:1106
+%    classifies path patching as Object/component-overlap/directed-graph,
+%    and :1474 lists it as legitimate Object evidence. Edges are objects
+%    of the declared formalism, so the routes are not "surplus".
+% ############################################################
+
+% Resolution matching — the section that must exist before any positioning.
+% Candidate home: §4 (Atlas), as a subsection preceding the nine view entries,
+% so every view entry can use the vocabulary.
+%
+% WRITTEN AGAINST THE HOSTILE REVIEW. The earlier positioning draft claimed
+% over-resolution as new. It is not: Cao & Yamins have it with a worked case
+% (cao_yamins_part1.txt:1524-1530), and Geiger et al. have both directions
+% (alignment induces an intervention map; pi undefined on unrealized values).
+% This section concedes both and locates the contribution elsewhere — in the
+% choice of identity criterion, which is the free parameter neither fixes.
+%
+% QUOTE PROVENANCE, all verified in local PDFs:
+%   cao_yamins_part1.txt:1524-1530  "the complexity of the description blows up"
+%   cao_yamins_part1.txt:742-744    runnability forces detail / "armchair"
+%   geiger_2023_causal_abstraction.txt:1-10  JMLR 26 (2025), arXiv v4
+% BIBITEMS REQUIRED: caoyamins2024a, geiger2025, yablo1992
+% NOTE: cite Geiger as 2025 (JMLR 26), NOT 2023. Check collision with the
+% existing geiger2024 bibitem used at v19:693.
+
+\subsection{Matching an Intervention to a Mechanism}
+\label{sec:resolution}
+
+A claim about a mechanism rests on a measurement, and a measurement can be too
+blunt or too sharp for the thing it measures.  Call the finest distinction an
+intervention can draw its \emph{resolving power}, and call the distinctions a
+mechanism instantiates its \emph{grain}.  Three states follow.  A report is
+\emph{matched} when resolving power meets grain.  It is \emph{under-resolved}
+when the intervention is blunter than the mechanism, so real structure goes
+unreported.  It is \emph{over-resolved} when the intervention draws distinctions
+the mechanism does not carry, so the surplus structure in the report is an
+artifact of the probe.
+
+Both failures are known.  \citet{caoyamins2024a} match the grain of a model to
+the grain of its explanandum and supply a worked case of excess resolution: a
+seven-layer network fitted to a single cortical cell, where ``the complexity of
+the description blows up as its fidelity to the physical mechanism falls
+apart.''  They also supply the standing caution against assuming detail is
+discardable, since runnability ``can end up forcing the preservation of many
+internal details'' beyond what one would guess ``from the armchair.''
+\citet{geiger2025} carry the same structure into interpretability.  An alignment
+between a high-level model and a network induces a map from low-level
+interventions to high-level ones, so coarsening the high-level variables
+coarsens which interventions remain distinguishable, and interchange-intervention
+accuracy grades how well the pairing holds.  The vocabulary below renames
+neither result.
+
+What both proposals hold fixed is the interesting part.  Cao and Yamins fix the
+explanandum, then ask which model grain suits it.  Geiger et al.\ fix an
+alignment, then ask whether the network realizes it.  Once either is fixed the
+grain question is well posed, and each answers it.  Choosing what to fix is the
+prior question, and it is a choice among identity criteria: an alignment
+declares which states count as the same mechanism before any intervention runs.
+A network admits several such declarations at once.  The same head participates
+in a component set, a functional role, a subspace, and a gauge orbit, and each
+carries its own answer to what would count as the same mechanism appearing
+twice.
+
+Resolution matching is therefore a three-place relation that the literature
+treats as two-place.  An intervention resolves finely or coarsely
+\emph{relative to a declared identity criterion}, because the criterion fixes
+which distinctions count as distinctions at all.  Path patching separates the
+routes by which a component's effect travels.  Under object identity those
+routes are one mechanism, and the separation is surplus.  Under role identity
+they may be two, and the same measurement is exactly matched.  Neither reading
+is a better measurement.  They differ in what was declared before the
+measurement was taken, and a report that omits the declaration leaves its own
+resolution unassessable.
+
+This yields four outcomes when two interventions disagree about one claim.  They
+\emph{agree} when their reports are consistent at some shared level.  They
+\emph{disagree} when the reports are jointly inconsistent at every level.  One
+\emph{sharpens} the other when the finer intervention reports additional
+structure that survives verification.  One \emph{over-resolves} when the
+additional structure fails it.  Separating the last two takes evidence this
+framework does not supply: reproducibility of the additional structure across
+seeds, its predictive purchase on held-out behavior, and its coherence with
+reports at other levels of description.  Those are audit questions, and
+\citet{tower2026mechvalidity} supplies the audits.  The contribution here is the
+statement of what the audit is being run on, which requires a declared
+criterion, and which is why the atlas comes first.

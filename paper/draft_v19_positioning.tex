@@ -1,0 +1,190 @@
+% Draft passages for v19 — NOT yet spliced into mechviews_v19.tex
+%
+% ############################################################
+% STOP. HOSTILE REVIEW FINDINGS — VERIFIED AGAINST LOCAL PDFs.
+% Passages B and C below are BROKEN AS CONCEIVED. Do not splice.
+%
+% (1) SEQUENCING ERROR, fatal to B and C. Both differentiate the paper's
+%     resolution thesis from a named rival. `grep -i "resolving power"`
+%     over mechviews_v19.tex returns ZERO hits. The thesis does not exist
+%     in the paper yet. Positioning cannot precede the claim positioned.
+%     WRITE THE RESOLUTION-MATCHING SECTION FIRST.
+%
+% (2) PASSAGE C ASSERTS THE NEGATION OF ITS OPPONENT'S THESIS, unargued.
+%     cao_yamins_part1.txt:119-122 — "we note the intimate relationship
+%     between measurement (and the choice of what to measure) ... and
+%     abstraction (and the choice of what details to ignore)";
+%     cao_yamins_part1.txt:185-186 — "But are the experimental and
+%     computational abstractions the same? We claim that they often are".
+%     C's payoff sentence ("vary independently") denies this flatly.
+%
+% (3) CAO & YAMINS ALREADY HAVE OVER-RESOLUTION, WITH A WORKED CASE.
+%     cao_yamins_part1.txt:1524-1530 — "when one tries to use the
+%     high-level description language ... to describe the operations at a
+%     too-low level, the complexity of the description blows up as its
+%     fidelity to the physical mechanism falls apart", worked through the
+%     7-layer MLP fit to L5PC data. This is the over-resolution anchor
+%     the TODO below asks for. It is theirs, not ours.
+%
+% (4) PASSAGE B QUOTES THE WEAKEST TWO SENTENCES IN A 63-PAGE PAPER —
+%     a Yablo aside attached to Definition 38 — and ignores the machinery
+%     that covers the same ground: Remark 32 (an alignment induces a
+%     unique partial map from low-level to high-level interventions, so
+%     coarsening the value space coarsens the intervention set — the two
+%     "independent" quantities are one quantity related by an explicit
+%     map); Remark 47 (pi undefined on unrealized values — the
+%     over-resolution direction); Definition 41 (intervention algebra and
+%     the distribution over evaluated interventions are declared inputs);
+%     Definition 48 (interchange-intervention accuracy). Geiger's stated
+%     first contribution is itself a resolving-power claim: hard and soft
+%     interventions "are unable to isolate quantities distributed across
+%     overlapping sets of microvariables."
+%
+% (5) GEIGER IS 2025, NOT 2023. JMLR 26 (2025) 1-63, "Submitted 1/23;
+%     Revised 12/24; Published 5/25", arXiv:2301.04709v4, 8 May 2025.
+%     arXiv v1 (2023) was a different, shorter paper. Re-key geiger2025;
+%     check collision with the existing geiger2024 bibitem (v19 line 693).
+%
+% (6) PASSAGE D MISUSES ITS SOURCE. The Milliere & Buckner quote closes
+%     Sec 4.2 "A plausible middle ground", on whether LLMs are relevant
+%     models of HUMAN COGNITION (memorization, generalization, agential
+%     stability) — not on mechanism-identity criteria. And "left
+%     untheorized" is false of that same paper: Sec 2.6, four pages
+%     earlier, theorizes it via approximate causal abstraction and
+%     interchange-intervention accuracy. Also: D's worked gloss ("same
+%     components, different roles") is a WITHIN-view dispute in this
+%     paper's own taxonomy, so it does not show the axes doing work.
+%     Need a case differing in ontology or identity criterion.
+%
+% (7) PASSAGE A: the sorting principle is never stated, and the natural
+%     one ("does the view use manipulability of parts as its criterion of
+%     constitutive relevance") catches SIX of nine, not two — Subspace
+%     (DAS/IIA), Stratified (ablation-fraction localizability, v19:883),
+%     Contrastive (counterfactual patching, v19:981), Perspectival (its
+%     causal evidence family, v19:932). A discusses only four views.
+%     Also: v19:791-796 has the structural view APPLYING a symmetry and
+%     retesting activation-space evidence, contradicting A's claim that
+%     it performs no interventions. Also: A's premise is top-down
+%     (intervene on the phenomenon) while its examples are bottom-up
+%     (ablate parts, read behavior). Also: B&G 2016 is a LIVE dispute —
+%     Craver, Glennan & Povich 2021 reply directly, and that paper is now
+%     held at reference/philsci/craver_glennan_povich_mie.pdf. Presenting
+%     it as a settled impossibility proof is the easiest thing for a
+%     phil-sci referee to reject.
+%
+% (8) CRAVER & KAPLAN 2020 DOES NOT SUPPORT OVER-RESOLUTION. Verified via
+%     the abstract + section list (BJPS 71(1):287-319; Sec 6 is really
+%     titled "From More Details to More Relevant Details"). They DEFEND
+%     mechanism against the charge that it demands maximal detail. That
+%     yields relevance-over-completeness. Irrelevant detail being inert
+%     is not excess resolution being artifactual. Do not cite them as the
+%     precedent for over-resolution.
+% ############################################################
+%
+% REVISION 2. Changes from r1, per prose review + source verification:
+%   - Passage B cut; its one surviving claim folded into C as a clause.
+%     (r1's B and C executed the same concede-then-relocate move twice.)
+%   - A now leads: it is the only passage making a claim that could be wrong.
+%   - 18 negation-contrast constructions rewritten positively.
+%   - Fixed: "Both"/"Both" referent collision; "too coarse ... or fine enough"
+%     broken parallel; "the values it posits" (antecedent was "method").
+%   - Cut "The sorting is a result about the atlas" (announced significance).
+%   - Added the missing citation for the one empirical claim in A.
+%   - Hedged the universal claim about what interchange interventions settle.
+%   - Four sentences over 40 words split.
+%
+% QUOTE PROVENANCE — every quotation verified in a local PDF, not a summary:
+%   caoyamins2024a  reference/philsci/cao_yamins_part1.txt:742-744
+%   geiger2023      reference/philsci/geiger_2023_causal_abstraction.txt:1107-1116
+%   milliere2024    reference/philsci/milliere_buckner_2024_part2.txt:1505-1508
+% Baumgartner & Gebharter 2016 is PAYWALLED and NOT held locally. Passage A
+% reports its argument from the verified abstract plus Krickel's reconstruction;
+% no body-text string is quoted. Do not add quotation marks to it.
+%
+% BIBITEMS REQUIRED (none currently in v19's thebibliography):
+%   baumgartner2016, geiger2023, caoyamins2024a, milliere2024, yablo1992
+% NOW HELD LOCALLY, not yet used here: fang_zhang_2024_proportionality,
+%   craver_glennan_povich_mie, woodward_2010_causation_biology,
+%   craver_2007_explaining_the_brain
+
+% ============================================================
+% A. Fat-handedness sorts the atlas.  LEADS.
+% Candidate home: after \subsection{View Families and Ontological
+% Commitment} (v19 line ~1016), or as a seventh decision point.
+% ============================================================
+
+\subsection{Which Views the Fat-Handedness Objection Reaches}
+
+The fat-handedness objection reaches two views in the atlas and passes two
+others by.  \citet{baumgartner2016} argue that Craver's mutual-manipulability
+criterion, embedded in Woodward's interventionism, fails for every genuine
+whole--part pair.  An ideal intervention must reach the phenomenon through
+exactly one route.  A phenomenon's constituents are its supervenience base, so
+any change to the phenomenon carries a change in some constituent occupying the
+same spatiotemporal region.  The intervention therefore reaches both.  Woodward
+calls this fat-handedness: ideality requires a route to one variable, and a
+common cause has two.  An impossibility proof follows, and a dilemma with it.
+Either constitutive relevance lies beyond empirical reach, or constitution
+collapses into causation.
+
+The objection needs a whole--part relation, and only some views supply one.
+Under the object view a circuit is a named component set, warranted by ablating
+members and reading model behavior.  Under the role view the warrant comes from
+interchange interventions on those same components.  Each fixes identity by
+manipulating the constituents of the behavior those constituents realize, which
+is the configuration the objection targets.  The structural view individuates by
+gauge-orbit membership and takes the weight matrix as its evidence, read without
+touching any behavior.  The instrumental view claims predictive equivalence and
+stops there.  The objection passes these two by.
+
+Consider a paper writing ``circuit $C$ implements indirect object
+identification.''  It can mean that the components of $C$ carry causal
+dependencies among themselves, a within-level claim that Woodwardian
+intervention supports.  It can also mean that the joint activity of $C$ realizes
+the behavior, a whole--part claim that inherits the objection.
+\citet{wang2022} establish their circuit by patching, which warrants the first
+reading, and then describe it as implementing the behavior, which invites the
+second; \S\ref{sec:motivation} traces a related conflation in the same result.
+Declaring the view separates the readings, and the declaration settles whether
+Baumgartner and Gebharter's objection applies to the paper at hand.
+
+% ============================================================
+% B (was C, with old B folded in as one clause).
+% Candidate home: immediately following the resolution-matching material.
+% ============================================================
+
+\citet{caoyamins2024a} argue that runnability forces detail.  Making a model
+execute the capacity ``can end up forcing the preservation of many internal
+details''; more of them may matter ``than we would have guessed from the
+armchair.''  Runnability does force detail, and it forces detail into the
+model.  The nearest treatment inside interpretability constrains the same
+thing: \citet{geiger2023} hold, after \citet{yablo1992}, that a high-level
+variable's value range should be grained so that cited causes stay proportional
+to their effects.  Both proposals discipline the description.  Resolving power
+disciplines the measurement.  A model may carve its variables proportionally and
+still be probed badly, by one method too coarse to separate the values the model
+posits, or by another fine enough to report distinctions the network collapses.
+Description detail and measurement discrimination therefore vary independently,
+and over-resolution is a failure of the second.
+\textcolor{red}{[TODO: one worked case of over-resolution. Every candidate
+currently in hand is a sharpening case. Without an instance where a finer probe
+reports structure the network does not carry, this claim reduces to
+``false positive.'' Leading candidate: the IOI subspace gap, 2 dimensions by
+Jensen--Shannon against $k=32$ DAS at 0.820 IIA.]}
+
+% ============================================================
+% C (was D). The empirical anchor. Rewritten in full.
+% Candidate home: §3.2 Coherence, as support for the coherence argument.
+% ============================================================
+
+Interpretability has already reported this underdetermination and stopped at
+reporting it.  \citet{milliere2024} find that interchange interventions license
+several representational readings of one network, and that those readings can be
+mutually exclusive.  Treating the strongest of them as correct, they conclude,
+``requires further justification.''  One intervention family, applied to one
+network, licenses incompatible readings, and the report ends there.  The axes of
+\S\ref{sec:axes} say what the readings disagree about: two interpretations
+assigning identical components and divergent roles disagree on the identity
+criterion, and criterion choice lies outside what interchange interventions have
+been shown to settle.  Settling it takes a declaration, which is what a view
+report supplies.

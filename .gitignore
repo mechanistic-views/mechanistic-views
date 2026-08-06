@@ -4,6 +4,14 @@ dist/
 .astro/
 .DS_Store
 .idea/
-paper/
 drafts/
 reference/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz
