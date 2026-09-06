@@ -14,6 +14,8 @@ A component can be highly contributory (large attribution) but not necessary (th
 
 Ablation tests (ACDC, activation patching) operate at the [Object view](/mechanistic-views/views/object/): mechanisms are concrete components, identity is component overlap, evidence is necessity and sufficiency. Attribution methods are closer to the [Instrumental view](/mechanistic-views/views/instrumental/): mechanisms are whatever predicts behavior, no commitment to components being "real." Manual circuit analysis operates at the [Role view](/mechanistic-views/views/role/): mechanisms are functional roles, identity is role equivalence, evidence is that the same role is filled.
 
+A fourth source of disagreement is the counterfactual distribution. Activation patching replaces activations from one input with those from another — and the choice of "another" is a foil. The [Contrastive view](/mechanistic-views/views/contrastive/) makes this explicit: different foils define different contrastive mechanisms, and two groups running activation patching with different counterfactual distributions are studying different contrastive mechanisms, not disagreeing about one. Most circuit discovery papers bury the counterfactual distribution in the methods and state the result as if absolute.
+
 When papers disagree about circuit size or membership, they are often comparing answers from different views without recognizing this. The disagreement is real in the sense that the answers differ, but it is not a conflict — it's a consequence of asking different questions.
 
 ## Mechanistic validity impact

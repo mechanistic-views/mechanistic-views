@@ -53,3 +53,33 @@ The contrastive view is naturally expressed through [causal graphs](/mechanistic
 The contrastive view is orthogonal to the [object](/mechanistic-views/views/object/)–[role](/mechanistic-views/views/role/) distinction. A contrastive mechanism can be stated at the object level ("head 9.1 behaves differently under foil A vs B") or the role level ("the name-mover function is foil-relative"). What distinguishes the contrastive view is that the foil is part of the mechanism's definition — not a parameter of the experiment.
 
 The [perspectival view](/mechanistic-views/views/perspectival/) diagnoses a related but distinct concern: that the analyst's choices shape what is found. The contrastive view makes one specific analyst choice — the foil — into a first-class part of the ontology rather than treating it as a bias to be eliminated.
+
+---
+
+## Technical details
+
+### Identity criterion
+
+Two mechanism descriptions refer to the same mechanism iff they produce the same contrastive pattern across the same foil set. Same foil set + same pattern = same mechanism.
+
+### Relationship to Mechanistic Validity
+
+The contrastive view's foil-dependence limits most validity criteria — the mechanism changes when the foil changes, so cross-foil generalization, invariance, and convergence are structurally impossible. Its strength is falsifiability: a claimed contrastive pattern can be tested by varying the foil systematically.
+
+| Lens | Covered | Possible | Impossible | Score |
+|---|---|---|---|---|
+| [Construct](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/construct) | [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | [C3 Task specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/task-specificity) | [C2 Structural plausibility](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/structural-plausibility), [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality), [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity) | 1/5 |
+| [Internal](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/internal) | — | [I1 Necessity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/necessity), [I2 Sufficiency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/sufficiency) | [I3 Specificity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/specificity), [I4 Consistency](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/consistency), [I5 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control) | 0/5 |
+| [External](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/external) | — | [E4 Effect magnitude](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/effect-magnitude) | [E1 Reach](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/intervention-reach), [E2 Graded response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response), [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity), [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness), [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | 0/6 |
+| [Measurement](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/measurement) | — | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability), [M3 Baseline separation](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/baseline-separation) | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance), [M4 Sensitivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/sensitivity), [M5 Calibration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/calibration), [M6 Coverage](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/construct-coverage) | 0/6 |
+| [Interpretive](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/interpretive) | [V1 Level declaration](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-declaration) | [V5 Scope honesty](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/scope-honesty) | [V2 Level-evidence match](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/level-evidence-match), [V3 Narrative coherence](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/narrative-coherence), [V4 Alternative exclusion](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/interpretive/alternative-exclusion) | 1/5 |
+
+**Why convergent validity (C5) is impossible.** Convergence requires a foil-independent mechanism to converge on. The contrastive view denies that such an object exists — the mechanism is constitutively foil-relative.
+
+**Why measurement invariance (M2) is impossible.** Changing the foil changes the mechanism. This is not measurement error; it is the view's core claim.
+
+### Further reading
+
+- Van Fraassen, *The Scientific Image* (1980) — pragmatic theory of contrastive explanation
+- Lipton, "Contrastive Explanation" (1990) — causal contrastive explanation
+- For related views: [Instrumental view](/mechanistic-views/views/instrumental/) (shares interventional focus), [Perspectival view](/mechanistic-views/views/perspectival/) (diagnoses analyst-dependence more broadly)

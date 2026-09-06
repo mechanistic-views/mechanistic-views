@@ -16,7 +16,7 @@
 
   <rect x="30" y="120" width="170" height="44" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.7" stroke-width="2"/>
   <text x="115" y="138" text-anchor="middle" class="card-name">Causal Graph</text>
-  <text x="115" y="154" text-anchor="middle" class="card-desc">Object &amp; Role views</text>
+  <text x="115" y="154" text-anchor="middle" class="card-desc">Object, Role &amp; Contrastive</text>
 
   <rect x="30" y="200" width="170" height="44" rx="8" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.7" stroke-width="2"/>
   <text x="115" y="218" text-anchor="middle" class="card-name">Role Graph</text>
