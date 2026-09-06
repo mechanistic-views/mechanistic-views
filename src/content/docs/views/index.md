@@ -4,9 +4,11 @@ title: Views
 
 # Views
 
-We define eight mechanistic views — coherent positions on what a mechanism is, when two are the same, and what counts as evidence. They are ordered by increasing ontological commitment — how much they claim about what mechanisms are:
+We define nine mechanistic views — coherent positions on what a mechanism is, when two are the same, and what counts as evidence — ordered by increasing ontological commitment:
 
-$$\text{Instrumental} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
+$$\text{Instrumental} < \text{Contrastive} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
+
+This ordering is partial, not total: Role and Object are incomparable, and the relative positions of Process and Structural depend on whether one weights temporal or algebraic structure as more committed.
 
 Higher-commitment views make stronger claims but require more evidence. The instrumental view requires only predictive utility; the stratified view requires evidence across multiple strata and measurement resolutions. 
 
@@ -19,6 +21,7 @@ The views are not mutually exclusive: a single paper may use several, and conver
 | View | Ontology | Identity | Evidence | Formalism | Target |
 |---|---|---|---|---|---|
 | [Instrumental](/mechanistic-views/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/mechanistic-views/views/instrumental/#evidence) | [Model theory](/mechanistic-views/formalism/model-theory/) | Behavioral prediction |
+| [Contrastive](/mechanistic-views/views/contrastive/) | Contrastive pattern | Same foil set + same pattern | [Foil variation, contrastive patching](/mechanistic-views/views/contrastive/#evidence) | [Causal graph](/mechanistic-views/formalism/causal-graph/) | Foil-relative behavior |
 | [Perspectival](/mechanistic-views/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/mechanistic-views/views/perspectival/#evidence) | [Measurement algebra](/mechanistic-views/formalism/measurement-algebra/) | Method-relative |
 | [Object](/mechanistic-views/views/object/) | Concrete part | Component overlap | [Ablation, patching](/mechanistic-views/views/object/#evidence) | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Specific behavior |
 | [Role](/mechanistic-views/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/mechanistic-views/views/role/#evidence) | [Role graph](/mechanistic-views/formalism/role-graph/) | Functional class |
@@ -29,11 +32,12 @@ The views are not mutually exclusive: a single paper may use several, and conver
 
 ## Validity coverage comparison
 
-Each view's methods cover a different subset of the 27 [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) criteria. Higher-commitment views cover more criteria; the two skeptical views (Instrumental, Perspectival) have the most "impossible" entries because they do not commit to a mechanism existing. See each view's page for the full breakdown.
+Each view's methods cover a different subset of the 27 [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) criteria. Higher-commitment views cover more criteria; the three lowest-commitment views (Instrumental, Contrastive, Perspectival) have the most "impossible" entries because they do not commit to a mechanism existing independent of measurement or foil choice. See each view's page for the full breakdown.
 
 | View | [Construct](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/construct) (5) | [Internal](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/internal) (5) | [External](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/external) (6) | [Measurement](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/measurement) (6) | [Interpretive](https://mechanistic-validity.github.io/mechanistic-validity/framework/validity-types_v4/interpretive) (5) | Total | Impossible |
 |---|---|---|---|---|---|---|---|
 | [Instrumental](/mechanistic-views/views/instrumental/) | 0/5 | 0/5 | 1/6 | 0/6 | 1/5 | 2/27 | 20 |
+| [Contrastive](/mechanistic-views/views/contrastive/) | 1/5 | 0/5 | 0/6 | 0/6 | 1/5 | 2/27 | 18 |
 | [Perspectival](/mechanistic-views/views/perspectival/) | 0/5 | 0/5 | 0/6 | 1/6 | 2/5 | 3/27 | 16 |
 | [Object](/mechanistic-views/views/object/) | 1/5 | 2/5 | 1/6 | 1/6 | 1/5 | 6/27 | 4 |
 | [Role](/mechanistic-views/views/role/) | 2/5 | 2/5 | 3/6 | 1/6 | 2/5 | 10/27 | 3 |
@@ -46,10 +50,10 @@ The pattern reflects the views' different commitments: the object view gives you
 
 The process view scores 10/27 on its own, but this is misleading — it is not a standalone view. It is a temporal modifier that pairs with a static view: process + subspace inherits the subspace view's 13/27 coverage and adds formation evidence on top. Process + structural inherits 16/27. The process view's unique contribution — formation order, developmental prerequisites, phase transitions — is orthogonal to the static criteria in the table.
 
-The skeptical views (Instrumental, Perspectival) score lowest because they deny that there is a mechanism to validate. Most criteria become impossible when there is no object to validate the construct of, test the invariance of, or generalize across architectures.
+The lowest-commitment views (Instrumental, Contrastive, Perspectival) score lowest because they deny that there is a mechanism to validate independent of the analyst's choices. Most criteria become impossible when there is no object to validate the construct of, test the invariance of, or generalize across architectures.
 
 ## How the views relate
 
 The views are not mutually exclusive at the level of phenomena. A given model may contain mechanisms best described by different views at different strata. The goal is to identify which commitments different descriptions carry, not to select a single correct view.
 
-See [View Mappings](mappings/) for diagrams showing how the views relate, and how other positions in the literature map onto these eight views.
+See [View Mappings](mappings/) for diagrams showing how the views relate, and how other positions in the literature map onto these nine views.

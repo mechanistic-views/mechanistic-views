@@ -27,6 +27,6 @@ My contact info is available on my personal site: [elliottower.ai](https://ellio
   author = {Tower, Elliot},
   title  = {Mechanistic Views: An Ontology for Mechanistic Interpretability},
   year   = {2026},
-  url    = {https://mechanistic-views.github.io/mechanistic-views/}
+  url    = {https://mechanistic-validity.github.io/mechanistic-views/}
 }
 ```

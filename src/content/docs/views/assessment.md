@@ -4,6 +4,10 @@ title: View Assessment
 
 # View Assessment
 
+:::note
+This content is not included in the paper.
+:::
+
 The [validity coverage tables](/mechanistic-views/views/#validity-coverage-comparison) on each view page answer one question: **within this view, which mechanistic validity criteria can you satisfy?** That is a coverage question — it tells you the ceiling of what your methods can validate if you adopt a given view.
 
 This page asks a different question: **how justified is each view itself, as a claim about what neural network mechanisms are?**
@@ -33,6 +37,24 @@ These are different questions. The object view has modest validity coverage (6/2
 - No evidence *against* this view is possible — it is unfalsifiable by construction, which is a philosophical weakness
 
 **Assessment:** Safe but limited. The instrumental view is justified as a floor — everything the field does is at least instrumentally useful — but its unfalsifiability means it cannot be wrong, which means it cannot be informative.
+
+---
+
+### Contrastive
+
+**Claim:** Mechanisms are contrastive patterns — differences in internal behavior between a target condition and a foil. The foil is part of the mechanism's definition, not a methodological convenience.
+
+**Evidence for:**
+- Most interpretability experiments are already contrastive in practice — activation patching uses a specific counterfactual, steering vectors are defined by paired prompt sets
+- Making the foil explicit explains why the "same experiment" with different counterfactual distributions yields different circuits
+- Philosophical support from van Fraassen and Lipton on contrastive explanation
+
+**Evidence against:**
+- Foil dependence can become foil arbitrariness — if every foil defines a different mechanism, the space of mechanisms is as large as the space of foil choices
+- Some mechanisms appear foil-independent: induction heads behave consistently across most foil choices, suggesting the foil is not constitutive
+- The view risks dissolving mechanism identity: if two researchers use different foils, they study "different mechanisms" by definition, which eliminates disagreement by fiat
+
+**Assessment:** Diagnostically valuable — it reveals a dependence that most papers suppress. As a complete ontology, it may overweight a real but second-order concern. The strongest case for the contrastive view is that published mechanism claims are already foil-relative and should say so.
 
 ---
 
@@ -165,6 +187,7 @@ These are different questions. The object view has modest validity coverage (6/2
 | View | Empirical support | Theoretical coherence | Main vulnerability |
 |---|---|---|---|
 | Instrumental | Strong (trivially) | Complete | Unfalsifiable; cannot explain *why* |
+| Contrastive | Moderate | Moderate | Foil dependence → foil arbitrariness |
 | Perspectival | Moderate | Complete | Cannot explain convergence |
 | Object | Strong | Moderate | Coordinate-dependent; no cross-model identity |
 | Role | Moderate | Moderate | Post-hoc labeling; vague specifications |

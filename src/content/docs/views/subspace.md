@@ -26,11 +26,17 @@ The mechanism is a point on the Grassmannian $\mathrm{Gr}(k, d)$. DAS identifies
 
 The Grassmannian comes with a canonical distance (principal angles), a notion of averaging (Frechet mean — the generalization of an average to curved spaces), and baseline distributions from random matrix theory (Marchenko-Pastur — the distribution of singular values for random matrices, used as a null model). This gives the subspace view precise, falsifiable identity criteria: you can measure how close two claimed subspaces are, whether convergence across methods is statistically significant, and whether the subspace is distinguishable from random noise.
 
+A nuance: DAS is more precisely a [role-view](/mechanistic-views/views/role/) method with a borrowed subspace parameterization. It validates by intervention success (role equivalence), not by Grassmannian distance. The subspace view's native evidence is convergence of independently recovered subspaces — weight-space SVD and activation-space DAS landing at the same Grassmannian point — not IIA alone.
+
 The subspace view assumes the mechanism is linearly encoded. When that assumption fails — nonlinear or context-switching representations, curved manifolds like the [grokking](https://arxiv.org/abs/2301.05217) circle — Riemannian geometry is needed instead of Grassmannian geometry. See the [stratified view](/mechanistic-views/views/stratified/) for how linear and nonlinear subspace structure relate.
 
 ## When it works and when it doesn't
 
 The subspace view is strongest when the causal variable is linearly encoded in the residual stream. For many known circuits — IOI, gender bias, factual recall — DAS finds subspaces with high IIA (interchange intervention accuracy — the fraction of examples where swapping the subspace's activations produces the expected output), confirming that the linear encoding assumption holds.
+
+**SAE confusion.** Sparse autoencoder features are dictionary elements that minimize reconstruction loss; causal subspaces are directions that mediate specific causal paths. These are different objectives and can disagree. An SAE feature is a hypothesis about a one-dimensional subspace mechanism, not a confirmed subspace claim.
+
+**Unconstrained alignment vacuousness.** Reporting high IIA without specifying the alignment class allows any model to be assigned any causal structure (Sutter et al., 2025). Restricting to linear alignment maps avoids this but is an assumption, not a theorem.
 
 **Linearity.** The central assumption. When the causal variable is encoded on a curved manifold (as in grokking, where the mechanism lives on $S^1$), linear subspace methods will miss the structure. The correct metric comes from the manifold geometry, not from the Grassmannian.
 

@@ -22,7 +22,7 @@ A mechanism is a localized object or collection of objects whose activity or wei
 
 ## What this view says
 
-The object view says mechanisms are architectural or learned units: heads, neurons, [SAE-recovered channels](https://learnmechinterp.com/topics/sparse-autoencoders/). Two mechanisms are the same when they share the same relevant parts, or when their parts are functionally interchangeable.
+The object view says mechanisms are architectural or learned units: heads, neurons, [SAE-recovered channels](https://learnmechinterp.com/topics/sparse-autoencoders/). Two mechanisms are the same when they share the same relevant parts.
 
 The claim "head 4.4 implements name-moving" is a *dispositional* claim, not a categorical one. It means: head 4.4 reliably activates in name-moving contexts AND its ablation impairs name-moving performance. It does not mean the head is in some intrinsic state of "name-moving-ness" independent of context. Both conditions — the observational (activation pattern) and the interventional (ablation effect) — are needed. A claim citing only one is underdetermined: high activation without ablation evidence might reflect correlation; ablation evidence without activation evidence might reflect indirect effects.
 
@@ -32,11 +32,17 @@ The object view works well when computation is sparse and localized. It breaks d
 
 The object view is strongest when computation is sparse, stable across prompts, and concentrated in a small number of components. Most of the field's current practice lives here.
 
-**Distributed mechanisms.** If computation is distributed across many components, no single object will be both necessary and sufficient. The circuit will have many low-contribution edges, and the "mechanism" becomes a large fraction of the network.
+**Role inflation.** A component is identified by patching, then labeled with a role ("name mover," "induction head") that implies richer mechanistic content than the object-level evidence supports. The component identity is established; the role is a hypothesis. This is the primary failure mode: object-view evidence used to support a role-view claim.
+
+**Distribution sensitivity.** The circuit identified by patching on one distribution may differ substantially on another, meaning the claimed object-level mechanism is distribution-relative.
 
 **Coordinate artifacts.** A neuron may look privileged because of parameterization, not because computation is intrinsically localized there. Rotating the basis can move the apparent mechanism to different neurons without changing the function. This is the fundamental limit of identifying mechanisms with coordinates.
 
 **Backup circuits.** Ablating one component may not impair behavior because a backup engages, producing false negatives for necessity tests. This means ablation can understate the true causal structure.
+
+### Compositional variant
+
+A natural refinement defines mechanisms not by component indices but by the computation graph they implement: each edge is a tensor operation, and two circuits are the same if their computation graphs are isomorphic. This is strictly more abstract than component overlap (it ignores which head occupies each node) but more concrete than the [role view](/mechanistic-views/views/role/) (it preserves graph structure, not just input–output behavior). Transcoder-based circuit analysis implicitly adopts this variant. We treat it as a variant of the object view rather than a separate view because it shares the same evidence types and failure modes; the difference is in the identity criterion only.
 
 ---
 
