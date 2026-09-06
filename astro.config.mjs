@@ -8,7 +8,7 @@ import rehypeKatex from 'rehype-katex';
 import starlightImageZoom from 'starlight-image-zoom';
 
 export default defineConfig({
-  site: 'https://mechanistic-validity.github.io',
+  site: 'https://mechanistic-views.github.io',
   base: '/mechanistic-views',
   markdown: {
     remarkPlugins: [remarkMath],
