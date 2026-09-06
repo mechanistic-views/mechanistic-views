@@ -70,6 +70,6 @@ A concrete instance of this problem: [Bricken et al. (2023)](https://transformer
 
 Under the Object view, this is alarming: a feature you were monitoring vanished. Under the Subspace view, it's expected: the subspace is stable even as the basis changes. The safety question becomes: is the *subspace* still detectable, even if the individual feature isn't? If yes, monitor the subspace, not the feature. If no, the representation genuinely changed — a much more serious concern that requires [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) evidence.
 
-## Resolution status: **Dissolved**
+## Resolution status: **Clarified**
 
-The framework dissolves the question. "True features" is an Object-view concept applied to a domain where the Subspace view is more appropriate. The answerable questions are: do subspaces converge? (Grassmannian distance), are they causally relevant? (DAS/IIA), are they more than artifacts? (discriminant validity). These replace the unanswerable question "which features are true?"
+The framework clarifies the question. "True features" is an Object-view concept applied to a domain where the Subspace view is more appropriate. The answerable questions are: do subspaces converge? (Grassmannian distance), are they causally relevant? (DAS/IIA), are they more than artifacts? (discriminant validity). These replace the unanswerable question "which features are true?"

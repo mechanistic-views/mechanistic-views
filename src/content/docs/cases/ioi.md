@@ -61,4 +61,4 @@ The faithfulness/completeness/minimality criteria test whether the *circuit* (th
 
 ## Further reading
 
-Wang, K., Variengien, A., Conmy, A., Shlegeris, B., Steinhardt, J. "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small." [ICLR 2023. arXiv:2211.00593](https://arxiv.org/pdf/2211.00593).
+Wang, K., Variengien, A., Conmy, A., Shlegeris, B., Steinhardt, J. "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small." [ICLR 2023. arXiv:2211.00593](https://arxiv.org/abs/2211.00593).

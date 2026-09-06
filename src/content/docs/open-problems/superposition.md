@@ -58,9 +58,9 @@ The field's current approach — train SAEs to "solve" superposition — is cohe
 3. If they're not stable — if features split, merge, and absorb unpredictably — that's evidence the representation is better described at the Subspace level.
 4. Discriminant validity (V3) is critical: do SAEs find qualitatively different structure in trained models vs. random models? If not, "superposition" may be a property of high-dimensional geometry, not of learned representations.
 
-## Resolution status: **Dissolved**
+## Resolution status: **Clarified**
 
-The framework dissolves the debate. "How do we solve superposition?" is an Object-view question. "How do we characterize the representation geometry?" is a Subspace-view question. "What is the gauge-invariant computation?" is a Structural-view question. They are different questions with different answers and different evidence requirements. The apparent disagreement about whether superposition is a "problem" is a view disagreement, not an empirical one.
+The framework clarifies the debate. "How do we solve superposition?" is an Object-view question. "How do we characterize the representation geometry?" is a Subspace-view question. "What is the gauge-invariant computation?" is a Structural-view question. They are different questions with different answers and different evidence requirements. The apparent disagreement about whether superposition is a "problem" is a view disagreement, not an empirical one.
 
 ## Mechanistic validity criteria
 

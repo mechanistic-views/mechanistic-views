@@ -56,9 +56,9 @@ The field defaults to the Object view's unit (heads, neurons) because it's easy 
 2. **Test unit sensitivity.** If your finding depends on the unit (head-level analysis says X, subspace-level says Y), that's a sign you're at the wrong resolution.
 3. **Match unit to claim.** If you're claiming a mechanism is universal across models ([E6](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture/)), you need an architecture-independent unit. Heads won't work.
 
-## Resolution status: **Dissolved**
+## Resolution status: **Clarified**
 
-There is no single right unit. The question dissolves when you recognize that different views define different units, and the appropriate unit depends on the claim. Head-level analysis is fine for Object-view claims about specific models. Subspace-level analysis is required for cross-model claims. The apparent disagreement about "the right unit" is a view disagreement about what kind of claim you're making.
+There is no single right unit. The question is clarified when you recognize that different views define different units, and the appropriate unit depends on the claim. Head-level analysis is fine for Object-view claims about specific models. Subspace-level analysis is required for cross-model claims. The apparent disagreement about "the right unit" is a view disagreement about what kind of claim you're making.
 
 ## Mechanistic validity criteria
 
@@ -67,7 +67,7 @@ There is no single right unit. The question dissolves when you recognize that di
 | [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | Central | Are the boundaries of the unit well-defined? |
 | [M2 Invariance](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/invariance/) | Central | Are findings stable across unit choices? |
 | [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture/) | Critical | Does the unit allow cross-model comparison? |
-| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | Relevant | Can the unit be measured consistently? |
+| [C1 Falsifiability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/falsifiability) | Relevant | Can claims about the unit be tested and potentially refuted? |
 
 ## See also
 

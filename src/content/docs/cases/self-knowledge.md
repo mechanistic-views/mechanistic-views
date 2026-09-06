@@ -48,4 +48,4 @@ If $S_\text{self}$ causally suppresses confident-but-wrong outputs when its proj
 
 Kadavath, S., Conerly, T., Askell, A. et al. "Language Models (Mostly) Know What They Know." [arXiv:2207.05221](https://arxiv.org/abs/2207.05221), 2022.
 
-Li, K., Patel, O., Vieira, F., Raber, N., Sachan, M., Riedel, S., Hajishirzi, H. "Representation Engineering: A Top-Down Approach to AI Transparency." [arXiv:2310.01405](https://arxiv.org/abs/2310.01405), 2023.
+Zou, A., Phan, L., Chen, S., Campbell, J., Guo, P., Ren, R., Pan, A., et al. "Representation Engineering: A Top-Down Approach to AI Transparency." [arXiv:2310.01405](https://arxiv.org/abs/2310.01405), 2023.

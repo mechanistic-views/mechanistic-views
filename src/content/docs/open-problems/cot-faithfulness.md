@@ -66,7 +66,7 @@ If you're drawing safety conclusions from CoT alone, you are at the Instrumental
 
 ## Resolution status: **Reframed**
 
-The framework does not answer whether CoT is faithful — that remains an empirical question. But it dissolves the *confusion* by showing that "faithful" means four different things under four different views, and that the safety-relevant notion (Structural faithfulness) requires cross-method convergence that no one has demonstrated. The framework tells you what evidence you'd need; it doesn't collect it for you.
+The framework does not answer whether CoT is faithful — that remains an empirical question. But it clarifies the *confusion* by showing that "faithful" means four different things under four different views, and that the safety-relevant notion (Structural faithfulness) requires cross-method convergence that no one has demonstrated. The framework tells you what evidence you'd need; it doesn't collect it for you.
 
 ## See also
 

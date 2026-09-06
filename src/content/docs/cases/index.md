@@ -8,9 +8,9 @@ Each worked example applies the mechanistic views framework to a concrete interp
 
 **From the paper:**
 
-- [Indirect Object Identification (IOI)](ioi/) — exercises the [object](/mechanistic-views/views/object/), [role](/mechanistic-views/views/role/), and [subspace](/mechanistic-views/views/subspace/) views
+- [Indirect Object Identification (IOI)](ioi/) — exercises the [object](/mechanistic-views/views/object/), [role](/mechanistic-views/views/role/), [subspace](/mechanistic-views/views/subspace/), and [structural](/mechanistic-views/views/structural/) views
 - [Induction Heads](induction/) — exercises the [object](/mechanistic-views/views/object/), [role](/mechanistic-views/views/role/), and [process](/mechanistic-views/views/process/) views
-- [Superposition](superposition/) — exercises all four views: [object](/mechanistic-views/views/object/), [subspace](/mechanistic-views/views/subspace/), [structural](/mechanistic-views/views/structural/), and [perspectival](/mechanistic-views/views/perspectival/)
+- [Superposition](superposition/) — exercises four views: [object](/mechanistic-views/views/object/), [subspace](/mechanistic-views/views/subspace/), [structural](/mechanistic-views/views/structural/), and [perspectival](/mechanistic-views/views/perspectival/)
 
 **Additional examples (not included in paper):**
 

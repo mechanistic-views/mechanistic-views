@@ -74,9 +74,9 @@ Each is a valid claim. They are not the same claim.
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | Critical | Is probe accuracy confounded by activation geometry? |
 | [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | Relevant | Does the feature affect only the relevant behavior? |
 
-## Resolution status: **Dissolved**
+## Resolution status: **Clarified**
 
-The framework dissolves the debate. The probe wars were caused by evidence-claim mismatch: Instrumental evidence (probe accuracy) used to support Subspace or Role claims (the model "uses" or "represents" the feature). Name the view, match the evidence to the claim, and the disagreement disappears. What remains is empirical work — actually running the causal interventions — not conceptual confusion.
+The framework clarifies the debate. The probe wars were caused by evidence-claim mismatch: Instrumental evidence (probe accuracy) used to support Subspace or Role claims (the model "uses" or "represents" the feature). Name the view, match the evidence to the claim, and the disagreement disappears. What remains is empirical work — actually running the causal interventions — not conceptual confusion.
 
 ## See also
 

@@ -27,7 +27,7 @@ The Process view is unique in that it provides evidence for criteria that no sta
 | [M1 Reliability](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/measurement/reliability/) | Possible (re-run method) | **Covered** (cross-seed comparison is built-in) |
 | [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Not testable | **Covered** (stability across training checkpoints) |
 | [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) | Testable but static | **Strengthened** (mechanism that survives fine-tuning on new distribution is more robust) |
-| [I3 Dose-response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response) | Static dose-response | **Strengthened** (formation trajectory shows gradual development, not just static graded effect) |
+| [E5 Graded response](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/graded-response) | Static dose-response | **Strengthened** (formation trajectory shows gradual development, not just static graded effect) |
 
 ## Sources
 

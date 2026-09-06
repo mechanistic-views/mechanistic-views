@@ -16,7 +16,7 @@ This is a ceiling for both the [Object view](/mechanistic-views/views/object/) a
 
 Linear probes find linear structure because they can only find linear structure. SAEs decompose into linear directions because that's what SAEs do. DAS finds linear subspaces because that's what it optimizes for. The Perspectival view says: what you find depends on your method, and the method's assumptions constrain the findings. When every tool in your toolkit assumes linearity, everything looks linear — even circles.
 
-The Subspace view is not inherently linear; Grassmannian geometry can describe curved submanifolds. But the standard methods (DAS, linear probes, SAEs) all restrict to linear subspaces of the ambient activation space. Extending the Subspace view to nonlinear structure — finding circles, manifolds, and curved subspaces — is an open methodological challenge, not a conceptual one.
+The Subspace view is not inherently linear; the Grassmannian $\mathrm{Gr}(k,d)$ is itself a curved manifold, and paths on it can track how a representation's subspace rotates across layers or training steps. But every point on the Grassmannian is a *linear* subspace of the ambient activation space, and all standard methods (DAS, linear probes, SAEs) restrict to linear structure. Extending the Subspace view to nonlinear representations — finding circles, manifolds, and curved subspaces within activation space — is an open methodological challenge, not a conceptual one.
 
 ## Mechanistic validity impact
 

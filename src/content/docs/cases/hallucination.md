@@ -45,4 +45,4 @@ Hypothesis: facts encoded with lower effective-rank weight structure hallucinate
 
 Meng, K., Bau, D., Andonian, A., Belinkov, Y. "Locating and Editing Factual Associations in GPT." [NeurIPS 2022. arXiv:2202.05262](https://arxiv.org/abs/2202.05262).
 
-Li, K., Patel, O., Vieira, F., Raber, N., Sachan, M., Riedel, S., Hajishirzi, H. "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model." [NeurIPS 2023. arXiv:2306.03341](https://arxiv.org/abs/2306.03341).
+Li, K., Patel, O., Viégas, F., Pfister, H., Wattenberg, M. "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model." [NeurIPS 2023. arXiv:2306.03341](https://arxiv.org/abs/2306.03341).
