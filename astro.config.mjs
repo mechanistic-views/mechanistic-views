@@ -55,7 +55,7 @@ export default defineConfig({
         },
         {
           label: 'Views',
-          collapsed: false,
+          collapsed: true,
           items: [
             { label: 'Overview', link: '/views/' },
             { label: 'Instrumental', link: '/views/instrumental/' },
@@ -106,7 +106,7 @@ export default defineConfig({
         },
         {
           label: 'Decision Points',
-          collapsed: false,
+          collapsed: true,
           items: [
             { label: 'Overview', link: '/decisions/' },
             { label: 'Object vs. Role', link: '/decisions/object-vs-role/' },
@@ -132,7 +132,7 @@ export default defineConfig({
         },
         {
           label: 'Open Problems',
-          collapsed: true,
+          collapsed: false,
           items: [
             { label: 'Problem Map', link: '/open-problems/' },
             { label: 'Decomposition Identity', link: '/open-problems/decomposition-identity/' },
