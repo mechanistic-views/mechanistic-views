@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 440" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .fam-label { font-size: 13px; font-weight: 700; letter-spacing: 0.3px; }
+      .fail-label { font-size: 10px; font-weight: 500; fill: #64748b; font-style: italic; }
+      .card-name { font-size: 13px; font-weight: 600; fill: #1e293b; }
+      .card-desc { font-size: 10.5px; fill: #475569; font-weight: 500; }
+      .edge-label { font-size: 11px; fill: #475569; font-weight: 600; font-style: italic; }
+      .cross-label { font-size: 12px; fill: #1e293b; font-weight: 700; }
+    </style>
+    <marker id="arr-purple" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#7c3aed"/>
+    </marker>
+    <marker id="arr-blue" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-gray" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- ══════ Identity Family ══════ -->
+  <rect x="40" y="48" width="230" height="155" rx="12" fill="#7c3aed" fill-opacity="0.08" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="155" y="38" text-anchor="middle" class="fam-label" fill="#7c3aed">Identity</text>
+
+  <rect x="58" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="78" text-anchor="middle" class="card-name">Object</text>
+  <text x="155" y="94" text-anchor="middle" class="card-desc">concrete parts: heads, neurons</text>
+
+  <line x1="155" y1="104" x2="155" y2="126" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr-purple)"/>
+  <text x="176" y="119" class="edge-label">inflation risk</text>
+
+  <rect x="58" y="130" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#7c3aed" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="148" text-anchor="middle" class="card-name">Role</text>
+  <text x="155" y="164" text-anchor="middle" class="card-desc">functional roles, multiply realized</text>
+
+  <text x="155" y="195" text-anchor="middle" class="fail-label">failure: role inflation</text>
+
+  <!-- Identity → Mathematical arrow -->
+  <line x1="270" y1="125" x2="447" y2="125" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+  <text x="358" y="113" text-anchor="middle" class="cross-label">components vs. geometry</text>
+
+  <!-- ══════ Mathematical Family ══════ -->
+  <rect x="450" y="48" width="230" height="155" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="565" y="38" text-anchor="middle" class="fam-label" fill="#3b82f6">Mathematical</text>
+
+  <rect x="468" y="60" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="565" y="78" text-anchor="middle" class="card-name">Subspace</text>
+  <text x="565" y="94" text-anchor="middle" class="card-desc">causal subspaces on Gr(k, d)</text>
+
+  <line x1="565" y1="104" x2="565" y2="126" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+  <text x="586" y="119" class="edge-label">gauge question</text>
+
+  <rect x="468" y="130" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="565" y="148" text-anchor="middle" class="card-name">Structural</text>
+  <text x="565" y="164" text-anchor="middle" class="card-desc">invariant weight structure</text>
+
+  <text x="565" y="195" text-anchor="middle" class="fail-label">failure: alignment vacuousness</text>
+
+  <!-- Mathematical → Process arrow (same y as components vs. geometry) -->
+  <line x1="680" y1="125" x2="835" y2="125" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr-gray)"/>
+  <text x="758" y="113" text-anchor="middle" class="cross-label">state vs. trajectory</text>
+
+  <!-- ══════ Process Family (singleton, vertically centered with top row) ══════ -->
+  <rect x="838" y="81" width="212" height="88" rx="12" fill="#14b8a6" fill-opacity="0.08" stroke="#14b8a6" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="944" y="71" text-anchor="middle" class="fam-label" fill="#14b8a6">Process</text>
+
+  <rect x="852" y="93" width="184" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#14b8a6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="944" y="111" text-anchor="middle" class="card-name">Process</text>
+  <text x="944" y="127" text-anchor="middle" class="card-desc">formation trajectories</text>
+
+  <text x="944" y="161" text-anchor="middle" class="fail-label">failure: training-detail overfitting</text>
+
+  <!-- ══════ Divider ══════ -->
+  <line x1="60" y1="230" x2="1070" y2="230" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- ══════ Pragmatic Family (singleton) ══════ -->
+  <rect x="40" y="260" width="230" height="88" rx="12" fill="#f43f5e" fill-opacity="0.08" stroke="#f43f5e" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="155" y="254" text-anchor="middle" class="fam-label" fill="#f43f5e">Pragmatic</text>
+
+  <rect x="58" y="272" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#f43f5e" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="155" y="290" text-anchor="middle" class="card-name">Instrumental</text>
+  <text x="155" y="306" text-anchor="middle" class="card-desc">useful predictions, not real objects</text>
+
+  <text x="155" y="340" text-anchor="middle" class="fail-label">failure: proxy confounding</text>
+
+  <!-- ══════ Analyst-choice Family ══════ -->
+  <rect x="380" y="260" width="670" height="88" rx="12" fill="#6366f1" fill-opacity="0.08" stroke="#6366f1" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="715" y="254" text-anchor="middle" class="fam-label" fill="#6366f1">Analyst-choice</text>
+
+  <rect x="398" y="272" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#6366f1" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="495" y="290" text-anchor="middle" class="card-name">Contrastive</text>
+  <text x="495" y="306" text-anchor="middle" class="card-desc">mechanisms relative to a foil</text>
+
+  <rect x="618" y="272" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#6366f1" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="715" y="290" text-anchor="middle" class="card-name">Perspectival</text>
+  <text x="715" y="306" text-anchor="middle" class="card-desc">methods as partial projections</text>
+
+  <rect x="838" y="272" width="194" height="44" rx="8" fill="white" fill-opacity="0.55" stroke="#6366f1" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="935" y="290" text-anchor="middle" class="card-name">Stratified</text>
+  <text x="935" y="306" text-anchor="middle" class="card-desc">strata with varying identity</text>
+
+  <text x="715" y="340" text-anchor="middle" class="fail-label">failure: analyst-choice dependence</text>
+
+  <!-- ══════ Bottom annotation ══════ -->
+  <text x="565" y="395" text-anchor="middle" font-size="13" fill="#475569" font-weight="600" font-style="italic">Families are grouped by primary failure mode: two views share a family</text>
+  <text x="565" y="413" text-anchor="middle" font-size="13" fill="#475569" font-weight="600" font-style="italic">when one methodological error corrupts both.</text>
+</svg>
