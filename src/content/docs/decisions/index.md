@@ -17,3 +17,5 @@ Each page examines a fork where different views lead to different experiments, d
 - **[Single-Method vs. Triangulated](single-vs-triangulated/)** -- When is one strong experiment enough, and when do you need converging evidence from independent domains? This determines the strength of the claims you can make.
 
 - **[Static vs. Process](static-vs-process/)** -- Should the mechanism be described as a final-state object, or does its formation history matter? This determines whether you need checkpoint data and dynamics-domain evidence.
+
+- **[Behavioral vs. Mechanistic](behavioral-vs-mechanistic/)** -- Is a finding about a model's behavioral propensity or about an internal mechanism? This matters most for safety, where the gap between instrumental evidence and mechanistic conclusions is the central evidence deficit.

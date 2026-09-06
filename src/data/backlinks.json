@@ -6,7 +6,7 @@
     },
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     },
     {
       "slug": "/cases/induction/",
@@ -15,6 +15,14 @@
     {
       "slug": "/formalism/dynamical-system/",
       "title": "Dynamical System"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     },
     {
       "slug": "/glossary/",
@@ -162,7 +170,7 @@
     },
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     },
     {
       "slug": "/cases/induction/",
@@ -175,6 +183,14 @@
     {
       "slug": "/cases/self-knowledge/",
       "title": "Case Study — Self-Knowledge"
+    },
+    {
+      "slug": "/cases/superposition/",
+      "title": "Case Study — Superposition"
+    },
+    {
+      "slug": "/decisions/behavioral-vs-mechanistic/",
+      "title": "Behavioral vs. Mechanistic"
     },
     {
       "slug": "/formalism/deep-dives/grassmannian/",
@@ -199,6 +215,14 @@
     {
       "slug": "/formalism/representation-theory/",
       "title": "Representation Theory"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     },
     {
       "slug": "/glossary/",
@@ -349,12 +373,20 @@
       "title": "Case Study — Hallucination"
     },
     {
+      "slug": "/cases/",
+      "title": "Worked Examples"
+    },
+    {
       "slug": "/cases/induction/",
       "title": "Case Study — Induction Heads"
     },
     {
       "slug": "/cases/ioi/",
       "title": "Case Study — IOI"
+    },
+    {
+      "slug": "/cases/superposition/",
+      "title": "Case Study — Superposition"
     },
     {
       "slug": "/formalism/category-theory/",
@@ -379,6 +411,14 @@
     {
       "slug": "/formalism/representation-theory/",
       "title": "Representation Theory"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     },
     {
       "slug": "/glossary/",
@@ -452,7 +492,7 @@
     },
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     },
     {
       "slug": "/cases/induction/",
@@ -467,6 +507,14 @@
       "title": "Case Study — Self-Knowledge"
     },
     {
+      "slug": "/cases/superposition/",
+      "title": "Case Study — Superposition"
+    },
+    {
+      "slug": "/decisions/behavioral-vs-mechanistic/",
+      "title": "Behavioral vs. Mechanistic"
+    },
+    {
       "slug": "/formalism/causal-graph/",
       "title": "Causal Graph"
     },
@@ -477,6 +525,14 @@
     {
       "slug": "/formalism/information-theory/",
       "title": "Information Theory"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     },
     {
       "slug": "/glossary/",
@@ -539,6 +595,10 @@
       "title": "Williams et al.: MI Needs Philosophy"
     },
     {
+      "slug": "/views/contrastive/",
+      "title": "Contrastive View"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
@@ -574,7 +634,7 @@
     },
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     },
     {
       "slug": "/cases/induction/",
@@ -595,6 +655,14 @@
     {
       "slug": "/formalism/role-graph/",
       "title": "Role Graph"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     },
     {
       "slug": "/glossary/",
@@ -645,6 +713,10 @@
       "title": "Williams et al.: MI Needs Philosophy"
     },
     {
+      "slug": "/views/contrastive/",
+      "title": "Contrastive View"
+    },
+    {
       "slug": "/views/",
       "title": "Views"
     },
@@ -664,31 +736,237 @@
   "/cases/ioi/": [
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     }
   ],
   "/cases/induction/": [
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
+    }
+  ],
+  "/cases/superposition/": [
+    {
+      "slug": "/cases/",
+      "title": "Worked Examples"
+    }
+  ],
+  "/mechanistic-views/views/perspectival/": [
+    {
+      "slug": "/cases/",
+      "title": "Worked Examples"
+    },
+    {
+      "slug": "/cases/superposition/",
+      "title": "Case Study — Superposition"
+    },
+    {
+      "slug": "/formalism/measurement-algebra/",
+      "title": "Measurement Algebra"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/decomposition-identity/",
+      "title": "Decomposition Identity"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/linear-assumption/",
+      "title": "Linear Assumption"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Do SAEs Recover the 'True' Features?"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/superposition/",
+      "title": "Superposition"
+    },
+    {
+      "slug": "/open-problems/validation-methodology/",
+      "title": "Validation Methodology"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/views/contrastive/",
+      "title": "Contrastive View"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/instrumental/",
+      "title": "Instrumental View"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    },
+    {
+      "slug": "/views/stratified/",
+      "title": "Stratified View"
     }
   ],
   "/cases/grokking/": [
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     }
   ],
   "/cases/hallucination/": [
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
     }
   ],
   "/cases/self-knowledge/": [
     {
       "slug": "/cases/",
-      "title": "Cases"
+      "title": "Worked Examples"
+    }
+  ],
+  "/mechanistic-views/open-problems/superposition/": [
+    {
+      "slug": "/cases/superposition/",
+      "title": "Case Study — Superposition"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/sae-true-features/",
+      "title": "Do SAEs Recover the 'True' Features?"
+    }
+  ],
+  "/mechanistic-views/views/instrumental/": [
+    {
+      "slug": "/decisions/behavioral-vs-mechanistic/",
+      "title": "Behavioral vs. Mechanistic"
+    },
+    {
+      "slug": "/formalism/model-theory/",
+      "title": "Model Theory"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/open-problems/circuit-disagreements/",
+      "title": "Circuit Disagreements"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/resolution-completeness/",
+      "title": "Resolution & Completeness"
+    },
+    {
+      "slug": "/open-problems/safety-evidence-gaps/",
+      "title": "Safety Evidence Gaps"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/steinhardt-behaviors/",
+      "title": "Steinhardt: Evaluating Behaviors"
+    },
+    {
+      "slug": "/open-problems/williams-philosophy/",
+      "title": "Williams et al.: MI Needs Philosophy"
+    },
+    {
+      "slug": "/open-problems/world-models/",
+      "title": "World Models"
+    },
+    {
+      "slug": "/views/contrastive/",
+      "title": "Contrastive View"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    },
+    {
+      "slug": "/views/perspectival/",
+      "title": "Perspectival View"
+    }
+  ],
+  "/mechanistic-views/open-problems/safety-evidence-gaps/": [
+    {
+      "slug": "/decisions/behavioral-vs-mechanistic/",
+      "title": "Behavioral vs. Mechanistic"
+    },
+    {
+      "slug": "/open-problems/cot-faithfulness/",
+      "title": "Is Chain-of-Thought Faithful?"
+    },
+    {
+      "slug": "/open-problems/deceptive-alignment/",
+      "title": "Deceptive Alignment"
+    },
+    {
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/open-problems/probe-features/",
+      "title": "Do Probes Find Features the Model Uses?"
+    },
+    {
+      "slug": "/open-problems/schmidt-agenda/",
+      "title": "Schmidt Trustworthy AI Agenda"
+    },
+    {
+      "slug": "/open-problems/steinhardt-behaviors/",
+      "title": "Steinhardt: Evaluating Behaviors"
     }
   ],
   "/decisions/object-vs-role/": [
@@ -716,6 +994,12 @@
     }
   ],
   "/decisions/static-vs-process/": [
+    {
+      "slug": "/decisions/",
+      "title": "Decisions"
+    }
+  ],
+  "/decisions/behavioral-vs-mechanistic/": [
     {
       "slug": "/decisions/",
       "title": "Decisions"
@@ -979,6 +1263,14 @@
       "title": "Whitney Stratification"
     },
     {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
+    },
+    {
       "slug": "/index/",
       "title": "Mechanistic Views"
     },
@@ -1017,8 +1309,20 @@
       "title": "Role Graph"
     },
     {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
       "slug": "/methods/",
       "title": "Methods"
+    },
+    {
+      "slug": "/views/contrastive/",
+      "title": "Contrastive View"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
     }
   ],
   "/mechanistic-views/formalism/deep-dives/gauge-holonomy/": [
@@ -1195,138 +1499,6 @@
       "title": "Role View"
     }
   ],
-  "/mechanistic-views/views/perspectival/": [
-    {
-      "slug": "/formalism/measurement-algebra/",
-      "title": "Measurement Algebra"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/open-problems/cot-faithfulness/",
-      "title": "Is Chain-of-Thought Faithful?"
-    },
-    {
-      "slug": "/open-problems/decomposition-identity/",
-      "title": "Decomposition Identity"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/linear-assumption/",
-      "title": "Linear Assumption"
-    },
-    {
-      "slug": "/open-problems/probe-features/",
-      "title": "Do Probes Find Features the Model Uses?"
-    },
-    {
-      "slug": "/open-problems/sae-true-features/",
-      "title": "Do SAEs Recover the 'True' Features?"
-    },
-    {
-      "slug": "/open-problems/schmidt-agenda/",
-      "title": "Schmidt Trustworthy AI Agenda"
-    },
-    {
-      "slug": "/open-problems/superposition/",
-      "title": "Superposition"
-    },
-    {
-      "slug": "/open-problems/validation-methodology/",
-      "title": "Validation Methodology"
-    },
-    {
-      "slug": "/open-problems/williams-philosophy/",
-      "title": "Williams et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/instrumental/",
-      "title": "Instrumental View"
-    },
-    {
-      "slug": "/views/mappings/",
-      "title": "View Mappings"
-    },
-    {
-      "slug": "/views/stratified/",
-      "title": "Stratified View"
-    }
-  ],
-  "/mechanistic-views/views/instrumental/": [
-    {
-      "slug": "/formalism/model-theory/",
-      "title": "Model Theory"
-    },
-    {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
-      "slug": "/open-problems/circuit-disagreements/",
-      "title": "Circuit Disagreements"
-    },
-    {
-      "slug": "/open-problems/cot-faithfulness/",
-      "title": "Is Chain-of-Thought Faithful?"
-    },
-    {
-      "slug": "/open-problems/deceptive-alignment/",
-      "title": "Deceptive Alignment"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/probe-features/",
-      "title": "Do Probes Find Features the Model Uses?"
-    },
-    {
-      "slug": "/open-problems/resolution-completeness/",
-      "title": "Resolution & Completeness"
-    },
-    {
-      "slug": "/open-problems/safety-evidence-gaps/",
-      "title": "Safety Evidence Gaps"
-    },
-    {
-      "slug": "/open-problems/schmidt-agenda/",
-      "title": "Schmidt Trustworthy AI Agenda"
-    },
-    {
-      "slug": "/open-problems/steinhardt-behaviors/",
-      "title": "Steinhardt: Evaluating Behaviors"
-    },
-    {
-      "slug": "/open-problems/williams-philosophy/",
-      "title": "Williams et al.: MI Needs Philosophy"
-    },
-    {
-      "slug": "/open-problems/world-models/",
-      "title": "World Models"
-    },
-    {
-      "slug": "/views/",
-      "title": "Views"
-    },
-    {
-      "slug": "/views/mappings/",
-      "title": "View Mappings"
-    },
-    {
-      "slug": "/views/perspectival/",
-      "title": "Perspectival View"
-    }
-  ],
   "/mechanistic-views/formalism/category-theory/": [
     {
       "slug": "/formalism/representation-theory/",
@@ -1351,6 +1523,30 @@
     {
       "slug": "/index/",
       "title": "Mechanistic Views"
+    }
+  ],
+  "/mechanistic-views/views/contrastive/": [
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
+    },
+    {
+      "slug": "/views/mappings/",
+      "title": "View Mappings"
+    }
+  ],
+  "/mechanistic-views/views/assessment/": [
+    {
+      "slug": "/framework/using/",
+      "title": "Using the Framework"
     }
   ],
   "/mechanistic-views/framework/": [
@@ -1463,32 +1659,6 @@
       "title": "Open Problem Map"
     }
   ],
-  "/mechanistic-views/open-problems/safety-evidence-gaps/": [
-    {
-      "slug": "/open-problems/cot-faithfulness/",
-      "title": "Is Chain-of-Thought Faithful?"
-    },
-    {
-      "slug": "/open-problems/deceptive-alignment/",
-      "title": "Deceptive Alignment"
-    },
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/probe-features/",
-      "title": "Do Probes Find Features the Model Uses?"
-    },
-    {
-      "slug": "/open-problems/schmidt-agenda/",
-      "title": "Schmidt Trustworthy AI Agenda"
-    },
-    {
-      "slug": "/open-problems/steinhardt-behaviors/",
-      "title": "Steinhardt: Evaluating Behaviors"
-    }
-  ],
   "/mechanistic-views/open-problems/training-dynamics/": [
     {
       "slug": "/open-problems/deceptive-alignment/",
@@ -1567,16 +1737,6 @@
     {
       "slug": "/open-problems/williams-philosophy/",
       "title": "Williams et al.: MI Needs Philosophy"
-    }
-  ],
-  "/mechanistic-views/open-problems/superposition/": [
-    {
-      "slug": "/open-problems/",
-      "title": "Open Problem Map"
-    },
-    {
-      "slug": "/open-problems/sae-true-features/",
-      "title": "Do SAEs Recover the 'True' Features?"
     }
   ],
   "/mechanistic-views/open-problems/circuit-disagreements/": [

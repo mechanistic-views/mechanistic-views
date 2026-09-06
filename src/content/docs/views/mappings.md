@@ -4,7 +4,7 @@ title: View Mappings
 
 # View Mappings
 
-How the eight views relate to each other, and how other positions in the interpretability literature map onto them.
+How the nine views relate to each other, and how other positions in the interpretability literature map onto them.
 
 ## Ontological commitment ordering
 
@@ -12,9 +12,9 @@ How the eight views relate to each other, and how other positions in the interpr
 
 ## View families
 
-The eight views group into three families of two (Identity, Mathematical, Process) plus two singletons (Methodological, Pragmatic).
+The nine views group into five families, where membership is fixed by *primary failure mode*: two views belong to the same family when one methodological error corrupts both. The **Identity family** (Object, Role; failure: role inflation), the **Mathematical family** (Subspace, Structural; failure: alignment vacuousness), the **Process family** (Process; failure: training-detail overfitting), the **Pragmatic family** (Instrumental; failure: proxy confounding), and the **Analyst-choice family** (Contrastive, Perspectival, Stratified; failure: analyst-choice dependence — each individuates mechanisms relative to a parameter the analyst sets).
 
-![Eight views organized by family](/mechanistic-views/figures/eight-views-families-v2.svg)
+![Views organized by family](/mechanistic-views/figures/nine-views-families.svg)
 
 ## Ontology determines identity determines formalism
 
@@ -22,13 +22,17 @@ Each view's ontological commitment implies a specific identity criterion, which 
 
 ![Three-column chain: Ontology → Identity → Formalism](/mechanistic-views/figures/ontology-identity-formalism-v2.svg)
 
-The diagrams encode a philosophical gradient. The bottom two views — Instrumental and Perspectival — are skeptical positions: they doubt that circuits or features are real objects in the model, treating them instead as useful fictions or method-relative projections. The top six make progressively stronger realist claims, culminating in the Stratified view's assertion that mechanisms have resolution-dependent structure that exists independent of any particular measurement. The ontology-determines-identity chain shows why this matters: each view's ontological stance locks in what counts as evidence, what counts as the same mechanism, and what mathematical language is natural. Mixing commitments from different views without recognizing the mismatch is a common source of confusion in the interpretability literature.
+The diagrams encode a philosophical gradient. The three lowest-commitment views — Instrumental, Contrastive, and Perspectival — make no claim that circuits or features are real objects in the model: the Instrumental view treats them as useful fictions, the Perspectival view as method-relative projections, and the Contrastive view as patterns relative to an analyst-chosen foil. The six higher-commitment views make progressively stronger realist claims, culminating in the Stratified view's assertion that mechanisms have resolution-dependent structure that exists independent of any particular measurement. The ontology-determines-identity chain shows why this matters: each view's ontological stance locks in what counts as evidence, what counts as the same mechanism, and what mathematical language is natural. Mixing commitments from different views without recognizing the mismatch is a common source of confusion in the interpretability literature.
 
 In practice, these diagrams can be used as a lookup table: find the view that matches your method, and the chain tells you what identity criterion and formalism follow. If your method targets architectural components, you are in the Object view; if it targets learned subspaces, you are in the Subspace view. Making this explicit avoids the common failure of collecting evidence at one level while drawing conclusions at another.
 
 ## Other positions in the literature
 
-Several coherent positions appear in the interpretability literature that are not listed as separate views here. In each case, we argue the position maps onto one of the eight views, adds a constraint to an existing view, or lacks practical methods for trained models.
+:::note
+This content is not included in the paper.
+:::
+
+Several coherent positions appear in the interpretability literature that are not listed as separate views here. In each case, we argue the position maps onto one of the nine views, adds a constraint to an existing view, or lacks practical methods for trained models.
 
 **Algorithmic** (RASP, Tracr). Treats mechanisms as formal programs the network implements. A coherent philosophical position, but the only cases where "this network implements algorithm X" can be verified are toy models or very simple circuits where the algorithm is already obvious. For real models, the computation is too distributed and approximate to extract a clean program. Algorithmic claims about trained models reduce to detailed role descriptions in practice.
 

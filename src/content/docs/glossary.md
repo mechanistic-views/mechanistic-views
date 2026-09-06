@@ -12,7 +12,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 **Mechanistic view.** The set of commitments underlying a mechanistic claim, formalized as a 5-tuple $\sigma = (O, {\sim}, E, F, T)$: ontology, identity criterion, evidential standards, formalism, target. See [Framework](/mechanistic-views/framework/).
 
-**Ontology.** What kind of entity counts as a mechanism — a component, a functional role, a subspace, a gauge-invariant structure, a formation trajectory, or a stratum point. Each of the [eight views](/mechanistic-views/views/) gives a different answer.
+**Ontology.** What kind of entity counts as a mechanism — a component, a functional role, a subspace, a gauge-invariant structure, a formation trajectory, or a stratum point. Each of the [nine views](/mechanistic-views/views/) gives a different answer.
 
 **Identity.** When two descriptions refer to the same mechanism. Must fit the ontology: component overlap for the [object view](/mechanistic-views/views/object/), role equivalence for the [role view](/mechanistic-views/views/role/), geodesic distance for the [subspace view](/mechanistic-views/views/subspace/), gauge-orbit membership for the [structural view](/mechanistic-views/views/structural/).
 
@@ -65,6 +65,8 @@ Quick-reference definitions for terms used across this site. For the mathematica
 **Logit lens / tuned lens.** Applies the unembedding matrix (or a learned affine transform) at intermediate layers to read off vocabulary-level predictions. Observational layer-by-layer readout. See [logit lens on learnmechinterp](https://learnmechinterp.com/topics/logit-lens-and-tuned-lens/) and the [linear projection formalism](/mechanistic-views/formalism/linear-projection/).
 
 ## Additional terms
+
+**Alignment class vacuity (Sutter et al. 2025).** Unrestricted nonlinear alignment maps achieve 100% IIA even on randomly initialized models, making DAS vacuous without structural constraints on the alignment class. Subspace-view claims therefore require either linear alignment or alignment constrained to respect the transport structure induced by the weight matrices. Without this constraint, high IIA is consistent with any causal structure. See the [Subspace view](/mechanistic-views/views/subspace/) and [Grassmannian formalism](/mechanistic-views/formalism/grassmannian/).
 
 **Formation criterion.** The threshold or condition used to declare that a mechanism has "formed" during training. Different criteria (behavioral threshold, AGOP convergence, weight-space structure) can disagree in timing. Process-view claims must specify which criterion is used. See [Process view](/mechanistic-views/views/process/).
 

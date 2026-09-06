@@ -12,6 +12,10 @@ The stratified view is the meta-view. It says there is no single correct answer 
 
 Mechanisms come in different geometric types. The type determines the correct methods, metrics, identity criteria, and evidence standards. Different interpretability methods are coordinate charts on a stratified mechanism space — method disagreement is often chart disagreement, not empirical disagreement.
 
+:::note
+The paper keeps the stratified view operational, centered on three measurements: effective dimensionality (participation ratio), localizability, and stratum stability. It explicitly disclaims Whitney's regularity conditions: "No claim in this section depends on Whitney's regularity conditions." The strata nomenclature ($\mathcal{M}_1$, $\mathcal{M}_k$, etc.), the "methods as charts" framework, and the falsifiable predictions below are site elaborations beyond the paper's claims.
+:::
+
 ## The strata
 
 The space of mechanisms is not a flat list but a nested filtration — each stratum includes the ones below it as limiting cases. A curved manifold mechanism is "approximately linear" near its center. A distributed mechanism may have a locally consistent approximation in some regions. Stratum assignment is a question of resolution: at what zoom level does the mechanism's specific geometric character become the leading-order description?

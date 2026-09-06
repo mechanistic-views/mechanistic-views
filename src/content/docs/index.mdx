@@ -9,11 +9,13 @@ import Cite from '../../components/Cite.astro';
 
 *A five-axis ontology for mechanistic interpretability*
 
-Neural networks are remarkably capable, but the internal mechanisms that produce these capabilities are still only partly understood. Mechanistic interpretability investigates this, and the field has identified circuits, features, causal subspaces, formation dynamics, and more, across a range of models and tasks. Individual components have been assigned functional roles like "name movers" and "induction heads." But what exactly is a "name mover"? Is it a specific component (head 9.9 in layer 9 of this particular model)? A functional role that any component could play, in any model? A direction in the model's internal representation space? A structural pattern in the weight matrices?
+Mechanistic interpretability has produced circuits, features, and causal subspaces — each resting on an implicit answer to a prior question: what kind of thing is a mechanism?
 
-These are not the same claim. Each assumes something different about what a mechanism is, what counts as evidence, and what follows from it. The same result means different things under different assumptions. Without explicit answers to these questions, a mechanistic claim is incomplete.
+The question is not rhetorical. In some papers a mechanism is a set of attention heads; in others it is a named functional role such as "name mover"; in others it is a causally sufficient subspace recovered by DAS; in others it is a set of features recovered by sparse autoencoders; in others it is a training-time transition. The difference between these is ontological, and ontological differences propagate: what a mechanism *is* determines when two descriptions pick out the *same* one, what *evidence* can warrant a claim, and what *inferences* may be drawn from it. A mechanistic claim has no determinate truth-conditions until these commitments are declared.
 
-We call these background assumptions a **mechanistic view**.
+The consequences are practical. Wang et al. establish by path patching that head 9.9 carries a large direct effect on the indirect-object logit, then label it a "name mover head" — a functional role. These are different claims under different views: the ablation supports an object claim (*this component matters*), while the role label requires independent operationalization. Arditi et al. show that removing a "refusal direction" suppresses refusal across 13 chat models; read instrumentally the finding is complete, but read as a claim about how refusal is organized in the residual stream it is not — two pooling choices applied to the same activations at the same layer recover directions 73° apart. The contrast that names the vector leaves the referent open.
+
+We call the background assumptions behind a mechanistic claim a **mechanistic view**.
 
 ## What is a mechanistic view?
 
@@ -31,17 +33,18 @@ A mechanistic view is the set of commitments — explicit or implicit — underl
 
 The five answers are not independent — what a mechanism is constrains when two are the same, which constrains what formalism is needed. See [Framework](/mechanistic-views/framework/) for the formal definition, coherence conditions, and why these constraints matter.
 
-## Eight mechanistic views
+## Nine mechanistic views
 
-The five axes admit multiple coherent answers. We organize these into eight mechanistic views, ordered by increasing ontological commitment — how much they claim about what mechanisms are, independent of any measurement:
+The five axes admit multiple coherent answers. We organize these into nine mechanistic views, ordered by increasing ontological commitment — how much they claim about what mechanisms are, independent of any measurement:
 
-$$\text{Instrumental} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
+$$\text{Instrumental} < \text{Contrastive} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
 
-Higher-commitment views make stronger claims but require more evidence. The structural, process, and stratified views are less explored in the current literature and are presented here as candidate research programs.
+This ordering is partial, not total: Role and Object are incomparable, and the relative positions of Process and Structural depend on whether one weights temporal or algebraic structure as more committed. The endpoints are clear: the instrumental view requires only predictive utility, while the stratified view requires evidence across multiple strata and measurement resolutions. Higher-commitment views make stronger claims but require more evidence.
 
 | View | Ontology | Identity | Evidence | Formalism | Target |
 |---|---|---|---|---|---|
 | [Instrumental](/mechanistic-views/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/mechanistic-views/views/instrumental/#evidence) | [Model theory](/mechanistic-views/formalism/model-theory/) | Behavioral prediction |
+| [Contrastive](/mechanistic-views/views/contrastive/) | Contrastive pattern | Same foil set + same pattern | [Foil variation, contrastive patching](/mechanistic-views/views/contrastive/#evidence) | [Causal graph](/mechanistic-views/formalism/causal-graph/) | Foil-relative behavior |
 | [Perspectival](/mechanistic-views/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/mechanistic-views/views/perspectival/#evidence) | [Measurement algebra](/mechanistic-views/formalism/measurement-algebra/) | Method-relative |
 | [Object](/mechanistic-views/views/object/) | Concrete part | Component overlap | [Ablation, patching](/mechanistic-views/views/object/#evidence) | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Specific behavior |
 | [Role](/mechanistic-views/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/mechanistic-views/views/role/#evidence) | [Role graph](/mechanistic-views/formalism/role-graph/) | Functional class |
