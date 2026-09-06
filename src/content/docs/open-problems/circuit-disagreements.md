@@ -29,6 +29,10 @@ When papers disagree about circuit size or membership, they are often comparing 
 
 The key insight: convergent validity (C5) and invariance (M2) should be tested *within* a view, not across views. Papers that report "failure to replicate" across methods using different views are making a category error.
 
+## Resolution status: **Clarified**
+
+Different methods find different circuits because they ask different questions under different views. Object-view methods (ACDC, activation patching) test necessity. Instrumental methods (attribution) estimate contribution. Role-view methods (manual analysis) identify functional roles. Necessity, contribution, and functional role are three different things. The disagreement is not empirical — it is a consequence of asking different questions. Convergent validity (C5) and invariance (M2) should be tested within a view, not across views.
+
 ## Sources
 
 - **Sharkey et al. (2026)** §2.1.4: Validation of descriptions ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))

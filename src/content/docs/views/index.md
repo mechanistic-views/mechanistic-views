@@ -6,9 +6,9 @@ title: Views
 
 We define nine mechanistic views — coherent positions on what a mechanism is, when two are the same, and what counts as evidence — ordered by increasing ontological commitment:
 
-$$\text{Instrumental} < \text{Contrastive} < \text{Perspectival} < \text{Object} < \text{Role} < \text{Subspace} < \text{Structural} < \text{Process} < \text{Stratified}$$
+$$\text{Instrumental} < \text{Contrastive} < \text{Perspectival} < \{\text{Object},\ \text{Role}\} < \text{Subspace} < \{\text{Structural},\ \text{Process}\} < \text{Stratified}$$
 
-This ordering is partial, not total: Role and Object are incomparable, and the relative positions of Process and Structural depend on whether one weights temporal or algebraic structure as more committed.
+This ordering is partial, and braces enclose the pairs it does not rank. Object and Role are incomparable (a role is multiply realizable while a component identity is tied to a specific model), and the relative positions of Structural and Process depend on whether one weights temporal or algebraic structure as more committed.
 
 Higher-commitment views make stronger claims but require more evidence. The instrumental view requires only predictive utility; the stratified view requires evidence across multiple strata and measurement resolutions. 
 
@@ -20,15 +20,15 @@ The views are not mutually exclusive: a single paper may use several, and conver
 
 | View | Ontology | Identity | Evidence | Formalism | Target |
 |---|---|---|---|---|---|
-| [Instrumental](/mechanistic-views/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention utility](/mechanistic-views/views/instrumental/#evidence) | [Model theory](/mechanistic-views/formalism/model-theory/) | Behavioral prediction |
-| [Contrastive](/mechanistic-views/views/contrastive/) | Contrastive pattern | Same foil set + same pattern | [Foil variation, contrastive patching](/mechanistic-views/views/contrastive/#evidence) | [Causal graph](/mechanistic-views/formalism/causal-graph/) | Foil-relative behavior |
+| [Instrumental](/mechanistic-views/views/instrumental/) | Predictive model | Predictive equivalence | [Forecast, intervention](/mechanistic-views/views/instrumental/#evidence) | [Model theory](/mechanistic-views/formalism/model-theory/) | Behavior prediction |
+| [Contrastive](/mechanistic-views/views/contrastive/) | Difference relative to foil | Same contrastive pattern | [Foil-varied patching](/mechanistic-views/views/contrastive/#evidence) | [Contrastive explanation](/mechanistic-views/formalism/causal-graph/) | Why $P$ rather than $Q$ |
 | [Perspectival](/mechanistic-views/views/perspectival/) | Method projection | Cross-method coherence | [Multi-method robustness](/mechanistic-views/views/perspectival/#evidence) | [Measurement algebra](/mechanistic-views/formalism/measurement-algebra/) | Method-relative |
 | [Object](/mechanistic-views/views/object/) | Concrete part | Component overlap | [Ablation, patching](/mechanistic-views/views/object/#evidence) | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Specific behavior |
-| [Role](/mechanistic-views/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/mechanistic-views/views/role/#evidence) | [Role graph](/mechanistic-views/formalism/role-graph/) | Functional class |
+| [Role](/mechanistic-views/views/role/) | Functional role | Role equivalence | [Role-specific causal tests](/mechanistic-views/views/role/#evidence) | [Functional decomp.](/mechanistic-views/formalism/role-graph/) | Functional class |
 | [Subspace](/mechanistic-views/views/subspace/) | Causal subspace | Same projector; $d_{\mathrm{Gr}} < \theta$ | [DAS/IIA (linear)](/mechanistic-views/views/subspace/#evidence), [subspace stability](/mechanistic-views/formalism/grassmannian/#subspace-stability) | [Grassmannian $\mathrm{Gr}(k,d)$](/mechanistic-views/formalism/grassmannian/) | Representational variable |
-| [Structural](/mechanistic-views/views/structural/) | Gauge-invariant structure | Gauge-orbit membership | [Holonomy, composition scores](/mechanistic-views/views/structural/#evidence) | [Fiber bundle quotient](/mechanistic-views/formalism/fiber-bundle-quotient/) | Computation class |
+| [Structural](/mechanistic-views/views/structural/) | Gauge-invariant structure | Gauge orbit | [Holonomy, composition](/mechanistic-views/views/structural/#evidence) | [Fiber bundle](/mechanistic-views/formalism/fiber-bundle-quotient/) | Computation class |
 | [Process](/mechanistic-views/views/process/) | Formation trajectory | Same trajectory type | [Checkpoints, formation knockouts](/mechanistic-views/views/process/#evidence) | [Dynamical system](/mechanistic-views/formalism/dynamical-system/) | Mechanism origin |
-| [Stratified](/mechanistic-views/views/stratified/) | Stratum point | Stratum + local equivalence | [Dimensionality, localization](/mechanistic-views/views/stratified/#evidence) | [Whitney stratification](/mechanistic-views/formalism/stratification/) | Resolution-relative |
+| [Stratified](/mechanistic-views/views/stratified/) | Stratum point | Stratum + local equivalence | [Participation ratio, localization](/mechanistic-views/views/stratified/#evidence) | [Res.-indexed strata](/mechanistic-views/formalism/stratification/) | Resolution-relative |
 
 ## Validity coverage comparison
 

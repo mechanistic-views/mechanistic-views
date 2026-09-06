@@ -12,7 +12,7 @@ How the nine views relate to each other, and how other positions in the interpre
 
 ## View families
 
-The nine views group into five families, where membership is fixed by *primary failure mode*: two views belong to the same family when one methodological error corrupts both. The **Identity family** (Object, Role; failure: role inflation), the **Mathematical family** (Subspace, Structural; failure: alignment vacuousness), the **Process family** (Process; failure: training-detail overfitting), the **Pragmatic family** (Instrumental; failure: proxy confounding), and the **Analyst-choice family** (Contrastive, Perspectival, Stratified; failure: analyst-choice dependence — each individuates mechanisms relative to a parameter the analyst sets).
+The nine views group into five families, where membership is fixed by *primary failure mode*: two views belong to the same family when one methodological error corrupts both. The **Identity family** (Object, Role; failure: role inflation), the **Mathematical family** (Subspace, Structural; failure: alignment vacuousness), the **Process family** (Process; failure: training-detail overfitting), the **Pragmatic family** (Instrumental; failure: safety-relevant overreach), and the **Analyst-choice family** (Contrastive, Perspectival, Stratified; failure: analyst-choice dependence — each individuates mechanisms relative to a parameter the analyst sets).
 
 ![Views organized by family](/mechanistic-views/figures/nine-views-families.svg)
 

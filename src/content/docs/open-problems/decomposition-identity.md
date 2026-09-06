@@ -29,13 +29,17 @@ The [Perspectival view](/mechanistic-views/views/perspectival/) offers a sharper
 
 The decomposition identity problem makes four validity criteria impossible or violated under the Object view. All four become possible or covered under the Subspace view. This is the single largest validity gain from moving up one level on the commitment ladder.
 
+## Resolution status: **Clarified**
+
+Under the Object view, the decomposition identity problem is unsolvable — different SAE widths yield different features, and no criterion within the view selects a canonical width. Under the Subspace view, the problem is expected: the subspace spanned by a cluster of split features is what is real; how you decompose it is gauge freedom. The subspace view makes a prediction the object view cannot: the span recovered at 4,096 latents and at 32,768 should coincide even where the feature lists do not, testable via principal angles and Grassmannian distance.
+
 ## Sources
 
 - **Sharkey et al. (2026)** §2.1.2: SDL limitations, reconstruction errors, sparsity as proxy ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Nanda (2022)** §4: Polysemanticity and superposition problems ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
 - **Apollo Research (2024)** #7, #18, #19: Feature splitting structure, continuous vs. discrete ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))
 - **Sharkey "Sparsify" (2024)**: Decompilation fidelity, hierarchical abstraction ([Sparsify agenda](https://www.alignmentforum.org/posts/64MizJXzyvrYpeKqm))
-- **Templeton et al. (2024)**: Scaling monosemanticity on Claude 3.5 Sonnet
+- **Templeton et al. (2024)**: Scaling monosemanticity on Claude 3 Sonnet
 - **Bricken et al. (2023)**: Towards monosemanticity (original SAE features paper)
 - **Cunningham et al. (2023)**: Sparse autoencoders find interpretable features in language models
 - **Williams, Oldenburg, Fierro et al. (2025)**: "MI Needs Philosophy" §2.1 — no single correct decomposition; "explanatory pluralism" ([full mapping](/mechanistic-views/open-problems/williams-philosophy/))

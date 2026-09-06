@@ -26,6 +26,10 @@ The capability-propensity distinction maps onto the [Instrumental](/mechanistic-
 | [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | **Untested** at most resolutions | A mechanism that is specific at one resolution may be non-specific at another |
 | [C4 Minimality](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/minimality) | **Resolution-dependent** — finer resolution means less parsimonious | There's a natural Pareto frontier between resolution and parsimony that the field hasn't characterized |
 
+## Resolution status: **Scoped**
+
+"How much do we understand?" is ill-posed without specifying resolution. A published circuit can recover most of a task metric while leaving the computation underdetermined at finer grain. This is Stratified-view territory: the interesting objects are the stable strata and the structure that survives coarse-graining. The capability-propensity distinction (what the model can do vs. what it tends to do) maps onto the Instrumental vs. Role boundary and requires view-specific evidence at each level.
+
 ## Sources
 
 - **Apollo Research (2024)** #31, #32: Complete model understanding, "dark matter" ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))

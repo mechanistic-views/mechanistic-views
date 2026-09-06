@@ -32,6 +32,10 @@ This is the [E6 Cross-architecture generalization](https://mechanistic-validity.
 | [C5 Convergent validity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/construct/convergent-validity/) | Fails across methods | Possible if roles converge | Testable via cross-method subspace overlap |
 | [E6 Cross-architecture](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/cross-architecture) | Components change with scale | Roles may persist | Subspaces may persist (testable) |
 
+## Resolution status: **Clarified**
+
+Cross-model identity is impossible under the Object view (components don't transport across architectures), possible under the Role view (functional equivalence), measurable under the Subspace view (Grassmannian distance), and natural under the Structural view (gauge-orbit isomorphism). Most universality claims rest on behavioral or role-level evidence while being stated structurally. The question "are these the same mechanism?" has no view-independent answer — only answers relative to a specified identity criterion.
+
 ## Sources
 
 - **Nanda (2022)** §5.32, §5.34, §9.53, §9.54: Feature universality across seeds and architectures ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
