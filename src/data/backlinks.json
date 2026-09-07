@@ -847,6 +847,80 @@
       "title": "Worked Examples"
     }
   ],
+  "/mechanistic-views/glossary/": [
+    {
+      "slug": "/cases/induction/",
+      "title": "Case Study — Induction Heads"
+    },
+    {
+      "slug": "/cases/ioi/",
+      "title": "Case Study — IOI"
+    },
+    {
+      "slug": "/formalism/causal-graph/",
+      "title": "Causal Graph"
+    },
+    {
+      "slug": "/formalism/deep-dives/gauge-holonomy/",
+      "title": "Gauge Quotients and Holonomy"
+    },
+    {
+      "slug": "/formalism/deep-dives/grassmannian/",
+      "title": "Grassmannian Geometry"
+    },
+    {
+      "slug": "/formalism/dictionary/",
+      "title": "Dictionary"
+    },
+    {
+      "slug": "/formalism/directed-graph/",
+      "title": "Directed Graph"
+    },
+    {
+      "slug": "/formalism/fiber-bundle-quotient/",
+      "title": "Fiber Bundle Quotient"
+    },
+    {
+      "slug": "/formalism/grassmannian/",
+      "title": "Grassmannian"
+    },
+    {
+      "slug": "/formalism/linear-classifier/",
+      "title": "Linear Classifier"
+    },
+    {
+      "slug": "/formalism/linear-projection/",
+      "title": "Linear Projection"
+    },
+    {
+      "slug": "/framework/cross-view-promotion/",
+      "title": "Cross-View Promotion"
+    },
+    {
+      "slug": "/methods/",
+      "title": "Methods"
+    },
+    {
+      "slug": "/views/object/",
+      "title": "Object View"
+    },
+    {
+      "slug": "/views/process/",
+      "title": "Process View"
+    },
+    {
+      "slug": "/views/role/",
+      "title": "Role View"
+    },
+    {
+      "slug": "/views/structural/",
+      "title": "Structural View"
+    },
+    {
+      "slug": "/views/subspace/",
+      "title": "Subspace View"
+    }
+  ],
   "/mechanistic-views/open-problems/superposition/": [
     {
       "slug": "/cases/superposition/",
@@ -1233,10 +1307,6 @@
       "title": "Glossary"
     },
     {
-      "slug": "/index/",
-      "title": "Mechanistic Views"
-    },
-    {
       "slug": "/views/stratified/",
       "title": "Stratified View"
     }
@@ -1535,12 +1605,16 @@
       "title": "Mechanistic Views"
     },
     {
-      "slug": "/views/",
-      "title": "Views"
+      "slug": "/open-problems/circuit-disagreements/",
+      "title": "Circuit Disagreements"
     },
     {
-      "slug": "/views/mappings/",
-      "title": "View Mappings"
+      "slug": "/open-problems/",
+      "title": "Open Problem Map"
+    },
+    {
+      "slug": "/views/",
+      "title": "Views"
     }
   ],
   "/mechanistic-views/views/assessment/": [
@@ -1563,6 +1637,14 @@
     {
       "slug": "/glossary/",
       "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/index_v4/",
+      "title": "Overview"
     },
     {
       "slug": "/open-problems/",
@@ -1595,6 +1677,28 @@
     {
       "slug": "/methods/",
       "title": "Methods"
+    }
+  ],
+  "/mechanistic-views/cases/induction/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    }
+  ],
+  "/mechanistic-views/cases/ioi/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    }
+  ],
+  "/mechanistic-views/framework/cross-view-promotion/": [
+    {
+      "slug": "/glossary/",
+      "title": "Glossary"
+    },
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
     }
   ],
   "/mechanistic-views/formalism/model-theory/": [
@@ -1641,6 +1745,22 @@
     {
       "slug": "/views/process/",
       "title": "Process View"
+    }
+  ],
+  "/mechanistic-views/open-problems/": [
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
+    },
+    {
+      "slug": "/index_v4/",
+      "title": "Overview"
+    }
+  ],
+  "/mechanistic-views/about_cite/": [
+    {
+      "slug": "/index/",
+      "title": "Mechanistic Views"
     }
   ],
   "/mechanistic-views/figures/methods-evidence-grid.svg/": [
@@ -1823,7 +1943,7 @@
       "title": "View Mappings"
     }
   ],
-  "/mechanistic-views/figures/eight-views-families-v2.svg/": [
+  "/mechanistic-views/figures/nine-views-families.svg/": [
     {
       "slug": "/views/mappings/",
       "title": "View Mappings"

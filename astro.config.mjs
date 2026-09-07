@@ -50,7 +50,7 @@ export default defineConfig({
             { label: 'Cross-View Promotion', link: '/framework/cross-view-promotion/' },
             { label: 'Methods', link: '/methods/' },
             { label: 'Glossary', link: '/glossary/' },
-            { label: 'About & Citation', link: '/about_cite/' },
+            { label: 'About', link: '/about_cite/' },
           ],
         },
         {
