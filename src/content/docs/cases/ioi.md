@@ -4,7 +4,7 @@ title: Case Study — IOI
 
 # Case Study — IOI
 
-**The phenomenon.** Given "When Mary and John went to the store, John gave a drink to", a transformer predicts "Mary". [Wang et al. (2023)](https://learnmechinterp.com/topics/ioi-circuit/) identified the relevant circuit in GPT-2 Small.
+**The phenomenon.** Given "When Mary and John went to the store, John gave a drink to", a transformer predicts "Mary". [Wang et al. (2023)](/mechanistic-views/glossary/#ioi-circuit) identified the relevant circuit in GPT-2 Small.
 
 ## [Object view](/mechanistic-views/views/object/)
 

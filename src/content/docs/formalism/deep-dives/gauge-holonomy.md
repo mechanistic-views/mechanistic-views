@@ -99,4 +99,4 @@ High holonomy curvature indicates geometric instability under fine-tuning. Stabi
 - [Structural view](/mechanistic-views/views/structural/) — the view that uses gauge orbits as mechanism identity
 - [Grassmannian deep dive](grassmannian/) — the subspace geometry that holonomy acts on
 - [Sheaf Cohomology deep dive](sheaves/) — a complementary topological invariant for circuit localizability
-- [Composition scores on learnmechinterp](https://learnmechinterp.com/topics/composition-and-virtual-heads/) — partially gauge-invariant weight-space measurements
+- [Composition scores on learnmechinterp](/mechanistic-views/glossary/#composition-score) — partially gauge-invariant weight-space measurements

@@ -26,7 +26,7 @@ These are the *gauge transformations*. Two weight configurations related by a ga
 
 ## How the structural view uses it
 
-Under the structural view, a mechanism is a gauge-invariant property of the weights: something that depends only on the equivalence class $[\theta] \in \mathcal{W}/\mathcal{G}$, not on any particular representative $\theta$. Singular values of [OV circuits](https://learnmechinterp.com/topics/qk-ov-circuits/) $W^{OV}$, principal angles between subspaces, and effective rank are gauge-invariant. [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) are invariant under head permutations but not under the full rotation symmetry. Individual neuron activations and head indices are not gauge-invariant.
+Under the structural view, a mechanism is a gauge-invariant property of the weights: something that depends only on the equivalence class $[\theta] \in \mathcal{W}/\mathcal{G}$, not on any particular representative $\theta$. Singular values of [OV circuits](/mechanistic-views/glossary/#qk-ov-circuits) $W^{OV}$, principal angles between subspaces, and effective rank are gauge-invariant. [Composition scores](/mechanistic-views/glossary/#composition-score) are invariant under head permutations but not under the full rotation symmetry. Individual neuron activations and head indices are not gauge-invariant.
 
 Two structural descriptions refer to the same mechanism when they lie in the same gauge orbit — when one can be transformed into the other by a sequence of gauge transformations.
 

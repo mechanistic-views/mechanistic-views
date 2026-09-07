@@ -62,8 +62,8 @@ where $\theta_1, \ldots, \theta_k$ are the principal angles between $S_1$ and $S
 
 Three independently non-injective sources:
 
-- **Activation-space interventional**: [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) (with IIA as surgical-intervention test)
-- **Weight-space structural**: [SVD of $W^{OV} = W^O W^V$](https://learnmechinterp.com/topics/qk-ov-circuits/), invariant subspace decomposition
+- **Activation-space interventional**: [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) (with IIA as surgical-intervention test)
+- **Weight-space structural**: [SVD of $W^{OV} = W^O W^V$](/mechanistic-views/glossary/#qk-ov-circuits), invariant subspace decomposition
 - **Dynamics-space**: AGOP convergence toward the eventual DAS subspace during training (Radhakrishnan et al., 2024)
 
 Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a general position condition.
@@ -82,7 +82,7 @@ IIA should be reported as a diagnostic for intervention quality and graph validi
 
 ### SAE channels and the subspace view
 
-[SAEs](https://learnmechinterp.com/topics/sparse-autoencoders/) trained on residual stream activations learn a dictionary $D \in \mathbb{R}^{d \times n}$ ($n \gg d$) and sparse codes $a \in \mathbb{R}^n_{\geq 0}$ such that $x \approx Da$. Each column $d_i$ is a candidate one-dimensional subspace — a point in $\mathrm{Gr}(1, d)$.
+[SAEs](/mechanistic-views/glossary/#sae) trained on residual stream activations learn a dictionary $D \in \mathbb{R}^{d \times n}$ ($n \gg d$) and sparse codes $a \in \mathbb{R}^n_{\geq 0}$ such that $x \approx Da$. Each column $d_i$ is a candidate one-dimensional subspace — a point in $\mathrm{Gr}(1, d)$.
 
 Whether a given SAE channel corresponds to a genuine causal variable is a separate question from whether it is needed for reconstruction. SAE recovery should be treated as hypothesis generation: confirm with DAS/IIA that identified directions are causally active, not merely reconstruction-relevant. Divergence between SAE channels and DAS subspaces is informative — it indicates that sparse reconstruction and causal structure are picking out different things.
 

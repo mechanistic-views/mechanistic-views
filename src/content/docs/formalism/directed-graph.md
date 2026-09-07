@@ -20,7 +20,7 @@ The nodes are specific components — head 9.9 in layer 9, MLP 10, the embedding
 
 Two object-level descriptions refer to the same mechanism when they share sufficient component overlap — when the subgraphs have the same (or sufficiently overlapping) nodes and edges.
 
-Circuit discovery methods like [activation patching](https://learnmechinterp.com/topics/activation-patching/), [ACDC](https://learnmechinterp.com/topics/attribution-patching/), and [edge attribution patching](https://learnmechinterp.com/topics/attribution-patching/) all produce directed graphs as output. This is why the object view is implicit in most circuit-discovery work: the methods already speak the language of the formalism.
+Circuit discovery methods like [activation patching](/mechanistic-views/glossary/#activation-patching), [ACDC](/mechanistic-views/glossary/#attribution-patching), and [edge attribution patching](/mechanistic-views/glossary/#attribution-patching) all produce directed graphs as output. This is why the object view is implicit in most circuit-discovery work: the methods already speak the language of the formalism.
 
 ## Relationship to other formalisms
 

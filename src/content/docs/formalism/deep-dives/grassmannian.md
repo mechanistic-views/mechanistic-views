@@ -94,4 +94,4 @@ Mechanistic Validity's measurement validity criterion can be operationalized as 
 - [Subspace view](/mechanistic-views/views/subspace/) — the view that uses the Grassmannian as its primary formalism
 - [Gauge Quotients and Holonomy deep dive](gauge-holonomy/) — gauge-invariant structure on top of Grassmannian geometry
 - [Stratification deep dive](stratification/) — how Grassmannians at different $k$ assemble into a stratified space
-- [DAS/IIA on learnmechinterp](https://learnmechinterp.com/topics/causal-abstraction/) — the primary method for recovering Grassmannian points
+- [DAS/IIA on learnmechinterp](/mechanistic-views/glossary/#causal-abstraction) — the primary method for recovering Grassmannian points

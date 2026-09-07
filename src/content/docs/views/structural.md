@@ -58,7 +58,7 @@ Behavioral equivalence is coarser: two mechanisms can compute differently but ha
 
 ### Evidence
 
-- **Gauge-invariant measurements**: singular values of [OV circuits](https://learnmechinterp.com/topics/qk-ov-circuits/) $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. [Composition scores](https://learnmechinterp.com/topics/composition-and-virtual-heads/) $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ are invariant under head permutations but not under the orthogonal rotation symmetry; they are gauge-invariant only with respect to the permutation subgroup
+- **Gauge-invariant measurements**: singular values of [OV circuits](/mechanistic-views/glossary/#qk-ov-circuits) $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. [Composition scores](/mechanistic-views/glossary/#composition-score) $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ are invariant under head permutations but not under the orthogonal rotation symmetry; they are gauge-invariant only with respect to the permutation subgroup
 - **Holonomy**: estimates of the holonomy group (connection must be specified)
 - **Cohomological tests**: $H^0$ and $H^1$ of the circuit cosheaf
 

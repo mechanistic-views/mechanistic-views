@@ -28,4 +28,4 @@ The causal graph is a high-level formalism — its nodes are variables like "sub
 
 - Pearl, *Causality* (2009) — the foundational treatment of SCMs and the do-operator
 - Geiger et al., "Causal Abstraction for Faithful Model Interpretation" (2021) — applies causal graphs to neural network interpretability
-- See the [methods page](/mechanistic-views/methods/) for how causal graphs are used in [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) and [causal scrubbing](https://learnmechinterp.com/topics/causal-abstraction/)
+- See the [methods page](/mechanistic-views/methods/) for how causal graphs are used in [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) and [causal scrubbing](/mechanistic-views/glossary/#causal-abstraction)

@@ -22,7 +22,7 @@ A mechanism is a localized object or collection of objects whose activity or wei
 
 ## What this view says
 
-The object view says mechanisms are architectural or learned units: heads, neurons, [SAE-recovered channels](https://learnmechinterp.com/topics/sparse-autoencoders/). Two mechanisms are the same when they share the same relevant parts.
+The object view says mechanisms are architectural or learned units: heads, neurons, [SAE-recovered channels](/mechanistic-views/glossary/#sae). Two mechanisms are the same when they share the same relevant parts.
 
 The claim "head 4.4 implements name-moving" is a *dispositional* claim, not a categorical one. It means: head 4.4 reliably activates in name-moving contexts AND its ablation impairs name-moving performance. It does not mean the head is in some intrinsic state of "name-moving-ness" independent of context. Both conditions — the observational (activation pattern) and the interventional (ablation effect) — are needed. A claim citing only one is underdetermined: high activation without ablation evidence might reflect correlation; ablation evidence without activation evidence might reflect indirect effects.
 
@@ -51,9 +51,9 @@ A natural refinement defines mechanisms not by component indices but by the comp
 ### Evidence
 
 Intervention on the proposed component:
-- [Ablation](https://learnmechinterp.com/topics/activation-patching/) and mean-ablation (necessity — removing component destroys behavior)
-- [Activation patching](https://learnmechinterp.com/topics/activation-patching/) (replacing a component's activations from one forward pass into another; tests whether the source-pass behavior is sufficient to cause target-pass output change)
-- [Path patching](https://learnmechinterp.com/topics/activation-patching/#path-patching) (tests specific information-flow paths)
+- [Ablation](/mechanistic-views/glossary/#activation-patching) and mean-ablation (necessity — removing component destroys behavior)
+- [Activation patching](/mechanistic-views/glossary/#activation-patching) (replacing a component's activations from one forward pass into another; tests whether the source-pass behavior is sufficient to cause target-pass output change)
+- [Path patching](/mechanistic-views/glossary/#path-patching) (tests specific information-flow paths)
 - Scaling tests (partially ablating a component to check whether the effect is graded, not just on/off)
 - Minimal sufficiency tests (finding the smallest component set that still produces the behavior)
 
@@ -67,7 +67,7 @@ A claim is stronger when independent intervention protocols converge on the same
 
 ### Formalism
 
-[Directed graph](/mechanistic-views/formalism/directed-graph/) or set-theoretic circuit description. Standard causal graphs (Pearl, 2009) apply directly. Circuit discovery methods like [ACDC](https://learnmechinterp.com/topics/attribution-patching/), [activation patching](https://learnmechinterp.com/topics/activation-patching/), and [EAP](https://learnmechinterp.com/topics/attribution-patching/) all produce directed graphs as output.
+[Directed graph](/mechanistic-views/formalism/directed-graph/) or set-theoretic circuit description. Standard causal graphs (Pearl, 2009) apply directly. Circuit discovery methods like [ACDC](/mechanistic-views/glossary/#attribution-patching), [activation patching](/mechanistic-views/glossary/#activation-patching), and [EAP](/mechanistic-views/glossary/#attribution-patching) all produce directed graphs as output.
 
 ### Relationship to Mechanistic Validity
 

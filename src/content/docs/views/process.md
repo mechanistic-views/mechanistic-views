@@ -44,9 +44,9 @@ The process view is needed when the phenomenon is inherently dynamic: phase tran
 
 ### Evidence
 
-- **Checkpoint analysis**: subspace estimates ([DAS](https://learnmechinterp.com/topics/causal-abstraction/) or AGOP) measured across training steps
+- **Checkpoint analysis**: subspace estimates ([DAS](/mechanistic-views/glossary/#causal-abstraction) or AGOP) measured across training steps
 - **AGOP trajectories**: convergence to eventual causal subspace — empirically observed to precede behavioral detection in some cases (Nanda et al., grokking), but whether this generalizes to arbitrary mechanisms is not established
-- **Phase transitions**: sudden changes in IIA, [composition score](https://learnmechinterp.com/topics/composition-and-virtual-heads/), or behavior
+- **Phase transitions**: sudden changes in IIA, [composition score](/mechanistic-views/glossary/#composition-score), or behavior
 - **Knockout retraining**: train a model with a proposed prerequisite component permanently ablated (a *training-time* intervention, not inference-time ablation) — if the target mechanism then fails to form, the prerequisite is established; if it forms anyway via a different route, the prerequisite claim is falsified
 
 ### What it lets you prove

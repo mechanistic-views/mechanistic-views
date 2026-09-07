@@ -4,7 +4,7 @@ title: Case Study — Induction Heads
 
 # Case Study — Induction Heads
 
-**The phenomenon.** Induction heads implement prefix matching: given $[A][B]\ldots[A]$, predict $[B]$. [Olsson et al. (2022)](https://learnmechinterp.com/topics/induction-heads/) described them in detail and proposed they underlie in-context learning.
+**The phenomenon.** Induction heads implement prefix matching: given $[A][B]\ldots[A]$, predict $[B]$. [Olsson et al. (2022)](/mechanistic-views/glossary/#induction-heads) described them in detail and proposed they underlie in-context learning.
 
 ## [Object view](/mechanistic-views/views/object/)
 

@@ -46,7 +46,7 @@ The role view is strongest when the same behavior appears across models or train
 
 - **Cross-seed comparison**: different training seeds implement the same behavior via different components, but the same role partition covers all of them
 - **Component transplant**: replacing component $h_1$ from $M_1$ with $h_2$ from $M_2$ preserves behavior iff both realize the same role
-- **[Linear probing](https://learnmechinterp.com/topics/probing-classifiers/)**: tests whether a concept is linearly accessible, though probing establishes presence not causal use (see [linear classifier formalism](/mechanistic-views/formalism/linear-classifier/))
+- **[Linear probing](/mechanistic-views/glossary/#linear-probing)**: tests whether a concept is linearly accessible, though probing establishes presence not causal use (see [linear classifier formalism](/mechanistic-views/formalism/linear-classifier/))
 - **Role-partitioned circuit search**: restricting edge search to role-respecting edges achieves comparable precision and recall to unrestricted search, where precision and recall are measured against a *behavioral* ground truth (necessity and sufficiency on held-out prompts)
 
 ### What it lets you prove
@@ -57,7 +57,7 @@ The role view is strongest when the same behavior appears across models or train
 
 ### Formalism
 
-[Role graph](/mechanistic-views/formalism/role-graph/), graph homomorphism, [causal abstraction](https://learnmechinterp.com/topics/causal-abstraction/). The role view operates at Marr's level 2 — the algorithm and representation level. [DAS/IIA](https://learnmechinterp.com/topics/causal-abstraction/) is the primary method for testing role claims via interchange interventions.
+[Role graph](/mechanistic-views/formalism/role-graph/), graph homomorphism, [causal abstraction](/mechanistic-views/glossary/#causal-abstraction). The role view operates at Marr's level 2 — the algorithm and representation level. [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) is the primary method for testing role claims via interchange interventions.
 
 ### Relationship to Mechanistic Validity
 

@@ -16,7 +16,7 @@ See [Grassmannian](https://en.wikipedia.org/wiki/Grassmannian) on Wikipedia.
 
 ## Why subspaces, not vectors
 
-[Distributed alignment search (DAS)](https://learnmechinterp.com/topics/causal-abstraction/) recovers a matrix $Q \in \mathbb{R}^{d \times k}$ such that intervening on $QQ^\top x$ transfers a causal variable. But $Q$ and $QR$ produce the same projector for any rotation $R \in O(k)$. The method identifies a subspace — a column span — not a specific basis. The natural space of such objects is the Grassmannian.
+[Distributed alignment search (DAS)](/mechanistic-views/glossary/#causal-abstraction) recovers a matrix $Q \in \mathbb{R}^{d \times k}$ such that intervening on $QQ^\top x$ transfers a causal variable. But $Q$ and $QR$ produce the same projector for any rotation $R \in O(k)$. The method identifies a subspace — a column span — not a specific basis. The natural space of such objects is the Grassmannian.
 
 ## How the subspace view uses it
 
