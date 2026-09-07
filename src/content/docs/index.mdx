@@ -1,21 +1,19 @@
 ---
 title: Mechanistic Views
-subtitle: A five-axis ontology for mechanistic interpretability
 ---
-
-import Cite from '../../components/Cite.astro';
 
 # Mechanistic Views
 
-*A five-axis ontology for mechanistic interpretability*
+### What is a mechanism?
 
-Mechanistic interpretability has produced circuits, features, and causal subspaces — each resting on an implicit answer to a prior question: what kind of thing is a mechanism?
+Mechanistic interpretability has produced circuits, features, and causal subspaces — each resting on an implicit answer to a prior question: what kind of thing is a mechanism? 
+In some papers a mechanism is a set of attention heads. In others it is a functional role ("name mover"), a causal subspace, or a training-time transition.
+These are different claims about different kinds of objects — and the difference determines when two descriptions pick out the same mechanism, what evidence can support the claim, and what inferences follow from it. 
+A mechanistic claim has no determinate truth-conditions until these commitments are declared. 
 
-The question is not rhetorical. In some papers a mechanism is a set of attention heads; in others it is a named functional role such as "name mover"; in others it is a causally sufficient subspace recovered by DAS; in others it is a set of features recovered by sparse autoencoders; in others it is a training-time transition. The difference between these is ontological, and ontological differences propagate: what a mechanism *is* determines when two descriptions pick out the *same* one, what *evidence* can warrant a claim, and what *inferences* may be drawn from it. A mechanistic claim has no determinate truth-conditions until these commitments are declared.
+We define these commitments as a **mechanistic view**, formalizing the background assumptions behind a mechanistic claim.
 
-The consequences are practical. Wang et al. establish by path patching that head 9.9 carries a large direct effect on the indirect-object logit, then label it a "name mover head" — a functional role. These are different claims under different views: the ablation supports an object claim (*this component matters*), while the role label requires independent operationalization. Arditi et al. show that removing a "refusal direction" suppresses refusal across 13 chat models; read instrumentally the finding is complete, but read as a claim about how refusal is organized in the residual stream it is not — two pooling choices applied to the same activations at the same layer recover directions 73° apart. The contrast that names the vector leaves the referent open.
-
-We call the background assumptions behind a mechanistic claim a **mechanistic view**.
+**Mechanistic Views** is a framework defining what is a mechanism, when two mechanisms are the same, and the mathematical formalisms for representing and comparing mechanisms. We present an atlas of 9 views spanning existing interpretability claims, and a demonstration of why the views framework helps clarify open problems in the field.
 
 ## What is a mechanistic view?
 
@@ -55,10 +53,13 @@ This ordering is partial, not total: Role and Object are incomparable, and the r
 
 ## Relationship to Mechanistic Validity
 
-Mechanistic Views defines what a mechanism is — what kind of object you're claiming exists, when two are the same, what formalism expresses the claim. [*Mechanistic Validity*](https://mechanistic-validity.github.io/mechanistic-validity/) is the evaluation counterpart: a six-layer pipeline from description modes to evidence families, calibrated metrics, falsifiable criteria, validity types, and tiered verdicts. Which validity types apply and what counts as passing them depends on the view — a subspace claim requires different evidence than a component claim.
+Mechanistic Views defines what a mechanism is — what kind of object is it, when two mechanisms are the same, and what formalism expresses the claim. [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) evaluates the evidence behind a mechanistic claim — whether the measurement is reliable, the causal interpretation is justified, the result generalizes within its stated scope, and the description matches what was tested. The frameworks are independent, but when used together they complement each other: what kind of mechanism is being claimed, and how strong is the evidence supporting it.
 
 ## Reading path
 
-Start with **[Framework](/mechanistic-views/framework/)** for the formal definition and coherence conditions. Then read one or two view pages — **[Object](/mechanistic-views/views/object/)** and **[Subspace](/mechanistic-views/views/subspace/)** cover the two most common background assumptions in the current literature. **[Structural](/mechanistic-views/views/structural/)** introduces the gauge-invariance argument. The **[Methods](/mechanistic-views/methods/)** page classifies 15 common interpretability methods by their implicit view commitments.
-
-The **[Formalisms](/mechanistic-views/formalism/)** section covers the mathematical objects referenced by the views: Grassmannians, gauge quotients, sheaves, holonomy, stratification. The Grassmannian page is accessible with linear algebra alone; the others benefit from graduate-level background.
+- [**Framework**](/mechanistic-views/framework/) — the five axes, coherence conditions, and why they matter
+- [**Views Overview**](/mechanistic-views/views/) — each of the 9 views with its ontology, identity criterion, evidence, formalism, and target
+- [**Cross-View Promotion**](/mechanistic-views/framework/cross-view-promotion/) — when a claim can be promoted to a stronger view, and what new evidence that requires
+- [**Methods**](/mechanistic-views/methods/) — how 15 common interpretability methods map to implicit view commitments
+- [**Open Problems**](/mechanistic-views/open-problems/) — how common interpretability problems can be better understood using views
+- [**About & Citation**](/mechanistic-views/about_cite/) — how to cite this work

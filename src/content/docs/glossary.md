@@ -26,7 +26,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 **Determination chain.** Ontology → Identity → Formalism. What a mechanism is determines when two are the same, which determines what mathematical language is needed.
 
-**Mechanistic Validity.** A companion framework for evaluating whether mechanistic claims are warranted. Six-layer pipeline from description modes to verdicts, 27 criteria across 5 validity types. See [Mechanistic Validity Interface](/mechanistic-views/mechval-interface/).
+**Mechanistic Validity.** A framework for evaluating whether mechanistic claims are warranted. Six-layer pipeline from description modes to verdicts, 36 criteria across 5 validity types. See [Mechanistic Validity Interface](/mechanistic-views/mechval-interface/).
 
 ## Technical terms
 
