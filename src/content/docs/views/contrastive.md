@@ -50,7 +50,7 @@ The contrastive view is naturally expressed through [causal graphs](/mechanistic
 
 ## Relationship to other views
 
-The contrastive view is orthogonal to the [object](/mechanistic-views/views/object/)–[role](/mechanistic-views/views/role/) distinction. A contrastive mechanism can be stated at the object level ("head 9.1 behaves differently under foil A vs B") or the role level ("the name-mover function is foil-relative"). What distinguishes the contrastive view is that the foil is part of the mechanism's definition — not a parameter of the experiment.
+The contrastive view is orthogonal to the [object](/mechanistic-views/views/object/)–[role](/mechanistic-views/views/role/) distinction. A contrastive mechanism can be stated at the object level ("head 9.9 behaves differently under foil A vs B") or the role level ("the name-mover function is foil-relative"). What distinguishes the contrastive view is that the foil is part of the mechanism's definition — not a parameter of the experiment.
 
 The [perspectival view](/mechanistic-views/views/perspectival/) diagnoses a related but distinct concern: that the analyst's choices shape what is found. The contrastive view makes one specific analyst choice — the foil — into a first-class part of the ontology rather than treating it as a bias to be eliminated.
 

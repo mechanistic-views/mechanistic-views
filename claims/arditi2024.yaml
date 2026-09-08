@@ -1,0 +1,25 @@
+source:
+  citation: arditi2024
+  local: reference/arditi2024.pdf
+  sha256: d0d5ee986084d6c77b0d73a0568e607afcb0c0a124fbbaae5c831c346b2a0780
+  extract_cmd: pdftotext -layout {} -
+claims:
+  scale-72b:
+    statement: 'Arditi evaluates open-source chat models up to 72B parameters.'
+    verified: true
+    quotes:
+      - exact: 'open-source chat models up to 72B parameters in size'
+        suffix: '. Specifically, we use a small set of contrastive'
+        section: 'introduction'
+  necessary-and-sufficient:
+    statement: 'Arditi establishes both necessity and sufficiency for the direction.'
+    verified: true
+    quotes:
+      - exact: 'both necessary and sufficient for refusal'
+        section: 'body'
+  post-instruction-extraction:
+    statement: 'Analysis focuses on post-instruction token positions.'
+    verified: true
+    quotes:
+      - exact: 'in this region to understand how the model formulates its response'
+        section: 'body'

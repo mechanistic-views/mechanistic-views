@@ -18,7 +18,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 <span id="evidence"></span>**Evidence.** What measurements can warrant a claim about a mechanism. Linked to ontology: a component claim is supported by ablation; a subspace claim needs [DAS/IIA](/mechanistic-views/views/subspace/#evidence) plus [subspace stability](/mechanistic-views/formalism/grassmannian/#subspace-stability); a structural claim needs measurements robust to reparameterization.
 
-<span id="formalism"></span>**Formalism.** The mathematical language used to express the claim. Ranges from [directed graphs](/mechanistic-views/formalism/directed-graph/) (object view) to [Whitney stratification](/mechanistic-views/formalism/stratification/) (stratified view). See [Formalisms](/mechanistic-views/formalism/) for all eight.
+<span id="formalism"></span>**Formalism.** The mathematical language used to express the claim. Ranges from [directed graphs](/mechanistic-views/formalism/directed-graph/) (object view) to [resolution-indexed strata](/mechanistic-views/formalism/stratification/) (stratified view). See [Formalisms](/mechanistic-views/formalism/) for all nine view-associated formalisms.
 
 <span id="target"></span>**Target.** What phenomenon the mechanism is supposed to explain — a specific behavior, a functional class, a representational variable, or a mechanism's origin.
 
@@ -52,7 +52,7 @@ Quick-reference definitions for terms used across this site. For the mathematica
 
 <span id="multi-domain-triangulation"></span>**Multi-domain triangulation.** Convergent evidence across structurally different domains (weight-space, activation-space, dynamics-space). Each domain alone is non-injective on mechanism space — two distinct mechanisms can look identical in one domain. See [Methods](/mechanistic-views/methods/#cross-cutting-observations).
 
-<span id="qua-problem"></span>**Qua-problem.** Identity claims are well-formed only relative to a description level. "Head 4.4 is the same mechanism as head 7.3" is meaningful only given a specified identity criterion — component overlap, role equivalence, or gauge-orbit membership give different answers.
+<span id="qua-problem"></span>**Qua-problem.** Identity claims are well-formed only relative to a description level. "Head 9.9 is the same mechanism as head 7.3" is meaningful only given a specified identity criterion — component overlap, role equivalence, or gauge-orbit membership give different answers.
 
 ## Methods
 

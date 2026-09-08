@@ -8,13 +8,13 @@ You can permute the heads of a transformer, rotate the residual stream basis, an
 
 ## Thesis
 
-A mechanism is an equivalence class under gauge symmetry: all weight configurations that implement the same input-output function are the same mechanism.
+A mechanism is an equivalence class of weight configurations under computation-preserving symmetries: two configurations related by such a symmetry — a rescaling, a permutation of neurons, or a rotation of a head's query–key subspace paired with an inverse rotation of its output — are the same mechanism. This is finer than behavioral equivalence: two configurations can produce identical outputs without lying in the same gauge orbit.
 
 ## What it explains
 
 **Why different methods can find different circuits that are all "correct."** If ACDC and EAP recover different component sets for the same task, the structural view asks: are these component sets related by a gauge transformation? If so, they are different descriptions of the same mechanism, not different mechanisms. Circuit disagreement is expected when the identity criterion is the gauge orbit, not the specific circuit.
 
-**Cross-architecture identity.** Two models implement the same mechanism if their gauge orbits are isomorphic — no need to match specific heads. Head 9.1 in GPT-2 and whatever implements the same function in Llama can be identified as "the same mechanism" without requiring them to be the same component.
+**Cross-architecture identity.** Two models implement the same mechanism if their gauge orbits are isomorphic — no need to match specific heads. Head 9.9 in GPT-2 and whatever implements the same function in Llama can be identified as "the same mechanism" without requiring them to be the same component.
 
 **Why the parameterization is not the mechanism.** A neuron may look special because of how the weights happen to be arranged, not because it is doing something computationally special. The structural view makes this distinction precise: anything that changes under a symmetry transformation is a property of the parameterization; anything that doesn't is a property of the mechanism.
 
@@ -26,9 +26,13 @@ Two mechanisms are the same when they lie in the same gauge orbit. This resolves
 
 The structural view also uses **holonomy** — what happens when you transport a subspace through the network along a closed loop of weight matrices. If the subspace comes back rotated, that rotation (the holonomy) is a gauge-invariant fingerprint characterizing the mechanism. Two mechanisms with different holonomy groups are provably different, regardless of how their components are arranged.
 
+:::note
+The paper's structural view is built on gauge orbits, transport maps and holonomy. The cosheaf cohomology material below — cohomology classes as view objects, $H^0$/$H^1$ tests, and the cohomological minimality criterion — is a site elaboration beyond the paper's claims.
+:::
+
 The view's objects also include **cosheaf cohomology classes** — topological invariants that track whether a mechanism can be decomposed into locally consistent pieces. When the cohomology is nontrivial ($H^1 \neq 0$), the mechanism has genuinely distributed structure that no local circuit description captures. (Not yet computed for any transformer at scale.)
 
-This is the most ontologically committed static position. It addresses the identity, convergence, and invariance problems that the lower views face, though at the cost of computability. Holonomy, cosheaf cohomology, and gauge-orbit comparison are hard to compute at scale. The view also requires specifying the right symmetry group — LayerNorm breaks the full rotation symmetry, and using the wrong gauge group produces wrong identity judgments. In practice, the structural view is more of a theoretical ceiling than a practical toolkit: it tells you what the right answer looks like, even when you can't compute it yet.
+It is among the most ontologically committed positions in the atlas, ranking above the subspace view and below the stratified view. It addresses the identity, convergence, and invariance problems that the lower views face, though at the cost of computability. Holonomy, cosheaf cohomology, and gauge-orbit comparison are hard to compute at scale. The view also requires specifying the right symmetry group — LayerNorm breaks the full rotation symmetry, and using the wrong gauge group produces wrong identity judgments. In practice, the structural view is more of a theoretical ceiling than a practical toolkit: it tells you what the right answer looks like, even when you can't compute it yet.
 
 ## When it works and when it doesn't
 
@@ -58,7 +62,7 @@ Behavioral equivalence is coarser: two mechanisms can compute differently but ha
 
 ### Evidence
 
-- **Gauge-invariant measurements**: singular values of [OV circuits](/mechanistic-views/glossary/#qk-ov-circuits) $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. [Composition scores](/mechanistic-views/glossary/#composition-score) $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ are invariant under head permutations but not under the orthogonal rotation symmetry; they are gauge-invariant only with respect to the permutation subgroup
+- **Gauge-invariant measurements**: singular values of [OV circuits](/mechanistic-views/glossary/#qk-ov-circuits) $W^{OV}$, principal angles, effective rank — invariant under both head permutations and (approximate) orthogonal rotations. [Composition scores](/mechanistic-views/glossary/#composition-score) $\|W^{QK}_v W^{OV}_u\|_F / (\|W^{QK}_v\|_F \|W^{OV}_u\|_F)$ measure how much head $v$ reads from head $u$ independently of basis choice. The composite form is what carries the invariance: the score is defined on $W_{QK}$ and $W_{OV}$ because keys, queries and values are reparameterizable by-products of the low-rank factors, and the normalization is what makes the quantity scale-invariant
 - **Holonomy**: estimates of the holonomy group (connection must be specified)
 - **Cohomological tests**: $H^0$ and $H^1$ of the circuit cosheaf
 

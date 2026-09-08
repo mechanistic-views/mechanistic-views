@@ -1,0 +1,14 @@
+source:
+  citation: yin2025
+  local: reference/yin_steinhardt_2025_which_heads_matter_icl.pdf
+  sha256: aec75ecc22d1fbdfcaab9244ea4303ed09ece7310ac2f3130c82c0ae8b7006fc
+  extract_cmd: pdftotext -layout {} -
+claims:
+  fv-preserved-random-comparable:
+    statement: 'Ablating induction heads while preserving the top 2 percent of FV heads has impact comparable to random ablation above 1B parameters.'
+    verified: true
+    quotes:
+      - exact: 'When ablating induction heads while preserving the top'
+        section: 'body'
+      - exact: 'comparable to random ablations in models'
+        section: 'body'

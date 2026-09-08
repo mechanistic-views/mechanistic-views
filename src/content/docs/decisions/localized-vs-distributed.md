@@ -10,19 +10,11 @@ This is the decision that determines whether circuit discovery -- the workhorse 
 
 ## When you face this decision
 
-You are studying how GPT-2 Small handles IOI (indirect object identification). You run ACDC and recover a circuit of about 26 heads and their edges. You measure how well this circuit accounts for the full model's behavior using the **dark matter ratio**:
+You are studying how GPT-2 Small handles IOI (indirect object identification). Activation patching identifies a small component set as causally necessary -- the 26-head circuit. DAS, run on the same task, identifies a high-dimensional subspace spanning many more components. Which one is the mechanism?
 
-$$r = \frac{\text{full model logit difference}}{\text{circuit logit difference}}$$
+The two results need not be contradictory. The patching identifies the components whose activation values lie in the relevant subspace; DAS characterizes the subspace. Under the object view the question is which minimal component set is causally necessary and sufficient; under the subspace view it is the dimensionality and localizability of the causal subspace; under the stratified view it is which stratum the evidence supports, which is the language in which the two results are compatible descriptions at different resolutions.
 
-A ratio of 1.0 means the circuit fully explains the model's behavior on this task. (Note: some papers define this ratio inverted, as circuit/full, giving values below 1.0 for incomplete coverage. Always check which convention a paper uses.)
-
-For IOI, the ratio is close to 1.0 -- the circuit accounts for most of the behavior. But suppose you try the same approach on a different task and get $r = 2.5$. Your circuit explains less than half the model's performance. Now what?
-
-**Degenerate cases.** If the circuit logit difference is near zero or negative -- which happens when circuit components interfere destructively -- the ratio is undefined or flips sign. In these cases, report the raw logit differences directly rather than the ratio.
-
-## The two interpretations of high $r$
-
-When the dark matter ratio is persistently high, there are two very different explanations:
+The decision bites when a circuit recovers much less of the model's behavior than the IOI circuit does. Two very different explanations are then live:
 
 **(A) Incomplete recovery.** A localized mechanism exists, but your circuit proposal missed part of it. The "dark matter" is a measurement artifact. The fix is more circuit recovery work -- find the missing components.
 
@@ -38,10 +30,10 @@ No single experiment cleanly separates these interpretations. Use them in combin
 
 **Cross-method convergence.** Run multiple independent methods -- activation patching, DAS (Distributed Alignment Search, which finds subspaces where swapping activations between inputs changes model behavior as if a causal variable changed), and SAE channel analysis. If they all recover different components and none substantially reduces $r$, this is convergent evidence for distribution. If they converge on the same components, the mechanism is likely localized and your initial method just missed some of them.
 
-**Cohomological test.** For researchers with the relevant mathematical background: build the circuit cosheaf (a formal structure that tracks how local circuit descriptions glue together across the network) and estimate $H^1$. Non-zero $H^1$ indicates a topological obstruction to localization in that particular cosheaf proposal. However, this only establishes that *this specific description* cannot be localized -- it does not rule out the existence of some other description that can.
+**Stratum stability.** Recompute two quantities at a second measurement resolution -- a different hook granularity, or DAS under a different alignment constraint. The first is the participation ratio of the causal subspace's eigenspectrum, which reports how many directions carry the effect without requiring a variance threshold. The second is localizability: the smallest fraction of components whose ablation recovers a fixed fraction of the full causal effect. Agreement across resolutions warrants a stratum assignment; disagreement means the analysis has not identified one.
 
 ## Recommended default
 
-Default to **localization** for well-studied tasks where circuit discovery methods have a track record (IOI, induction, greater-than). These tasks have compact circuits, and the dark matter ratio is typically close to 1.0.
+Default to **localization** for well-studied tasks where circuit discovery methods have a track record (IOI, induction, greater-than). These tasks have compact circuits, though IOI still admits rival head sets of comparable faithfulness (Chen et al., 2026).
 
-Treat **distribution** as the working hypothesis when $r$ is persistently high despite multiple recovery attempts with independent methods. But be cautious about strong claims of irreducible distribution -- a non-zero $H^1$ for one cosheaf proposal does not prove that no localized description exists, only that a particular one failed.
+Treat **distribution** as the working hypothesis when $r$ is persistently high despite multiple recovery attempts with independent methods. But be cautious about strong claims of irreducible distribution -- a distributed result under one measurement resolution does not prove that no localized description exists, only that the resolutions tried have not found one.

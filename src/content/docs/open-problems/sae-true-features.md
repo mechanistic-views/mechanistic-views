@@ -26,7 +26,7 @@ Individual features are basis vectors. What's real is the *subspace* they span �
 
 SAE features are not discoveries *in* the model — they are projections *of* the model through a particular method (sparse dictionary learning with a specific loss function, width, and training procedure). A different method projects different features. Neither is wrong; neither is "true."
 
-**The implication.** Asking whether SAE features are "real" is like asking whether a Mercator projection is the "true" shape of a continent. The projection is mathematically valid and practically useful, but the shape is not "in" the territory. [Casper et al. (2023)](https://arxiv.org/abs/2312.09237) and others have shown that SAEs applied to random or shuffled activations still produce "interpretable" features — exactly what the Perspectival view predicts.
+**The implication.** Asking whether SAE features are "real" is like asking whether a Mercator projection is the "true" shape of a continent. The projection is mathematically valid and practically useful, but the shape is not "in" the territory. [Heap et al. (2025)](https://arxiv.org/abs/2501.17727) show that SAEs applied to randomly initialized transformers still produce features that score as interpretable — exactly what the Perspectival view predicts.
 
 ## The resolution
 
@@ -66,7 +66,7 @@ These are answerable. "Are these the true features?" is not.
 
 ## Feature absorption
 
-A concrete instance of this problem: [Bricken et al. (2023)](https://transformer-circuits.pub/2023/monosemantic-features/index.html) and subsequent work showed that safety-relevant SAE features can be *absorbed* into more general features at higher SAE widths. A "deception" feature at width 4096 may disappear at width 16384 — not because deception stopped being represented, but because the representation was redistributed across finer-grained features.
+A concrete instance of this problem: [Chanin et al. (2024)](https://arxiv.org/abs/2409.14507) showed that safety-relevant SAE features can be *absorbed* into more general features at higher SAE widths, a phenomenon distinct from the feature splitting [Bricken et al. (2023)](https://transformer-circuits.pub/2023/monosemanticity) reported. A "deception" feature at width 4096 may disappear at width 16384 — not because deception stopped being represented, but because the representation was redistributed across finer-grained features.
 
 Under the Object view, this is alarming: a feature you were monitoring vanished. Under the Subspace view, it's expected: the subspace is stable even as the basis changes. The safety question becomes: is the *subspace* still detectable, even if the individual feature isn't? If yes, monitor the subspace, not the feature. If no, the representation genuinely changed — a much more serious concern that requires [E5 Robustness](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/robustness) evidence.
 

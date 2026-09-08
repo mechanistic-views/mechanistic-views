@@ -35,7 +35,7 @@ Under the Object view, the decomposition identity problem is unsolvable — diff
 
 ## Sources
 
-- **Sharkey et al. (2026)** §2.1.2: SDL limitations, reconstruction errors, sparsity as proxy ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §2.1.2: SDL limitations, reconstruction errors, sparsity as proxy ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Nanda (2022)** §4: Polysemanticity and superposition problems ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
 - **Apollo Research (2024)** #7, #18, #19: Feature splitting structure, continuous vs. discrete ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))
 - **Sharkey "Sparsify" (2024)**: Decompilation fidelity, hierarchical abstraction ([Sparsify agenda](https://www.alignmentforum.org/posts/64MizJXzyvrYpeKqm))

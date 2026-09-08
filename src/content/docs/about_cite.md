@@ -27,7 +27,7 @@ If you use or reference this framework, please cite:
 ```bibtex
 @software{tower2026mechanisticviews,
   author    = {Tower, Elliot},
-  title     = {Mechanistic Views: An Ontology for Mechanistic Interpretability},
+  title     = {Mechanistic Views: An Atlas of Hidden Commitments and a Realism Criterion for Mechanistic Claims},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.21196311},

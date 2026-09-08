@@ -1,0 +1,645 @@
+source:
+  citation: vig2020gender
+  local: reference/vig2020causal.pdf
+  sha256: 1e35f3c72663d08be952910fd20caa7a6c4dc353544424a81a1a05808cd7a35e
+  extract_cmd: pdftotext -layout {} -
+imported_from: mechanistic-validity/docs/data/audits/gender.yaml
+claims:
+  c1-falsifiability:
+    statement: '[C1 Falsifiability, status C] Falsifiability'
+    verified: true
+    quotes:
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+    - exact: The first 6 selected ones are from layers 4 and 5, further demonstrating the concentration
+        of the effect in the middle layers.
+      section: §5.2, Attention
+    - exact: We did not find similar behavior in a randomly initialized model, indicating that these patterns
+        do not occur by chance.
+      section: §5.2, Attention
+    - exact: These two observations are further indications that the model has not learned a distinct
+        and sparse representation of gender-neutral references.
+      section: §5.2, Neurons
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+  c2-structural-plausibility:
+    statement: '[C2 Structural plausibility, status PC] Structural plausibility'
+    verified: true
+    quotes:
+    - exact: The mediator, denoted as z, might be a particular neuron, a full layer, an attention head,
+        or a certain attention
+      section: §3.2.2
+    - exact: weight. Following Pearl’s definitions, we measure the direct and indirect effects of intervening
+        in the model relative to z (Pearl, 2001).
+      section: §3.2.2, continuing across the page break
+    - exact: For studying attention behavior, we focus on the attention weights, which define relationships
+        between words.
+      section: §3.4
+    - exact: Visualizing the indirect effect of each neuron in a heatmap (Figure 10 top) reveals vertical
+        stripes when a neuron at the same index, but different layers, has a similar effect.
+      section: §5.3, Residual Connections
+    - exact: As Figure 10 (bottom) shows, the stripes are less random in higher layers.
+      section: §5.3, Residual Connections
+  c3-convergent-validity:
+    statement: '[C3 Convergent validity, status C] Convergent validity'
+    verified: true
+    quotes:
+    - exact: We found this sparsity consistent in all model variants and datasets we examined.
+      section: §5.2, Attention
+    - exact: Similar to the attention result, a tiny fraction of neurons is sufficient for obtaining an
+        effect equal to that of
+      section: §5.2, Neurons
+    - exact: intervening on all neurons concurrently. Most of the top selected neurons are concentrated
+        in the embedding layer and first hidden layer.
+      section: §5.2, continuing across the page break
+    - exact: The same holds for concurrent interventions (Figure 8), where TE ≈ NDE-all + NIE-all.
+      section: §5.4
+    - exact: We find that our results are robust to the metric used to quantify the effects
+      section: §3.5
+    - exact: In the neuron intervention case, by definition TE = NIE-all and NDE-all = 0, so the decomposition
+        trivially holds.
+      section: footnote 8, §5.4
+  c4-discriminant-validity:
+    statement: '[C4 Discriminant validity, status U] Discriminant validity'
+    verified: true
+    quotes:
+    - exact: 'For each of the templates, we used the following professions. Words in italics are definitional
+        and were thus excluded from the total effect calculation:'
+      section: Appendix A.1
+    - exact: Vig (2019) previously identified the same head (layer 5, head 10; noted as 5-10) as relating
+        to coreference resolution based on visual inspection.
+      section: §5.3, Attention
+    - exact: Clark et al. (2019) found an attention head in BERT (Devlin et al., 2019) that was highly
+        predictive of coreference, also in layer 5 out of 12.
+      section: §5.3, Attention
+    - exact: Here, we choose the domain A to be the set of predicted outcomes of interest, specifically
+        the stereotypical and anti-stereotypical candidates.
+      section: §3.5
+  c5-nomological-validity:
+    statement: '[C5 Nomological validity, status C] Nomological validity'
+    verified: true
+    quotes:
+    - exact: weight. Following Pearl’s definitions, we measure the direct and indirect effects of intervening
+        in the model relative to z (Pearl, 2001).
+      section: §3.2.2, continuing across the page break
+    - exact: However, the TE = NDE + NIE decomposition is not guaranteed without further assumptions (e.g.,
+        under linear models). In our case, an additional no-interaction condition was needed for the decomposition
+        to hold, as shown and discussed in Appendix E.
+      section: footnote 7, §5.4
+    - exact: This equation parallels a previously-described assumption in the causal mediation analysis
+        literature that ascertains that the NIE is the same regardless of the fixed value at which the
+        intervention (the analogue of set-gender/null) is held, known as a no-interaction assumption (Imai
+        et al., 2010b).
+      section: Appendix E
+    - exact: Fitting the data to a linear model yields a coefficient of 1.04 and an intercept of 0.00
+        (R2 = 0.78).
+      section: Appendix E
+    - exact: The causality literature often focuses on assumptions needed for identification of mediation
+        effects from observed data (Pearl, 2001; Avin, Shpitser, & Pearl, 2005; Imai, Keele, & Yamamoto,
+        2010b).
+      section: §6
+  m1-reliability:
+    statement: '[M1 Reliability, status PC] Reliability'
+    verified: true
+    quotes:
+    - exact: To simplify processing by GPT2 and focus on common professions, we only take examples that
+        are not split into sub-word units, resulting in 17 templates and 169 professions, or 2,873 examples
+        in total.
+      section: §4.2
+    - exact: For the professions dataset, the GPT2 variants from distil to large have respective total
+        effects of 8.3, 7.5, 9.6, and 12.5, all with standard deviations < 10.
+      section: §5.1
+    - exact: Given woman as the occupation word, the probability ratio p(she)/p(he) ranges from 2.5 to
+        45.1 across templates (µ = 17.2, σ = 13.1).
+      section: Appendix A.1
+    - exact: As can be seen from Figure 14, we also observe considerably higher variances with some of
+        the new models than in the case of GPT2.
+      section: §5.5, Neuron interventions
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+  m2-baseline-separation:
+    statement: '[M2 Baseline separation, status C] Baseline separation'
+    verified: true
+    quotes:
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+    - exact: GPT2-small rand. 117M 12 12 0.07 0.05 0.12
+      section: Table 1
+    - exact: We did not find similar behavior in a randomly initialized model, indicating that these patterns
+        do not occur by chance.
+      section: §5.2, Attention
+    - exact: However, we still observe a small increase in effect within the intermediate layers across
+        all models except for the randomized one.
+      section: §5.2, Neurons
+    - exact: 'Figure 17: Indirect effect when using a randomly initialized GPT2-small model on Winobias.'
+      section: Figure 17 caption, Appendix C.1
+  m3-stability:
+    statement: '[M3 Stability, status PC] Stability'
+    verified: true
+    quotes:
+    - exact: G REEDY approach, which iteratively selects the head with the maximal marginal contribution
+        to the indirect effect, or a T OP - K approach, which selects the k elements with the strongest
+        individual effects.
+      section: §5.2, Attention
+    - exact: Sparsity is consistent across all experiments where only a small proportion of heads are
+        sufficient to achieve the full model effect of intervening at all heads.
+      section: Appendix D
+    - exact: On Winogender, only 4/4/5/4% of heads are needed to saturate, while on Winobias, only 6/7/8/6%
+        of heads are needed in GPT2-distil/small/medium/large.
+      section: Appendix D
+    - exact: We find that our results are robust to the metric used to quantify the effects
+      section: §3.5
+    - exact: While we observed consistent results under multiple metrics, our definitions of causal effects
+        to quantify bias could be refined, and alternative definitions might be advantageous for NLP research.
+      section: §6
+    - exact: 'Specifically, we perform the following do-operations: (a) set-gender: replace the ambiguous
+        profession with an anti-stereotypical gender-specific word (that is, replace nurse with man, doctor
+        with woman, etc.); (b) null: leave the sentence as is.'
+      section: §3.2
+    - exact: As mentioned above, we pick person as target of the set-gender change for the gender-neutral
+        reference and we measure the probability of the continuation they.
+      section: §3.3
+    - exact: In this case, we define the swap-gender operation, which changes she to he.
+      section: §3.4
+  m4-calibration:
+    statement: '[M4 Calibration, status PC] Calibration'
+    verified: true
+    quotes:
+    - exact: 'The relative probabilities assigned to the two candidates can be thought of as a measure
+        of grammatical gender bias in the model:'
+      section: §3.2, immediately before Eq. 1
+    - exact: If y(u) < 1, the prediction is stereotypical; if y(u) > 1, it is anti-stereotypical. A perfectly
+        unbiased model would achieve y(u) = 1 and thus exhibit bias toward neither the stereotypical nor
+        the anti-stereotypical case.
+      section: §3.2
+    - exact: TE(set-gender, null; y, u) = 13.1/0.14 − 1 ≈ 92.6
+      section: Figure 4
+    - exact: It is difficult to compare effect magnitudes in the three datasets because of their different
+        nature.
+      section: §5.1
+    - exact: The professions dataset yields much stronger effects than the Winograd-style datasets.
+      section: §5.1
+  m5-sensitivity:
+    statement: '[M5 Sensitivity, status PC] Sensitivity'
+    verified: true
+    quotes:
+    - exact: In the professions dataset, we found moderate positive correlations between the external
+        gender bias
+      section: §5.1
+    - exact: and the log-total effect, ranging from 0.35 to 0.45 over the different models, indicating
+        that the model captures the expected biases.
+      section: §5.1, continuing past the footnote marker
+    - exact: In the Winograd-style datasets, we found relatively low correlations between the log-total
+        effect and the log-ratio of the two occupations’ stereotypicality, ranging from 0.17 to 0.26.
+      section: §5.1
+    - exact: Both datasets include statistics from the U.S. Bureau of Labor Statistics (BLS) to assess
+        the gender stereotypicality of the referenced occupations.
+      section: Appendix A.2
+  m6-invariance:
+    statement: '[M6 Invariance, status C] Invariance'
+    verified: true
+    quotes:
+    - exact: 'We use several model sizes: small, medium, large, extra-large (xl), and a very small distilled
+        model (Sanh, Debut, Chaumond, & Wolf, 2019).'
+      section: §4.1
+    - exact: To test the universality of our findings across Transformer-based architectures, we perform
+        a subset of experiments with two additional autoregressive models
+      section: §4.1
+    - exact: 'Specifically, we investigate a total of four metrics, consisting of the primary metric and
+        the three alternate metrics, referred to and defined by the following:'
+      section: Appendix F
+    - exact: The agreement between all autoregressive models we have tested indicates that our framework
+        has revealed general patterns in gender bias effects manifesting across different architectures
+        rather than features of a particular model.
+      section: §5.5, Attention interventions
+    - exact: None of the non-GPT2 models seem to share the exact same pattern that we have observed with
+        GPT2 variants
+      section: §5.5, Neuron interventions
+    - exact: We do not have a compelling theory to explain these differences in results.
+      section: §5.5
+  m7-selection-correction:
+    statement: '[M7 Selection correction, status U] Selection correction'
+    verified: true
+    quotes:
+    - exact: G REEDY approach, which iteratively selects the head with the maximal marginal contribution
+        to the indirect effect, or a T OP - K approach, which selects the k elements with the strongest
+        individual effects.
+      section: §5.2, Attention
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+    - exact: Figure 6a shows the indirect effects from the top 5% of neurons from each layer in different
+        models.
+      section: §5.2, Neurons
+    - exact: For computational reasons, we select sets of 96 neurons.
+      section: footnote 6, §5.2
+    - exact: The problem of subset selection (selecting k elements from n) is an NP-hard combinatorial
+        optimization problem.
+      section: Appendix D
+  i1-necessity:
+    statement: '[I1 Necessity, status N/A] Necessity'
+    verified: true
+    quotes:
+    - exact: The natural direct effect (NDE) measures how much an intervention x changes an outcome variable
+        y directly, without passing through a hypothesized mediator z. It its computed by applying the
+        intervention x but holding z fixed to its original value.
+      section: §3.2.2
+    - exact: The natural indirect effect (NIE) measures how much the intervention x changes y indirectly,
+        through z. It is computed by setting z to its value under the intervention x, while keeping everything
+        else to its original value.
+      section: §3.2.2
+    - exact: This framework allows evaluating the causal contribution of different mediators z to gender
+        bias.
+      section: §3.2.2
+    - exact: By definition, concurrent intervention on all neurons entails TE = NIE-all, since then
+      section: §5.3, Neurons
+    - exact: In the neuron intervention case, by definition TE = NIE-all and NDE-all = 0, so the decomposition
+        trivially holds.
+      section: footnote 8, §5.4
+  i2-sufficiency:
+    statement: '[I2 Sufficiency, status PC] Sufficiency'
+    verified: true
+    quotes:
+    - exact: The natural indirect effect (NIE) measures how much the intervention x changes y indirectly,
+        through z. It is computed by setting z to its value under the intervention x, while keeping everything
+        else to its original value.
+      section: §3.2.2
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+    - exact: Similar to the case of attention, Figure 7 shows that after a few neurons (4%) match the
+        model-wise concurrent effect, most neurons do not contribute much, and many even diminish the
+        effect.
+      section: §5.3, Neurons
+    - exact: Very few neurons (4%) are required to saturate the model effect. Of those, 57% are from layers
+        0 and 1.
+      section: Figure 7 caption
+    - exact: Here, we choose the domain A to be the set of predicted outcomes of interest, specifically
+        the stereotypical and anti-stereotypical candidates.
+      section: §3.5
+  i3-minimality:
+    statement: '[I3 Minimality, status PC] Minimality'
+    verified: true
+    quotes:
+    - exact: G REEDY approach, which iteratively selects the head with the maximal marginal contribution
+        to the indirect effect
+      section: §5.2, Attention
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+    - exact: As Figure 5b shows, most heads do not contribute much to the indirect effect, and many reduce
+        it.
+      section: §5.3, Attention
+    - exact: Similar to the case of attention, Figure 7 shows that after a few neurons (4%) match the
+        model-wise concurrent effect, most neurons do not contribute much, and many even diminish the
+        effect.
+      section: §5.3, Neurons
+  i4-specificity:
+    statement: '[I4 Specificity, status U] Specificity'
+    verified: true
+    quotes:
+    - exact: Here, we choose the domain A to be the set of predicted outcomes of interest, specifically
+        the stereotypical and anti-stereotypical candidates.
+      section: §3.5
+    - exact: When working with neuron interventions, the outcomes of interest in response to a prompt
+        like The nurse said that will be the set of possible genders predicted by the model, specifically
+        A = {he, she} in our case.
+      section: §3.5
+    - exact: The probability distributions used in the metrics discussed above can reasonably be extended
+        to the full range of possible output words by the neural network. The inclusion of only pronouns
+        in our construction, though, is due to the focus on the specific case of gender bias.
+      section: §3.5
+    - exact: However, it may also yield interesting insights on more subtle consequences of the interventions,
+        such as how other non-pronoun words with associated stereotypes may be affected by these interventions.
+      section: §3.5
+  i5-rival-mechanism-exclusion:
+    statement: '[I5 Rival mechanism exclusion, status PC] Rival mechanism exclusion'
+    verified: true
+    quotes:
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+    - exact: We did not find similar behavior in a randomly initialized model, indicating that these patterns
+        do not occur by chance.
+      section: §5.2, Attention
+    - exact: To validate that each template would capture gender bias, we instantiate each with an occupation
+        of woman and man and verify that the conditional probabilities of she and he align with gender.
+      section: Appendix A.1
+    - exact: In the professions dataset, we found moderate positive correlations between the external
+        gender bias
+      section: §5.1
+    - exact: and the log-total effect, ranging from 0.35 to 0.45 over the different models, indicating
+        that the model captures the expected biases.
+      section: §5.1, continuing past the footnote marker
+  i6-double-dissociation:
+    statement: '[I6 Double dissociation, status U] Double dissociation'
+    verified: true
+    quotes:
+    - exact: 'The figure demonstrates that they capture different coreference aspects: one head aligns
+        with the stereotypical coreference candidate, another head attends to the tokens following that
+        candidate, while a third attends to the anti-stereotypical candidate.'
+      section: §5.3, Attention
+    - exact: This framework allows evaluating the causal contribution of different mediators z to gender
+        bias.
+      section: §3.2.2
+    - exact: Through the distinction between direct and indirect effect, we can measure how much of the
+        total effect of gender edits on gender bias flows through a specific component (indirect effect)
+        or elsewhere in the model (direct effect).
+      section: §3.2.2
+  i7-confound-control:
+    statement: '[I7 Confound control, status PC] Confound control'
+    verified: true
+    quotes:
+    - exact: 'For each of the templates, we used the following professions. Words in italics are definitional
+        and were thus excluded from the total effect calculation:'
+      section: Appendix A.1
+    - exact: The professions are accompanied by crowdsourced ratings between −1 and 1 for definitionality
+        and stereotypicality.
+      section: §4.2
+    - exact: Moreover, this case suffers from the additional confounder that the model could assign probability
+        to the plural they which we are not able to disambiguate from the singular case.
+      section: §3.3
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+    - exact: To simplify processing by GPT2 and focus on common professions, we only take examples that
+        are not split into sub-word units
+      section: §4.2
+  i9-epistatic-interaction:
+    statement: '[I9 Epistatic interaction, status C] Epistatic interaction'
+    verified: true
+    quotes:
+    - exact: Figure 8 compares indirect effects of concurrent intervention on all heads (NIE-all) to summing
+        the effects of independent interventions (NIE-sum).
+      section: §5.3, Attention
+    - exact: The differences are fairly small (maximum relative distance from NIE-all between 0.7% and
+        11.3%), indicating that heads operate primarily in an independent and complementary manner, capturing
+        different aspects of gender bias.
+      section: §5.3, Attention
+    - exact: Notably, the sum of independent indirect effects (NIE-sum) is much smaller than the concurrent
+        intervention (NIE-all), as shown in the following table. Thus, neurons combine synergistically
+        to compound independent effects.
+      section: §5.3, Neurons
+    - exact: NIE-sum 6.8 4.0 3.5 2.1 2.9
+      section: table in §5.4
+    - exact: NIE-all 130.9 112.3 116.0 96.9 225.2
+      section: table in §5.4
+  i10-rescue-reversibility:
+    statement: '[I10 Rescue reversibility, status U] Rescue reversibility'
+    verified: true
+    quotes:
+    - exact: The natural direct effect (NDE) measures how much an intervention x changes an outcome variable
+        y directly, without passing through a hypothesized mediator z. It its computed by applying the
+        intervention x but holding z fixed to its original value.
+      section: §3.2.2
+    - exact: For the present use case, we define the NDE of x = x on y given mediator z = z to be the
+        change in the amount of bias when genderizing all units u, e.g., changing nurse to man, while
+        holding z for each unit to its original value.
+      section: §3.2.2
+    - exact: For the present use case, we define the NIE as the change in amount of bias when keeping
+        unit u as is, but setting z to the value it would attain under a genderized reading.
+      section: §3.2.2
+  i11-onset-coupling:
+    statement: '[I11 Onset coupling, status U] Onset coupling'
+    verified: true
+    quotes:
+    - exact: As an example large pre-trained LM, we use GPT2 (Radford et al., 2019), a Transformer-based
+        (English) LM trained on massive amounts of data.
+      section: §4.1
+    - exact: Table 1 shows the total effects of gender bias in the different GPT2 models, on three datasets,
+        as well as the effects with a randomly initialized GPT2-small model.
+      section: §5.1
+  i12-offset-coupling:
+    statement: '[I12 Offset coupling, status PC] Offset coupling'
+    verified: true
+    quotes:
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+    - exact: GPT2-small rand. 117M 12 12 0.07 0.05 0.12
+      section: Table 1
+    - exact: We did not find similar behavior in a randomly initialized model, indicating that these patterns
+        do not occur by chance.
+      section: §5.2, Attention
+    - exact: However, we still observe a small increase in effect within the intermediate layers across
+        all models except for the randomized one.
+      section: §5.2, Neurons
+  e1-intervention-reach:
+    statement: '[E1 Intervention reach, status U] Intervention reach'
+    verified: true
+    quotes:
+    - exact: 'Specifically, we perform the following do-operations: (a) set-gender: replace the ambiguous
+        profession with an anti-stereotypical gender-specific word (that is, replace nurse with man, doctor
+        with woman, etc.); (b) null: leave the sentence as is.'
+      section: §3.2
+    - exact: As mentioned above, we pick person as target of the set-gender change for the gender-neutral
+        reference and we measure the probability of the continuation they.
+      section: §3.3
+    - exact: In this case, we define the swap-gender operation, which changes she to he.
+      section: §3.4
+    - exact: We compute the NDE and NIE for each head individually by intervening on the attention weights
+      section: §3.4
+    - exact: We find that our results are robust to the metric used to quantify the effects
+      section: §3.5
+  e2-prompt-generalization:
+    statement: '[E2 Prompt generalization, status C] Prompt generalization'
+    verified: true
+    quotes:
+    - exact: To simplify processing by GPT2 and focus on common professions, we only take examples that
+        are not split into sub-word units, resulting in 17 templates and 169 professions, or 2,873 examples
+        in total.
+      section: §4.2
+    - exact: For attention intervention experiments, we use examples from Winobias Dev/Test (Zhao et al.,
+        2018a) and Winogender (Rudinger et al., 2018), totaling 160/130 and 44 examples that fit our formulation,
+        respectively.
+      section: §4.2
+    - exact: For Winobias, we only consider Type 1 examples, which follow the format of a shared prompt
+        and two alternate continuations.
+      section: Appendix A.2
+    - exact: It is difficult to compare effect magnitudes in the three datasets because of their different
+        nature.
+      section: §5.1
+    - exact: This may be attributed to the more explicit source of bias, the word representations, as
+        compared to intricate coreference relations in the Winograd-style datasets.
+      section: §5.1
+    - exact: We found this sparsity consistent in all model variants and datasets we examined.
+      section: §5.2, Attention
+  e3-cross-task-generalization:
+    statement: '[E3 Cross-task generalization, status U] Cross-task generalization'
+    verified: true
+    quotes:
+    - exact: While the framework may apply to any property expressed as a function of model predictions,
+        our experimental design focuses on gender bias in a binary setup.
+      section: §6
+    - exact: Applying the methodology to more gender-inclusive setups and other kinds of biases is thus
+        especially important since it can uncover these shortcomings in models.
+      section: §6
+    - exact: While we use gender bias as a case study, the approach can be applied to controlled effect
+        or bias.
+      section: §3.2
+    - exact: Here, we choose the domain A to be the set of predicted outcomes of interest, specifically
+        the stereotypical and anti-stereotypical candidates.
+      section: §3.5
+  e4-cross-model-generalization:
+    statement: '[E4 Cross-model generalization, status PC] Cross-model generalization'
+    verified: true
+    quotes:
+    - exact: 'Table 1: Model sizes and total effects (TE) of gender bias in various GPT2 variants evaluated
+        on Winobias (WB), Winogender (WG), and the Professions dataset.'
+      section: Table 1 caption
+    - exact: In the Winograd-style datasets, the total effect mostly increases with model size, saturating
+        at the large and xl models. In the professions dataset, model size is not well correlated with
+        total effect, but GPT2-xl has a much larger effect.
+      section: §5.1
+    - exact: 'These results support our main findings with GPT2: the heat maps show the sparsity of indirect
+        effects in Transformer-XL and XLNet while the bar charts demonstrate decomposability.'
+      section: §5.5, Attention interventions
+    - exact: show mixed levels of agreement with GPT2 results.
+      section: §5.5, Attention interventions
+    - exact: None of the non-GPT2 models seem to share the exact same pattern that we have observed with
+        GPT2 variants
+      section: §5.5, Neuron interventions
+    - exact: We do not have a compelling theory to explain these differences in results.
+      section: §5.5
+  e5-graded-response:
+    statement: '[E5 Graded response, status PC] Graded response'
+    verified: true
+    quotes:
+    - exact: To determine how many heads are required to achieve the full effect of intervening on all
+        heads, we also intervene on groups of heads.
+      section: §5.2, Attention
+    - exact: 'Figure 23: The indirect effect after sequentially selecting an increasing number of heads
+        through the T OP - K or G REEDY approach on different model types and data. A small proportion
+        of heads are required to saturate the effect of the model.'
+      section: Figure 23 caption, Appendix D
+    - exact: 'Figure 7: Indirect effects after sequentially selecting an increasing number of neurons
+        from either the full model or individual layers using the T OP - K approach in GPT2-small on the
+        professions dataset.'
+      section: Figure 7 caption
+    - exact: 'Specifically, we perform the following do-operations: (a) set-gender: replace the ambiguous
+        profession with an anti-stereotypical gender-specific word (that is, replace nurse with man, doctor
+        with woman, etc.); (b) null: leave the sentence as is.'
+      section: §3.2
+    - exact: The natural indirect effect (NIE) measures how much the intervention x changes y indirectly,
+        through z. It is computed by setting z to its value under the intervention x, while keeping everything
+        else to its original value.
+      section: §3.2.2
+  e6-novel-prediction:
+    statement: '[E6 Novel prediction, status PC] Novel prediction'
+    verified: true
+    quotes:
+    - exact: In the professions dataset, we found moderate positive correlations between the external
+        gender bias
+      section: §5.1
+    - exact: and the log-total effect, ranging from 0.35 to 0.45 over the different models, indicating
+        that the model captures the expected biases.
+      section: §5.1, continuing past the footnote marker
+    - exact: In the Winograd-style datasets, we found relatively low correlations between the log-total
+        effect and the log-ratio of the two occupations’ stereotypicality, ranging from 0.17 to 0.26.
+      section: §5.1
+    - exact: These two observations are further indications that the model has not learned a distinct
+        and sparse representation of gender-neutral references.
+      section: §5.2, Neurons
+    - exact: Preliminary experiments with gender-neutral references showed that models have not learned
+        the concept of these references, at least for our chosen templates.
+      section: §6
+  v1-level-declaration:
+    statement: '[V1 Level declaration, status C] Level declaration'
+    verified: true
+    quotes:
+    - exact: This article introduced a structural-behavioral framework for interpreting neural models
+        based on causal mediation analysis.
+      section: §6
+    - exact: Our approach is a structural-behavioral analysis. It is structural in that our results highlight
+        internal model components that are responsible for gender bias. It is behavioral in that said
+        components are causally implicated in how gender bias manifests in the model outputs.
+      section: §1
+    - exact: The mediator, denoted as z, might be a particular neuron, a full layer, an attention head,
+        or a certain attention
+      section: §3.2.2
+    - exact: We first perform targeted interventions on the input text and measure their effect on the
+        gender bias measure defined above (Eq. 1), which serves as the response variable y.
+      section: §3.2
+  v2-level-evidence-match:
+    statement: '[V2 Level-evidence match, status C] Level-evidence match'
+    verified: true
+    quotes:
+    - exact: 'Gender bias is sparse: Much of the effect is concentrated in relatively few model components.'
+      section: §1
+    - exact: 'Gender bias is synergistic: Some model components interact to produce mutual effects that
+        amplify their individual effects.'
+      section: §1
+    - exact: 'Gender bias is decomposable: The total gender bias effect approximates the sum of the direct
+        and indirect effect, a surprising result given the non-linear nature of the model.'
+      section: §1
+    - exact: Only 10 heads are required to match the effect of intervening on all 144 heads at the same
+        time (Figure 5b).
+      section: §5.2, Attention
+    - exact: The differences are fairly small (maximum relative distance from NIE-all between 0.7% and
+        11.3%), indicating that heads operate primarily in an independent and complementary manner, capturing
+        different aspects of gender bias.
+      section: §5.3, Attention
+    - exact: The same holds for concurrent interventions (Figure 8), where TE ≈ NDE-all + NIE-all.
+      section: §5.4
+  v3-alternative-level:
+    statement: '[V3 Alternative level, status PC] Alternative level'
+    verified: true
+    quotes:
+    - exact: Random model effects are much smaller, indicating that it is the training that causes gender
+        bias.
+      section: §5.1
+    - exact: We did not find similar behavior in a randomly initialized model, indicating that these patterns
+        do not occur by chance.
+      section: §5.2, Attention
+    - exact: 'The figure demonstrates that they capture different coreference aspects: one head aligns
+        with the stereotypical coreference candidate, another head attends to the tokens following that
+        candidate, while a third attends to the anti-stereotypical candidate.'
+      section: §5.3, Attention
+    - exact: Vig (2019) previously identified the same head (layer 5, head 10; noted as 5-10) as relating
+        to coreference resolution based on visual inspection.
+      section: §5.3, Attention
+  v4-unlicensed-labeling:
+    statement: '[V4 Unlicensed labeling, status C] Unlicensed labeling'
+    verified: true
+    quotes:
+    - exact: 'The relative probabilities assigned to the two candidates can be thought of as a measure
+        of grammatical gender bias in the model:'
+      section: §3.2, immediately before Eq. 1
+    - exact: If y(u) < 1, the prediction is stereotypical; if y(u) > 1, it is anti-stereotypical. A perfectly
+        unbiased model would achieve y(u) = 1 and thus exhibit bias toward neither the stereotypical nor
+        the anti-stereotypical case.
+      section: §3.2
+    - exact: The mediator, denoted as z, might be a particular neuron, a full layer, an attention head,
+        or a certain attention
+      section: §3.2.2
+    - exact: Vig (2019) previously identified the same head (layer 5, head 10; noted as 5-10) as relating
+        to coreference resolution based on visual inspection.
+      section: §5.3, Attention
+    - exact: 'The figure demonstrates that they capture different coreference aspects: one head aligns
+        with the stereotypical coreference candidate, another head attends to the tokens following that
+        candidate, while a third attends to the anti-stereotypical candidate.'
+      section: §5.3, Attention
+  v5-scope-declaration:
+    statement: '[V5 Scope declaration, status C] Scope declaration'
+    verified: true
+    quotes:
+    - exact: This experimental setup is based on a binary notion of a stereotypical and an anti-stereotypical
+        candidate. Unfortunately, the datasets investigated in this work are designed for experiments
+        with a binary grammatical gender instead of a gender-inclusive spectrum.
+      section: §3.2
+    - exact: Moreover, this case suffers from the additional confounder that the model could assign probability
+        to the plural they which we are not able to disambiguate from the singular case.
+      section: §3.3
+    - exact: However, the TE = NDE + NIE decomposition is not guaranteed without further assumptions (e.g.,
+        under linear models). In our case, an additional no-interaction condition was needed for the decomposition
+        to hold, as shown and discussed in Appendix E.
+      section: footnote 7, §5.4
+    - exact: We do not have a compelling theory to explain these differences in results.
+      section: §5.5
+    - exact: While the framework may apply to any property expressed as a function of model predictions,
+        our experimental design focuses on gender bias in a binary setup.
+      section: §6

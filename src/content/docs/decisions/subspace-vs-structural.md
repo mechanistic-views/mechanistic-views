@@ -28,7 +28,7 @@ Two mechanisms are the same when they lie in the same gauge orbit -- that is, wh
 
 **What it buys you.** A characterization that is genuinely invariant to internal symmetries. If two models are in the same gauge orbit, they compute the same function in a strong sense, and any subspace-level comparison that says otherwise is misleading.
 
-**What goes wrong.** Computing gauge orbits and holonomy (a measure of how the gauge connection "twists" around the orbit) is expensive and currently requires specialized tooling that most practitioners do not have. The fiber bundle structure also breaks down at non-generic points -- for example, when two attention heads in the same layer have identical weights, the gauge group does not act freely, and the bundle formalism does not apply cleanly. If you cannot actually compute the structural characterization, demanding it just blocks progress.
+**What goes wrong.** The formalism exists and is now computable: Javidnia (2026) gauge-fixes a context complex on a spanning tree so that each chord residual equals the holonomy of its fundamental cycle, and instantiates it on a frozen language model. Gould et al. (2023) identify a succession mechanism from the weight product $W_U W_{OV} \mathrm{MLP}_0(W_E)$ with no activation entering the analysis. What is missing is systematic use rather than the formalism itself. The fiber bundle structure also breaks down at non-generic points -- for example, when two attention heads in the same layer have identical weights, the gauge group does not act freely, and the bundle formalism does not apply cleanly. If you cannot actually compute the structural characterization, demanding it just blocks progress.
 
 ## Distinguishing experiments
 

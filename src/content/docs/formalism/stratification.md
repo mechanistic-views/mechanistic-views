@@ -22,7 +22,7 @@ $$\mathcal{M} = \mathcal{M}_1 \sqcup \mathcal{M}_2 \sqcup \cdots \sqcup \mathcal
 
 Each $\mathcal{M}_k$ contains mechanisms that live in a $k$-dimensional subspace; $\mathcal{M}_\infty$ contains genuinely distributed mechanisms with no finite-dimensional representative. A mechanism's identity depends on which stratum it occupies: two mechanisms in $\mathcal{M}_k$ are compared by Grassmannian distance, but a mechanism in $\mathcal{M}_2$ and one in $\mathcal{M}_5$ are not comparable in the same way — they live in different strata with different local geometry.
 
-The stratified view is resolution-relative: the same computation may appear as a point in $\mathcal{M}_k$ at one resolution and $\mathcal{M}_{k'}$ at another. The Whitney conditions ensure that moving between resolutions (crossing stratum boundaries) is geometrically well-behaved.
+The stratified view is resolution-relative: the same computation may appear as a point in $\mathcal{M}_k$ at one resolution and $\mathcal{M}_{k'}$ at another. Whitney's regularity conditions are the mathematical antecedent for strata that meet in a controlled way, but the strata used here are constructed rather than assumed: membership is settled by measurement — participation ratio, localizability, and stability of both across resolutions — and no claim on this page depends on the regularity conditions holding.
 
 ## Deep dive
 

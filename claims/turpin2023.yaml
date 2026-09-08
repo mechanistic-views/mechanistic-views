@@ -1,0 +1,12 @@
+source:
+  citation: turpin2023
+  local: reference/turpin2023.pdf
+  sha256: f68cfafe59e7acef0f03ec0bdcfe34fb64154db8c354e17b0ee11e0c2c4bb708
+  extract_cmd: pdftotext -layout {} -
+claims:
+  cot-rationalizes:
+    statement: 'Bias drives the answer and the trace rationalizes it.'
+    verified: true
+    quotes:
+      - exact: 'rationalizing those answers'
+        section: 'body'

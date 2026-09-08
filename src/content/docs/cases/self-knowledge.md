@@ -36,9 +36,11 @@ If $S_\text{self}$ causally suppresses confident-but-wrong outputs when its proj
 
 ## Current evidence state
 
+Tiers below are the [Mechanistic Validity](/mechanistic-views/mechval-interface/) ladder, not this framework's verdict vocabulary.
+
 - **Tier 1** across all views: no published work applies [DAS](/mechanistic-views/views/subspace/#evidence) or systematic patching to self-knowledge with appropriate controls for the distributional confound
 
-## What would move to Tier 2
+## What a first family would need to show
 
 - [DAS](/mechanistic-views/views/subspace/#evidence) on minimal pairs spanning known variation in model confidence, with IIA reported
 - Activation steering showing the proposed subspace causally affects self-referential outputs independently of prompt statistics

@@ -16,7 +16,7 @@ This is the floor of the framework. Every other view must satisfy the instrument
 
 **Why some interpretability debates are unproductive.** When researchers argue about whether a mechanism is "really" an induction head or "really" a copying circuit, the instrumental view says: if both descriptions predict equally well, the question has no content. The argument is about labels, not about the model.
 
-**Why behavioral benchmarks are the universal floor.** Every view in this framework must produce predictions that match behavior. If a mechanism description fails to predict, it fails — period. The instrumental view simply refuses to add requirements beyond this minimum.
+**Why it is the lowest-commitment position.** The instrumental view asks only that a description predict behavior and guide interventions. Other views ask for more and, in some cases, for something else entirely — the structural view's canonical evidence is a weight product with no activation from any prompt entering the analysis. Evidence does not accumulate across views: predictive success is what the instrumental view requires and all it establishes.
 
 **What counts as a successful explanation.** Under this view, a mechanism description succeeds when it predicts behavior and guides effective interventions. No metaphysical criteria about "what the mechanism really is" are needed or meaningful.
 

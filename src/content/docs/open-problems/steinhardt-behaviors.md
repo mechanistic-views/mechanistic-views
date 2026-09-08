@@ -37,4 +37,3 @@ Steinhardt's behavioral evaluation framework maps onto three mechval criteria th
 ## Sources
 
 - **[Steinhardt (2026)](https://www.lesswrong.com/posts/J5KkwYnnaeNX7hL2s/the-case-for-evaluating-model-behaviors)**: The case for evaluating model behaviors
-- **Coverage analysis**: `mechanistic-validity-experiments/experiments/15_unsolved_problems/steinhardt_behaviors/` — behavioral propensity measurement, reward hacking circuit scan, circuit-to-behavior prediction experiments

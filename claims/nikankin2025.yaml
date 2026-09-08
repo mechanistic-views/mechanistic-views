@@ -1,0 +1,18 @@
+source:
+  citation: nikankin2025
+  local: reference/nikankin_2024_bag_of_heuristics.pdf
+  sha256: 8d141b698112693010f1183292cbd8f954108f22e4f1d1def465833d7f678410
+  extract_cmd: pdftotext -layout {} -
+claims:
+  ninety-one-percent:
+    statement: '91% of the 3,200 top neurons per operator classify as heuristics.'
+    verified: true
+    quotes:
+      - exact: 'we classify as arithmetic heuristics 91% of the 3,200 top neurons for each operator'
+        section: 'body'
+  llama3-8b-is-the-main-model:
+    statement: 'The headline figures are Llama3-8B; other models are an appendix.'
+    verified: true
+    quotes:
+      - exact: 'We focus on Llama3-8B in the main paper'
+        section: 'body'

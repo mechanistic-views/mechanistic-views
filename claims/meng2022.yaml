@@ -1,0 +1,18 @@
+source:
+  citation: meng2022
+  local: reference/meng2022.pdf
+  sha256: d7c17f896cca512fb258261421b073baa6f4e6e44b6bb7ada5c90185f423054a
+  extract_cmd: pdftotext -layout {} -
+claims:
+  decisive-not-necessary:
+    statement: "Meng's term is decisive; the paper makes a mediation claim, not a necessity claim."
+    verified: true
+    quotes:
+      - exact: 'decisive in a model'
+        section: 'body'
+  restoration-protocol:
+    statement: 'The protocol tests whether a single state can restore the prediction.'
+    verified: true
+    quotes:
+      - exact: 'restore the prediction'
+        section: 'body'

@@ -10,11 +10,11 @@ title: Case Study — IOI
 
 The mechanism is the component set: name-movers, backup name-movers, negative name-movers, S-inhibition heads, duplicate token heads, and induction heads. Activation patching and path patching show these heads are necessary and approximately sufficient for the logit difference between indirect object and subject names.
 
-**Limitation.** The circuit accounts for roughly 70–80% of the full model's logit difference on standard prompts, leaving a persistent gap. Whether this gap reflects incomplete recovery or genuine distribution is an open question.
+**Limitation.** The circuit recovers 87% of the full model's logit difference (Wang et al., 2023), and still admits rival head sets of comparable faithfulness (Chen et al., 2026). The residual is not the only underdetermination: more than one head set clears the same faithfulness bar.
 
 ## [Role view](/mechanistic-views/views/role/)
 
-The mechanism is the role structure: S-inhibition role, duplicate-token role, name-mover role. The backup name movers finding suggests roles are more stable than components — when name movers are knocked out, other heads compensate by taking on the same role (Wang et al., §3.4). However, systematic cross-seed or cross-model role transfer has not been published.
+The mechanism is the role structure: S-inhibition role, duplicate-token role, name-mover role. Knocking out the three main name movers leaves the logit difference only 5% lower, because other heads compensate "by replacing their role" (Wang et al., §3.4) — which the role view predicts, since multiple realizability is what a role predicts. But the class itself is fixed by an effect-size threshold the authors call arbitrary: of the eight backup name movers, four resemble name movers, two attend to and copy both candidate names, one prefers the subject token, and one tracks subjects of clauses. Half the class does not perform the function the class is named for, and systematic cross-seed or cross-model role transfer has not been published.
 
 ## [Subspace view](/mechanistic-views/views/subspace/)
 
@@ -24,17 +24,15 @@ The IOI mechanism is a set of causal subspaces, one per relevant variable. Each 
 
 ## [Structural view](/mechanistic-views/views/structural/)
 
-Competing IOI circuit proposals may be coverage-equivalent — same cosheaf cohomology — in which case the apparent disagreement is a measurement artifact.
+The relevant object is gauge-invariant information flow — the K-composition term for downstream heads reading from head 9.9 (Elhage et al., 2021). A computation-preserving reparameterization changes the weight matrices but not the composition score; a patching result that survives such reparameterization is structural, and one that does not is basis-dependent.
 
-**Open question.** Are the competing proposals coverage-equivalent, accounting for the base-section and cosheaf-construction dependence of $H^\bullet$?
+**Open question.** Do the competing circuit proposals survive a computation-preserving reparameterization of the implicated heads' weights? If a proposal's support changes under one, it was basis-dependent rather than structural.
 
 ## Current evidence state
 
-- **Tier 3** under the [object view](/mechanistic-views/views/object/) for standard prompts
-- **Tier 2** under the [subspace](/mechanistic-views/views/subspace/) and [role](/mechanistic-views/views/role/) views
-- **Tier 1** under the [structural view](/mechanistic-views/views/structural/)
+The criterion returns **candidate**. Patching and the knockout dissociation are both identity-family evidence, so the support does not cross a family boundary — not because the evidence is weak, but because one family's characteristic artifact, a role asserted rather than operationalized, could produce all of it. The subspace and structural questions are posed rather than answered. What the later work adds is analyst-choice evidence that the object is foil-relative: Franco et al. (2026) obtain two circuit clusters from two template families, and Sun et al. (2026) find congruence collapsing across model families.
 
-## What would move to higher tiers
+## What would cross a second family boundary
 
 **Subspace view, Tier 3 → 4** (three-domain triangulation + cross-architecture generalization):
 - Systematic [DAS](/mechanistic-views/views/subspace/#evidence) recovery with IIA reported across seeds and architectures
@@ -45,7 +43,7 @@ Competing IOI circuit proposals may be coverage-equivalent — same cosheaf coho
 - Systematic role partition search with precision/recall against behavioral ground truth
 - Cross-architecture role transfer with transplant experiments
 
-**All views**: dark matter accounting — close the $r$ gap or establish cosheaf obstruction with base sections specified
+**All views**: the subspace and structural questions are posed rather than answered — the circuit's support has not yet crossed a family boundary
 
 ## Limitations acknowledged by the original paper
 

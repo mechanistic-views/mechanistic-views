@@ -1,0 +1,18 @@
+source:
+  citation: tigges2024
+  local: reference/tigges_2024_circuits_consistent.pdf
+  sha256: de26edd28d3792be78213005cc5d2e1f7999ee40a3a5a28743161f9a5ee9eba9
+  extract_cmd: pdftotext -layout {} -
+claims:
+  replicates-across-scale:
+    statement: 'Algorithms and component types tend to replicate across model scale.'
+    verified: true
+    quotes:
+      - exact: 'tend to replicate across model scale'
+        section: 'body'
+  head-4-6-is-training-time:
+    statement: 'The (4,6) instability is across training within one model, not across scale.'
+    verified: true
+    quotes:
+      - exact: 'suddenly stops exhibiting this behavior'
+        section: 'body'

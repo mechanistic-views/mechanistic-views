@@ -8,7 +8,7 @@ Mechanistic interpretability forces you to make choices about what kind of thing
 
 Each page examines a fork where different views lead to different experiments, different claims, and different failure modes. They are organized around the practical question: **given my research goal, which view should I adopt?**
 
-- **[Object vs. Role](object-vs-role/)** -- Is the mechanism a specific component (head 9.1) or the functional role it plays (name-moving)? This determines whether your findings generalize across model seeds and architectures.
+- **[Object vs. Role](object-vs-role/)** -- Is the mechanism a specific component (head 9.9) or the functional role it plays (name-moving)? This determines whether your findings generalize across model seeds and architectures.
 
 - **[Subspace vs. Structural](subspace-vs-structural/)** -- Is subspace proximity sufficient for mechanism identity, or do you need gauge-invariant characterization? This matters whenever you compare mechanisms across models that may differ by an internal symmetry transformation.
 

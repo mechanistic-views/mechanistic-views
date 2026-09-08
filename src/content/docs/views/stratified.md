@@ -6,7 +6,7 @@ title: Stratified View
 
 Some mechanisms are single directions. Some are multi-dimensional subspaces. Some are curved manifolds. Some are distributed across the entire residual stream with no finite-dimensional description. These are not the same kind of object, and treating them as if they were is where a large class of interpretability confusions come from.
 
-The stratified view is the meta-view. It says there is no single correct answer to "what is a mechanism?" because different mechanisms live in different geometric types — different *strata* of a structured space. The other views each describe one kind of mechanism well: the [object view](/mechanistic-views/views/object/) handles localized components, the [subspace view](/mechanistic-views/views/subspace/) handles linear subspaces, the [structural view](/mechanistic-views/views/structural/) handles gauge-invariant structure. The stratified view organizes these into a hierarchy and says: the first job of any mechanistic analysis is to figure out what kind of object you're looking at, because the right methods, metrics, and evidence standards all depend on the answer.
+The stratified view indexes mechanisms by resolution. It says the answer to "what is a mechanism?" is incomplete until a resolution is declared, because different mechanisms live in different geometric types — different *strata* of a structured space. The other views each describe one kind of mechanism well: the [object view](/mechanistic-views/views/object/) handles localized components, the [subspace view](/mechanistic-views/views/subspace/) handles linear subspaces, the [structural view](/mechanistic-views/views/structural/) handles gauge-invariant structure. The stratified view organizes these into a hierarchy and says: the first job of any mechanistic analysis is to figure out what kind of object you're looking at, because the right methods, metrics, and evidence standards all depend on the answer.
 
 ## Thesis
 
@@ -56,7 +56,7 @@ When two methods *do* agree — when DAS and weight-space SVD converge on the sa
 
 ## The genuine competitor: perspectivalism
 
-The [perspectival view](/mechanistic-views/views/perspectival/) is the only view that cannot be absorbed into the stratified account. The stratified view makes a realist commitment: there are facts about which geometric type a mechanism is, independent of how you measure it. Perspectivalism denies this — it says the "mechanism" looks different from different methods, and there is no method-independent ground truth.
+The [perspectival view](/mechanistic-views/views/perspectival/) is the sharpest contrast. The stratified view is resolution-relative and still fully committal: once a resolution is declared, there is a fact of the matter about which stratum a mechanism occupies, and it is measurable. Perspectivalism denies this — it says the "mechanism" looks different from different methods, and there is no method-independent ground truth.
 
 The evidence bears on this debate directly. When independent methods with non-overlapping assumptions converge on the same geometric object (as in grokking, where weight decomposition, activation probing, and training dynamics all identify the same Fourier structure), that convergence is evidence against perspectivalism. When methods persistently diverge (as in IOI under different ablation methods), perspectivalism gains ground.
 
@@ -111,7 +111,7 @@ The strongest predictions the stratified view generates:
 
 - **Grokking stratum transition:** The Grassmannian distance from pre-grokking to post-grokking representation should be significantly larger than zero, and the distortion ratio should increase post-grokking. Testable on existing checkpoints.
 - **Linear steering degrades with curvature:** The advantage of manifold/geodesic steering over linear steering should increase monotonically with distortion ratio $R$. Testable with existing codebases (Curveball, Manifold Steering).
-- **Pullback metric sufficiency:** Two mechanisms with identical behavioral output distributions should be at the same Grassmannian point. If two mechanisms produce identical outputs but live at different Grassmannian positions, the core identity criterion is wrong. The strongest single falsifier of the entire framework.
+- **Pullback metric adequacy:** Where two mechanisms are known on independent grounds to implement the same computation, the pullback metric should place them at the same Grassmannian point. Identical output distributions are not sufficient — behavioral equivalence is coarser than subspace identity, so two mechanisms can agree on outputs and sit at different Grassmannian positions without impugning the identity criterion.
 - **SAE dilution predicts failure:** For concepts with dilution ratio $> 10$ (fragmented SAE coverage of a manifold), the faithfulness of SAE-based explanations should be significantly lower than for concepts with dilution ratio $< 2$.
 
 ### Relationship to Mechanistic Validity

@@ -20,19 +20,17 @@ Before grokking, the model outputs correct training labels without compositional
 
 ## [Process view](/mechanistic-views/views/process/) account
 
-AGOP trajectories converge to the eventual Fourier subspace before the behavioral transition — dynamics-domain evidence of formation. Weight decay is the key hyperparameter: it penalizes high-norm memorization weights more than the structured Fourier weights, making the transition happen earlier.
+Nanda et al. (2023) report that the generalizing circuit is amplified gradually and is formed well before test loss drops, and that grokking is the later removal of the memorizing components rather than a sudden switch between circuits. The mechanism is the trajectory — the sequence of weight-space changes and the checkpoint-by-checkpoint emergence of the algorithmic solution. No static description of the final circuit explains why generalization occurred, when it occurred, or what determined the transition point.
 
 A complete process-view account should derive the transition timing from the dynamical system structure (e.g., from the relative decay rates of memorization and generalization components under the specific weight-decay schedule), not just describe it empirically.
 
-## Dark matter and cohomology
-
-A testable conjecture (OQ 5.3): the memorization circuit cosheaf has $H^1 \neq 0$ and the Fourier circuit cosheaf has $H^1 = 0$. If true, the grokking transition is a cohomological phase transition.
-
 ## Current evidence state
+
+Tiers below are the [Mechanistic Validity](/mechanistic-views/mechval-interface/) ladder, not this framework's verdict vocabulary. The framework's own verdicts are view-invariant, contested and candidate.
 
 - **Tier 3** for the final-state Fourier mechanism under the [subspace view](/mechanistic-views/views/subspace/)
 - **Tier 2** for the phase transition dynamics under the [process view](/mechanistic-views/views/process/): well-documented, but full dynamical account preliminary
-- **Tier 1** for the dark matter / cohomology account under the [structural view](/mechanistic-views/views/structural/)
+- **Tier 1** under the [structural view](/mechanistic-views/views/structural/): no gauge-invariant characterization of either circuit has been published
 
 ## Further reading
 

@@ -16,7 +16,7 @@ The mechanism is a set of components: attention heads, MLP neurons, layers. Thes
 
 **The problem.** Architectural components may not align with computational function. A single attention head can serve multiple functions depending on context. Multiple heads can collectively implement a single function (as in the IOI circuit's backup name movers). The one-head-one-function assumption is convenient but frequently violated.
 
-[Merullo et al. (2024)](https://arxiv.org/abs/2312.10794) showed that "circuit" boundaries drawn at the head level miss distributed computations that span many heads, none of which is individually necessary. The Object view's unit creates a resolution problem: the boundaries are clear but may not carve at the joints.
+[Merullo et al. (2024)](https://arxiv.org/abs/2310.08744) found that the IOI and Colored Objects circuits in GPT-2 Medium share 78% of their top-2% heads, and that the head at index 9.9 contributes to both — attributed there to induction rather than name moving. Under the Object view the same coordinates name a different mechanism in the next model size; under the Role view the overlap is either the same roles recurring across tasks or evidence that "the IOI circuit" was a task-general substrate misidentified as task-specific. The Object view's unit creates a resolution problem: the boundaries are clear but may not carve at the joints.
 
 ### [Role view](/mechanistic-views/views/role/) — the unit is the functional role
 

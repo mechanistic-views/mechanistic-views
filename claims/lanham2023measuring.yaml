@@ -1,0 +1,12 @@
+source:
+  citation: lanham2023measuring
+  local: reference/lanham2023measuring.pdf
+  sha256: 98bd5d514a25af073c382e87e9b230d81c74f024db5c8b5388769dc8e4dcca2c
+  extract_cmd: pdftotext -layout {} -
+claims:
+  intervenes-on-cot:
+    statement: 'Lanham intervenes on the chain of thought systematically.'
+    verified: true
+    quotes:
+      - exact: 'the model predictions change when we intervene'
+        section: 'body'

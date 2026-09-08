@@ -38,7 +38,7 @@ Different criteria can give different formation times for the same mechanism:
 - **Subspace convergence**: the AGOP (Average Gradient Outer Product) subspace is within some distance of the eventual DAS subspace.
 - **Weight-space structure**: the composition score between relevant heads reaches its asymptotic value.
 
-These can disagree substantially. AGOP convergence often precedes behavioral detection by thousands of training steps -- the weight-space structure for the mechanism is in place long before the mechanism is behaviorally detectable. This means a process-view claim must state which formation criterion it uses, because "when the mechanism forms" is not a single well-defined moment.
+These can disagree, and by how much is not established -- whether weight-space structure is in place before a mechanism becomes behaviorally detectable, and by how many steps, is an open measurement. This is why a process-view claim must state which formation criterion it uses: "when the mechanism forms" is not a single well-defined moment.
 
 ## Distinguishing experiments
 

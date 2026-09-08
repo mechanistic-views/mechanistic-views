@@ -1,0 +1,589 @@
+source:
+  citation: nanda2023progress
+  local: reference/nanda2023grokking.pdf
+  sha256: 93dcdafc2ecf75d31ab2e32e74cdc11e2e488fec42edfef58ad3d4b6515bcd5f
+  extract_cmd: pdftotext -layout {} -
+imported_from: mechanistic-validity/docs/data/audits/grokking.yaml
+claims:
+  c1-falsifiability:
+    statement: '[C1 Falsifiability, status C] Each key frequency makes a directional ablation prediction
+      that could fail'
+    verified: true
+    quotes:
+    - exact: The loss of the transformer (lower=better) when ablating each frequency k ∈ {1, 2, ..., 56}
+        and everything except for the five key frequencies (restricted loss). We include the original
+        unablated loss for reference. Ablating key frequencies causes a performance drop, while the other
+        ablations do not harm performance.
+      section: Figure 6
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: If we instead projected the MLP activations onto the nullspace of these 10 directions, loss
+        increases to 5.27—worse than uniform.
+      section: §4.4
+    - exact: The idea is that the memorizing solution should be spread out in the Fourier domain, so that
+        ablating a few directions will leave it mostly unaffected, while the generalizing solution will
+        be hurt significantly.
+      section: §5.1
+  c2-structural-plausibility:
+    statement: '[C2 Structural plausibility, status C] Weight-level throughout; $W_E$ sparse in the Fourier
+      basis at 6 frequencies'
+    verified: true
+    quotes:
+    - exact: The embedding matrix WE is sparse in the Fourier basis–it only has significant nonnegligible
+        norm at 6 frequencies. Of these frequencies, only 5 appear to be used significantly in later parts
+        of the model (corresponding to k ∈ {14, 35, 41, 42, 52}). We dub these the key frequencies of
+        the model.
+      section: §4.1
+    - exact: the residual has Frobenius norm that is under 0.55% of the norm of WL .
+      section: §4.2
+    - exact: This fit explain 99.02%, 95.21%, 99.10%, 92.42% of the variance of Cj respectively.
+      section: Appendix C.1.3
+    - exact: We speculate that this is because of weight decay encouraging the embeddings WE to be small,
+        causing the network to allocate two of its attention heads to effectively increasing the size
+        of WE .
+      section: Appendix C.1.3
+  c3-convergent-validity:
+    statement: '[C3 Convergent validity, status PC] Three families at origin, but all descend from Fourier-space
+      ablation'
+    verified: true
+    quotes:
+    - exact: We confirm this understanding with four lines of evidence (Section 4)
+      section: §1
+    - exact: Our first line of evidence involves examining the network weights and activations and observing
+        consistent periodic structure that is unlikely to occur by chance (Section 4.1).
+      section: §4
+    - exact: We next look into the actual mechanisms implemented in the model weights (Section 4.2).
+      section: §4
+    - exact: Finally, we use ablations to confirm that our interpretation is faithful (Section 4.4).
+      section: §4
+    - exact: 'We translate the ablations in Section 4.4 into two progress measures: restricted and excluded
+        loss.'
+      section: §5.1
+  c4-discriminant-validity:
+    statement: '[C4 Discriminant validity, status PC] Excluded loss rises during circuit formation while
+      train loss stays flat'
+    verified: true
+    quotes:
+    - exact: The idea is that the memorizing solution should be spread out in the Fourier domain, so that
+        ablating a few directions will leave it mostly unaffected, while the generalizing solution will
+        be hurt significantly.
+      section: §5.1
+    - exact: Circuit formation (Epochs 1.4k–9.4k). In this phase, excluded loss rises, sum of squared
+        weights falls, restricted loss starts to fall, and test and train loss stay flat.
+      section: §5.2
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+  c5-nomological-validity:
+    statement: '[C5 Nomological validity, status PC] Placed inside progress measures and phase changes;
+      links are analogical'
+    verified: true
+    quotes:
+    - exact: Barak et al. (2022) introduce the notion of progress measures—metrics that improve smoothly
+        and that precede emergent behavior.
+      section: §2
+    - exact: The style of post-hoc mechanistic interpretability in Section 4 is heavily inspired by the
+        Circuits approach of Cammarata et al. (2020), Elhage et al. (2021), and Olsson et al. (2022).
+      section: §2
+    - exact: As demonstrated in Section 4 and Appendix C.2.1, small transformers trained on this task
+        use several different frequencies which they add together. The reason for this is to end up with
+        a function whose value at x = 0 mod 113 is significantly larger than any other x.
+      section: Appendix B
+  m1-reliability:
+    statement: '[M1 Reliability, status PC] Five seeds at the mainline configuration, reported in full
+      (Table 3)'
+    verified: true
+    quotes:
+    - exact: The train and test accuracy (left) and train and test loss (right) of one-layer transformers
+        on the modular addition task described in Section 3, over 5 random seeds.
+      section: Figure 2
+    - exact: In this section, we provide evidence that all 4 other runs (i.e., random seeds) using the
+        experimental setup of our mainline model also use the Fourier multiplication algorithm
+      section: Appendix C.2.1
+    - exact: We then compute the fraction of variance explained (FVE) if we replace the projection with
+        a single term proportional to cos (wk (a + b)) or sin (wk (a + b)), and find that it is consistently
+        close to 1.
+      section: Table 1
+    - exact: (We report the standard deviation of loss over the runs in parentheses.)
+      section: Table 6
+  m2-baseline-separation:
+    statement: '[M2 Baseline separation, status C] All 56 frequencies ablated individually; the five separate
+      by orders'
+    verified: true
+    quotes:
+    - exact: The loss of the transformer (lower=better) when ablating each frequency k ∈ {1, 2, ..., 56}
+        and everything except for the five key frequencies (restricted loss). We include the original
+        unablated loss for reference. Ablating key frequencies causes a performance drop, while the other
+        ablations do not harm performance.
+      section: Figure 6
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: We then ablate all 113 · 113 − 40 of the Fourier components besides key frequencies; this
+        ablation actually improves performance (loss drops 70% to 7.24 · 10−8 ).
+      section: §4.4
+    - exact: As with the mainline model, ablating all of the key frequencies reduces performance to worse
+        than chance, while ablating everything but the key frequencies improves test performance.
+      section: Appendix C.2.1
+  m3-stability:
+    statement: '[M3 Stability, status PC] Seed, data fraction, depth and modulus swept; analysis choices
+      are not'
+    verified: true
+    quotes:
+    - exact: We find that grokking occurs for the modular addition task with P = 113 for many data fractions
+      section: Appendix C.2.2
+    - exact: For P = 401 (Figure 25), we could not get grokking, even by varying the weight decay parameter
+        λ ∈ {0.3, 0.5, 1, 3, 5, 8}.
+      section: Appendix C.2.2
+    - exact: In order to find the key frequencies to calculate the excluded and restricted loss, we perform
+        a DFT on the neuron-logit map WL , then take the frequencies with nontrivial coefficients
+      section: Appendix C.2
+    - exact: As shown in Figure 5, out of 512 total neurons, 433 (84.6%) have over 85% of their variance
+        explained with a single frequency.
+      section: §4.3
+  m4-calibration:
+    statement: '[M4 Calibration, status PC] Loss in natural units; the uniform reference is invoked but
+      never computed'
+    verified: true
+    quotes:
+    - exact: If we instead projected the MLP activations onto the nullspace of these 10 directions, loss
+        increases to 5.27—worse than uniform.
+      section: §4.4
+    - exact: As with the mainline model, ablating all of the key frequencies reduces performance to worse
+        than chance, while ablating everything but the key frequencies improves test performance.
+      section: Appendix C.2.1
+    - exact: 1       2.07 · 10−7                     6.5 · 100                                         5.7
+        · 10−8
+      section: Table 4
+  m5-sensitivity:
+    statement: '[M5 Sensitivity, status U] Unattempted; a known-negative control with no known-positive'
+    verified: true
+    quotes:
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: We verify that these approximations are faithful to the model’s functionality, by replacing
+        each component with its approximation. This generally does not hurt the performance of the model
+        and in some cases improves it.
+      section: §4.4
+  m6-invariance:
+    statement: '[M6 Invariance, status C] Table 5 repeats the mechanism statistics for 27 models, five
+      conditions'
+    verified: true
+    quotes:
+    - exact: For each of the models in Appendices C.2.3 and D.1 that generalizes to test data, we report
+        the test loss, the Gini coefficients of the norms of the Fourier components of WE and WL (Section
+        5.1), the key frequencies of the network
+      section: Table 5
+    - exact: We find that every model trained with weight decay and that generalizes correctly implements
+        some variation of the Fourier multiplication algorithm.
+      section: Appendix C.2.3
+    - exact: Interestingly, the embedding and unembedding matrices of the models trained with dropout
+        are not sparse in the Fourier basis
+      section: Appendix C.2.3
+  m7-selection-correction:
+    statement: '[M7 Selection correction, status U] Unattempted, and circular: frequencies chosen from
+      the spectrum tested'
+    verified: true
+    quotes:
+    - exact: The embedding matrix WE is sparse in the Fourier basis–it only has significant nonnegligible
+        norm at 6 frequencies. Of these frequencies, only 5 appear to be used significantly in later parts
+        of the model (corresponding to k ∈ {14, 35, 41, 42, 52}). We dub these the key frequencies of
+        the model.
+      section: §4.1
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: As shown in Figure 5, out of 512 total neurons, 433 (84.6%) have over 85% of their variance
+        explained with a single frequency.
+      section: §4.3
+    - exact: In order to find the key frequencies to calculate the excluded and restricted loss, we perform
+        a DFT on the neuron-logit map WL , then take the frequencies with nontrivial coefficients
+      section: Appendix C.2
+    - exact: One method for getting a general (model-independent) progress measure for this task is to
+        compute the excluded loss for each of the 56 unique frequencies and then take the max.
+      section: Appendix C.2, footnote 3
+  i1-necessity:
+    statement: '[I1 Necessity, status C] Key-frequency removal gives 6.5--11 in four seeds; nullspace
+      gives 5.27'
+    verified: true
+    quotes:
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: As with the mainline model, ablating all of the key frequencies reduces performance to worse
+        than chance, while ablating everything but the key frequencies improves test performance.
+      section: Appendix C.2.1
+    - exact: 1       2.07 · 10−7                     6.5 · 100                                         5.7
+        · 10−8
+      section: Table 4
+    - exact: 2        2.1 · 10−7                     1.1 · 101                                         6.2
+        · 10−8
+      section: Table 4
+    - exact: If we instead projected the MLP activations onto the nullspace of these 10 directions, loss
+        increases to 5.27—worse than uniform.
+      section: §4.4
+    - exact: The matrices are sparse in the Fourier basis, enabling us to identify 3 or 4 key frequencies
+        for each of the seeds.
+      section: Appendix C.2.1
+  i2-sufficiency:
+    statement: '[I2 Sufficiency, status C] Non-key Fourier ablation improves loss 70%; polynomial substitution
+      costs 3%'
+    verified: true
+    quotes:
+    - exact: To measure this, we perform a 2D DFT on the logits to write them as a linear combination
+        of waves in a and b, and set all terms besides the constant term and the 20 terms corresponding
+        to cos(wk (a + b)) and sin(wk (a + b)) for the five key frequencies to 0. We then measure the
+        loss of the ablated network.
+      section: §5.1
+    - exact: We then ablate all 113 · 113 − 40 of the Fourier components besides key frequencies; this
+        ablation actually improves performance (loss drops 70% to 7.24 · 10−8 ).
+      section: §4.4
+    - exact: If we project the MLP activations to these 10 directions, loss decreases 50% to 1.19 · 10−7
+        .
+      section: §4.4
+    - exact: This increases loss by only 3% in relative terms (from 2.41 · 10−7 to 2.48 · 10−7 ) and has
+        no effect on accuracy.
+      section: §4.4
+  i3-minimality:
+    statement: '[I3 Minimality, status PC] Every key frequency is load-bearing singly; 79 of 512 neurons
+      miss the cutoff'
+    verified: true
+    quotes:
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: In Figure 15, we plot the excluded loss if we exclude each of the five key frequencies (as
+        opposed to all five key frequencies).
+      section: Appendix C.1.5
+    - exact: As shown in Figure 5, out of 512 total neurons, 433 (84.6%) have over 85% of their variance
+        explained with a single frequency.
+      section: §4.3
+    - exact: We replace each of these neurons’ activation value by the corresponding polynomial, leaving
+        the other neurons untouched.
+      section: §4.4
+  i4-specificity:
+    statement: '[I4 Specificity, status N/A] One task; the model has no off-target behavior to spare'
+    verified: true
+    quotes:
+    - exact: We train transformers to perform addition mod P . The input to the model is of the form “a
+        b =”, where a and b are encoded as P -dimensional one-hot vectors, and = is a special token above
+        which we read the output c.
+      section: §3
+    - exact: Note that loss is only calculated from the logits on the final token, and information only
+        moves between tokens during the attention layer
+      section: Appendix A
+    - exact: As there are only 113 · 113 possible pairs, we evaluate test loss and accuracy on all pairs
+        of inputs not used for training.
+      section: §3
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+  i5-rival-mechanism-exclusion:
+    statement: '[I5 Rival mechanism exclusion, status PC] Memorization excluded; Clock and Pizza are not'
+    verified: true
+    quotes:
+    - exact: The idea is that the memorizing solution should be spread out in the Fourier domain, so that
+        ablating a few directions will leave it mostly unaffected, while the generalizing solution will
+        be hurt significantly.
+      section: §5.1
+    - exact: Circuit formation (Epochs 1.4k–9.4k). In this phase, excluded loss rises, sum of squared
+        weights falls, restricted loss starts to fall, and test and train loss stay flat.
+      section: §5.2
+    - exact: 'The core issue is that the model has two possible solutions: memorization (with low train
+        loss and high test loss) and a generalization (with low train loss and low test loss).'
+      section: Appendix E.1
+    - exact: Fourier Multiplication Algorithm is the generalization solution.
+      section: Appendix E.1
+  i6-double-dissociation:
+    statement: '[I6 Double dissociation, status U] Unattempted; no second mechanism shown intact under
+      ablation'
+    verified: true
+    quotes:
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: 'both the attention heads and the skip connection around them are crucial to the functioning
+        of the model: zero ablating attention heads increases loss to 24.3, while zero ablating the skip
+        connection around the attention heads increases loss to 19.1, both significantly worse than chance'
+      section: Appendix A.1
+  i7-confound-control:
+    statement: '[I7 Confound control, status PC] Data fraction, modulus, depth, seed and weight decay
+      all varied'
+    verified: true
+    quotes:
+    - exact: As the figure shows, no grokking occurs, and excluded loss does not increase, suggesting
+        that the model does not form the circuit for generalizing algorithm at all.
+      section: Appendix D.1
+    - exact: In each case, we ran three random seeds. We show the results in Figure 28. While grokking
+        did not occur with ℓ1 regularization, we found that it does occur for all three seeds using dropout
+        with p = 0.2 or p = 0.5.
+      section: Appendix D.1
+    - exact: In this section, we provide further evidence that small transformers grok on the modular
+        addition task, by varying the size of the network, the amount of training data, and the size of
+        the prime P .
+      section: Appendix C.2.2
+  i9-epistatic-interaction:
+    statement: '[I9 Epistatic interaction, status PC] Non-additivity demonstrated: single frequencies
+      have sparse effects'
+    verified: true
+    quotes:
+    - exact: The unembedding matrix also adds together cos (wk (a + b − c)) for the various ks. This causes
+        the cosine waves to constructively interfere at c∗ = a + b mod p (giving c∗ a large logit), and
+        destructively interfere everywhere else (thus giving small logits to other cs).
+      section: §3.1
+    - exact: 'However, other values of x cause this function to be close to 1: f14 (8) = f14 (105) = 0.998,
+        f14 (16) = f14 (89) = 0.994, etc.'
+      section: Appendix B
+    - exact: it turns out that f35 (8) = f35 (105) = −0.990. This means that by adding together f14 and
+        f35 , we end up with a function that is not close to 1 at x = 8 mod 113.
+      section: Appendix B
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+  i10-rescue-reversibility:
+    statement: '[I10 Rescue reversibility, status U] Unattempted; every intervention substitutes rather
+      than restores'
+    verified: true
+    quotes:
+    - exact: We verify that these approximations are faithful to the model’s functionality, by replacing
+        each component with its approximation. This generally does not hurt the performance of the model
+        and in some cases improves it.
+      section: §4.4
+    - exact: We replace various components of the model by the components of the Fourier multiplication
+        algorithm and find that doing so consistently does not harm and sometimes even improves model
+        performance.
+      section: §4
+    - exact: If we instead projected the MLP activations onto the nullspace of these 10 directions, loss
+        increases to 5.27—worse than uniform.
+      section: §4.4
+  i11-onset-coupling:
+    statement: '[I11 Onset coupling, status C] Restricted and excluded loss move before test accuracy
+      does'
+    verified: true
+    quotes:
+    - exact: 'We translate the ablations in Section 4.4 into two progress measures: restricted and excluded
+        loss.'
+      section: §5.1
+    - exact: Circuit formation (Epochs 1.4k–9.4k). In this phase, excluded loss rises, sum of squared
+        weights falls, restricted loss starts to fall, and test and train loss stay flat.
+      section: §5.2
+    - exact: Notably, the circuit is formed well before grokking occurs.
+      section: §5.2
+    - exact: Surprisingly, the sudden transition to perfect test accuracy in grokking occurs during cleanup,
+        after the generalizing mechanism is learned.
+      section: §1
+    - exact: As with the mainline model, restricted loss consistently declines prior to train loss.
+      section: Figure 18
+  i12-offset-coupling:
+    statement: '[I12 Offset coupling, status U] Unattempted; no test that behavior disappears as the circuit
+      does'
+    verified: true
+    quotes:
+    - exact: As the figure shows, no grokking occurs, and excluded loss does not increase, suggesting
+        that the model does not form the circuit for generalizing algorithm at all.
+      section: Appendix D.1
+    - exact: Training, test, and full excluded loss for a 1-layer version of the original architecture
+        without weight decay. One random seed chosen for readability. Note that not having weight decay
+        prevents grokking.
+      section: Figure 26
+  e1-intervention-reach:
+    statement: '[E1 Intervention reach, status C] Five intervention primitives at four loci, all agreeing'
+    verified: true
+    quotes:
+    - exact: We then ablate all 113 · 113 − 40 of the Fourier components besides key frequencies; this
+        ablation actually improves performance (loss drops 70% to 7.24 · 10−8 ).
+      section: §4.4
+    - exact: If we project the MLP activations to these 10 directions, loss decreases 50% to 1.19 · 10−7
+        .
+      section: §4.4
+    - exact: This increases loss by only 3% in relative terms (from 2.41 · 10−7 to 2.48 · 10−7 ) and has
+        no effect on accuracy.
+      section: §4.4
+    - exact: We validate that this is all that is going on, by replacing the sigmoid with the best linear
+        fit. This improves performance, decreasing test loss from 2.41 · 10−7 to 2.12 · 10−7 .
+      section: Appendix C.1.3
+    - exact: Concretely, if we set it to zero or to its average (zero or mean ablation) then model accuracy
+        is unchanged, and loss goes from 2.4 · 10−7 to 9.12 · 10−7 and 7.25 · 10−7 respectively.
+      section: Appendix A.1
+  e2-prompt-generalization:
+    statement: '[E2 Prompt generalization, status C] The input space is enumerable and enumerated: all
+      $113^2$ pairs'
+    verified: true
+    quotes:
+    - exact: Our mainline dataset consists of 30% of the entire set of possible inputs (that is, 30% of
+        the 113 ·
+      section: §3
+    - exact: As there are only 113 · 113 possible pairs, we evaluate test loss and accuracy on all pairs
+        of inputs not used for training.
+      section: §3
+    - exact: To do so, we take a 2D DFT on the 113 · 113 · 113 logit matrix over all 113 · 113 pairs of
+        inputs to get the logits in the Fourier basis, then set various frequencies in this basis to 0.
+      section: §4.4
+  e3-cross-task-generalization:
+    statement: '[E3 Cross-task generalization, status PC] Three further tasks run, but only for whether
+      grokking occurs'
+    verified: true
+    quotes:
+    - exact: We now provide addition analysis of grokking phenomena on 3 additional algorithmic tasks
+        and confirm that limited data is an important part of grokking
+      section: Appendix D.3
+    - exact: Taken together, these results echo the importance of limited data for grokking.
+      section: Appendix D.3
+    - exact: We use a 1-layer full transformer for 5-digit addition, a 2-layer attention only transformer
+        for predicting repeated subsequences, and a 1-layer attention only transformer for the skip trigram
+        task.
+      section: Appendix D.3
+  e4-cross-model-generalization:
+    statement: '[E4 Cross-model generalization, status PC] One- and two-layer transformers only at origin'
+    verified: true
+    quotes:
+    - exact: In our mainline experiment, we take P = 113 and use a one-layer ReLU transformer, token embeddings
+        with d = 128, learned positional embeddings, 4 attention heads of dimension d/4 = 32, and n =
+        512 hidden units in the MLP. In other experiments, we vary the depth and dimension of the model.
+      section: §3
+    - exact: As shown in Figure 22, 2-layer transformers also exhibit some degree of grokking.
+      section: Appendix C.2.2
+    - exact: For P = 109, we saw exactly the same behavior as with the mainline model.
+      section: Appendix C.2.2
+  e5-graded-response:
+    statement: '[E5 Graded response, status U] Unattempted; ablation is binary per component, with no
+      interpolation'
+    verified: true
+    quotes:
+    - exact: The loss of the transformer (lower=better) when ablating each frequency k ∈ {1, 2, ..., 56}
+        and everything except for the five key frequencies (restricted loss). We include the original
+        unablated loss for reference. Ablating key frequencies causes a performance drop, while the other
+        ablations do not harm performance.
+      section: Figure 6
+    - exact: then set various frequencies in this basis to 0
+      section: §4.4
+    - exact: To measure this, we perform a 2D DFT on the logits to write them as a linear combination
+        of waves in a and b, and set all terms besides the constant term and the 20 terms corresponding
+        to cos(wk (a + b)) and sin(wk (a + b)) for the five key frequencies to 0. We then measure the
+        loss of the ablated network.
+      section: §5.1
+  e6-novel-prediction:
+    statement: '[E6 Novel prediction, status C] The progress measures are derived, then shown to predict
+      the curve'
+    verified: true
+    quotes:
+    - exact: 'We translate the ablations in Section 4.4 into two progress measures: restricted and excluded
+        loss.'
+      section: §5.1
+    - exact: Both metrics improve continuously prior to when grokking occurs.
+      section: §1
+    - exact: The restricted loss begins declining before test loss declines, but has an inflection point
+        when grokking begins to occur.
+      section: Figure 7
+    - exact: (4) ablating key frequencies used by the model reduces performance to chance, while ablating
+        the other 95% of frequencies slightly improves performance.
+      section: §1
+    - exact: We then ablate all 113 · 113 − 40 of the Fourier components besides key frequencies; this
+        ablation actually improves performance (loss drops 70% to 7.24 · 10−8 ).
+      section: §4.4
+  v1-level-declaration:
+    statement: '[V1 Level declaration, status PC] Level implied by usage rather than declared'
+    verified: true
+    quotes:
+    - exact: We fully reverse engineer the algorithm learned by these networks, which uses discrete Fourier
+        transforms and trigonometric identities to convert addition to rotation about a circle.
+      section: Abstract
+    - exact: We confirm the algorithm by analyzing the activations and weights
+      section: Abstract
+    - exact: A mechanistic explanation aims to reverse engineer the mechanisms of the network, generally
+        by identifying the circuits (Cammarata et al., 2020; Elhage et al., 2021) within a model that
+        implement a behavior.
+      section: §1
+    - exact: 'We claim that the learned networks use the following algorithm (Figure 1):'
+      section: §3.1
+  v2-level-evidence-match:
+    statement: '[V2 Level-evidence match, status PC] Algorithm-level claim backed at the weight level
+      for most of the model'
+    verified: true
+    quotes:
+    - exact: We fully reverse engineer the algorithm learned by these networks, which uses discrete Fourier
+        transforms and trigonometric identities to convert addition to rotation about a circle.
+      section: Abstract
+    - exact: This approximation explains 95% of the variance in the original logits.
+      section: §4.2
+    - exact: As shown in Figure 5, out of 512 total neurons, 433 (84.6%) have over 85% of their variance
+        explained with a single frequency.
+      section: §4.3
+    - exact: We speculate that this is because of weight decay encouraging the embeddings WE to be small,
+        causing the network to allocate two of its attention heads to effectively increasing the size
+        of WE .
+      section: Appendix C.1.3
+  v3-alternative-level:
+    statement: '[V3 Alternative level, status PC] Memorization addressed and refuted; the basis alternative
+      is not'
+    verified: true
+    quotes:
+    - exact: The idea is that the memorizing solution should be spread out in the Fourier domain, so that
+        ablating a few directions will leave it mostly unaffected, while the generalizing solution will
+        be hurt significantly.
+      section: §5.1
+    - exact: We check empirically that the terms uTk MLP(a, b) and vkT MLP(a, b) are approximate multiples
+        of cos (wk (a + b)) and sin (wk (a + b)) (> 90% of variance explained). Thus the network computes
+        trigonometric functions in the MLP and reads them off as claimed.
+      section: §4.2
+    - exact: This approximation explains 95% of the variance in the original logits.
+      section: §4.2
+  v4-unlicensed-labeling:
+    statement: '[V4 Unlicensed labeling, status C] Four labels restate measurements; the algorithm name
+      outruns what separates it'
+    verified: true
+    quotes:
+    - exact: The embedding matrix WE is sparse in the Fourier basis–it only has significant nonnegligible
+        norm at 6 frequencies. Of these frequencies, only 5 appear to be used significantly in later parts
+        of the model (corresponding to k ∈ {14, 35, 41, 42, 52}). We dub these the key frequencies of
+        the model.
+      section: §4.1
+    - exact: As reported in Figure 6, ablating any key frequency causes a significant increase in loss.
+        This confirms that the five frequencies identified in previous sections are indeed necessary components
+        of the transformer. In contrast, ablating other frequencies does not hurt the model at all.
+      section: §4.4
+    - exact: We refer to this algorithm as Fourier multiplication, and will justify our claim in detail
+        in Section 4.
+      section: §3.1
+    - exact: We therefore also study the P × n neuron-logit map WL = WU Wout
+      section: §3
+    - exact: To measure this, we perform a 2D DFT on the logits to write them as a linear combination
+        of waves in a and b, and set all terms besides the constant term and the 20 terms corresponding
+        to cos(wk (a + b)) and sin(wk (a + b)) for the five key frequencies to 0. We then measure the
+        loss of the ablated network.
+      section: §5.1
+    - exact: Instead of keeping the important frequencies wk , we next remove only those key frequencies
+        from the logits but keep the rest.
+      section: §5.1
+    - exact: We find that training splits into three phases, which we call the memorization, circuit formation,
+        and cleanup phases.
+      section: §5.2
+    - exact: We speculate that this is because of weight decay encouraging the embeddings WE to be small,
+        causing the network to allocate two of its attention heads to effectively increasing the size
+        of WE .
+      section: Appendix C.1.3
+  v5-scope-declaration:
+    statement: '[V5 Scope declaration, status C] \S6 states the limits before any generalization is implied'
+    verified: true
+    quotes:
+    - exact: In this work, we studied the behavior of small transformers on a simple algorithmic task,
+        solved with a single circuit.
+      section: §6
+    - exact: The analysis reported in this work required significant amounts of manual effort, and our
+        progress metrics are specific to small networks on one particular algorithmic task.
+      section: §6
+    - exact: we lack a general notion of criticality that would allow us to predict when the phase transition
+        will happen ex ante.
+      section: §6

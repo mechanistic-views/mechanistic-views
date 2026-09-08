@@ -35,5 +35,5 @@ The capability-propensity distinction maps onto the [Instrumental](/mechanistic-
 - **Apollo Research (2024)** #31, #32: Complete model understanding, "dark matter" ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))
 - **[Steinhardt (2026)](https://www.lesswrong.com/posts/J5KkwYnnaeNX7hL2s/the-case-for-evaluating-model-behaviors)**: The case for evaluating model behaviors
 - **Sharkey "Sparsify" (2024)**: Hierarchical abstraction, decompilation fidelity ([Sparsify agenda](https://www.alignmentforum.org/posts/64MizJXzyvrYpeKqm))
-- **Sharkey et al. (2026)** §3.5: Microscope AI — extracting latent knowledge ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §3.5: Microscope AI — extracting latent knowledge ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Nanda (2022)** §9: Learned features — functional types, universality, completeness ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))

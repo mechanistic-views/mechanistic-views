@@ -18,7 +18,7 @@ A mechanism is a process that forms over training, individuated in part by its f
 
 **Induction head emergence.** Induction heads appear suddenly at a specific training step, not gradually. This suggests a phase transition rather than gradual construction. The formation has a prerequisite: previous-token heads must form first. These developmental dependencies — mechanism B cannot form until mechanism A exists — are invisible from any static view (Olsson et al., 2022).
 
-**Why the same final circuit can be different mechanisms.** Two models might converge to the same circuit (same subspace, same gauge orbit) by different training paths. The process view says these are different mechanisms because they formed differently. This is a genuine empirical disagreement with the static views, not a terminological one.
+**Why the same final circuit can be different mechanisms.** Two models might converge to the same circuit (same subspace, same gauge orbit) by different training paths. The process view counts these as different mechanisms because the formation process, not the final circuit, is the object it individuates. The disagreement with the static views is over which object is the mechanism, and no further experiment settles it — a declaration does.
 
 ## What this view says
 
@@ -26,7 +26,7 @@ The mechanism at time $t$ is the state of the process at $t$, not the static obj
 
 Two mechanisms are the same if they share the same formation process: same formation event type, same developmental prerequisites, same formation criterion timing. Cross-seed identity requires that the formation event occurs at the same relative training step, in the same order relative to other events, with the same prerequisites.
 
-The process view is naturally paired with a static view (usually [subspace](/mechanistic-views/views/subspace/) or [structural](/mechanistic-views/views/structural/)) — the static view says what the mechanism is at any given checkpoint, and the process view says how it changes across checkpoints. It is not a replacement for static views but an additional dimension of description.
+The process view pairs readily with a static view (usually [subspace](/mechanistic-views/views/subspace/) or [structural](/mechanistic-views/views/structural/)) — the static view says what the mechanism is at any given checkpoint, and the process view says how it came to be. It is a view in its own right, with its own ontology and its own identity criterion, and it constitutes a family of its own in the paper's partition by failure mode.
 
 ## When it works and when it doesn't
 
