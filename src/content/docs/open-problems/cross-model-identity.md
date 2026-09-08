@@ -39,7 +39,7 @@ Cross-model identity is impossible under the Object view (components don't trans
 ## Sources
 
 - **Nanda (2022)** §5.32, §5.34, §9.53, §9.54: Feature universality across seeds and architectures ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
-- **Sharkey et al. (2026)** §3.6: Cross-architecture MI ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §3.6: Cross-architecture MI ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Li et al. (2015)**: Convergent learning — do different neural networks learn the same representations?
 - **Morcos et al. (2018)**: Insights on representational similarity in neural networks with canonical correlation
 - **Bansal et al. (2021)**: Revisiting model stitching to compare neural representations

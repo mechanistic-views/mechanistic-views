@@ -4,7 +4,7 @@ title: "Circuit Disagreements"
 
 # Which circuit is correct?
 
-The indirect object identification (IOI) task has been analyzed by at least four independent groups using different methods. Wang et al. (2022) found the circuit manually. Conmy et al. (2023) used ACDC (automated circuit discovery via computational graph pruning). Syed et al. (2023) used attribution patching (gradient-weighted activation differences). Hanna et al. (2023) used a related approach for the greater-than task and found circuits with very different sizes. The circuits don't agree. The field treats this as a replication problem — which method got the right answer?
+The indirect object identification (IOI) task has been analyzed by at least four independent groups using different methods. Wang et al. (2023) found the circuit manually. Conmy et al. (2023) used ACDC (automated circuit discovery via computational graph pruning). Syed et al. (2023) used attribution patching (gradient-weighted activation differences). Hanna et al. (2023) used a related approach for the greater-than task and found circuits with very different sizes. The circuits don't agree. The field treats this as a replication problem — which method got the right answer?
 
 The problem is not replication. The problem is that each method asks a different question, and the question determines the answer. Ablation-based methods (ACDC, activation patching) test which components are *necessary* — remove them and performance degrades. Attribution methods estimate which components *contribute most* — their gradient-weighted effect on the output. Manual analysis identifies which components fill *functional roles* — name movers, backup name movers, induction heads. Necessity, contribution, and functional role are three different things, and they give three legitimately different circuit boundaries.
 
@@ -35,9 +35,9 @@ Different methods find different circuits because they ask different questions u
 
 ## Sources
 
-- **Sharkey et al. (2026)** §2.1.4: Validation of descriptions ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §2.1.4: Validation of descriptions ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Nanda (2022)** §2: Circuits in the wild ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
-- **Wang et al. (2022)**: Interpretability in the wild: a circuit for indirect object identification in GPT-2 small
+- **Wang et al. (2023)**: Interpretability in the wild: a circuit for indirect object identification in GPT-2 Small ([ICLR 2023](https://arxiv.org/abs/2211.00593))
 - **Conmy et al. (2023)**: Towards automated circuit discovery for mechanistic interpretability (ACDC)
 - **Syed et al. (2023)**: Attribution patching outperforms automated circuit discovery (EAP)
 - **Hanna et al. (2023)**: How does GPT-2 compute greater-than?

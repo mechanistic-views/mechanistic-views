@@ -19,11 +19,11 @@ Each formalism is listed with its primary view association, but most can serve m
 - [Model Theory](model-theory/) — primarily the instrumental view; predictive equivalence
 - [Measurement Algebra](measurement-algebra/) — primarily the perspectival view; measurement operations as objects
 - [Directed Graph](directed-graph/) — primarily the object view; circuit graphs
-- [Role Graph](role-graph/) — primarily the role view; graph homomorphism, causal abstraction
+- [Functional Decomposition](role-graph/) — primarily the role view; roles and their dependencies, loose by necessity since a role is multiply realizable
 - [Grassmannian](grassmannian/) — primarily the subspace view; also used by the structural and stratified views for linear strata
 - [Fiber Bundle Quotient](fiber-bundle-quotient/) — primarily the structural view; gauge orbits, holonomy
 - [Dynamical System](dynamical-system/) — primarily the process view; training dynamics
-- [Whitney Stratification](stratification/) — primarily the stratified view; also describes internal Grassmannian structure
+- [Resolution-Indexed Strata](stratification/) — primarily the stratified view; Whitney stratification is the mathematical antecedent, and no operational claim depends on its regularity conditions
 
 ## Method-level formalisms
 
@@ -48,7 +48,7 @@ The Grassmannian, fiber bundle quotient, and Whitney stratification pages have a
 
 - [Grassmannian Geometry](deep-dives/grassmannian/) — principal angles, transport maps, Fréchet statistics
 - [Gauge Quotients and Holonomy](deep-dives/gauge-holonomy/) — fiber bundles, connections, holonomy computation
-- [Sheaf Cohomology](deep-dives/sheaves/) — cosheaves on directed graphs, $H^0$ and $H^1$, localizability
+- [Sheaf Cohomology](deep-dives/sheaves/) — cosheaves on directed graphs, $H^0$ and $H^1$, localizability. A site elaboration: sheaves are attached to no view in the paper
 - [Stratification](deep-dives/stratification/) — Whitney conditions, Thom-Mather theory, the $\mathcal{M}_\infty$ stratum
 
 These assume graduate-level mathematics. The overview pages are accessible with linear algebra alone.

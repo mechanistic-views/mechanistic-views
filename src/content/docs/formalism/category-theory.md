@@ -16,7 +16,7 @@ See [Category theory](https://en.wikipedia.org/wiki/Category_theory) on Wikipedi
 
 ## How it is used in interpretability
 
-Category theory formalizes what the role view means by "same functional role across models." Two components play the same role if there exists a functor between their computational contexts that maps one to the other. This is strictly stronger than matching input-output behavior: it requires that the entire compositional structure is preserved, not just the endpoint.
+Category theory is one candidate language for making "same functional role across models" precise, and it is not the role view's formalism: the paper's atlas assigns the role view a functional decomposition, loose by necessity because a role is multiply realizable. A functorial criterion is strictly stronger than role equivalence — it requires that the entire compositional structure is preserved, not just the endpoint — so a result meeting it exceeds what the role view asks for. Two components play the same role if there exists a functor between their computational contexts that maps one to the other. This is strictly stronger than matching input-output behavior: it requires that the entire compositional structure is preserved, not just the endpoint.
 
 Causal abstraction can be viewed categorically: an alignment between a high-level causal model and a low-level neural network is a functor that preserves interventional behavior. When the functor exists, the high-level model is a faithful abstraction of the low-level one.
 

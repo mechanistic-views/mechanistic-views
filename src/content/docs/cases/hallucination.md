@@ -4,7 +4,7 @@ title: Case Study — Hallucination
 
 # Case Study — Hallucination
 
-**The phenomenon.** Language models generate confident, fluent, factually incorrect outputs. Two mechanistically distinct failure modes: **knowledge absence** (the fact was never encoded) and **knowledge retrieval failure** (the fact is encoded but the wrong candidate wins). The distinction matters for what mechanism description is appropriate and what interventions would help.
+**The phenomenon.** Language models generate confident, fluent, factually incorrect outputs. Simhi et al. (2024) separate two mechanistically distinct failure modes: cases where the model "does not hold the correct answer in its parameters" (HK⁻) and cases where it has the knowledge and errs anyway (HK⁺). They report HK⁺ hallucinations are prevalent across models and datasets, which makes retrieval failure a mechanism to explain rather than an edge case.
 
 ## [Object view](/mechanistic-views/views/object/)
 
@@ -28,14 +28,16 @@ Evidence: [DAS](/mechanistic-views/views/subspace/#evidence) on minimal pairs wh
 
 ## [Structural view](/mechanistic-views/views/structural/)
 
-Hypothesis: facts encoded with lower effective-rank weight structure hallucinate more frequently under retrieval competition. A test: measure effective rank of the fact-encoding component in $W^{OV}$ of implicated heads, correlate with hallucination frequency on ambiguous prompts.
+Hypothesis: facts encoded with *higher* effective-rank weight structure hallucinate more frequently under retrieval competition, since low-effective-rank storage concentrates a fact into a robust attractor while high-effective-rank storage spreads it thinly enough to be overridden by a competing candidate. A test: measure effective rank of the fact-encoding component in $W^{OV}$ of implicated heads, correlate with hallucination frequency on ambiguous prompts.
 
 ## Current evidence state
+
+Tiers below are the [Mechanistic Validity](/mechanistic-views/mechval-interface/) ladder, not this framework's verdict vocabulary.
 
 - **Tier 2** for the [object](/mechanistic-views/views/object/) and [role](/mechanistic-views/views/role/) views: patching studies localize factual recall to mid-to-late layers; cross-seed consistency not reported
 - **Tier 1** for [subspace](/mechanistic-views/views/subspace/) and [structural](/mechanistic-views/views/structural/) views
 
-## What would move to Tier 3
+## What a second family would need to show
 
 - [DAS](/mechanistic-views/views/subspace/#evidence) on factual recall tasks with IIA reported and cross-prompt consistency established
 - Weight-space evidence: effective rank and composition score analysis of heads identified by patching

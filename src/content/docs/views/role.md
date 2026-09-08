@@ -4,7 +4,7 @@ title: Role View
 
 # Role View
 
-The object view identifies mechanisms with specific components: head 5.1, neuron 347, this set of edges. But what happens when the same computation appears in multiple models implemented by completely different components? The role view answers: the mechanism is not the component, it's the job. "Name mover" is the mechanism; head 5.1 is just one way it happens to be realized in one particular model.
+The object view identifies mechanisms with specific components: head 9.9, neuron 347, this set of edges. But what happens when the same computation appears in multiple models implemented by completely different components? The role view answers: the mechanism is not the component, it's the job. "Name mover" is the mechanism; head 9.9 is just one way it happens to be realized in one particular model.
 
 This is the first step beyond the object view. It lets you say "this model has a name mover" without specifying which head, and it lets you compare mechanisms across models with different architectures. Many of the field's important high-level claims are implicitly role-view claims — claims about what functional job is being done, not about which specific component does it.
 
@@ -34,7 +34,7 @@ The role view is strongest when the same behavior appears across models or train
 
 **Role inflation.** If every component is assigned its own unique role, the role view collapses to the object view and adds no explanatory power.
 
-**Multiple roles per component.** A component may realize different roles under different prompt conditions, making role assignment context-dependent. Head 4.4 might be a name-mover on IOI prompts and something entirely different on arithmetic prompts.
+**Multiple roles per component.** A component may realize different roles under different prompt conditions, making role assignment context-dependent. Head 9.9 might be a name-mover on IOI prompts and something entirely different on arithmetic prompts.
 
 **Roles are still tested via components.** Evidence for role claims comes from component-level interventions in a specific basis. The role view inherits many of the object view's measurement limitations — it adds a layer of functional abstraction on top.
 
@@ -47,17 +47,17 @@ The role view is strongest when the same behavior appears across models or train
 - **Cross-seed comparison**: different training seeds implement the same behavior via different components, but the same role partition covers all of them
 - **Component transplant**: replacing component $h_1$ from $M_1$ with $h_2$ from $M_2$ preserves behavior iff both realize the same role
 - **[Linear probing](/mechanistic-views/glossary/#linear-probing)**: tests whether a concept is linearly accessible, though probing establishes presence not causal use (see [linear classifier formalism](/mechanistic-views/formalism/linear-classifier/))
-- **Role-partitioned circuit search**: restricting edge search to role-respecting edges achieves comparable precision and recall to unrestricted search, where precision and recall are measured against a *behavioral* ground truth (necessity and sufficiency on held-out prompts)
+- **Weight-space role signature**: for a name-mover role claim, $W_{OV}$ should encode a copying operation, the head should perform that function on novel prompts, and a head in a different model with the same $W_{OV}$ signature should earn the same label
 
 ### What it lets you prove
 
 - **Multiple realization**: the same role can be implemented by different components
 - **Role transfer**: if component $h_1$ in $M_1$ realizes role $R$, transplanting $h_1$ into $M_2$ (replacing $M_2$'s role-$R$ component) preserves the role-$R$ behavior
-- **Role-reduction**: circuit search constrained by role partition is not less accurate than unconstrained search (under a well-specified role partition)
+- **Role independence**: the role specification is stated without reference to the procedure that found the component, and predicts behavior on held-out constructions
 
 ### Formalism
 
-[Role graph](/mechanistic-views/formalism/role-graph/), graph homomorphism, [causal abstraction](/mechanistic-views/glossary/#causal-abstraction). The role view operates at Marr's level 2 — the algorithm and representation level. [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) is the primary method for testing role claims via interchange interventions.
+[Role graph](/mechanistic-views/formalism/role-graph/), graph homomorphism, [causal abstraction](/mechanistic-views/glossary/#causal-abstraction). Marr's levels organize explanatory targets and cut across the views — two researchers at the same Marr level can hold different views — so the two frameworks are complementary rather than nested. [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) is the primary method for testing role claims via interchange interventions.
 
 ### Relationship to Mechanistic Validity
 

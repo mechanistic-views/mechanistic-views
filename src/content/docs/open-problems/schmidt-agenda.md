@@ -55,7 +55,7 @@ In our language: **when does [Object](/mechanistic-views/views/object/)/[Subspac
 
 ## The meta-observation
 
-The Schmidt agenda repeatedly asks for "evidence standards," "construct validity," "predictive validity," and "generalization guarantees." These are exactly the concepts that the [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) framework formalizes into 27 criteria across 5 lenses. The agenda asks *what* evidence is needed; mechval provides *how* to measure whether you have it; and the views framework tells you *which methods can produce it*.
+The Schmidt agenda repeatedly asks for "evidence standards," "construct validity," "predictive validity," and "generalization guarantees." These are exactly the concepts that the [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) framework formalizes into 36 criteria across 5 lenses. The agenda asks *what* evidence is needed; mechval provides *how* to measure whether you have it; and the views framework tells you *which methods can produce it*.
 
 The agenda's core tension — "surface-level compliance without robust generalization" — is the Instrumental view's ceiling stated in safety language. A model that passes behavioral evaluations (Instrumental evidence) but fails under distribution shift has satisfied the Instrumental view's criteria and nothing more. The agenda is asking for evidence that goes beyond the Instrumental view without having a name for the Instrumental view.
 

@@ -29,10 +29,14 @@ The [Schmidt Sciences 2026 "Trustworthy AI" research agenda](https://www.schmidt
 
 The pattern: Instrumental evidence covers sufficiency (the lever works) but leaves necessity, alternative exclusion, and all external validity criteria untested. A safety case built on Instrumental evidence has at least five untested validity criteria. Moving to Object evidence fills necessity and makes external criteria testable. Moving to Subspace evidence covers alternative exclusion and makes external criteria measurable.
 
+## Resolution status: **Scoped**
+
+Prominent safety findings — refusal direction ablation, representation engineering for truthfulness — are Instrumental evidence: they establish that a direction is a sufficient behavioral lever, not that it is the mechanism. Safety monitoring requires at minimum Object evidence (necessity plus sufficiency) and ideally Subspace evidence (stability across distributions). The gap between instrumental evidence and the safety conclusions drawn from it is the central evidence deficit in the problem survey.
+
 ## Sources
 
 - **[Schmidt Sciences (2026)](https://www.schmidtsciences.org/trustworthy-ai-research-agenda/)**: "Trustworthy AI" agenda §2.1–2.2 — evaluation validity, mechanistic interventions, deception detection
-- **Sharkey et al. (2026)** §3.2: Safety monitoring and auditing ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §3.2: Safety monitoring and auditing ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Apollo Research (2024)**: Deception evaluation framework ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))
 - **Arditi et al. (2024)**: Refusal in language models is mediated by a single direction
 - **Zou et al. (2023)**: Representation engineering: a top-down approach to AI transparency

@@ -60,11 +60,13 @@ where $\theta_1, \ldots, \theta_k$ are the principal angles between $S_1$ and $S
 
 ### Evidence
 
-Three independently non-injective sources:
+Two native sources, each individually non-injective:
 
 - **Activation-space interventional**: [DAS/IIA](/mechanistic-views/glossary/#causal-abstraction) (with IIA as surgical-intervention test)
 - **Weight-space structural**: [SVD of $W^{OV} = W^O W^V$](/mechanistic-views/glossary/#qk-ov-circuits), invariant subspace decomposition
-- **Dynamics-space**: AGOP convergence toward the eventual DAS subspace during training (Radhakrishnan et al., 2024)
+- **Cross-distribution stability**: the geodesic distance on $\mathrm{Gr}(k,d)$ between the subspace recovered on the discovery distribution and the one recovered on a held-out distribution
+
+Training-time subspace estimation (AGOP) bears on when the subspace formed, which is a [process-view](/mechanistic-views/views/process/) question rather than a third subspace-evidence domain.
 
 Each domain is individually non-injective on mechanism space, but the joint map is conjectured to be injective under a general position condition.
 
@@ -92,7 +94,7 @@ As dictionary size $n$ increases, some channels split into more specific ones (f
 
 - **Convergence**: weight-space and activation-space subspaces converge on $\mathrm{Gr}(k, d)$
 - **Non-vacuity** (theoretical): restricting to transport-respecting alignments (G-SCM) is expected to rule out degenerate solutions (Sutter et al., 2025), though this has not yet been empirically demonstrated
-- **Flow bounds**: $\|W^{OV}_u \cdot W^{KQ}_v\|_F$ is a distribution-free upper bound on causal information flow
+- **Weight–activation convergence**: an SVD of $W^{OV}$ and a DAS run on the same layer land at the same point of $\mathrm{Gr}(k,d)$, which is what confirms a subspace by its own identity criterion rather than by intervention success
 - **Triangulation necessity**: each evidence domain alone is non-injective; convergence across domains is required for unambiguous identification
 
 ### Formalism

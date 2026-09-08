@@ -26,15 +26,16 @@ Olsson et al. (2022) showed induction heads form suddenly at a specific training
 
 The process-view claim: this corresponds to a formation event — the mechanism appears suddenly rather than accumulating smoothly, suggesting a phase transition in the weight-space trajectory rather than gradual construction. The pre-transition state is not necessarily distributed (it may simply be the absence of the mechanism); the stratum-change interpretation requires evidence that the pre-transition model has a different positive mechanism rather than the absence of one. AGOP trajectories are the natural evidence source for distinguishing these.
 
-**Formation criterion.** The transition is detected behaviorally (IIA threshold). AGOP convergence may precede this; characterizing the lead time is open.
+**Formation criterion.** Olsson et al. detect the transition as a bump in the training loss, with prefix-matching scores rising abruptly in the same window. Whether a weight-space criterion converges earlier than that behavioral one is open.
 
 ## Current evidence state
 
-- **Tier 3** under the [object](/mechanistic-views/views/object/) and [role](/mechanistic-views/views/role/) views: necessity, sufficiency, and cross-model role transfer well-established
-- **Tier 2** under the [process view](/mechanistic-views/views/process/): phase transition documented; full dynamical account preliminary
-- **Tier 1** under the [subspace](/mechanistic-views/views/subspace/) and [structural](/mechanistic-views/views/structural/) views
+Two readings of the same evidence base separate here.
 
-## What would move to higher tiers
+- **Narrow reading** (the heads copy a token that followed the same context earlier): **view-invariant**. Support crosses three families — ablation attributing in-context learning to those heads (identity), the copying and prefix-matching terms read off the OV and QK circuits (mathematical), and the coincidence of head formation with the in-context learning jump (process).
+- **Broad reading** (the heads are the mechanistic source of general in-context learning): **contested**. The same three families support it, so family breadth does not separate the two. What separates them is the later literature: the causal ablation was never run above 42M parameters; at 70–72B the heads carrying abstract in-context reasoning form a disjoint set from induction heads (Webb et al., 2025); suppressing induction-head formation leaves abstract in-context learning intact on 13 of 21 tasks (Sahin et al., 2025); and once function-vector heads are preserved, ablating induction heads above 1B is comparable to ablating random heads (Yin et al., 2025).
+
+## What would cross a second family boundary
 
 **[Subspace view](/mechanistic-views/views/subspace/), Tier 1 → 2** (single-domain causal evidence):
 - [DAS](/mechanistic-views/views/subspace/#evidence) recovery of the induction variable subspace with IIA reported

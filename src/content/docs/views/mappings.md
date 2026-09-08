@@ -18,7 +18,7 @@ The nine views group into five families, where membership is fixed by *primary f
 
 ## Ontology determines identity determines formalism
 
-Each view's ontological commitment implies a specific identity criterion, which in turn implies a natural formalism. The chain from ontology to identity is tight; the chain from identity to formalism is many-to-many (a single view can use multiple formalisms, and a single formalism can serve multiple views). But the determination direction is fixed: choosing what a mechanism *is* determines when two are *the same* determines what *math* is natural.
+Each view's ontological commitment implies a specific identity criterion, which in turn implies a specific ambient formalism. The chain is mostly one-to-one: if mechanisms are causal subspaces, identity is geodesic proximity on $\mathrm{Gr}(k,d)$ and the formalism must include Grassmannian geometry; if they are gauge-invariant structures, identity is orbit membership and the formalism must include fiber bundles. The one loose case is loose for a reason: a role is a universal that different components realize, so a formalism naming a particular realizer would contradict the ontology it expresses. Evidence and target are constrained but not determined, so the chain has two free parameters once the ontology is fixed.
 
 ![Three-column chain: Ontology → Identity → Formalism](/mechanistic-views/figures/ontology-identity-formalism-v2.svg)
 

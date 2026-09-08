@@ -6,7 +6,7 @@ title: Mechanistic Validity Interface
 
 Mechanistic Views and [Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/) are companion frameworks with different scopes.
 
-**[Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/)** asks: is a mechanistic claim warranted by the evidence provided? It supplies 27 operational criteria across 5 validity lenses and a 5-tier evidence taxonomy.
+**[Mechanistic Validity](https://mechanistic-validity.github.io/mechanistic-validity/)** asks: is a mechanistic claim warranted by the evidence provided? It supplies 36 operational criteria across 5 validity lenses — 6 construct (C1–C6), 7 measurement (M1–M7), 12 internal (I1–I12), 6 external (E1–E6), 5 interpretive (V1–V5) — and a five-tier evidence ladder.
 
 **Mechanistic Views** asks: what background view makes the claim meaningful in the first place?
 
@@ -34,15 +34,17 @@ Mechanistic Validity uses five evidence tiers, assigned relative to a stated vie
 
 | Tier | Label | Description |
 |---|---|---|
-| 1 | Existence claim | Behavioral observation only; no mechanistic evidence |
-| 2 | Preliminary | Single-domain mechanistic evidence; failure modes not ruled out |
-| 3 | Established | Two-domain convergent evidence; cross-seed or cross-prompt consistency shown |
-| 4 | Well-characterized | Three-domain triangulation; cross-architecture or cross-task generalization established |
-| 5 | Canonical | Multiple independent replications; mechanism used as reference for further work |
+| 1 | Proposed | Behavioral observation or a stated hypothesis; no mechanistic evidence |
+| 2 | Causally Suggestive | Single-domain interventional evidence; characteristic failure modes not ruled out |
+| 3 | Mechanistically Supported | Convergent evidence within a domain; cross-seed or cross-prompt consistency shown |
+| 4 | Triangulated | Convergence across structurally different evidence domains; cross-architecture or cross-task generalization established |
+| 5 | Validated | Independent replication; the mechanism serves as a reference for further work |
+
+Three diagnostic labels replace the tier rather than ranking within it: **Underdetermined** (the evidence cannot discriminate the claim from a rival), **Insufficient** (the evidence type cannot reach the claim), and **Disconfirmed** (a control or replication contradicts it).
 
 Tier assignments are view-relative: the same evidence can warrant Tier 3 under the object view and only Tier 2 under the subspace view, because the subspace view requires cross-domain triangulation where the object view does not.
 
-## Minimal triangulation for Tier 3
+## Minimal triangulation for Tier 3 (Mechanistically Supported)
 
 Each view requires convergent evidence from at least two independent domains. Two of any three domains alone leaves an identifiability gap.
 
@@ -85,5 +87,4 @@ The Mechanistic Validity validity chain can in principle be realized as Grassman
 When using structural-view identity criteria in a Mechanistic Validity audit:
 - State whether the model is at a generic point (free gauge action)
 - Specify the connection used for holonomy estimates
-- Specify the base sections used for cosheaf construction
 These are not formalities; different choices give different verdicts.

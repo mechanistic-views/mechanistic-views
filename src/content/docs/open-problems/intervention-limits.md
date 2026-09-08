@@ -27,10 +27,14 @@ The [Structural view](/mechanistic-views/views/structural/) partially resolves t
 | [I4 Confound control](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/internal/confound-control/) | **Violated** — side effects are uncontrolled confounds | Every ablation confounds "this component contributes to the target task" with "this component is needed for network stability" |
 | [E3 Selectivity](https://mechanistic-validity.github.io/mechanistic-validity/framework/criteria/external/selectivity) | **Untested** — ablation studies rarely measure effects on non-target tasks | Without specificity testing, you can't distinguish "this head does IOI" from "this head does everything" |
 
+## Resolution status: **Scoped**
+
+Ablation-based methods face three Object-view ceilings: reconfiguration, where the remaining network compensates for the ablated component; interaction effects, where single-component ablation misses synergies; and side effects, where ablating a multi-functional component conflates necessity with general stability. Moving to the Subspace view (orthogonal interventions) or the Structural view (gauge-invariant properties) partially resolves each. Further ablations cannot raise the ceiling.
+
 ## Sources
 
-- **Sharkey et al. (2026)** §2.1.4: Ablation reconfiguration, multi-component interactions ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
-- **Sharkey et al. (2026)** §3.2: Intervention side effects
+- **Sharkey et al. (2025)** §2.1.4: Ablation reconfiguration, multi-component interactions ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §3.2: Intervention side effects
 - **McGrath et al. (2023)**: The hydra effect in ablation studies
 - **Chan et al. (2022)**: Causal scrubbing (proposed as a stricter alternative to ablation)
 - **ICML 2026 (Orgad, Barez et al.)**: Comparative advantage of MI over non-MI methods ([arXiv:2605.11161](https://arxiv.org/abs/2605.11161))

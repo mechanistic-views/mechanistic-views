@@ -16,7 +16,7 @@ This framing encounters a difficulty it lacks the internal resources to resolve.
 
 The [Subspace view](/mechanistic-views/views/subspace/) reframes features as subspaces rather than individual directions. Superposition is geometric: subspaces can overlap, and in high-dimensional spaces, approximate orthogonality is abundant enough that substantial overlap is expected. The question shifts from "how do we disentangle features?" to "how much do representational subspaces interfere, and does that interference degrade downstream computation?"
 
-This reframing makes the SAE width problem dissolve into a measurable quantity. Different SAE widths correspond to different granularities of subspace decomposition, and the relationship between them can be characterized by Grassmannian distances between the recovered subspaces across widths and random seeds. If subspaces converge, they identify robust geometric structure; if they fragment, the decomposition at that granularity is an artifact.
+This reframing turns the SAE width problem into a measurable quantity. Different SAE widths correspond to different granularities of subspace decomposition, and the relationship between them can be characterized by Grassmannian distances between the recovered subspaces across widths and random seeds. If subspaces converge, they identify robust geometric structure; if they fragment, the decomposition at that granularity is an artifact.
 
 ## Structural view
 

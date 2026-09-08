@@ -85,9 +85,9 @@ These are different questions. The object view has modest validity coverage (6/2
 
 **Evidence against:**
 - Dark matter: circuits rarely account for 100% of model behavior. The gap could be measurement error or genuinely distributed computation
-- Coordinate dependence: "head 9.1 is the name mover" is basis-dependent. Rotate the residual stream and the same computation lives in different components
+- Coordinate dependence: "head 9.9 is the name mover" is basis-dependent. Rotate the residual stream and the same computation lives in different components
 - Backup circuits: knock out the "name movers" and other heads take over the role, suggesting the role matters more than the components
-- Cross-model identity is undefined — "head 9.1" in GPT-2 has no counterpart in Llama
+- Cross-model identity is undefined — "head 9.9" in GPT-2 has no counterpart in Llama
 
 **Assessment:** Well-supported for single-model circuit discovery. Breaks down for cross-model claims, distributed mechanisms, and identity questions. The view's limitations are well-documented but do not invalidate its core use case.
 
@@ -122,7 +122,7 @@ These are different questions. The object view has modest validity coverage (6/2
 
 **Evidence against:**
 - The Sutter vacuity problem: with unrestricted nonlinear alignment maps, any model can achieve 100% IIA on any task. The subspace view's restriction to linear maps avoids this but is an assumption, not a theorem
-- DAS finds subspaces in random models too — the method's ability to find *something* does not establish that what it finds is real
+- Unconstrained nonlinear alignment reaches 100% IIA on randomly initialized models, so IIA alone certifies nothing about the model; the subspace view's claims stand only under a restricted alignment class
 - Linearity assumption: some mechanisms may live on curved manifolds where Grassmannian geometry is the wrong framework
 
 **Assessment:** The strongest mid-commitment position. Addresses the object view's coordinate-dependence problems while remaining computationally tractable. The vacuity concern is serious but has a clear resolution path (restricting alignment maps — what we propose as G-SCM). The linearity assumption is a known limitation, not a fatal flaw.
@@ -139,7 +139,7 @@ These are different questions. The object view has modest validity coverage (6/2
 - The framework resolves cross-architecture identity in principle
 
 **Evidence against:**
-- Computability: holonomy, cosheaf cohomology, and gauge-orbit comparison have not been computed for any real transformer at scale
+- Computability: gauge-orbit comparison has not been run at scale, though Javidnia (2026) makes holonomy computable on a frozen language model, so what is missing is systematic use rather than the formalism
 - Wrong symmetry group: LayerNorm breaks the full rotation symmetry, and the correct gauge group for transformers with LayerNorm is not established
 - The view's objects (gauge orbits, holonomy groups) are currently more theoretical constructs than empirical tools
 
@@ -161,7 +161,7 @@ These are different questions. The object view has modest validity coverage (6/2
 - Checkpoint analysis is expensive and model-specific
 - Few process-level claims have been replicated across model families
 
-**Assessment:** The process view is not a standalone view — it is a temporal modifier that pairs with a static view. Its unique contribution (formation order, developmental prerequisites) is well-supported for specific phenomena (grokking, induction heads) but has not been shown to be generally necessary. Most mechanisms can be adequately described statically.
+**Assessment:** The process view is the only view whose ontology is temporal, and it is the sole member of its family. Its unique contribution (formation order, developmental prerequisites) is well-supported for specific phenomena (grokking, induction heads) but has not been shown to be generally necessary. Many mechanism claims can be stated without it, and the ones that cannot are exactly the ones about how a mechanism formed.
 
 ---
 
@@ -193,7 +193,7 @@ These are different questions. The object view has modest validity coverage (6/2
 | Role | Moderate | Moderate | Post-hoc labeling; vague specifications |
 | Subspace | Moderate-strong | Strong | Vacuity; linearity assumption |
 | Structural | Weak | Strong | Computationally intractable |
-| Process | Moderate (for specific phenomena) | Moderate | Not standalone; formation criterion ambiguity |
+| Process | Moderate (for specific phenomena) | Moderate | Underspecified identity criterion; formation criterion ambiguity |
 | Stratified | Weak | Ambitious | Stratum assignment unsolved; Duhem-Quine |
 
 The pattern: empirical support and theoretical ambition are roughly inversely correlated. The views with the most evidence (object, instrumental) make the weakest claims. The views with the broadest explanatory scope (structural, stratified) have the least empirical grounding. This is expected — stronger claims require more evidence, and the field has not yet produced that evidence for the higher-commitment views.

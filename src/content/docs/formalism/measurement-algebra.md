@@ -16,7 +16,7 @@ See [Measurement in quantum mechanics](https://en.wikipedia.org/wiki/Measurement
 
 ## How the perspectival view uses it
 
-Under the perspectival view, a mechanism is a projection of the method used to find it — different methods may reveal different aspects of the same underlying structure. Measurement algebra provides the formalism because the central question is how different method-projections relate to each other.
+Under the perspectival view, a mechanism is a projection of the method used to find it — different methods may reveal different aspects of the same underlying structure. Measurement algebra is the formalism named for the view because the central question is how different method-projections relate to each other. The algebra itself is unbuilt: constructing one is an open problem, and the operational content of the view currently rests on multi-method robustness rather than on an algebraic composition law.
 
 Two perspectival descriptions refer to the same mechanism when they exhibit *cross-method coherence*: the measurements from different methods compose consistently under the algebra. If method A and method B produce results that are algebraically compatible — commuting projections, consistent composition — they are measuring the same thing from different angles.
 

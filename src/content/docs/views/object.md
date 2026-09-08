@@ -4,7 +4,7 @@ title: Object View
 
 # Object View
 
-The object view is the default stance in most interpretability work today. When someone says "head 9.1 is a name mover" or "this SAE channel fires on French text," they are making an object-view claim: the mechanism is a specific, concrete part of the network, and you study it by poking at it — ablating it, patching it, measuring what happens when it's gone.
+The object view is the default stance in most interpretability work today. When someone says "head 9.9 is a name mover" or "this SAE channel fires on French text," they are making an object-view claim: the mechanism is a specific, concrete part of the network, and you study it by poking at it — ablating it, patching it, measuring what happens when it's gone.
 
 This is the simplest realist position. It says mechanisms are real things you can point to: this head, that neuron, these edges in a circuit graph. The evidence is causal and direct — remove the component, see if the behavior breaks. Most circuit discovery work (ACDC — Automatic Circuit DisCovery, activation patching, EAP — Edge Attribution Patching) operates in this view, producing directed graphs of components as output.
 
@@ -18,13 +18,13 @@ A mechanism is a localized object or collection of objects whose activity or wei
 
 **Why circuit discovery works.** Methods like ACDC, activation patching, and EAP produce directed graphs of components. Under the object view, these graphs ARE the mechanism — a set of parts with causal relationships between them.
 
-**When the field says "this head does X."** Claims like "head 9.1 is a name mover" or "S-inhibition heads suppress the subject token" are object-view claims. The component is the mechanism; its behavior under intervention is the evidence.
+**When the field says "this head does X."** Claims like "head 9.9 is a name mover" or "S-inhibition heads suppress the subject token" are object-view claims. The component is the mechanism; its behavior under intervention is the evidence.
 
 ## What this view says
 
 The object view says mechanisms are architectural or learned units: heads, neurons, [SAE-recovered channels](/mechanistic-views/glossary/#sae). Two mechanisms are the same when they share the same relevant parts.
 
-The claim "head 4.4 implements name-moving" is a *dispositional* claim, not a categorical one. It means: head 4.4 reliably activates in name-moving contexts AND its ablation impairs name-moving performance. It does not mean the head is in some intrinsic state of "name-moving-ness" independent of context. Both conditions — the observational (activation pattern) and the interventional (ablation effect) — are needed. A claim citing only one is underdetermined: high activation without ablation evidence might reflect correlation; ablation evidence without activation evidence might reflect indirect effects.
+The claim "head 9.9 implements name-moving" is a *dispositional* claim, not a categorical one. It means: head 9.9 reliably activates in name-moving contexts AND its ablation impairs name-moving performance. It does not mean the head is in some intrinsic state of "name-moving-ness" independent of context. Both conditions — the observational (activation pattern) and the interventional (ablation effect) — are needed. A claim citing only one is underdetermined: high activation without ablation evidence might reflect correlation; ablation evidence without activation evidence might reflect indirect effects.
 
 The object view works well when computation is sparse and localized. It breaks down when mechanisms are distributed across many components, when backup circuits mask ablation effects, or when the "important component" is an artifact of the coordinate system rather than a genuine computational unit. When these failures dominate, the [subspace](/mechanistic-views/views/subspace/) or [structural](/mechanistic-views/views/structural/) views may be more appropriate. But for much of the field's current practice — finding circuits, characterizing heads, interpreting SAE channels — the object view is where the work lives.
 
@@ -83,7 +83,7 @@ The object view gives strong causal evidence — ablation tests necessity, patch
 
 **Why convergent validity (C5) is impossible.** Different circuit-discovery methods (ACDC, EAP, activation patching) recover different component sets for the same task. Under the object view, this is method disagreement. Under the [subspace view](/mechanistic-views/views/subspace/), it is expected — each method projects the same underlying subspace onto a different component basis.
 
-**Why cross-architecture (E6) is impossible.** Head 9.1 in GPT-2 does not exist in Llama. Component identity cannot cross architectures. The [role view](/mechanistic-views/views/role/) can express "same role, different components"; the [structural view](/mechanistic-views/views/structural/) can express it via gauge-orbit isomorphism.
+**Why cross-architecture (E6) is impossible.** Head 9.9 in GPT-2 does not exist in Llama. Component identity cannot cross architectures. The [role view](/mechanistic-views/views/role/) can express "same role, different components"; the [structural view](/mechanistic-views/views/structural/) can express it via gauge-orbit isomorphism.
 
 **Why measurement invariance (M2) is impossible.** Components are coordinate-dependent: rotating the basis moves "the mechanism" to different neurons without changing the computation. The [subspace view](/mechanistic-views/views/subspace/) resolves this because subspaces are invariant under rotation.
 

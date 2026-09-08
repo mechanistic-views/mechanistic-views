@@ -34,9 +34,13 @@ The Perspectival view doesn't say interpretability is impossible. It says that s
 
 The fix for all three problems is the same: convergent evidence across methods, distributions, and runs. This is what higher-commitment views (Subspace and above) require by construction — they build cross-method convergence into their evidence standards rather than treating it as optional.
 
+## Resolution status: **Scoped**
+
+Three foundational threats to mechanistic interpretability evidence: validation circularity (testing on the discovery distribution), interpretability illusions (distribution-dependent feature labels), and lack of random baselines (arbitrary directions receive plausible labels). All three are predicted by the Perspectival view and resolved by requiring convergent evidence across methods and distributions.
+
 ## Sources
 
-- **Sharkey et al. (2026)** §2.1.4: Validation circularity, no standardized evaluation ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
+- **Sharkey et al. (2025)** §2.1.4: Validation circularity, no standardized evaluation ([arXiv:2501.16496](https://arxiv.org/abs/2501.16496))
 - **Nanda (2022)** §6.37, §9.58: Interpretability illusions ([200 Open Problems](https://www.alignmentforum.org/posts/LbrPTJ4fmABEdEnLf/200-concrete-open-problems-in-mechanistic-interpretability))
 - **Apollo Research (2024)** #7: Random direction baseline ([45+ MI Projects](https://www.alignmentforum.org/posts/KfkpgXdgRheSRWDy8))
 - **ICML 2026 (Orgad, Barez et al.)**: Comparative advantage — MI vs. non-MI baselines ([arXiv:2605.11161](https://arxiv.org/abs/2605.11161))

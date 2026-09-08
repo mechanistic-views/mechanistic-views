@@ -17,7 +17,7 @@ Each method carries implicit commitments across all five axes. Method links prov
 | [ACDC](/mechanistic-views/glossary/#attribution-patching) | [Object](/mechanistic-views/views/object/) | Component overlap | Activations | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Task circuit |
 | [EAP](/mechanistic-views/glossary/#attribution-patching) | [Object](/mechanistic-views/views/object/) | Component overlap | Activations + Weights | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Task circuit |
 | [Ablation](/mechanistic-views/glossary/#activation-patching) | [Object](/mechanistic-views/views/object/) | Component overlap | Activations | [Directed graph](/mechanistic-views/formalism/directed-graph/) | Importance |
-| [DAS / IIA](/mechanistic-views/glossary/#causal-abstraction) | [Role](/mechanistic-views/views/role/) | Role equivalence | Activations | [Causal graph](/mechanistic-views/formalism/causal-graph/) | Concept |
+| [DAS / IIA](/mechanistic-views/glossary/#causal-abstraction) | [Role](/mechanistic-views/views/role/)<sup>†</sup> | Role equivalence | Activations | [Grassmannian $\mathrm{Gr}(k,d)$](/mechanistic-views/formalism/grassmannian/) (borrowed) | Concept |
 | [Causal scrubbing](/mechanistic-views/glossary/#causal-abstraction) | [Role](/mechanistic-views/views/role/) | Role equivalence | Activations | [Causal graph](/mechanistic-views/formalism/causal-graph/) | Alignment |
 | [Linear probing](/mechanistic-views/glossary/#linear-probing) | [Role](/mechanistic-views/views/role/) | Role equivalence | Activations | [Linear classifier](/mechanistic-views/formalism/linear-classifier/) | Detection |
 | [SAE features](/mechanistic-views/glossary/#sae) | [Object](/mechanistic-views/views/object/) | Component overlap | Activations | [Dictionary](/mechanistic-views/formalism/dictionary/) | Feature catalog |
@@ -36,7 +36,7 @@ Each method carries implicit commitments across all five axes. Method links prov
 **Key patterns:**
 - Most methods are Object view + activation evidence. The field's default ontology is components (heads, neurons, features).
 - DAS uses Subspace *parameterization* but Role *identity* — it validates by interchange intervention success (IIA), not Grassmannian distance. The subspace is the search space, not the ontology.
-- The instrumental and perspectival views describe philosophical positions rather than method families. The structural, process, and stratified views are proposed as novel research programs — individual methods touch their territory (composition scores for structural, AGOP for process) but no method fully adopts their ontology.
+- Six views are descriptive — object, role, subspace, process, instrumental, contrastive — characterizing commitments already operative in published work. Three are programmatic — structural, stratified, perspectival — articulating views implicit in emerging directions without widely adopted methods. No widely used method operates in the stratified or perspectival views; composition scores reach structural territory and AGOP reaches process territory.
 
 ## Limitations and axis tensions
 
