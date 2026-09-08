@@ -1,0 +1,18 @@
+source:
+  citation: chen2026
+  local: reference/chen2026.pdf
+  sha256: aaec573dde3325cb351e85030b172b70dbe4ad219da5cfdf9f1d75b1e3b1198b
+  extract_cmd: pdftotext -layout {} -
+claims:
+  iou-4-1:
+    statement: 'Two structures overlap in 96 elements against a union of 2351, an IoU of 4.1%.'
+    verified: true
+    quotes:
+      - exact: 'IoU(A, B) = 4.1%'
+        section: 'body'
+  both-perfect-accuracy:
+    statement: 'Both achieve perfect IOI accuracy and satisfy the same quality criteria.'
+    verified: true
+    quotes:
+      - exact: 'Both sheaves achieve perfect IOI accuracy and satisfy'
+        section: 'body'

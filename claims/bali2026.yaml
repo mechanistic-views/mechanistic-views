@@ -1,0 +1,18 @@
+source:
+  citation: bali2026
+  local: reference/bali2026.pdf
+  sha256: ee5d8c1446f99ffeadfc79381d2787c36816f7695202465856a03c874e3f1bbd
+  extract_cmd: pdftotext -layout {} -
+claims:
+  midlayer-stability-070:
+    statement: 'Mid-layer head stability drops to about 0.70 from 1.0 at layer 1.'
+    verified: true
+    quotes:
+      - exact: 'S5 (layer 5) drops to'
+        section: 'body'
+  residual-stream-stable:
+    statement: 'The residual stream is comparatively stable.'
+    verified: true
+    quotes:
+      - exact: 'residual stream is relatively much more stable'
+        section: 'body'

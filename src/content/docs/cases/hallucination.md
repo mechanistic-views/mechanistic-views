@@ -10,7 +10,7 @@ title: Case Study — Hallucination
 
 A set of components retrieves the correct fact; a competing mechanism promoting the incorrect candidate wins. Evidence: activation patching studies showing specific layers or heads produce the correct answer when patched from a correct pass.
 
-**Limitation.** If correct and incorrect mechanisms share components, the [object view](/mechanistic-views/views/object/) cannot cleanly localize the failure.
+**Limitation.** Correct and incorrect mechanisms do share components: Cheang et al. (2025) report that hallucinations produced from learned associations are "mechanistically similar to those of factual recall." The [object view](/mechanistic-views/views/object/) therefore cannot cleanly localize the failure — this is a measured finding rather than a hypothetical.
 
 ## [Role view](/mechanistic-views/views/role/)
 
@@ -45,6 +45,10 @@ Tiers below are the [Mechanistic Validity](/mechanistic-views/mechval-interface/
 
 ## Further reading
 
-Meng, K., Bau, D., Andonian, A., Belinkov, Y. "Locating and Editing Factual Associations in GPT." [NeurIPS 2022. arXiv:2202.05262](https://arxiv.org/abs/2202.05262).
+Simhi, A., Herzig, J., Szpektor, I., Belinkov, Y. "Distinguishing Ignorance from Error in LLM Hallucinations." [arXiv:2410.22071](https://arxiv.org/abs/2410.22071), 2024. — the HK⁻ / HK⁺ split this page rests on.
 
-Li, K., Patel, O., Viégas, F., Pfister, H., Wattenberg, M. "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model." [NeurIPS 2023. arXiv:2306.03341](https://arxiv.org/abs/2306.03341).
+Cheang, C. S., Chan, H. P., Zhang, W., Deng, Y. "Do LLMs Really Know What They Don't Know? Internal States Mainly Reflect Knowledge Recall Rather Than Truthfulness." [arXiv:2510.09033](https://arxiv.org/abs/2510.09033), 2025. — reports that hallucinations produced from learned associations are mechanistically similar to factual recall.
+
+Meng, K., Bau, D., Andonian, A., Belinkov, Y. "Locating and Editing Factual Associations in GPT." [NeurIPS 2022. arXiv:2202.05262](https://arxiv.org/abs/2202.05262). — background on where factual associations are stored.
+
+Li, K., Patel, O., Viégas, F., Pfister, H., Wattenberg, M. "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model." [NeurIPS 2023. arXiv:2306.03341](https://arxiv.org/abs/2306.03341). — an instrumental-view intervention on the same phenomenon.

@@ -1,0 +1,18 @@
+source:
+  citation: chanin2024absorption
+  local: reference/chanin_2024_feature_absorption.pdf
+  sha256: fc4175d560e35e2a36d41924ed35d0be791fab555e851df1aea656a14410e6ef
+  extract_cmd: pdftotext -layout {} -
+claims:
+  absorbed-into-more-specific:
+    statement: 'General features are absorbed into more specific latents, not into more general ones.'
+    verified: true
+    quotes:
+      - exact: 'into more specific latents'
+        section: 'body'
+  width-does-not-fix:
+    statement: 'Varying SAE size or sparsity does not solve absorption.'
+    verified: true
+    quotes:
+      - exact: 'varying SAE sizes or sparsity is insufficient'
+        section: 'body'

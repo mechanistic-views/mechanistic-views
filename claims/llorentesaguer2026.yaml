@@ -1,0 +1,12 @@
+source:
+  citation: llorentesaguer2026
+  local: reference/refusal/arx_2604.18901.pdf
+  sha256: 46687c4ab228d55dd31f46b9962448ea1b4c85d9e0ef58650c5b65736f537f08
+  extract_cmd: pdftotext -layout {} -
+claims:
+  pooling-73-degrees:
+    statement: 'Two pooling choices at one layer recover harm directions 73 degrees apart.'
+    verified: true
+    quotes:
+      - exact: 'recover harm directions 73'
+        section: 'body'

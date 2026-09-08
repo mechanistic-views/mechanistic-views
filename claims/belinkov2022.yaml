@@ -1,0 +1,18 @@
+source:
+  citation: belinkov2022
+  local: reference/belinkov2022.pdf
+  sha256: 2a96a5654c2f96a7ceaa279cccc476b1e725812ad03b7e3aa71ee1fac9373a32
+  extract_cmd: pdftotext -layout {} -
+claims:
+  accuracy-not-selectivity:
+    statement: 'Probes can have high accuracy and low selectivity.'
+    verified: true
+    quotes:
+      - exact: 'high accuracy, but low selectivity'
+        section: 'body'
+  complexity-was-disputed:
+    statement: 'Probe complexity was a live methodological dispute.'
+    verified: true
+    quotes:
+      - exact: 'considered the complexity of the probe'
+        section: 'body'

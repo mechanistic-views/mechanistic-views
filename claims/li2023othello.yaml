@@ -1,0 +1,568 @@
+source:
+  citation: li2023othello
+  local: reference/li2022othello.pdf
+  sha256: 3a64ec2e9610837e577578397e7fd8b6bb49adbe60bed026a496a94356866391
+  extract_cmd: pdftotext -layout {} -
+imported_from: mechanistic-validity/docs/data/audits/othello.yaml
+claims:
+  c1-falsifiability:
+    statement: '[C1 Falsifiability, status C] Intervention fixes the failing outcome before it is measured'
+    verified: true
+    quotes:
+    - exact: If the new predictions match our expectations for B ′ —and not the predictions we recorded
+        for B—we conclude the representation had a causal effect on the model.
+      section: §4
+    - exact: We measure prediction alignment with the intervened world representation as a multi-label
+        classification problem, comparing the top-N predictions against the ground-truth legal next-move
+        set, where N is the number of legal next-moves after intervention.
+      section: §4.2
+    - exact: Red dashed lines represent an average number of errors by testing pre-intervention predictions
+        on post-intervention ground-truths
+      section: Figure 3 caption
+    - exact: This result suggests that if there is an internal representation of the board state, it does
+        not have a simple linear form.
+      section: §3.1
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+  c2-structural-plausibility:
+    statement: '[C2 Structural plausibility, status PC] Layerwise argument and probe geometry; no weight-level
+      account'
+    verified: true
+    quotes:
+    - exact: Given the causal attention mechanism of GPT-2, modifying activations for only one layer is
+        unlikely to be effective as later layer computations incorporate information from prior board
+        representations unaffected by our intervention.
+      section: §4.1
+    - exact: For classifier vectors, however, we see a somewhat clearer geometric correlation with the
+        grid shape itself.
+      section: Appendix A
+    - exact: This shape may reflect a set of correlations between neighboring grid cells, and could be
+        an interesting object for future study.
+      section: Appendix A
+    - exact: Understanding of the internal representations of a sequence model is interesting in its own
+        right, but may also be helpful in deeper interpretations of the network.
+      section: §7
+  c3-convergent-validity:
+    statement: '[C3 Convergent validity, status C] Probe, intervention and three metrics agree; two share
+      one instrument'
+    verified: true
+    quotes:
+    - exact: These results indicate that the probe may be recovering a nontrivial representation of board
+        state in the network’s activations. In section 4, we describe intervention experiments validating
+        this hypothesis.
+      section: §3.2
+    - exact: Error (Figure 3), F1 (Figure 9), and KL divergence (Figure 10) show a similar trend, confirming
+        that the proposed intervention technique is useful and validating the causality from world representations
+        to model predictions.
+      section: Appendix F
+    - exact: Our modification uses a simple gradient descent method on the probe’s class score for the
+        particular tile s whose state is being modified.
+      section: §4.1
+    - exact: Expert moves rely on complex global features of the board. The difference
+      section: §5
+    - exact: between the latent saliency maps for the two versions of Othello-GPT suggests that the visualization
+        technique is providing useful information about the two systems.
+      section: §5, continuing after the Figure 4 caption
+  c4-discriminant-validity:
+    statement: '[C4 Discriminant validity, status PC] Separated from memorisation and from a random net,
+      not from a summary'
+    verified: true
+    quotes:
+    - exact: Othello-GPT trained on the skewed dataset still yields an error rate of 0.02%. Since Othello-GPT
+        has seen none of these test sequences before, pure sequence memorization cannot explain its performance
+      section: §2.3
+    - exact: The key comparison is between the randomized network and the trained network.
+      section: §3.1, footnote 6
+    - exact: By contrast, the baseline (probing a randomized network with nonlinear probes) shows almost
+        no improvement over the linear case.
+      section: §3.2
+    - exact: This probe defines an internal representation of the board state. We then provide evidence
+        that this representation plays a causal role in the network’s predictions.
+      section: §1
+  c5-nomological-validity:
+    statement: '[C5 Nomological validity, status PC] Named rival theory and a literature; no theory of
+      what a world model is'
+    verified: true
+    quotes:
+    - exact: Some have suggested that training on a sequence modeling task is inherently limiting. The
+        arguments range from philosophical (Bender & Koller, 2020) to mathematical (Merrill et al., 2021).
+      section: §1
+    - exact: A common theme is that seemingly good performance might result from memorizing “surface statistics,”
+        i.e., a long list of correlations that do not reflect a causal model of the process generating
+        the sequence.
+      section: §1
+    - exact: Our work fits into a general line of investigation into world representations created by
+        sequence models.
+      section: §6
+    - exact: instead building interpretable world models—that is, understandable models of the process
+        producing the sequences they are trained on.
+      section: §1
+  m1-reliability:
+    statement: '[M1 Reliability, status C] Probe accuracies re-run 100 times; deviations in Tables 4 and
+      5'
+    verified: true
+    quotes:
+    - exact: In order to exclude the possibility that the differences in probe accuracies in Table 1 and
+        Table 2 are caused by randomness, we run the same experiment for 100 times with different random
+        seeds and report the standard deviations of them in Table 4 and Table 5, based on which we conclude
+        that the probe accuracies are robust to randomness and there are significant differences between
+        the probe accuracies of linear and nonlinear probes, and also between probes on randomized Othello-GPT
+        and Othello-GPTs trained on different datasets.
+      section: Appendix H
+    - exact: Standard deviations of error rates (%) of nonlinear probes on randomized Othello-GPT
+      section: Table 5 caption
+  m2-baseline-separation:
+    statement: '[M2 Baseline separation, status C] Untrained net, constant guess and null intervention
+      floors all reported'
+    verified: true
+    quotes:
+    - exact: For comparison, the untrained Othello-GPT has an error rate of 93.29%.
+      section: §2.3
+    - exact: A best random guess yields 52.95%, if the probe always guesses the tile is empty.
+      section: §3
+    - exact: As a baseline, we have included probes trained on a randomly initialized network
+      section: §3.1
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+    - exact: Red dashed lines represent an average number of errors by testing pre-intervention predictions
+        on post-intervention ground-truths
+      section: Figure 3 caption
+    - exact: Note that the baseline F1 and DKL are the averages of the F1 and DKL overall 1000 intervention
+        cases
+      section: Appendix F
+  m3-stability:
+    statement: '[M3 Stability, status PC] Optimiser, β and probe capacity swept; the probe target never
+      varied'
+    verified: true
+    quotes:
+    - exact: Experiments find this optimization process is robust to different configurations of optimizer,
+        learning rate α, and number of steps.
+      section: Appendix G
+    - exact: We sweep β at the best Ls = 5 on the natural benchmark and report average number of errors
+        in Table 3. We can observe it does not clearly help.
+      section: Appendix G
+    - exact: 'we plot probe accuracies of two-layer probes varying to two different experiment settings:
+        (1) Probe Hidden Units: the number of hidden units H in nonlinear probes; (2) Layer: at which
+        layer the representations xl is taken out.'
+      section: Appendix B
+    - exact: Here we further discuss another hyper-parameter ablated in Figure 3, the starting layer for
+        intervention
+      section: Appendix G
+  m4-calibration:
+    statement: '[M4 Calibration, status PC] Intervention error has a null floor; probe accuracy has no
+      task scale'
+    verified: true
+    quotes:
+    - exact: We then calculate an error per case (a sum of false positives and false negatives, shown
+        in Figure 3)
+      section: §4.2
+    - exact: Classifying a tile as unoccupied or occupied can be written as a linear function of the input
+        sequence, thus we consider only the 3-way black/white/empty classifiers.
+      section: §3, footnote 5
+    - exact: Error (Figure 3), F1 (Figure 9), and KL divergence (Figure 10) show a similar trend, confirming
+        that the proposed intervention technique is useful and validating the causality from world representations
+        to model predictions.
+      section: Appendix F
+  m5-sensitivity:
+    statement: '[M5 Sensitivity, status PC] A known-negative control only; no planted representation is
+      recovered'
+    verified: true
+    quotes:
+    - exact: As a baseline, we have included probes trained on a randomly initialized network
+      section: §3.1
+    - exact: Probes on the randomized network do better than chance; a constant guess of “empty” has a
+        47% error rate. But that performance is not a surprise, since it makes sense that some information
+        about moves is preserved even by a random network.
+      section: §3, footnote 6
+    - exact: The key comparison is between the randomized network and the trained network.
+      section: §3.1, footnote 6
+  m6-invariance:
+    statement: '[M6 Invariance, status C] All eight layers, both datasets, both benchmarks, three metrics'
+    verified: true
+    quotes:
+    - exact: The probe accuracy for trained networks, shown in Table 2, is significantly better than the
+        linear probe in absolute terms.
+      section: §3.2
+    - exact: For layer l, the accuracy peaks at midway, which is aligned with studies on natural language
+        (Hewitt & Manning, 2019), where linguistic properties are found to be best probed in mid-layers.
+      section: Appendix B
+    - exact: 'The benchmark set consists of two subsets of 1000 intervention cases: one “natural,” one
+        “unnatural.”'
+      section: §4.2
+    - exact: Error (Figure 3), F1 (Figure 9), and KL divergence (Figure 10) show a similar trend, confirming
+        that the proposed intervention technique is useful and validating the causality from world representations
+        to model predictions.
+      section: Appendix F
+  m7-selection-correction:
+    statement: '[M7 Selection correction, status U] Headline numbers are the maximum over swept Ls and
+      β, uncorrected'
+    verified: true
+    quotes:
+    - exact: 'For both benchmarks, Ls = 4 (intervening 5 layers) gives the best result: average errors
+        of 0.12 and 0.06 respectively.'
+      section: §4.2
+    - exact: We sweep β at the best Ls = 5 on the natural benchmark and report average number of errors
+        in Table 3. We can observe it does not clearly help.
+      section: Appendix G
+    - exact: Here we further discuss another hyper-parameter ablated in Figure 3, the starting layer for
+        intervention
+      section: Appendix G
+  i1-necessity:
+    statement: '[I1 Necessity, status PC] Substitution to a counterfactual state; nothing is removed'
+    verified: true
+    quotes:
+    - exact: We record the move predictions associated with B, then modify these activations such that
+        our probe reports an updated board state
+      section: §4
+    - exact: Through our protocol, only a single tile s distinguishes B ′ from B’s board state
+      section: §4
+    - exact: Our modification uses a simple gradient descent method on the probe’s class score for the
+        particular tile s whose state is being modified.
+      section: §4.1
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+  i2-sufficiency:
+    statement: '[I2 Sufficiency, status PC] Editing the representation alone moves predictions, including
+      off-distribution'
+    verified: true
+    quotes:
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+    - exact: 'For both benchmarks, Ls = 4 (intervening 5 layers) gives the best result: average errors
+        of 0.12 and 0.06 respectively.'
+      section: §4.2
+    - exact: The natural subset consists of positions reachable by legal play. The unnatural subset contains
+        positions that are unreachable by legal play.
+      section: §4.2
+    - exact: This small modification results in a different set of possible legal moves for B ′ .
+      section: §4
+  i3-minimality:
+    statement: '[I3 Minimality, status N/A] One activation vector holds all 64 tiles; no components to
+      prune'
+    verified: true
+    quotes:
+    - exact: The complete world state, including states of all the 64 board tiles, is encoded in a single
+        internal representation x, while during intervention experiment, we only wish to change one of
+        them.
+      section: Appendix G
+    - exact: This representation appears to be nonlinear in an essential way.
+      section: §7
+  i4-specificity:
+    statement: '[I4 Specificity, status PC] Off-target flips raised, mitigation swept, effects never counted'
+    verified: true
+    quotes:
+    - exact: 'A natural question is: will the intervention operation flip tiles we do not intend? It is
+        possible but we can mitigate that by considering the cross entropy losses of other tiles as a
+        regularization term, weighted by a hyper-parameter β.'
+      section: Appendix G
+    - exact: We sweep β at the best Ls = 5 on the natural benchmark and report average number of errors
+        in Table 3. We can observe it does not clearly help.
+      section: Appendix G
+    - exact: when the same intervention is done on later layers again, the model is more convinced that
+        C4 should be black and stops to correct it
+      section: Appendix D
+    - exact: We then calculate an error per case (a sum of false positives and false negatives, shown
+        in Figure 3)
+      section: §4.2
+  i5-rival-mechanism-exclusion:
+    statement: '[I5 Rival mechanism exclusion, status PC] Memorisation and off-distribution rivals excluded;
+      basis choice was not'
+    verified: true
+    quotes:
+    - exact: A potential explanation for these results may be that Othello-GPT is simply memorizing all
+        possible transcripts.
+      section: §2.3
+    - exact: Othello-GPT trained on the skewed dataset still yields an error rate of 0.02%. Since Othello-GPT
+        has seen none of these test sequences before, pure sequence memorization cannot explain its performance
+      section: §2.3
+    - exact: This second subset is designed to be a stringent test, since it is by definition far from
+        anything encountered in the training distribution.
+      section: §4.2
+    - exact: This result suggests that if there is an internal representation of the board state, it does
+        not have a simple linear form.
+      section: §3.1
+  i6-double-dissociation:
+    statement: '[I6 Double dissociation, status U] One representation, one behaviour; no converse leg
+      is available'
+    verified: true
+    quotes:
+    - exact: In our case, we want to know whether Othello-GPT’s internal activations contain a representation
+        of the current board state.
+      section: §3
+    - exact: To determine whether the board state information affects the network’s predictions, we influence
+        internal activations during Othello-GPT’s calculation and measure the resulting effects.
+      section: §4
+    - exact: Through our protocol, only a single tile s distinguishes B ′ from B’s board state
+      section: §4
+  i7-confound-control:
+    statement: '[I7 Confound control, status PC] Memorisation, distribution and probe capacity controlled;
+      target is not'
+    verified: true
+    quotes:
+    - exact: our goal is to prevent memorization of input data; the network only sees moves, and never
+        sees board state directly.
+      section: §2.3, footnote 4
+    - exact: Othello-GPT trained on the skewed dataset still yields an error rate of 0.02%. Since Othello-GPT
+        has seen none of these test sequences before, pure sequence memorization cannot explain its performance
+      section: §2.3
+    - exact: This second subset is designed to be a stringent test, since it is by definition far from
+        anything encountered in the training distribution.
+      section: §4.2
+    - exact: The key comparison is between the randomized network and the trained network.
+      section: §3.1, footnote 6
+  i9-epistatic-interaction:
+    statement: '[I9 Epistatic interaction, status U] Single-tile edits only; rule composition named as
+      future work'
+    verified: true
+    quotes:
+    - exact: Through our protocol, only a single tile s distinguishes B ′ from B’s board state
+      section: §4
+    - exact: the intervention in benchmark only cause a set difference of 2.12 tiles on average
+      section: Appendix F
+    - exact: However, when the prediction flips more than one straight line, intervening on one of them
+        does not nullify the prediction.
+      section: Appendix E
+    - exact: How to extract such knowledge with unlimited amount of intervention experiments at hand?
+        We leave it for future research.
+      section: Appendix E
+  i10-rescue-reversibility:
+    statement: '[I10 Rescue reversibility, status PC] Restoration observed as an obstacle, not designed
+      as a rescue test'
+    verified: true
+    quotes:
+    - exact: We can observe that after intervention is successfully done on the 5th layer at C4, the flipped
+        disc is corrected in the immediately following layer, as seen in the pre-intervention probing
+        results at the 6-th layer.
+      section: Appendix D
+    - exact: Instead, we select an initial layer Ls then modify it and subsequent layers’ activations
+      section: §4.1
+    - exact: Part of the misinformation gets corrected (light blue), but we alternate this intervening
+        and computation process until the last layer, from which the next-step prediction is made.
+      section: Figure 2 caption
+  i11-onset-coupling:
+    statement: '[I11 Onset coupling, status U] Training-step axis available and explicitly declined'
+    verified: true
+    quotes:
+    - exact: The model starts from randomly initialized weights, including in the word embedding layer.
+      section: §2.2
+    - exact: except we ask how many hidden units within our nonlinear probe are necessary to achieve reasonable
+        accuracy given each layer of the GPT instead of looking into number of training epochs.
+      section: Appendix B
+    - exact: we wish to understand when, during a game, a model has developed world representations of
+        board tiles, where in Othello-GPT that information is stored, how difficult it is to decode that
+        information, and when the model may forget that information.
+      section: Appendix B
+  i12-offset-coupling:
+    statement: '[I12 Offset coupling, status U] Two models differ in competence; the coupling is never
+      analysed'
+    verified: true
+    quotes:
+    - exact: The model starts from randomly initialized weights, including in the word embedding layer.
+      section: §2.2
+    - exact: The error rate is 0.01% for Othello-GPT trained on the synthetic dataset and 5.17% for Othello-GPT
+        trained on the championship dataset.
+      section: §2.3
+    - exact: The probe accuracy for trained networks, shown in Table 2, is significantly better than the
+        linear probe in absolute terms.
+      section: §3.2
+  e1-intervention-reach:
+    statement: '[E1 Intervention reach, status U] One intervention operator, reported under three outcome
+      metrics'
+    verified: true
+    quotes:
+    - exact: Our modification uses a simple gradient descent method on the probe’s class score for the
+        particular tile s whose state is being modified.
+      section: §4.1
+    - exact: Our proposed intervention method stands out by only working on internal representations and
+        requires only one forward pass.
+      section: §6
+    - exact: Error (Figure 3), F1 (Figure 9), and KL divergence (Figure 10) show a similar trend, confirming
+        that the proposed intervention technique is useful and validating the causality from world representations
+        to model predictions.
+      section: Appendix F
+  e2-prompt-generalization:
+    statement: '[E2 Prompt generalization, status C] 1000 natural and 1000 unnatural cases; both training
+      distributions'
+    verified: true
+    quotes:
+    - exact: 'The benchmark set consists of two subsets of 1000 intervention cases: one “natural,” one
+        “unnatural.”'
+      section: §4.2
+    - exact: This second subset is designed to be a stringent test, since it is by definition far from
+        anything encountered in the training distribution.
+      section: §4.2
+    - exact: Its data distribution is different from the championship games, reflecting no strategy.
+      section: §2.1
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+  e3-cross-task-generalization:
+    statement: '[E3 Cross-task generalization, status PC] Othello only; other games and natural language
+      listed as future work'
+    verified: true
+    quotes:
+    - exact: One natural extension would be to perform the same type of investigation with other, more
+        complex games.
+      section: §7
+    - exact: More broadly, it would be interesting to study how our results generalize to models trained
+        on natural language.
+      section: §7
+    - exact: For more complex natural language tasks, can we find meaningful world representations?
+      section: §7
+  e4-cross-model-generalization:
+    statement: '[E4 Cross-model generalization, status C] One architecture, two training sets; nothing
+      cross-model at origin'
+    verified: true
+    quotes:
+    - exact: We trained an 8-layer GPT model (Radford et al., 2018; 2019; Brown et al., 2020) with an
+        8-head attention mechanism and a 512-dimensional hidden space.
+      section: §2.2
+    - exact: We use two sets of training data for the system, which we call “championship” and “synthetic”.
+      section: §2.1
+    - exact: Our goal is to study how much Othello-GPT can learn from pure sequence information, so we
+        provide as few inductive biases as possible.
+      section: §2.2
+  e5-graded-response:
+    statement: '[E5 Graded response, status PC] Two knobs swept with degradation outside the optimum;
+      no dose-response'
+    verified: true
+    quotes:
+    - exact: We sweep β at the best Ls = 5 on the natural benchmark and report average number of errors
+        in Table 3. We can observe it does not clearly help.
+      section: Appendix G
+    - exact: If we intervene with more than 5 layers, shallow layers which have not developed reliable
+        world
+      section: Appendix G
+    - exact: representations (according to Figure 6) are touched, making intervention hazardous.
+      section: Appendix G, continuing after the Table 3 block
+    - exact: On the other hand, if we intervene only at the deepest layers, though the world representation
+        can be intervened successfully (see Appendix D), the model does not have enough computation to
+        adapt to the newer world representation and makes predictions corresponding to it.
+      section: Appendix G
+  e6-novel-prediction:
+    statement: '[E6 Novel prediction, status C] Unnatural boards predicted to work and did; saliency maps
+      split two models'
+    verified: true
+    quotes:
+    - exact: This second subset is designed to be a stringent test, since it is by definition far from
+        anything encountered in the training distribution.
+      section: §4.2
+    - exact: 'For both benchmarks, Ls = 4 (intervening 5 layers) gives the best result: average errors
+        of 0.12 and 0.06 respectively.'
+      section: §4.2
+    - exact: The synthetic Othello-GPT shows high saliency for precisely those tiles that are required
+        to make a move legal.
+      section: §5
+    - exact: Expert moves rely on complex global features of the board. The difference
+      section: §5
+    - exact: between the latent saliency maps for the two versions of Othello-GPT suggests that the visualization
+        technique is providing useful information about the two systems.
+      section: §5, continuing after the Figure 4 caption
+  v1-level-declaration:
+    statement: '[V1 Level declaration, status PC] Level named by the phrase used, and the phrase changes
+      between sections'
+    verified: true
+    quotes:
+    - exact: we provide evidence for an emergent world model in a GPT variant trained to produce legal
+        moves in Othello
+      section: §1, contributions
+    - exact: In our case, we want to know whether Othello-GPT’s internal activations contain a representation
+        of the current board state.
+      section: §3
+    - exact: Our experiments provide evidence that Othello-GPT maintains a representation of game board
+        states
+      section: §7
+    - exact: that is, the Othello “world”—to produce sequences it was trained on.
+      section: §7
+  v2-level-evidence-match:
+    statement: '[V2 Level-evidence match, status PC] Evidence matches decodable plus causal; the definition
+      asks for more'
+    verified: true
+    quotes:
+    - exact: instead building interpretable world models—that is, understandable models of the process
+        producing the sequences they are trained on.
+      section: §1
+    - exact: This probe defines an internal representation of the board state. We then provide evidence
+        that this representation plays a causal role in the network’s predictions.
+      section: §1
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+    - exact: How to extract such knowledge with unlimited amount of intervention experiments at hand?
+        We leave it for future research.
+      section: Appendix E
+  v3-alternative-level:
+    statement: '[V3 Alternative level, status PC] Memorisation alternative posed and refuted; state summary
+      never posed'
+    verified: true
+    quotes:
+    - exact: A potential explanation for these results may be that Othello-GPT is simply memorizing all
+        possible transcripts.
+      section: §2.3
+    - exact: Othello-GPT trained on the skewed dataset still yields an error rate of 0.02%. Since Othello-GPT
+        has seen none of these test sequences before, pure sequence memorization cannot explain its performance
+      section: §2.3
+    - exact: Our nonlinear probe accuracies suggest that Othello-GPT computes information reflecting the
+        board state. It’s not obvious, however, whether that information is causal for the model’s predictions.
+      section: §4
+    - exact: This probe defines an internal representation of the board state. We then provide evidence
+        that this representation plays a causal role in the network’s predictions.
+      section: §1
+  v4-unlicensed-labeling:
+    statement: '[V4 Unlicensed labeling, status PC] ``World model'''' is defined, and only a state summary
+      is ever measured'
+    verified: true
+    quotes:
+    - exact: instead building interpretable world models—that is, understandable models of the process
+        producing the sequences they are trained on.
+      section: §1
+    - exact: we provide evidence for an emergent world model in a GPT variant trained to produce legal
+        moves in Othello
+      section: §1, contributions
+    - exact: This probe defines an internal representation of the board state. We then provide evidence
+        that this representation plays a causal role in the network’s predictions.
+      section: §1
+    - exact: Our nonlinear probe accuracies suggest that Othello-GPT computes information reflecting the
+        board state. It’s not obvious, however, whether that information is causal for the model’s predictions.
+      section: §4
+    - exact: Compared to baseline errors (2.68 and 2.59), the proposed intervention technique is effective
+        even under unnatural board states, suggesting the emergent representations are causal to model
+        predictions.
+      section: §4.2
+    - exact: How to extract such knowledge with unlimited amount of intervention experiments at hand?
+        We leave it for future research.
+      section: Appendix E
+    - exact: The lower left board represents the model’s perceived world state prior to intervention.
+      section: Figure 2 caption
+    - exact: when the same intervention is done on later layers again, the model is more convinced that
+        C4 should be black and stops to correct it
+      section: Appendix D
+    - exact: Even without knowing how synthetic-GPT was trained, an experienced Othello player might be
+        able to guess its goal.
+      section: §5
+  v5-scope-declaration:
+    statement: '[V5 Scope declaration, status C] Synthetic scope declared in the title, §1.1 and the conclusion'
+    verified: true
+    quotes:
+    - exact: This setting allows us to investigate world representations in a highly controlled context,
+        where both the task and sequence being modeled are synthetic and well-understood.
+      section: §1.1
+    - exact: Our approach for investigating internal representations of language models is to narrow our
+        focus from natural language to a more controlled synthetic setting.
+      section: §2
+    - exact: A key motivation is the hope that ideas and techniques learned in this simplified setting
+        may eventually be useful in natural-language settings as well.
+      section: §1
+    - exact: More broadly, it would be interesting to study how our results generalize to models trained
+        on natural language.
+      section: §7

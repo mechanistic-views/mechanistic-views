@@ -1,0 +1,12 @@
+source:
+  citation: sun2026
+  local: reference/sun2026.pdf
+  sha256: 8e061a3e1be8d8837237785660fa7735f3c6628aeeb97b9249f5ec8cda0c0475
+  extract_cmd: pdftotext -layout {} -
+claims:
+  cross-family-congruence:
+    statement: 'Pythia-GPT2 congruence is 0.13 against 0.73 and 0.92 within family.'
+    verified: true
+    quotes:
+      - exact: 'congruence between Pythia and GPT2 is significantly lower (0.13 versus 0.73 and 0.92)'
+        section: 'body'
